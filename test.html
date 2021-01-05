@@ -5,10 +5,11 @@
 	</head>
 	<body>
     <button onclick="tryInTester()">Send Message to Tester</button> 
+    <button onclick="tryInTester(true)">Send Message to Tester (Dev mode)</button> 
 		<script type="text/javascript">
-      function tryInTester() {
+      function tryInTester(devMode) {
         const message = {
-            "isDevMode": false,
+            "isDevMode": !!devMode,
             "payload": {
               "entityTreeNode": {
                 "entity": {
