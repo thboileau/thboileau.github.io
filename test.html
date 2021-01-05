@@ -4,58 +4,59 @@
 		<title>Vous Etes Perdu ?</title>
 	</head>
 	<body>
-		<h1>Perdu sur l'Internet ?</h1>
-		<h2>Pas de panique, on va vous aider</h2>
-		<strong><pre>    * <----- vous &ecirc;tes ici</pre></strong>
+    <button onclick="tryInTester()">Send Message to Tester</button> 
 		<script type="text/javascript">
-			window.postMessage({
-  "isDevMode": false,
-  "payload": {
-    "entityTreeNode": {
-      "entity": {
-        "type": "Project",
-        "id": "2e44e1a8-7fdb-4e3d-9a99-b2b100297482","importedFrom": "f219e47c-880a-4176-bbcb-2904843f5af7",
-        "name": "Empty 2 UP"
-      },
-      "children": [
-        {
-          "entity": {
-            "type": "Request",
-            "method": {
-              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
-              "name": "GET"
-            },
-            "body": {
-              "formBody": {
-                "overrideContentType": true,
-                "encoding": "application/x-www-form-urlencoded",
-                "items": []
+      function tryInTester() {
+        const message = {
+            "isDevMode": false,
+            "payload": {
+              "entityTreeNode": {
+                "entity": {
+                  "type": "Project",
+                  "id": "2e44e1a8-7fdb-4e3d-9a99-b2b100297482","importedFrom": "f219e47c-880a-4176-bbcb-2904843f5af7",
+                  "name": "Empty 2 UP"
+                },
+                "children": [
+                  {
+                    "entity": {
+                      "type": "Request",
+                      "method": {
+                        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                        "name": "GET"
+                      },
+                      "body": {
+                        "formBody": {
+                          "overrideContentType": true,
+                          "encoding": "application/x-www-form-urlencoded",
+                          "items": []
+                        },
+                        "bodyType": "Text"
+                      },
+                      "uri": {
+                        "scheme": {
+                          "secure": true,
+                          "name": "https",
+                          "version": "V11"
+                        }
+                      },
+                      "id": "6abf2699-6537-4ea9-bb73-d30e15631c1a",
+                      "name": "Request empty UP UP",
+                      "headers": []
+                    }
+                  }
+                ]
               },
-              "bodyType": "Text"
+              "environments": []
             },
-            "uri": {
-              "scheme": {
-                "secure": true,
-                "name": "https",
-                "version": "V11"
-              }
-            },
-            "id": "6abf2699-6537-4ea9-bb73-d30e15631c1a",
-            "name": "Request empty UP UP",
-            "headers": []
-          }
-        }
-      ]
-    },
-    "environments": []
-  },
-  "payloadType": "apiTester",
-  "queryString": "",
-  "source": "API Portal",
-  "target": "cacipppbjkckpbicmkjahmpfgjlnmilf",
-  "type": "openApi",
-  "shouldReplaceOriginTab": false,
-}, window.location.origin);
+            "payloadType": "apiTester",
+            "queryString": "",
+            "source": "API Portal",
+            "target": "cacipppbjkckpbicmkjahmpfgjlnmilf",
+            "type": "openApi",
+            "shouldReplaceOriginTab": false,
+          };
+        window.postMessage(message, window.location.origin);
+      }
 		</script>
 	</body>
 </html>
