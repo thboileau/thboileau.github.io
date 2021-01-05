@@ -4,10 +4,12 @@
 		<title>Vous Etes Perdu ?</title>
 	</head>
 	<body>
-    <button onclick="tryInTester()">Send Message to Tester</button> 
-    <button onclick="tryInTester(true)">Send Message to Tester (Dev mode)</button> 
+    <button onclick="tryInTester('aejoelaoggembcahagimdiliamlcdmfm')">Send Message to Tester (Paying Prod)</button> 
+    <button onclick="tryInTester('ndhpdjlmagefginpimmegdninnnkodgo')">Send Message to Tester (Free Prod)</button>
+    <button onclick="tryInTester('mcbdcamfbeodcehmnbdfcmckhmmmhbad')">Send Message to Tester (QA version)</button>
+    <button onclick="tryInTester('cacipppbjkckpbicmkjahmpfgjlnmilf', true)">Send Message to Tester (Dev mode)</button> 
 		<script type="text/javascript">
-      function tryInTester(devMode) {
+      function tryInTester(extensionID, devMode) {
         const message = {
             "isDevMode": !!devMode,
             "payload": {
@@ -52,7 +54,7 @@
             "payloadType": "apiTester",
             "queryString": "",
             "source": "API Portal",
-            "target": "cacipppbjkckpbicmkjahmpfgjlnmilf",
+            "target": extensionID,
             "type": "openApi",
             "shouldReplaceOriginTab": false,
           };
