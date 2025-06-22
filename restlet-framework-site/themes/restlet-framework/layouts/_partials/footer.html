@@ -1,0 +1,41 @@
+<footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/{{ .Site.Params.versions.stable }}/">User guide</a></li>
+            <li><a href="/documentation/tutorials/{{ .Site.Params.versions.stable }}/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/{{ .Site.Params.versions.stable }}/">Javadocs</a></li>
+            <li><a href="/documentation/{{ .Site.Params.versions.stable }}/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; {{ now.Year }} Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>

@@ -1,0 +1,137 @@
+.m-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  @media #{$md-up} {
+    justify-content: flex-start;
+  }
+
+  &.center-blocks {
+    li {
+      justify-content: center;
+    }
+
+    svg {
+      max-width: 180px;
+      height: 100%;
+    }
+  }
+
+  &.icon-list-center {
+    @media #{$md-up} {
+      justify-content: center;
+    }
+  }
+
+  >li {
+    display: flex;
+
+    .card__flat {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+      min-height: 144px;
+      position: relative;
+    }
+  }
+
+}
+
+.icon-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 64px;
+
+  figure + .icon-block__title {
+    margin-top: 29px;
+  }
+
+  .icon-block__title {
+    margin-top: 0;
+    margin-bottom: 26px;
+    line-height: 28px;
+  }
+
+  .icon-block__desc {
+    flex: 1 0 auto;
+    // margin-bottom: 24px;
+  }
+
+  small {
+    color: $mantee;
+    position: relative;
+    bottom: 9px;
+    margin-bottom: 8px;
+
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
+.icon-oval {
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  line-height: 64px;
+  width: 64px;
+  height: 64px;
+
+  &-shamrock {
+    background-color: rgba($shamrock,.15);
+    color: $shamrock;
+  }
+
+  &-malibu {
+    background-color: rgba($malibu,.15);
+    color: $malibu;
+  }
+
+  &-jaffa {
+    background-color: rgba($jaffa,.15);
+    color: $jaffa;
+  }
+
+  &-lima {
+    background-color: rgba($lima,.15);
+    color: $lima;
+  }
+
+  &-transparent {
+    background-color: rgba($white,.14);
+  }
+}
+
+.icon-text-list {
+  li {
+    padding-left: 23px;
+    position: relative;
+  }
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+// Custom
+
+.case-studies {
+    .icon-block {
+        figure {
+          img {
+            max-height: 60px;
+          }
+        }
+    }
+}

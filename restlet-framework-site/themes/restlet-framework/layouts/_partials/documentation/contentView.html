@@ -1,0 +1,32 @@
+<div class="content-wrapper section-bg-white">
+  {{ partial "documentation/downloadBanner.html" . }}
+  {{ partial "documentation/mobile-nav.html" . }}
+
+  <div class="row">
+    <div class="col-md-3">
+      {{ partial "documentation/innerNavDynamic.html" . }}
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        {{ partial "documentation/versionSwitcher.html" . }}
+
+section    =>   {{ range .Site.Sections }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}{{ .Params.section }}</a></li>
+  {{ end }}
+section    =>   {{ .Params.section }}
+<br>
+type    =>   {{ .Type }}
+<br>
+currentSection    =>   {{ .CurrentSection }}
+<br>
+  {{ range .CurrentSection.RegularPagesRecursive.ByTitle }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}{{ .Params.section }}</a></li>
+  {{ end }}
+
+ 
+        <h1>{{ default .Title .Params.longTitle }}</h1>
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>

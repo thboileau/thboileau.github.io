@@ -1,0 +1,63 @@
+.m-media {
+  .media-list__item {
+    display: flex;
+  	flex-direction: column;
+    margin: 0;
+    padding: 25px 0;
+    position: relative;
+
+    @media #{$md-up} {
+      flex-direction: row;
+      padding: 55px 0;
+    }
+
+    &:first-of-type {
+      padding: 25px 0 55px;
+      @media #{$md-up} {
+        padding: 90px 0 55px;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    .media__figure {
+      width: 100%;
+
+      @media #{$md-up} {
+        text-align: center;
+
+        +.media__body {
+          margin-left: 60px;
+        }
+      }
+
+      @media #{$xs-only,$sm-only} {
+        order: 2;
+        margin-top: 20px;
+      }
+    }
+
+    .media__body {
+      width: 100%;
+
+      @media #{$md-up} {
+        +.media__figure {
+          margin-left: 60px;
+        }
+      }
+
+      .media__title {
+        color: $ship-cove;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 32px;
+
+        @media #{$md-up} {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

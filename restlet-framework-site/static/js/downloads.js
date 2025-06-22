@@ -1,0 +1,249 @@
+
+var editions = [
+  {value:'jse',     name: 'Java SE'},
+  {value:'jee',     name: 'Java EE'},
+  {value:'gae',     name: 'Google App Engine'},
+  {value:'android', name: 'Android'},
+  {value:'gwt',     name: 'Google Web Toolkit'},
+  {value:'osgi',    name: 'OSGi Environments'}
+];
+
+var versions = [
+  { name: '2.4',
+    releases: [
+      {name: '2.4.4', release_date: '2024-06-20', id: '2.4.4'},
+      {name: '2.4.3', release_date: '2020-01-28', id: '2.4.3'},
+      {name: '2.4.2', release_date: '2019-11-13', id: '2.4.2'},
+      {name: '2.4.0', release_date: '2018-01-09', id: '2.4.0'}
+    ]},
+  { name: '2.3',
+    releases: [
+      {name: '2.3.12', release_date: '2017-10-02', id: '2.3.12'},
+      {name: '2.3.11', release_date: '2017-09-29', id: '2.3.11'},
+      {name: '2.3.10', release_date: '2017-05-28', id: '2.3.10'},
+      {name: '2.3.9', release_date: '2016-12-20', id: '2.3.9'},
+      {name: '2.3.8', release_date: '2016-12-10', id: '2.3.8'},
+      {name: '2.3.7', release_date: '2016-03-14', id: '2.3.7'},
+      {name: '2.3.6', release_date: '2016-01-26', id: '2.3.6'},
+      {name: '2.3.5', release_date: '2015-10-03', id: '2.3.5'},
+      {name: '2.3.4', release_date: '2015-07-16', id: '2.3.4'},
+      {name: '2.3.3', release_date: '2015-06-21', id: '2.3.3'},
+      {name: '2.3.2', release_date: '2015-05-01', id: '2.3.2'},
+      {name: '2.3.1', release_date: '2015-02-03', id: '2.3.1'},
+      {name: '2.3.0', release_date: '2014-12-17', id: '2.3.0'},
+      {name: '2.3 RC2', release_date: '2014-12-08', id: '2.3rc2'},
+      {name: '2.3 RC1', release_date: '2014-11-21', id: '2.3rc1'},
+      {name: '2.3 M5', release_date: '2014-11-07', id: '2.3m5'},
+      {name: '2.3 M4', release_date: '2014-10-31', id: '2.3m4'},
+      {name: '2.3 M3', release_date: '2014-09-18', id: '2.3m3'},
+      {name: '2.3 M2', release_date: '2014-05-06', id: '2.3m2'},
+      {name: '2.3 M1', release_date: '2014-03-27', id: '2.3m1'}
+    ]},
+  { name: '2.2',
+    releases: [
+      {name: '2.2.3', release_date: '2014-11-27', id: '2.2.3'},
+      {name: '2.2.2', release_date: '2014-08-05', id: '2.2.2'},
+      {name: '2.2.1', release_date: '2014-05-06', id: '2.2.1'},
+      {name: '2.2.0', release_date: '2014-03-27', id: '2.2.0'},
+      {name: '2.2 RC4', release_date: '2014-03-19', id: '2.2rc4'},
+      {name: '2.2 RC3', release_date: '2014-03-04', id: '2.2rc3'},
+      {name: '2.2 RC2', release_date: '2014-02-18', id: '2.2rc2'},
+      {name: '2.2 RC1', release_date: '2014-02-09', id: '2.2rc1'},
+      {name: '2.2 M6', release_date: '2013-12-05', id: '2.2m6'},
+      {name: '2.2 M5', release_date: '2013-09-07', id: '2.2m5'},
+      {name: '2.2 M4', release_date: '2013-08-23', id: '2.2m4'},
+      {name: '2.2 M3', release_date: '2013-03-07', id: '2.2m3'},
+      {name: '2.2 M2', release_date: '2013-02-28', id: '2.2m2'},
+      {name: '2.2 M1', release_date: '2012-12-24', id: '2.2m1'}
+    ]},
+  { name: '2.1',
+    releases: [
+      {name: '2.1.7', release_date: '2014-02-09', id: '2.1.7'},
+      {name: '2.1.6', release_date: '2013-12-05', id: '2.1.6'},
+      {name: '2.1.5', release_date: '2013-12-05', id: '2.1.5'},
+      {name: '2.1.4', release_date: '2013-09-07', id: '2.1.4'},
+      {name: '2.1.3', release_date: '2013-08-23', id: '2.1.3'},
+      {name: '2.1.2', release_date: '2013-02-28', id: '2.1.2'},
+      {name: '2.1.1', release_date: '2012-12-23', id: '2.1.1'},
+      {name: '2.1.0', release_date: '2012-09-20', id: '2.1.0'},
+      {name: '2.1 RC6', release_date: '2012-08-22', id: '2.1rc6'},
+      {name: '2.1 RC5', release_date: '2012-05-23', id: '2.1rc5'},
+      {name: '2.1 RC4', release_date: '2012-04-06', id: '2.1rc4'},
+      {name: '2.1 RC3', release_date: '2012-02-15', id: '2.1rc3'},
+      {name: '2.1 RC2', release_date: '2012-01-15', id: '2.1rc2'},
+      {name: '2.1 RC1', release_date: '2011-10-06', id: '2.1rc1'},
+      {name: '2.1 M7', release_date: '2011-08-24', id: '2.1m7'},
+      {name: '2.1 M6', release_date: '2011-08-20', id: '2.1m6'},
+      {name: '2.1 M5', release_date: '2011-06-21', id: '2.1m5'},
+      {name: '2.1 M3', release_date: '2011-03-31', id: '2.1m3'},
+      {name: '2.1 M4', release_date: '2011-04-27', id: '2.1m4'},
+      {name: '2.1 M2', release_date: '2010-12-24', id: '2.1m2'},
+      {name: '2.1 M1', release_date: '2010-11-07', id: '2.1m1'}
+    ]},
+  { name: '2.0',
+    releases: [
+      {name: '2.0.15', release_date: '2012-08-23', id: '2.0.15'},
+      {name: '2.0.14', release_date: '2012-05-23', id: '2.0.14'},
+      {name: '2.0.13', release_date: '2012-04-18', id: '2.0.13'},
+      {name: '2.0.12', release_date: '2012-04-06', id: '2.0.12'},
+      {name: '2.0.11', release_date: '2012-01-25', id: '2.0.11'},
+      {name: '2.0.10', release_date: '2011-10-05', id: '2.0.10'},
+      {name: '2.0.9', release_date: '2011-08-20', id: '2.0.9'},
+      {name: '2.0.8', release_date: '2011-06-21', id: '2.0.8'},
+      {name: '2.0.7', release_date: '2011-04-27', id: '2.0.7'},
+      {name: '2.0.6', release_date: '2011-03-31', id: '2.0.6'},
+      {name: '2.0.5', release_date: '2011-02-09', id: '2.0.5'},
+      {name: '2.0.4', release_date: '2010-12-24', id: '2.0.4'},
+      {name: '2.0.3', release_date: '2010-11-07', id: '2.0.3'},
+      {name: '2.0.2', release_date: '2010-11-03', id: '2.0.2'},
+      {name: '2.0.1', release_date: '2010-09-08', id: '2.0.1'},
+      {name: '2.0.0', release_date: '2010-07-19', id: '2.0.0'},
+      {name: '2.0 RC4', release_date: '2010-06-01', id: '2.0rc4'},
+      {name: '2.0 RC3', release_date: '2010-04-23', id: '2.0rc3'},
+      {name: '2.0 RC2', release_date: '2010-03-30', id: '2.0rc2'},
+      {name: '2.0 RC1', release_date: '2010-03-15', id: '2.0rc1'},
+      {name: '2.0 M7', release_date: '2010-01-29', id: '2.0m7'},
+      {name: '2.0 M6', release_date: '2009-11-20', id: '2.0m6'},
+      {name: '2.0 M5', release_date: '2009-09-28', id: '2.0m5'},
+      {name: '2.0 M4', release_date: '2009-08-06', id: '2.0m4'},
+      {name: '2.0 M3', release_date: '2009-05-27', id: '2.0m3'}
+    ]},
+  { name: '1.2',
+    releases: [
+      {name: '1.2 M2', release_date: '2009-04-01', id: '1.2m2'},
+      {name: '1.2 M1', release_date: '2009-01-23', id: '1.2m1'}
+    ]},
+  { name: '1.1',
+    releases: [
+      {name: '1.1.10', release_date: '2010-04-23', id: '1.1.10'},
+      {name: '1.1.9', release_date: '2010-03-30', id: '1.1.9'},
+      {name: '1.1.8', release_date: '2010-01-29', id: '1.1.8'},
+      {name: '1.1.7', release_date: '2009-11-20', id: '1.1.7'},
+      {name: '1.1.6', release_date: '2009-09-28', id: '1.1.6'},
+      {name: '1.1.5', release_date: '2009-05-26', id: '1.1.5'},
+      {name: '1.1.4', release_date: '2009-04-06', id: '1.1.4'},
+      {name: '1.1.3', release_date: '2009-02-26', id: '1.1.3'},
+      {name: '1.1.2', release_date: '2009-01-23', id: '1.1.2'},
+      {name: '1.1.1', release_date: '2008-10-31', id: '1.1.1'},
+      {name: '1.1.0', release_date: '2008-10-28', id: '1.1.0'},
+      {name: '1.1 RC2', release_date: '2008-09-24', id: '1.1rc2'},
+      {name: '1.1 RC1', release_date: '2008-08-20', id: '1.1rc1'},
+      {name: '1.1 M5', release_date: '2008-08-07', id: '1.1m5'},
+      {name: '1.1 M4', release_date: '2008-05-20', id: '1.1m4'},
+      {name: '1.1 M3', release_date: '2008-04-01', id: '1.1m3'},
+      {name: '1.1 M2', release_date: '2008-02-29', id: '1.1m2'},
+      {name: '1.1 M1', release_date: '2007-12-24', id: '1.1m1'}
+    ]},
+  { name: '1.0',
+    releases: [
+      {name: '1.0.11', release_date: '2008-10-27', id: '1.0.11'},
+      {name: '1.0.10', release_date: '2008-05-20', id: '1.0.10'},
+      {name: '1.0.9', release_date: '2008-04-01', id: '1.0.9'},
+      {name: '1.0.8', release_date: '2008-02-29', id: '1.0.8'},
+      {name: '1.0.7', release_date: '2007-12-22', id: '1.0.7'},
+      {name: '1.0.6', release_date: '2007-11-08', id: '1.0.6'},
+      {name: '1.0.5', release_date: '2007-09-06', id: '1.0.5'},
+      {name: '1.0.4', release_date: '2007-07-25', id: '1.0.4'},
+      {name: '1.0.3', release_date: '2007-07-15', id: '1.0.3'},
+      {name: '1.0.2', release_date: '2007-06-20', id: '1.0.2'},
+      {name: '1.0.1', release_date: '2007-05-04', id: '1.0.1'},
+      {name: '1.0.0', release_date: '2007-04-16', id: '1.0.0'},
+      {name: '1.0 RC6', release_date: '2007-03-27', id: '1.0rc6'},
+      {name: '1.0 RC5', release_date: '2007-03-09', id: '1.0rc5'},
+      {name: '1.0 RC4', release_date: '2007-01-26', id: '1.0rc4'},
+      {name: '1.0 RC3', release_date: '2007-01-19', id: '1.0rc3'},
+      {name: '1.0 RC2', release_date: '2007-01-09', id: '1.0rc2'},
+      {name: '1.0 RC1', release_date: '2006-12-26', id: '1.0rc1'},
+      {name: '1.0 Beta23', release_date: '2006-12-19', id: '1.0beta23'},
+      {name: '1.0 Beta22', release_date: '2006-12-07', id: '1.0beta22'},
+      {name: '1.0 Beta21', release_date: '2006-11-26', id: '1.0beta21'},
+      {name: '1.0 Beta20', release_date: '2006-11-08', id: '1.0beta20'},
+      {name: '1.0 Beta19', release_date: '2006-10-23', id: '1.0beta19'},
+      {name: '1.0 Beta18', release_date: '2006-08-19', id: '1.0beta18'},
+      {name: '1.0 Beta17', release_date: '2006-07-19', id: '1.0beta17'},
+      {name: '1.0 Beta16', release_date: '2006-06-30', id: '1.0beta16'},
+      {name: '1.0 Beta15', release_date: '2006-06-26', id: '1.0beta15'},
+      {name: '1.0 Beta14', release_date: '2006-06-02', id: '1.0beta14'},
+      {name: '1.0 Beta13', release_date: '2006-05-29', id: '1.0beta13'},
+      {name: '1.0 Beta12', release_date: '2006-05-20', id: '1.0beta12'},
+      {name: '1.0 Beta11', release_date: '2006-05-16', id: '1.0beta11'},
+      {name: '1.0 Beta10', release_date: '2006-05-02', id: '1.0beta10'},
+      {name: '1.0 Beta9', release_date: '2006-04-14', id: '1.0beta9'},
+      {name: '1.0 Beta8', release_date: '2006-04-10', id: '1.0beta8'},
+      {name: '1.0 Beta7', release_date: '2006-03-24', id: '1.0beta7'},
+      {name: '1.0 Beta6', release_date: '2006-03-20', id: '1.0beta6'},
+      {name: '1.0 Beta5', release_date: '2006-03-07', id: '1.0beta5'},
+      {name: '1.0 Beta4', release_date: '2006-03-03', id: '1.0beta4'},
+      {name: '1.0 Beta3', release_date: '2006-02-15', id: '1.0beta3'},
+      {name: '1.0 Beta2', release_date: '2006-02-03', id: '1.0beta2'},
+      {name: '1.0 Beta1', release_date: '2006-01-26', id: '1.0beta1'}
+    ]}
+]
+
+function downloadIIFE (versions, baseUrl) {
+
+  function getUrl (branch, release, edition) {
+    var excludeEdition = branch === '1.0' || branch === '1.1' || branch === '1.2';
+    var editionFragment = excludeEdition ? '' : edition  + '-';
+    return baseUrl + branch + '/restlet-' + editionFragment + release + '.zip';
+  }
+
+  function getReleases (branch) {
+    return versions[ branch ].releases;
+  }
+
+  function createSelectOption (releaseKey, release) {
+    var option = document.createElement('option');
+    option.value = releaseKey;
+    option.text = release.name;
+    return option;
+  }
+
+  var branchSelect = document.querySelector('#id_branch');
+  var releaseSelect = document.querySelector('#id_release');
+  var editionSelect = document.querySelector('#id_edition');
+
+  function populateReleases (releases) {
+    while (releaseSelect.firstChild) { // Purge existing values
+      releaseSelect.firstChild.remove();
+    }
+
+    Object.keys(releases).forEach(function (key) {
+      var release = releases[ key ];
+      releaseSelect.add(createSelectOption(key, release));
+    });
+  }
+
+  // Replace placeholder releases (there in case js is disabled)
+  var currentReleases = getReleases(branchSelect.value);
+  populateReleases(currentReleases);
+
+  branchSelect.addEventListener('change', function changeBranch (event) {
+    var releases = getReleases(event.target.value);
+
+    populateReleases(releases);
+
+    // Set release date
+    var releaseDateElement = document.querySelector('#download_date');
+    var currentReleaseKey = releaseSelect.firstChild.value;
+    releaseDateElement.innerText = releases[ currentReleaseKey ].release_date;
+
+    // Set links
+    var changeLogLink = document.querySelector('#change_log_link');
+    changeLogLink.href = '/documentation/' + event.target.value + '/changelog';
+
+    var changeLogBranch = document.querySelector('.download_name');
+    changeLogBranch.innerText = event.target.value;
+  });
+
+  releaseSelect.addEventListener('change', function changeRelease (event) {
+    var currentBranch = branchSelect.value;
+    var releaseDateElement = document.querySelector('#download_date');
+    var currentReleaseKey = event.target.value;
+    releaseDateElement.innerText = getReleases(currentBranch)[ currentReleaseKey ].release_date;
+  });
+
+  var releaseIndex = releaseSelect.value;
+  var releaseId = getReleases(branchSelect.value)[ releaseIndex ][ 'id' ];
+  window.location = getUrl(branchSelect.value, releaseId, editionSelect.value);
+};

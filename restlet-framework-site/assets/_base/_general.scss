@@ -1,0 +1,272 @@
+// Config
+$font-family-base: 'Source Sans Pro', sans-serif !default;
+$font-size-base: 16px !default;
+$body-text-color: $mako !default;
+$body-line-height: floor(($font-size-base * 1.5)); //24
+
+$link-hover-decoration: none;
+
+// Default
+html body {
+  color: $body-text-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: 400;
+  line-height: $body-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  &:hover,
+  &:focus {
+    text-decoration: $link-hover-decoration;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  font-size: 15px;
+
+  @extend .table;
+  @extend .table-bordered;
+
+  > thead {
+    background-color: $alabaster;
+
+    > tr > th {
+     border-bottom-width: 0 !important;
+    }
+  }
+}
+
+main {
+  overflow: hidden;
+}
+
+section {
+  padding-top: 10px;
+  padding-bottom: 60px;
+
+  &.extra-padding {
+    padding-top: 71px;
+    padding-bottom: 149px;
+  }
+}
+
+.section-bg-grey {
+  background-color: $alabaster;
+}
+
+.section-bg-blue {
+    background-color: $pickled-bluewood;
+}
+
+.section-bg-mako {
+  background-color: $mako;
+}
+
+.section-bg-white {
+  background-color: $white;
+}
+
+/*.skew-top-grey {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  overflow:hidden;
+  background-color: $white;
+
+  &:before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    transform: skewY(-4deg);
+    background-color: $alabaster;
+    z-index: -1;
+  }
+}*/
+
+.skew-top-grey {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 0 0 150px;
+
+  &:before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: -67px;
+    transform: skewY(-4deg);
+    background-color: #f8f8f8;
+    z-index: -1;
+  }
+}
+
+.skew-top-white{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: $white;
+  padding: 0 0 150px;
+
+  &:before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 50%;
+    position: absolute;
+    top: -67px;
+    transform: skewY(-4deg);
+    background-color: $white;
+    z-index: -1;
+  }
+}
+
+.skew-top-blue {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: $pickled-bluewood;
+  padding: 0 0 150px;
+
+  &:before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 50%;
+    position: absolute;
+    top: -67px;
+    transform: skewY(-4deg);
+    background-color: $pickled-bluewood;
+    z-index: -1;
+  }
+}
+
+.skew-top-black {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: $shark;
+  padding: 0;
+
+  &:before {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 50%;
+    position: absolute;
+    top: -67px;
+    transform: skewY(-2deg);
+    background-color: $shark;
+    z-index: -1;
+  }
+}
+
+.m-top-30 {
+  margin-top: 30px;
+}
+
+.m-top-40 {
+  margin-top: 40px;
+}
+
+.m-top-50 {
+  margin-top: 50px !important;
+}
+
+.m-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.m-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.eq-height {
+  @media #{$sm-up} {
+    display: flex;
+  }
+
+  .flex-item {
+    display: flex;
+    flex: 1;
+    >div {
+      flex: 1;
+    }
+  }
+}
+
+.center-flex {
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.abs-hv-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.sparky-happy {
+  background: url(../images/shared/sparky-happy.svg) no-repeat;
+  background-size: contain;
+  display: none;
+  position: absolute;
+  top: -140px;
+  left: 0;
+  width: 162px;
+  height: 197px;
+
+  @media #{$sm-up} {
+    display: inline-block;
+  }
+}
+
+.orbit-bg {
+  background-image: url(../images/shared/sections/orbites.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+}
+
+.content-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.flex-inline {
+  display: flex;
+  flex-direction: column;
+  @media #{$sm-up} {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+iframe {
+  border: none;
+  display: block;
+}
+
+#map {
+  margin: 0 0 20px;
+  @media #{$xs-up} {
+    margin: 0 0 10px;
+  }
+  @media #{$sm-up} {
+    margin: 0;
+  }
+}

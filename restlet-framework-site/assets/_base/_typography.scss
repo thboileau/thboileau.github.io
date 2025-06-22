@@ -1,0 +1,94 @@
+// Import
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
+@import "_vendors/_font-awesome/scss/font-awesome";
+
+// Config
+$font-size-h1: floor(($font-size-base * 2.5)) !default; // ~40px
+$font-size-h2: floor(($font-size-base * 1.5)) !default; // ~24px
+
+$font-size-sm-h1: floor(($font-size-base * 2.25)) !default; // ~36px
+$font-size-sm-h2: floor(($font-size-base * 1.25)) !default; // ~20px
+
+$font-size-h3: floor(($font-size-base * 1.25)) !default; // ~20px
+$font-size-h4: $font-size-base !default; // ~16px
+$font-size-h5: ceil(($font-size-base * 0.87)) !default; // ~14px
+$font-size-h6: ceil(($font-size-base * 0.75)) !default; // ~12px
+
+$headings-font-family: $font-family-base !default;
+
+$headings-font-weight-light: 300 !default;
+$headings-font-weight-normal: 400 !default;
+$headings-font-weight-semibold: 600 !default;
+$headings-font-weight-bold: 700 !default;
+
+// Default
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headings-font-family;
+}
+
+h1 {
+  font-weight: $headings-font-weight-light;
+  font-size: 30px;
+
+  @media #{$sm-up} {
+    font-size: $font-size-h1;
+  }
+}
+
+h2,
+h3 {
+  font-weight: $headings-font-weight-normal;
+}
+
+h4 {
+  font-weight: $headings-font-weight-semibold;
+}
+
+.headline {
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 42px;
+
+  >a {
+    color: #464b55;
+
+    &:hover {
+      color: #464b55;
+    }
+  }
+}
+
+article .lead,
+section .lead {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.text-shamrock {
+  color: $shamrock;
+}
+
+.text-malibu {
+  color: $malibu;
+}
+
+.text-jaffa {
+  color: $jaffa;
+}
+
+.text-lima {
+  color: $lima;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-shipcove {
+    color: $ship-cove;
+}
+
+.text-bostonblue {
+  color: $boston-blue;
+}

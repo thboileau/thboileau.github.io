@@ -1,0 +1,36 @@
+  <nav>
+  <ul class="content-nav">
+    <li {{ if eq .Title "Overview" }}class="active" {{ end }} >
+      <a href="/">Overview</a>
+    </li>
+    <li {{ if eq .Title "Features" }}class="active" {{ end }} >
+      <a href="/features">Features</a>
+    </li>
+    <li {{ if eq .Title "Download" }}class="active" {{ end }} >
+      <a href="/downloads/current/">Download</a>
+      <ul>
+        <li {{ if eq .Title "Current Release" }}class="active" {{ end }} >
+          <a href="/downloads/current/">Current Release</a>
+        </li>
+        <li {{ if eq .Title "Other Releases" }}class="active" {{ end }} >
+          <a href="/downloads/past/">Other Releases</a>
+        </li>
+        <li {{ if eq .Title "Legal Terms" }}class="active" {{ end }} >
+          <a href="/downloads/legal-terms/">Legal Terms</a>
+        </li>
+        <li {{ if eq .Title "FAQ" }}class="active" {{ end }} >
+          <a href="/downloads/faq/">FAQ</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/documentation/tutorials/{{ .Site.Params.versions.stable }}/">Documentation</a>
+      <ul>
+        <li><a href="/documentation/user-guide/{{ .Site.Params.versions.stable }}/">User guide</a></li>
+        <li><a href="/documentation/tutorials/{{ .Site.Params.versions.stable }}/">Tutorials</a></li>
+        <li><a href="/documentation/javadocs/{{ .Site.Params.versions.stable }}/">Javadocs</a></li>
+        <li><a href="/documentation/{{ .Site.Params.versions.stable }}/changelog">Changelog</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
