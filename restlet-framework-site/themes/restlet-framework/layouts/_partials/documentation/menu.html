@@ -21,6 +21,9 @@ Renders a menu for the given menu ID.
 {{- define "_partials/inline/menu/walk.html" }}
   {{- $page := .page }}
   {{- range .menuEntries }}
+{{- /*
+soit le nom du menu est spécifique à une version/branche de doc, soit il faut arriver à filtrer...
+*/}}
     {{- $attrs := dict "href" .URL }}
     {{- if $page.IsMenuCurrent .Menu . }}
       {{- $attrs = merge $attrs (dict "class" "navigation-list-link active" "aria-current" "page") }}
