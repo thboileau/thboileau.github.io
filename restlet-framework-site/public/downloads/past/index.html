@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | Other Releases</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="framework-index">
+
+    <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <main id="main" role="main">
+  <header class="m-masthead masthead-textured text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="masthead__inner">
+          <h1 class="masthead__title">Restlet framework</h1>
+          <p class="masthead__slogan">Restlet Framework is the most widely used open source<br> solution for Java developers who want to create and use APIs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <article class="skew-top-white">
+  <div class="container">
+    <div class="row">
+<div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu content-nav dl-menu-toggle">
+        <li>
+          <a href="/">Overview</a>
+        </li>
+        <li>
+          <a href="/features">Features</a>
+        </li>
+        <li class="">
+          <a href="/downloads/current/">Download</a>
+          <ul class="dl-submenu">
+            <li>
+              <a href="/downloads/current/">Current Release</a>
+            </li>
+            <li>
+              <a href="/downloads/past/">Other Releases</a>
+            </li>
+            <li>
+              <a href="/downloads/legal-terms/">Legal Terms</a>
+            </li>
+            <li>
+              <a href="/downloads/faq/">FAQ</a>
+            </li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="/documentation/tutorials/2.5/">Documentation</a>
+          <ul class="dl-submenu">
+            <li>
+              <a href="/documentation/user-guide/2.5/">User guide</a>
+            </li>
+            <li>
+              <a href="/documentation/tutorials/2.5/">Tutorials</a>
+            </li>
+            <li>
+              <a href="/documentation/javadocs/2.5/">Javadocs</a>
+            </li>
+            <li>
+              <a href="/documentation/2.5/changelog">Changelog</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+      <div class="col-md-3 hidden-xs hidden-sm">
+  <nav>
+  <ul class="content-nav">
+    <li  >
+      <a href="/">Overview</a>
+    </li>
+    <li  >
+      <a href="/features">Features</a>
+    </li>
+    <li  >
+      <a href="/downloads/current/">Download</a>
+      <ul>
+        <li  >
+          <a href="/downloads/current/">Current Release</a>
+        </li>
+        <li class="active"  >
+          <a href="/downloads/past/">Other Releases</a>
+        </li>
+        <li  >
+          <a href="/downloads/legal-terms/">Legal Terms</a>
+        </li>
+        <li  >
+          <a href="/downloads/faq/">FAQ</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="/documentation/tutorials/2.5/">Documentation</a>
+      <ul>
+        <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+        <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+        <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+        <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+
+	    <div class="col-md-5 col-md-offset-1">
+
+        
+<div class="row">
+  <ul class="m-icon-list">
+    <li class="col-md-12">
+      <div class="m-icon icon-block">
+        <figure><img style="height: 50px;" src="/images/downloads/restlet-framework.svg" /></figure>
+        <p>
+          <small>Select a version to download below, or view how to configure
+          <a class="text-bostonblue" href="/documentation/user-guide/2.4/introduction/getting-started/maven">Maven</a> or
+          <a class="text-bostonblue" href="/documentation/user-guide/2.4/introduction/getting-started/eclipse">Eclipse</a>.</small></p>
+
+        <form id="frmDownload" action="." method="POST" novalidate="novalidate">
+
+          <div class="form-group">
+            <label for="id_branch">Branch:</label>
+            <select class="form-control" id="id_branch" name="branch">
+              
+              {{ range $index, $version := .Site.Data.downloads.preMavenCentral.versions }}
+              <option value="{{ version[0] }}">{{ version[0] }}</option>
+              {{ end }}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="id_release">Release:</label>
+            <select class="form-control" id="id_release" name="release">
+              {% for version in .Site.Data.downloads.preMavenCentral.versions %}
+                {% for release in version[1]["releases"] %}
+                  <option value="{{ release['id'] }}">{{ release["name"] }}</option>
+                {% endfor %}
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="id_edition">Edition:</label>
+            <select class="form-control" id="id_edition" name="edition">
+              {% for edition in .Site.Data.downloads.editions %}
+                <option value="{{ edition.value }}">{{ edition.name }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select id="id_distribution" name="distribution" class="hidden">
+              <option data-short-title="zip" selected="selected" value="7">ZIP file</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <button type="button" class="m-button m-button-block m-button-flat-darkblue" id="download" onclick="downloadIIFE({{ .Site.Data.downloads.preMavenCentral.versions | jsonify }}, 'https://download.restlet.talend.com/')">Download</button>
+          </div>
+
+          <p>Release date: <span id="download_date">2024-06-20</span></p>
+
+        </form>
+        <div>
+          Starting from release 2.5, the Restlet Framework is available from Maven Central repository.
+          Prior to version 2.5 of Restlet Framework, the Maven repository for Restlet is accessible from https://maven.restlet.talend.com and contains all Restlet JARs and third party dependencies that aren’t available in the main public Maven repository.
+        </div>
+        <div>
+          Here is a sample pom file illustrating how to reference Restlet JARs and third party dependencies that aren’t available in the main public Maven repository:
+        </div>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;project</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://maven.apache.org/POM/4.0.0&#34;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#b44">xmlns:xsi=</span><span style="color:#b44">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#b44">xsi:schemaLocation=</span><span style="color:#b44">&#34;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;modelVersion&gt;</span>4.0.0<span style="color:#008000;font-weight:bold">&lt;/modelVersion&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;groupId&gt;</span>org.example<span style="color:#008000;font-weight:bold">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;artifactId&gt;</span>myapplication<span style="color:#008000;font-weight:bold">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;version&gt;</span>0.0.1-SNAPSHOT<span style="color:#008000;font-weight:bold">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;properties&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;java.version&gt;</span>1.8<span style="color:#008000;font-weight:bold">&lt;/java.version&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;restlet.version&gt;</span>2.4.4<span style="color:#008000;font-weight:bold">&lt;/restlet.version&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;/properties&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;repositories&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;repository&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;id&gt;</span>maven-restlet<span style="color:#008000;font-weight:bold">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;name&gt;</span>Restlet repository<span style="color:#008000;font-weight:bold">&lt;/name&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;url&gt;</span>https://maven.restlet.talend.com<span style="color:#008000;font-weight:bold">&lt;/url&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;/repository&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;/repositories&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;dependencies&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;groupId&gt;</span>org.restlet.jse<span style="color:#008000;font-weight:bold">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;artifactId&gt;</span>org.restlet<span style="color:#008000;font-weight:bold">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;version&gt;</span>${restlet.version}<span style="color:#008000;font-weight:bold">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;/dependency&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;groupId&gt;</span>org.restlet.jse<span style="color:#008000;font-weight:bold">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;artifactId&gt;</span>org.restlet.ext.jackson<span style="color:#008000;font-weight:bold">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;version&gt;</span>${restlet.version}<span style="color:#008000;font-weight:bold">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;/dependency&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;/dependencies&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;build&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;plugins&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;plugin&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#008000;font-weight:bold">&lt;artifactId&gt;</span>maven-compiler-plugin<span style="color:#008000;font-weight:bold">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#008000;font-weight:bold">&lt;version&gt;</span>3.8.0<span style="color:#008000;font-weight:bold">&lt;/version&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#008000;font-weight:bold">&lt;configuration&gt;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#008000;font-weight:bold">&lt;release&gt;</span>${java.version}<span style="color:#008000;font-weight:bold">&lt;/release&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#008000;font-weight:bold">&lt;/configuration&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#008000;font-weight:bold">&lt;/plugin&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;/plugins&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;/build&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;/project&gt;</span></span></span></code></pre></div>
+
+        <ul class="list-inline">
+          <li class="doc"><a href="/documentation/2.5/changelog" id="change_log_link" target="_blank">View change log for version
+            <span class="download_name">2.5</span></a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+</article>
+
+  </main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>

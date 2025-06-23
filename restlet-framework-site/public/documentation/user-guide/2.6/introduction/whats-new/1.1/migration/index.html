@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | Migration</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="static-nav documentation">
+
+  <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+<div class="sidebar-wrapper hidden-xs hidden-sm">
+  <aside class="section-bg-mako text-white">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+      <ul id="accordion" class="nav documentation-nav">
+        <li>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <ul id="submenu-1" class="nav panel-switch" role="menu">
+            <li>
+              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
+              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+                <li><a href="/documentation/user-guide/2.6/introduction/overview" class="active" >Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/2.6/core/overview" >Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/2.6/editions/overview" >Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/2.6/extensions/overview" >Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/2.6/appendices/glossary">Appendices</a></li>
+              </ul>
+            </li>
+            <li><a href="/documentation/tutorials/2.6/overview" >Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.6/" >Javadocs</a></li>
+            <li><a target="_blank" href="/documentation/2.6/changelog">Change Log</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+<div class="content-wrapper section-bg-white">
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-md-12">
+    <div class="h-cta h-cta--large section-bg-grey">
+      <img class="large" src="/images/restlet-framework-dark.svg" alt="Restlet Framework">
+      <a href="/downloads/current" class="m-button m-button-flat-green pull-right">Install Framework</a>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+            <li>mobile-nav</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/overview/">Overview</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/features/">Features</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/">What&#39;s new</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.4/">In version 2.4</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.3/">In version 2.3</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.2/">In version 2.2</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.1/">In version 2.1</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/">2</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/api/">API improvements</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/engine/">Engine</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/extensions/">Extensions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/editions/">Editions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/misc/">Misc</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/migration/">Migration</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        
+
+        <h1>Migration guide from Restlet 1.0 to 1.1</h1>
+        <h1 id="introduction">Introduction</h1>
+<p>This guide intends to explain the main differences between the Restlet
+1.0 and 1.1 releases and to help you migrate your existing applications.</p>
+<p>It presents a set of important modifications related to:</p>
+<ul>
+<li>Handling of context</li>
+<li>Handling of resources</li>
+<li>Usage of the Servlet Adapter</li>
+<li>Access to &ldquo;current&rdquo; objects</li>
+<li>Access to the original resource reference of the current request</li>
+<li>Handling of statuses and exceptions</li>
+<li>Miscellaneous</li>
+<li>List of deprecations (mainly renamed methods)</li>
+</ul>
+<h1 id="important-breaking-changes">Important breaking changes</h1>
+<h2 id="handling-of-context">Handling of context</h2>
+<p>The handling of Context has been significantly refactored in the 1.1
+release due to security reasons. In release 1.0, a Component shared its
+context between all attached applications. It appeared that this design
+could lead to conflicts where an application would update the
+component&rsquo;s context and thus impact the behavior of the other
+applications.</p>
+<p>Here are the main changes implemented in the 1.1 release:</p>
+<ul>
+<li>Each connector now has its own instance of Context to allow setting
+of different parameter values on different connectors.</li>
+<li>A new Context#createChildContext() method has been added to create
+a new isolated child context from a parent component&rsquo;s context.</li>
+<li>The semantics of the Application(Context) constructor has changed in
+that the given context is no more the parent context, but the
+application&rsquo;s context.</li>
+<li>The &ldquo;attach&rdquo; methods on virtual hosts and internal component router
+now automatically set the child context on the target application
+with a null context is detected.</li>
+</ul>
+<p>Thus, we encourage you to override the default Application() constructor
+instead of the Application(Context) one which is only useful in a few
+cases where you need to immediately have access to the application&rsquo;s
+context.</p>
+<p>Another consequence is that parameters or attributes are not copied from
+the component to the application by the default implementation of the
+Context#createChildContext() method which is typically used to prepare
+the Application&rsquo;s context based on the parent Component&rsquo;s context.</p>
+<h2 id="sample-code">Sample code</h2>
+<p>When a component instantiate an Application, or any kind of Restlet, it
+is no more mandatory to specify the context. Taking a simple component
+that attaches an application, here is the ancient way to achieve this:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Component<span style="color:#bbb"> </span>component<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Component();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Add a new HTTP server listening on port 8182.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">getServers</span>().<span style="color:#b44">add</span>(Protocol.<span style="color:#b44">HTTP</span>,<span style="color:#bbb"> </span>8182);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Attach the sample application.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">getDefaultHost</span>().<span style="color:#b44">attach</span>(<span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>FirstStepsApplication(component.<span style="color:#b44">getContext</span>()));</span></span></code></pre></div>
+<p>And now, here is the new way:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Component<span style="color:#bbb"> </span>component<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Component();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Add a new HTTP server listening on port 8182.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">getServers</span>().<span style="color:#b44">add</span>(Protocol.<span style="color:#b44">HTTP</span>,<span style="color:#bbb"> </span>8182);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Attach the sample application.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">getDefaultHost</span>().<span style="color:#b44">attach</span>(<span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>FirstStepsApplication());</span></span></code></pre></div>
+<p>If you still need to handle the context in the Application constructor,
+you must do as follow:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Component<span style="color:#bbb"> </span>component<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Component();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Add a new HTTP server listening on port 8182.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">getServers</span>().<span style="color:#b44">add</span>(Protocol.<span style="color:#b44">HTTP</span>,<span style="color:#bbb"> </span>8182);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Attach the sample application.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">getDefaultHost</span>().<span style="color:#b44">attach</span>(<span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>FirstStepsApplication(component.<span style="color:#b44">getContext</span>().<span style="color:#b44">createChildContext</span>()));</span></span></code></pre></div>
+<p>The application is instantiated with a child context, not the component
+context. Otherwise, your application might not start properly and a log
+trace will warn you.</p>
+<h1 id="handling-of-resources">Handling of resources</h1>
+<p>Some new boolean attributes have been added on the resource class. They
+help to specify the state of a Resource instance.</p>
+<ul>
+<li>The &ldquo;available&rdquo; attribute says if the current resource exists and
+can present a representation. If a resource is not available, then a
+404 status is returned.</li>
+<li>The &ldquo;modifiable&rdquo; attribute says if the current resource supports the
+methods that update its state, that is to say, for the HTTP
+protocol: POST, PUT and DELETE.</li>
+<li>The &ldquo;readable&rdquo; attribute says if the current resource is able to
+generate a representation. If a resource is not readable, a resource
+will answer to GET and HEAD HTTP methods with a &ldquo;method not allowed&rdquo;
+response status.</li>
+</ul>
+<h1 id="usage-of-the-servlet-adapter">Usage of the Servlet Adapter</h1>
+<ul>
+<li>The ServletConverter now also copy the Servlet&rsquo;s request attributes
+into the Restlet attributes map.</li>
+<li>A static ServletCall.getRequest(Request) method has been added to
+the Servlet extension and gives access to the HttpServletRequest
+object.</li>
+<li>The underlying component can now be customized which allows to
+define several applications either with a &ldquo;/WEB-INF/restlet.xml
+file&rdquo;, or a &ldquo;org.restlet.component&rdquo; parameter in the &ldquo;web.xml&rdquo;. see
+<a href="https://javadocs.restlet.talend.com/2.6/all/ext/com/noelios/restlet/ext/servlet/ServerServlet.html">ServerServlet
+javadocs</a>
+for more details.</li>
+</ul>
+<h1 id="accessing-current-objects">Accessing current objects</h1>
+<p>Some recurrent need is to access current objects such as the current
+application, the current context, etc. Although, the API of some objects
+gives direct access to such properties (e.g.
+&ldquo;Resource#getApplication&rdquo;), it was generally not the case with Restlet
+1.0, thus some static methods have been introduced in Restlet 1.1:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method name</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Response.getCurrent()</td>
+          <td>The current Response object handled by the current thread.</td>
+      </tr>
+      <tr>
+          <td>Application.getCurrent()</td>
+          <td>The current Application object handled by the current thread.</td>
+      </tr>
+      <tr>
+          <td>Context.getCurrent()</td>
+          <td>The current Context handled by the current thread.</td>
+      </tr>
+      <tr>
+          <td>Context.getCurrentLogger()</td>
+          <td>Always returns a non-null logger, if possible the current context&rsquo;s logger.</td>
+      </tr>
+  </tbody>
+</table>
+<p>These methods may help you to reduce the number of lines of code but,
+for proper object-oriented design, we recommend using them only under
+duress. Typical case is when you need to integrate Restlet code with a
+third-party library that doesn&rsquo;t let you pass in your Restlet context or
+objects. For example, you should by default prefer obtaining the current
+context using methods such as
+<a href="https://javadocs.restlet.talend.com/2.6/all/api/org/restlet/Restlet.html#getContext%28%29">Restlet.getContext()</a>
+or
+<a href="https://javadocs.restlet.talend.com/2.6/all/api/org/restlet/Handler.html#getContext%28%29">Handler.getContext()</a>.</p>
+<h1 id="accessing-the-original-resources-reference">Accessing the original resource&rsquo;s reference</h1>
+<p>New features have been added to the tunnel filter. Some of them allow
+you to automatically update the request according to some parameters
+specified in the query part of the target resource&rsquo;s reference. In this
+case, it happens that the resource&rsquo;s reference is updated. If you still
+want to access the original reference, a new attribute has been added to
+the Request object called &ldquo;originalRef&rsquo;&rdquo;.</p>
+<h1 id="handling-of-statuses-and-exceptions">Handling of statuses and exceptions</h1>
+<p>A new &ldquo;ResourceException&rdquo; class has been introduced. Basically, it
+encapsulates a status and the optional cause of a checked exception.
+This exception may be thrown by a Resource instance when handling GET,
+POST, PUT, etc requests. This exception can be handled by the status
+service when rendering error statuses.</p>
+<h1 id="miscellaneous">Miscellaneous</h1>
+<p>This section lists several updates that may have an impact on your
+existing code</p>
+<ul>
+<li>The Resource class now accepts POST requests without any entity, or
+with an empty entity.</li>
+<li>The list of known media-types defined on the MetadataService has
+been completed with Tomcat&rsquo;s entries</li>
+<li>Added a Representation.release() to have an uniform way to release a
+representation without forcing a read for example or manually
+closing the socket, the channel, the file, etc.</li>
+<li>Added a Representation.exhaust() method that reads and discards
+content optimally (better than getText())</li>
+<li>Application is now concrete and has a setRoot() method.</li>
+<li>Filter.beforeHandle() and doHandle() methods can now indicate if the
+processing should continue normal, go to the afterHandle() method
+directly or stop immediately.
+<blockquote>
+<p><strong>IMPORTANT NOTE</strong>: as it isn&rsquo;t
+possible to add a return parameter to an existing method, the change
+can break existing filters. In this case, you just need to return
+the &ldquo;CONTINUE&rdquo; constant from your method and use &ldquo;int&rdquo; as a return
+parameter.</p></blockquote>
+</li>
+<li>Added Handler.getQuery() method to easily return the request&rsquo;s
+target resource reference query as a parsed form (series of
+parameters).</li>
+<li>The Message&rsquo;s getEntityAsDom(), getEntityAsSax() and
+getEntityAsForm() are now caching the result representation for
+easier reuse in a Restlet filters chain.</li>
+</ul>
+<h1 id="deprecations">Deprecations</h1>
+<h2 id="resource-class">Resource class</h2>
+<p>List of renamed methods to prevent confusion with lower-level methods
+handleGet(), handletPost(), handlePut() and handleDelete() now part of
+the parent class of Resource, the Handler class.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>getPreferredRepresentation()</td>
+          <td>represent()</td>
+      </tr>
+      <tr>
+          <td>getRepresentation(Variant)</td>
+          <td>represent(Variant)</td>
+      </tr>
+      <tr>
+          <td>post(Representation)</td>
+          <td>acceptRepresentation(Representation)</td>
+      </tr>
+      <tr>
+          <td>put(Representation)</td>
+          <td>storeRepresentation(Representation)</td>
+      </tr>
+      <tr>
+          <td>delete()</td>
+          <td>removeRepresentations()</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="variant-class">Variant class</h2>
+<p>Some properties and methods have been moved to the Representation
+subclass</p>
+<ul>
+<li>UNKNOWN_SIZE</li>
+<li>getExpirationDate, setExpirationDate</li>
+<li>getModificationDate, setModificationDate</li>
+<li>getSize, setSize</li>
+<li>getTag, setTag</li>
+</ul>
+<h2 id="tunnelservice">TunnelService</h2>
+<p>List of renamed methods.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>getCharacterSetAttribute</td>
+          <td>getCharacterSetParameter</td>
+      </tr>
+      <tr>
+          <td>setCharacterSetAttribute</td>
+          <td>setCharacterSetParameter</td>
+      </tr>
+      <tr>
+          <td>getEncodingAttribute</td>
+          <td>getEncodingParameter</td>
+      </tr>
+      <tr>
+          <td>setEncodingAttribute</td>
+          <td>setEncodingParameter</td>
+      </tr>
+      <tr>
+          <td>getLanguageAttribute</td>
+          <td>getLanguageParameter</td>
+      </tr>
+      <tr>
+          <td>setLanguageAttribute</td>
+          <td>setLanguageParameter</td>
+      </tr>
+      <tr>
+          <td>getMediaTypeAttribute</td>
+          <td>getMediaTypeParameter</td>
+      </tr>
+      <tr>
+          <td>setMediaTypeAttribute</td>
+          <td>setMediaTypeParameter</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="metadataservice">MetadataService</h2>
+<p>This class allows to link a metadata with several extensions name.
+However, only the first one in the list will be returned by the
+getExtension(Metadata), it is considered as the preferred one. The
+&ldquo;getMappings&rdquo; and &ldquo;setMappings&rdquo; methods have been removed. Instead, use
+getExtension(Metadata), getMetadata(String) and the addExtension(String,
+Metadata), addExtension(String, Metadata, boolean preferred),
+clearExtension methods</p>
+<h2 id="converterservice">ConverterService</h2>
+<p>Since 1.1 with no replacement as it doesn&rsquo;t fit well with content
+negotiation. Most users prefer to handle those conversion in Resource
+subclasses.</p>
+<h2 id="request">Request</h2>
+<p>As a consequence of the previous change, the following methods are not
+replaced: Request#getEntityAsObject, Request#setEntity(Object)</p>
+<h2 id="response">Response</h2>
+<p>List of renamed methods.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>getChallengeRequest</td>
+          <td>getChallengeRequests</td>
+      </tr>
+      <tr>
+          <td>getRedirectRef</td>
+          <td>getLocationRef</td>
+      </tr>
+      <tr>
+          <td>setRedirectRef</td>
+          <td>setLocationRef</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="finder">Finder</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>createResource(Request, Response)</td>
+          <td>createTarget(Request, Response) and take care of the targetClass property.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="template">Template</h2>
+<p>Removed the Logger parameter to all constructors. which still can be set
+with the setLogger(Logger) method.</p>
+<h2 id="restlet">Restlet</h2>
+<p>The init(Request, Response) method is removed. Instead, make sure that
+you call the {@link #handle(Request, Response)} method from your
+Restlet superclass.</p>
+<h2 id="form">Form</h2>
+<p>Removed the Logger parameter to all constructors.</p>
+<h2 id="status">Status</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>isInfo(int code)</td>
+          <td>isInformational(int)</td>
+      </tr>
+      <tr>
+          <td>isInfo()</td>
+          <td>isInformational()</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="challengescheme">ChallengeScheme</h2>
+<p>ChallengeScheme HTTP_AWS replaced by HTTP_AWS_S3</p>
+<h2 id="protocol">Protocol</h2>
+<p>The SMTP_STARTTLS protocol is removed. Use the &ldquo;startTls&rdquo; parameter on
+the JavaMail connector instead.</p>
+<h2 id="response-1">Response</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>getChallengeRequest</td>
+          <td>getChallengeRequests</td>
+      </tr>
+      <tr>
+          <td>getRedirectRef</td>
+          <td>getLocationRef</td>
+      </tr>
+      <tr>
+          <td>setRedirectRef</td>
+          <td>setLocationRef</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="guard">Guard</h2>
+<p>List of renamed methods.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>challenge(Response)</td>
+          <td>challenge(Response, boolean) The added boolean indicates if the new challenge is due to a stale response.</td>
+      </tr>
+      <tr>
+          <td>checkSecret(String, char[])</td>
+          <td>checkSecret(Request, String, char[]) Added the request parameter</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="context">Context</h2>
+<p>List of renamed method.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>getDispatcher</td>
+          <td>getClientDispatcher NB: it exists a server dispatcher.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="transformrepresentation">TransformRepresentation</h2>
+<p>List of renamed methods</p>
+<table>
+  <thead>
+      <tr>
+          <th>Method</th>
+          <th>Replacement</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>getURIResolver</td>
+          <td>getUriResolver</td>
+      </tr>
+  </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>

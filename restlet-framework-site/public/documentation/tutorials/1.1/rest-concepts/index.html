@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | REST main concepts</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="static-nav documentation">
+
+  <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+<div class="sidebar-wrapper hidden-xs hidden-sm">
+  <aside class="section-bg-mako text-white">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+      <ul id="accordion" class="nav documentation-nav">
+        <li>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <ul id="submenu-1" class="nav panel-switch" role="menu">
+            <li>
+              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
+              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+                <li><a href="/documentation/user-guide/1.1/introduction/overview" >Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/1.1/core/overview" >Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/1.1/editions/overview" >Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/1.1/extensions/overview" >Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/1.1/appendices/glossary">Appendices</a></li>
+              </ul>
+            </li>
+            <li><a href="/documentation/tutorials/1.1/overview" class="active" >Tutorials</a></li>
+            <li><a href="/documentation/javadocs/1.1/" >Javadocs</a></li>
+            <li><a target="_blank" href="/documentation/1.1/changelog">Change Log</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+<div class="content-wrapper section-bg-white">
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-md-12">
+    <div class="h-cta h-cta--large section-bg-grey">
+      <img class="large" src="/images/restlet-framework-dark.svg" alt="Restlet Framework">
+      <a href="/downloads/current" class="m-button m-button-flat-green pull-right">Install Framework</a>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+            <li>mobile-nav</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/overview/">Overview</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/features/">Features</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/">What&#39;s new</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.4/">In version 2.4</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.3/">In version 2.3</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.2/">In version 2.2</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.1/">In version 2.1</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/">2</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/api/">API improvements</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/engine/">Engine</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/extensions/">Extensions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/editions/">Editions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/misc/">Misc</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/migration/">Migration</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        
+
+        <h1>REST main concepts</h1>
+        <h1 id="overview-of-a-rest-architecture">Overview of a REST architecture</h1>
+<p>Let&rsquo;s step back a little and consider typical web architectures from a
+REST point of view. In the diagram below, ports represent the connector
+that enables the communication between components which are represented
+by the larger boxes. The links represents the particular protocol (HTTP,
+SMTP, etc.) used for the actual communication.</p>
+<p><img src="../images/tutorial04.png" alt=""></p>
+<p>Note that the same component can have any number of client and server
+connectors attached to it. Web Server B, for example, has both a server
+connector to respond to requests from the User Agent component, and
+client connectors to send requests to Web Server A and the Mail Server.</p>
+<h1 id="components-virtual-hosts-and-applications">Components, virtual hosts and applications</h1>
+<p>In addition to supporting the standard REST software architecture
+elements as presented before, the Restlet framework also provides a set
+of classes that greatly simplify the hosting of multiple applications
+within a single JVM. The goal is to provide a RESTful, portable and more
+flexible alternative to the existing Servlet API. In the diagram below,
+we can see the three types of Restlets that are provided in order to
+manage these complex cases. Components can manage several Virtual Hosts
+and Applications. Virtual Hosts support flexible configuration where,
+for example, the same IP address is shared by several domain names, or
+where the same domain name is load-balanced across several IP addresses.
+Finally, we use Applications to manage a set of related Restlets,
+Resources and Representations. In addition, Applications are ensured to
+be portable and reconfigurable over different Restlet implementations
+and with different virtual hosts. In addition, they provide important
+services like access logging, automatic decoding of request entities,
+configurable status page setting and more!</p>
+<p><img src="../images/tutorial05.png" alt=""></p>
+<p>In order to illustrate these classes, let&rsquo;s examine a simple example.
+Here we create a Component, then add an HTTP server connector to it,
+listening on port 8182. Then we create a simple trace Restlet and attach
+it to the defaut VirtualHost of the Component. This default host is
+catching any request that wasn&rsquo;t already routed to a declared
+VirtualHost (see the Component.hosts property for details). In a later
+example, we will also introduce the usage of the Application class. Note
+that for now you don&rsquo;t see any access log displayed in the console.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-style:italic">// Create a new Restlet component and add a HTTP server connector to it</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Component<span style="color:#bbb"> </span>component<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Component();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">getServers</span>().<span style="color:#b44">add</span>(Protocol.<span style="color:#b44">HTTP</span>,<span style="color:#bbb"> </span>8182);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Create a new tracing Restlet</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Restlet<span style="color:#bbb"> </span>restlet<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Restlet()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f">@Override</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">handle</span>(Request<span style="color:#bbb"> </span>request,<span style="color:#bbb"> </span>Response<span style="color:#bbb"> </span>response)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#080;font-style:italic">// Print the requested URI path</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>String<span style="color:#bbb"> </span>message<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#b44">&#34;Resource URI  : &#34;</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>request.<span style="color:#b44">getResourceRef</span>()<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#b44">&#39;\n&#39;</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#b44">&#34;Root URI      : &#34;</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>request.<span style="color:#b44">getRootRef</span>()<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#b44">&#39;\n&#39;</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#b44">&#34;Routed part   : &#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#666">+</span><span style="color:#bbb"> </span>request.<span style="color:#b44">getResourceRef</span>().<span style="color:#b44">getBaseRef</span>()<span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#b44">&#39;\n&#39;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#666">+</span><span style="color:#bbb"> </span><span style="color:#b44">&#34;Remaining part: &#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#666">+</span><span style="color:#bbb"> </span>request.<span style="color:#b44">getResourceRef</span>().<span style="color:#b44">getRemainingPart</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>response.<span style="color:#b44">setEntity</span>(message,<span style="color:#bbb"> </span>MediaType.<span style="color:#b44">TEXT_PLAIN</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>};<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Then attach it to the local host</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">getDefaultHost</span>().<span style="color:#b44">attach</span>(<span style="color:#b44">&#34;/trace&#34;</span>,<span style="color:#bbb"> </span>restlet);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Now, let&#39;s start the component!</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Note that the HTTP server connector is also automatically started.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>component.<span style="color:#b44">start</span>();</span></span></code></pre></div>
+<p>Now let&rsquo;s test it by entering
+<a href="http://localhost:8182/trace/abc/def?param=123">http://localhost:8182/trace/abc/def?param=123</a> in a Web browser. Here
+is the result that you will get:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    Resource URI  : http://localhost:8182/trace/abc/def?param<span style="color:#666">=</span><span style="color:#666">123</span>
+</span></span><span style="display:flex;"><span>    Root URI      : http://localhost:8182/trace
+</span></span><span style="display:flex;"><span>    Routed part   : http://localhost:8182/trace
+</span></span><span style="display:flex;"><span>    Remaining part: /abc/def?param<span style="color:#666">=</span><span style="color:#666">123</span></span></span></code></pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>

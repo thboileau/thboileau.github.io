@@ -1,10 +1,10 @@
 ---
 title: Migration
 longTitle: Migration guide from version 1.1 to 2.0
-parent: In version 2.0
-section: guide-introduction
-version: '2.4'
-weight: 6
+menus:
+  inner:
+    parent: 2.0
+    weight: 6
 ---
 # Introduction
 

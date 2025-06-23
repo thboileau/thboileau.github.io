@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | XdbRepresentation</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="static-nav documentation">
+
+  <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+<div class="sidebar-wrapper hidden-xs hidden-sm">
+  <aside class="section-bg-mako text-white">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+      <ul id="accordion" class="nav documentation-nav">
+        <li>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <ul id="submenu-1" class="nav panel-switch" role="menu">
+            <li>
+              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
+              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+                <li><a href="/documentation/user-guide/2.4/introduction/overview" >Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/2.4/core/overview" >Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/2.4/editions/overview" >Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/2.4/extensions/overview" class="active" >Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/2.4/appendices/glossary">Appendices</a></li>
+              </ul>
+            </li>
+            <li><a href="/documentation/tutorials/2.4/overview" >Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.4/" >Javadocs</a></li>
+            <li><a target="_blank" href="/documentation/2.4/changelog">Change Log</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+<div class="content-wrapper section-bg-white">
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-md-12">
+    <div class="h-cta h-cta--large section-bg-grey">
+      <img class="large" src="/images/restlet-framework-dark.svg" alt="Restlet Framework">
+      <a href="/downloads/current" class="m-button m-button-flat-green pull-right">Install Framework</a>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+            <li>mobile-nav</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/overview/">Overview</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/features/">Features</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/">What&#39;s new</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.4/">In version 2.4</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.3/">In version 2.3</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.2/">In version 2.2</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.1/">In version 2.1</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/">2</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/api/">API improvements</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/engine/">Engine</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/extensions/">Extensions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/editions/">Editions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/misc/">Misc</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/migration/">Migration</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        
+
+        <h1>Oracle XDB Restlet Adapter - XdbRepresentation</h1>
+        <p>** An Optimized XdbRepresentation class for Oracle XMLDB</p>
+<p>Until Oracle allow us to use OTN Developer license for including ojdbc5.jar, xdb.jar and xmlparserv2.jar we can not put the above code under SVN. This is due it will not compile caused by missing dependencies.
+Here the step by step instruction to compile the code: create a directory under Restlet SVN latest checkout:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#080;font-style:italic"># cd restlet/</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># mkdir libraries/oracle.xdb_11.1/</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># cp $ORACLE_HOME/rdbms/jlib/xdb.jar libraries/oracle.xdb_11.1/</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># cp $ORACLE_HOME/jdbc/lib/ojdbc5.jar libraries/oracle.xdb_11.1/</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># cp $ORACLE_HOME/lib/xmlparserv2.jar libraries/oracle.xdb_11.1/</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># mkdir modules/org.restlet.ext.xdb/src/org/restlet/representation/</span>
+</span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"># vi</span>
+</span></span><span style="display:flex;"><span>modules/org.restlet.ext.xdb/src/org/restlet/representation/XdbRepresentation.java
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>--- Edit here the content of the class below -----</span></span></code></pre></div>
+<p>XdbRepresentation.java class</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * Copyright 2005-2014 Restlet
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * The contents of this file are subject to the terms of one of the following
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * open source licenses: Apache 2.0 or or EPL 1.0 (the &#34;Licenses&#34;). You can
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * select the license that you prefer but you may not use this file except in
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * compliance with one of these Licenses.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * You can obtain a copy of the Apache 2.0 license at
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * http://www.opensource.org/licenses/apache-2.0
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * You can obtain a copy of the EPL 1.0 license at
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * http://www.opensource.org/licenses/eclipse-1.0
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * See the Licenses for the specific language governing permissions and
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * limitations under the Licenses.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * Alternatively, you can obtain a royalty free commercial license with less
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * limitations, transferable or non-transferable, directly at
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * http://restlet.com/products/restlet-framework
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * Restlet is a registered trademark of Restlet S.A.S.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">package</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">org.restlet.representation</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">java.io.IOException</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">java.io.OutputStream</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">java.sql.SQLException</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">javax.servlet.ServletException</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">javax.xml.namespace.QName</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">javax.xml.xpath.XPath</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">javax.xml.xpath.XPathFactory</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">oracle.xdb.XMLType</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">org.restlet.data.MediaType</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">org.restlet.ext.xml.XmlRepresentation</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">org.restlet.representation.Representation</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">import</span><span style="color:#bbb"> </span><span style="color:#00f;font-weight:bold">org.w3c.dom.Document</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">XdbRepresentation</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">extends</span><span style="color:#bbb"> </span>XmlRepresentation<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/** The wrapped DOM document. */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">private</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">volatile</span><span style="color:#bbb"> </span>XMLType<span style="color:#bbb"> </span>dom;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/** The source XML representation. */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">private</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">volatile</span><span style="color:#bbb"> </span>Representation<span style="color:#bbb"> </span>xmlRepresentation;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * import oracle.xdb.XMLType; Constructor for an empty document.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param mediaType
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            The representation&#39;s media type.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00a000">XdbRepresentation</span>(MediaType<span style="color:#bbb"> </span>mediaType)<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">throws</span><span style="color:#bbb"> </span>IOException<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">super</span>(mediaType);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">null</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Constructor from an existing Oracle DOM document.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param mediaType
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            The representation&#39;s media type.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param xmlDocument
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            The source DOM document.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00a000">XdbRepresentation</span>(MediaType<span style="color:#bbb"> </span>mediaType,<span style="color:#bbb"> </span>Document<span style="color:#bbb"> </span>xmlDocument)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">throws</span><span style="color:#bbb"> </span>IOException<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">super</span>(mediaType);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">try</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>XMLType.<span style="color:#b44">createXML</span>(XdbServerServlet.<span style="color:#b44">getConnection</span>(),<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span>xmlDocument);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">catch</span><span style="color:#bbb"> </span>(SQLException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">throw</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>IOException(<span style="color:#b44">&#34;Can not create XMLType from Document&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#666">+</span><span style="color:#bbb"> </span>e.<span style="color:#b44">getMessage</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">catch</span><span style="color:#bbb"> </span>(ServletException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">throw</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>IOException(<span style="color:#b44">&#34;Can not create XMLType from Document&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#666">+</span><span style="color:#bbb"> </span>e.<span style="color:#b44">getMessage</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Constructor from an existing Oracle DOM document.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param mediaType
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            The representation&#39;s media type.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param xmlDocument
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            The source DOM document.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00a000">XdbRepresentation</span>(MediaType<span style="color:#bbb"> </span>mediaType,<span style="color:#bbb"> </span>XMLType<span style="color:#bbb"> </span>xmlDocument)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">super</span>(mediaType);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>xmlDocument;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Constructor.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param xmlRepresentation
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            A source XML representation to parse.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#00a000">XdbRepresentation</span>(Representation<span style="color:#bbb"> </span>xmlRepresentation)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">super</span>((xmlRepresentation<span style="color:#bbb"> </span><span style="color:#666">==</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">null</span>)<span style="color:#bbb"> </span><span style="color:#666">?</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">null</span><span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>xmlRepresentation<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>.<span style="color:#b44">getMediaType</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">xmlRepresentation</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>xmlRepresentation;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Function to extract the given set of nodes from the XMLType. This set of
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * nodes is specified by the xpath expression.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param expression
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            - the xpath expression which specifies the nodes to search
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            for.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param nsmap
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            - the map of namespaces which resolves the prefixes in the
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            xpath expression. format is &#34;xmlns=a.com xmlns:b=b.com&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @return XMLType which contains the extracted nodes. null if no nodes
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *         match the specified expression.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span>XMLType<span style="color:#bbb"> </span><span style="color:#00a000">extract</span>(String<span style="color:#bbb"> </span>expression,<span style="color:#bbb"> </span>String<span style="color:#bbb"> </span>nsmap)<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">throws</span><span style="color:#bbb"> </span>Exception<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span>.<span style="color:#b44">extract</span>(expression,<span style="color:#bbb"> </span>nsmap);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Function to transform the XMLType using the given XSL document. The new
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * (transformed) XML document is returned.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param xsldoc
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            the XSL document to be applied to the XMLType
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param parammap
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            the top level parameters to be passed to the XSL
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            transformation. This should be of the format &#34;a=b c=d e=f&#34;.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            This can be null.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @return the transformed XMLType.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @throws java.sql.SQLException
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span>XMLType<span style="color:#bbb"> </span><span style="color:#00a000">transform</span>(XMLType<span style="color:#bbb"> </span>xsldoc,<span style="color:#bbb"> </span>String<span style="color:#bbb"> </span>parammap)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">throws</span><span style="color:#bbb"> </span>SQLException<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span>.<span style="color:#b44">transform</span>(xsldoc,<span style="color:#bbb"> </span>parammap);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Function to check for the existence of the given set of nodes in the
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * XMLType. This set of nodes is specified by the xpath expression.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param expression
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            the xpath expression which specifies the nodes to search for.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param nsmap
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            the map of namespaces which resolves the prefixes in the xpath
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            expression. format is &#34;xmlns=a.com xmlns:b=b.com&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @return TRUE if specified nodes exist in the XMLType else FALSE
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">boolean</span><span style="color:#bbb"> </span><span style="color:#00a000">existsNode</span>(String<span style="color:#bbb"> </span>expression,<span style="color:#bbb"> </span>String<span style="color:#bbb"> </span>nsmap)<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">throws</span><span style="color:#bbb"> </span>Exception<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span>.<span style="color:#b44">existsNode</span>(expression,<span style="color:#bbb"> </span>nsmap);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Writes the representation to a byte stream. This method is ensured to
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * write the full content for each invocation unless it is a transient
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * representation, in which case an exception is thrown.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param outputStream
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            The output stream.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @throws IOException
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">write</span>(OutputStream<span style="color:#bbb"> </span>outputStream)<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">throws</span><span style="color:#bbb"> </span>IOException<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">try</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span>.<span style="color:#b44">writeToOutputStream</span>(outputStream);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">catch</span><span style="color:#bbb"> </span>(SQLException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">throw</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>IOException(<span style="color:#b44">&#34;Can not write to the output stream. &#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#666">+</span><span style="color:#bbb"> </span>e.<span style="color:#b44">getMessage</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Evaluates an XPath expression and returns the result as in the given
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * return type.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * For faster response time, specially in relational schema mappings objects
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * use.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @param returnType
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *            The qualified name of the return type.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @return The evaluation result.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @see javax.xml.xpath.XPathException
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @see javax.xml.xpath.XPathConstants
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @see org.restlet.representation.XdbRepresentation#extract
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f">@Override</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span>Object<span style="color:#bbb"> </span><span style="color:#00a000">evaluate</span>(String<span style="color:#bbb"> </span>expression,<span style="color:#bbb"> </span>QName<span style="color:#bbb"> </span>returnType)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">throws</span><span style="color:#bbb"> </span>Exception<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">final</span><span style="color:#bbb"> </span>XPath<span style="color:#bbb"> </span>xpath<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>XPathFactory.<span style="color:#b44">newInstance</span>().<span style="color:#b44">newXPath</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>xpath.<span style="color:#b44">setNamespaceContext</span>(<span style="color:#a2f;font-weight:bold">this</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">return</span><span style="color:#bbb"> </span>xpath.<span style="color:#b44">evaluate</span>(expression,<span style="color:#bbb"> </span>getDocument().<span style="color:#b44">getDocument</span>(),<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>returnType);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * Returns the wrapped DOM document. If no document is defined yet, it
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * attempts to parse the XML representation eventually given at construction
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * time. Otherwise, it just creates a new document.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     * @return The wrapped DOM document.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic">     */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span>XMLType<span style="color:#bbb"> </span><span style="color:#00a000">getDocument</span>()<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">throws</span><span style="color:#bbb"> </span>IOException<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">if</span><span style="color:#bbb"> </span>(<span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span><span style="color:#bbb"> </span><span style="color:#666">==</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">null</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span><span style="color:#a2f;font-weight:bold">try</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#a2f;font-weight:bold">if</span><span style="color:#bbb"> </span>(<span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">xmlRepresentation</span><span style="color:#bbb"> </span><span style="color:#666">!=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">null</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>XMLType.<span style="color:#b44">createXML</span>(<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                            </span>XdbServerServlet.<span style="color:#b44">getConnection</span>(),<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                            </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">xmlRepresentation</span>.<span style="color:#b44">getStream</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>}<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">else</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>XMLType(XdbServerServlet.<span style="color:#b44">getConnection</span>(),<span style="color:#bbb"> </span><span style="color:#b44">&#34;&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">catch</span><span style="color:#bbb"> </span>(SQLException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#a2f;font-weight:bold">throw</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>IOException(<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                        </span><span style="color:#b44">&#34;Can not create XMLType from representation&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                                </span><span style="color:#666">+</span><span style="color:#bbb"> </span>e.<span style="color:#b44">getMessage</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">catch</span><span style="color:#bbb"> </span>(ServletException<span style="color:#bbb"> </span>e)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                </span><span style="color:#a2f;font-weight:bold">throw</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>IOException(<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                        </span><span style="color:#b44">&#34;Can not create XMLType from representation&#34;</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                                </span><span style="color:#666">+</span><span style="color:#bbb"> </span>e.<span style="color:#b44">getMessage</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">            </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">return</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">this</span>.<span style="color:#b44">dom</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>

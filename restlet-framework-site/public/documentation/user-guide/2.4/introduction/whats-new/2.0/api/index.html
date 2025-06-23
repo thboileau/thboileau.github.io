@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | API improvements</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="static-nav documentation">
+
+  <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+<div class="sidebar-wrapper hidden-xs hidden-sm">
+  <aside class="section-bg-mako text-white">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+      <ul id="accordion" class="nav documentation-nav">
+        <li>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <ul id="submenu-1" class="nav panel-switch" role="menu">
+            <li>
+              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
+              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+                <li><a href="/documentation/user-guide/2.4/introduction/overview" class="active" >Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/2.4/core/overview" >Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/2.4/editions/overview" >Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/2.4/extensions/overview" >Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/2.4/appendices/glossary">Appendices</a></li>
+              </ul>
+            </li>
+            <li><a href="/documentation/tutorials/2.4/overview" >Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.4/" >Javadocs</a></li>
+            <li><a target="_blank" href="/documentation/2.4/changelog">Change Log</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+<div class="content-wrapper section-bg-white">
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-md-12">
+    <div class="h-cta h-cta--large section-bg-grey">
+      <img class="large" src="/images/restlet-framework-dark.svg" alt="Restlet Framework">
+      <a href="/downloads/current" class="m-button m-button-flat-green pull-right">Install Framework</a>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+            <li>mobile-nav</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/overview/">Overview</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/features/">Features</a>
+    </li>
+    <li>
+      <a aria-current="true" class="navigation-list-link ancestor" href="/documentation/user-guide/2.4/introduction/whats-new/">What&#39;s new</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.4/">In version 2.4</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.3/">In version 2.3</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.2/">In version 2.2</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.1/">In version 2.1</a>
+    </li>
+    <li>
+      <a aria-current="true" class="navigation-list-link ancestor" href="/documentation/user-guide/2.4/introduction/whats-new/2.0/">2</a>
+        <ul>
+    <li class="active">
+      <a aria-current="page" class="navigation-list-link active" href="/documentation/user-guide/2.4/introduction/whats-new/2.0/api/">API improvements</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/engine/">Engine</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/extensions/">Extensions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/editions/">Editions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/misc/">Misc</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/migration/">Migration</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        
+
+        <h1>API improvements</h1>
+        <h1 id="packages-restructuring">Packages restructuring</h1>
+<p>In order to simplify even more the learning and deployment of Restlet
+applications, the Restlet API and its implementation (ie. the Restlet
+Engine) have been merged into a single module (ie. JAR, bundle). All
+engine classes were moved to
+<a href="https://javadocs.restlet.talend.com/2.4/jse/engine/index.html">org.restlet.engine</a>.</p>
+<p>In addition, all extensions are now located under a
+<a href="https://javadocs.restlet.talend.com/2.4/jse/ext/index.html">org.restlet.ext</a>
+root package. This means that all extensions previously under
+&ldquo;com.noelios.restlet.ext&rdquo; have been moved. Note that some classes from
+the <a href="https://javadocs.restlet.talend.com/2.4/jse/api/index.html">core Restlet API</a>
+have been moved to the Restlet Engine such as:</p>
+<ul>
+<li>org.restlet.util.Engine moved to org.restlet.engine.Engine</li>
+<li>org.restlet.util.Helper moved to org.restlet.engine.Helper</li>
+<li>org.restlet.util.ByteUtils moved to org.restlet.engine.io.BioUtils</li>
+<li>org.restlet.util.DateUtils moved to org.restlet.engine.util.DateUtils</li>
+</ul>
+<p>Note also, that there were two Spring extensions in Restlet 1.1. Now
+they are merged under the org.restlet.ext.spring extension.</p>
+<p>In order to ensure a cleaner separation between resource and
+representation artifacts, we have added a new
+“org.restlet.representation” package and moved all representation
+classes to it. The “org.restlet.resource” package is now more focused,
+allowing us to welcome our new resource API and to move in related
+classes such as Finder and Handler. We have also added a
+“org.restlet.routing” package where we moved Filter, Redirector and
+Router related classes.</p>
+<h1 id="root-package">Root package</h1>
+<p>The org.restlet.Uniform abstract class has been refactored into an
+interface with a single handle(Request, Response) method. Its logic has
+been moved to the org.restlet.Client class. This allows us to leverage
+it for asynchronous calls, as we already do in the GWT edition.</p>
+<p>We moved Message, Request and Response classes from the
+&ldquo;org.restlet.data&rdquo; to the &ldquo;org.restlet&rdquo; root package as they are core
+artifacts of the API used in Uniform interface. Requests and responses
+can now be aborted, useful to save bandwidth where undesired calls are
+handled.</p>
+<p>In order to support both inbound and outbound routing and filtering of
+calls for Restlet applications, we have added two properties:
+“inboundRoot : Restlet” and “outboundRoot : Restlet” to the Application
+class and deprecated the “root : Restlet” property. This will allow you
+to easily provide features such as preemptive authentication with the
+recently added ClientResource class.</p>
+<p>The component XML configuration has been extended to support all
+existing properties and features available in the Java API.</p>
+<h1 id="data-package">Data package</h1>
+<p>Nearly all standard HTTP headers are now fully supported by the Restlet
+API including “Age”, “Authentication-Info”, “Date”, &ldquo;Expect&rdquo;,
+“If-Range”, “Retry-After”, &ldquo;Via&rdquo;, “Warning”, and the frequently asked
+“Cache-Control” header! For a detailled mapping of those headers to the
+Restlet API, please consult <a href="/documentation/user-guide/2.4/core/http-headers-mapping">this page of the user guide</a>.</p>
+<p>Character sets support was enhanced, fixing an issue with Macintosh and
+adding new constants in the CharacterSet class for all common ones
+defined by IANA. Also, the default language used for representation is
+now dynamically retrieved based on the JVM setting instead of
+English/US.</p>
+<h1 id="representation-package">Representation package</h1>
+<p>Added AppendableRepresentation for dynamic generation of
+StringRepresentation instances.</p>
+<h1 id="resource-package">Resource package</h1>
+<p>After a long experience with our class-driven Resource API introduced in
+Restlet 1.0 and the recent introduction of the annotation-driven JAX-RS
+API (that we support as a special Restlet extension), we felt it was
+time for us to step-back and propose a better solution, taking the best
+of both experiences.</p>
+<p>We initiated a specification effort in our developers wiki at the beginning of this year, taking into
+account all the enhancement requests, issues and feed-back made by our
+community. Here is the overall architecture:</p>
+<p><img src="../images/hierarchy.png" alt=""></p>
+<p>The new design uses three foundation classes (UniformResource,
+ClientResource and ServerResource) which support just four annotations
+by default: @Get, @Post, @Put and @Delete. New ones can be defined to
+support extension methods like @Copy and @Move for WebDAV. Note that the
+support for annotations can be turned off and is not necessary to
+develop resources.</p>
+<p>This new design provides the best of both worlds, the power and
+flexibility of Restlet 1.1 and the expressiveness and additional
+abstraction offered by JAX-RS. In addition, it goes beyond those
+existing APIs by offering a uniform support for both server and client
+resources !</p>
+<p>The ServerResource class  cleanly integrates the annotation-based and
+method-based call processing : the annotation-based processing extends
+the usual method-base processing.</p>
+<p>ClientResource also support for annotated interfaces via the creation of
+dynamic proxies. It also automatically follows redirections when
+possible. Access to the underlying ClientResource instance for dynamic
+proxies is possible via a ClientProxy interface automatically
+implemented, like for the GWT edition. Proxies for child or parent
+resource can also easily be obtained, reusing the current resource like
+a prototype resource!</p>
+<p>Asynchronous call handling is now available on both on the server-side
+and the client-side. The callback mechanism used was inspired from GWT
+and is fully consistent with our Restlet edition for GWT, ensuring a
+greater portability.</p>
+<h1 id="routing-package">Routing package</h1>
+<p>The &ldquo;org.restlet.routing&rdquo; package has been enhanced with new Validator
+and Extractor filters containing logic found in the new deprecated Route
+class, replaced with a more specific TemplateRoute class. Those changes
+should be transparent for most applications using the Router class to
+attach Restlets and resources using URI templates.</p>
+<p>We also moved Template and Variable classes from &ldquo;org.restlet.util&rdquo;  to
+&ldquo;org.restlet.routing&rdquo; package.</p>
+<h1 id="security-package">Security package</h1>
+<p>The refactoring of the Restlet security model has been the most
+requested change since the Restlet 1.0 release. Fortunately, after a
+long maturation period, it has finally made a huge step forward,
+materialized by the addition of an “org.restlet.security” package. The
+new design is the synthesis
+of many contributions and discussions from the community. Care has been
+taken to keep a separation of concern between Components and
+Applications regarding security.</p>
+<p>Security realms now have a lifecycle allowing the initialization from a
+relational database, a file or a LDAP directory.</p>
+<p>The API is also extensible and offers a good foundation for your new
+security efforts.</p>
+<h1 id="service-package">Service package</h1>
+<p>Refactored the services to facilitate the addition of new ones by users
+in their applications or their components.</p>
+<p>The TunnelService now supports “X-HTTP-Method-Override” header.</p>
+<p>More powerful ConverterService which can automatically serialize POJOs
+into XML, JSON and other serialization formats such as regular Java
+serialization or long term bean persistence. We leverage XStream for
+automatic XML/JSON marshalling and unmarshalling. Note that the JAX-RS
+extension now also relies on this improved conversion service!
+Converters were added for all relevant Restlet extensions, allowing
+usage of high-level classes in annotated Restlet interfaces for example.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>

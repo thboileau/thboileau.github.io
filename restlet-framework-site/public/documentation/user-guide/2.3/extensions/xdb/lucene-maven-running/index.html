@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | Running and testing</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="static-nav documentation">
+
+  <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+<div class="sidebar-wrapper hidden-xs hidden-sm">
+  <aside class="section-bg-mako text-white">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+      <ul id="accordion" class="nav documentation-nav">
+        <li>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <ul id="submenu-1" class="nav panel-switch" role="menu">
+            <li>
+              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
+              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+                <li><a href="/documentation/user-guide/2.3/introduction/overview" >Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/2.3/core/overview" >Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/2.3/editions/overview" >Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/2.3/extensions/overview" class="active" >Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/2.3/appendices/glossary">Appendices</a></li>
+              </ul>
+            </li>
+            <li><a href="/documentation/tutorials/2.3/overview" >Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.3/" >Javadocs</a></li>
+            <li><a target="_blank" href="/documentation/2.3/changelog">Change Log</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+<div class="content-wrapper section-bg-white">
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-md-12">
+    <div class="h-cta h-cta--large section-bg-grey">
+      <img class="large" src="/images/restlet-framework-dark.svg" alt="Restlet Framework">
+      <a href="/downloads/current" class="m-button m-button-flat-green pull-right">Install Framework</a>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+            <li>mobile-nav</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/overview/">Overview</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/features/">Features</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/">What&#39;s new</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.4/">In version 2.4</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.3/">In version 2.3</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.2/">In version 2.2</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.1/">In version 2.1</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/">2</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/api/">API improvements</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/engine/">Engine</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/extensions/">Extensions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/editions/">Editions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/misc/">Misc</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/migration/">Migration</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        
+
+        <h1>XMLDB Restet Adapter/Lucene/Maven - Running/Testing</h1>
+        <ul>
+<li>Starting Jetty to debug these services outside OJVM</li>
+</ul>
+<p>This Maven target provides a client side environment to test and debug REST WS without installing it inside the OJVM. Note that in this server side implementation of REST WS we are using a unique entry point to get the SQL connection, this connection when running outside the database use System&rsquo;s properties to get user, password and SQLNet connect string to connect to the target database.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#666">[</span>mochoa@mochoa lucene-restlet<span style="color:#666">]</span>$ mvn jetty:run
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Scanning <span style="color:#a2f;font-weight:bold">for</span> projects...
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Searching repository <span style="color:#a2f;font-weight:bold">for</span> plugin with prefix: <span style="color:#b44">&#39;jetty&#39;</span>.
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span>
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Building org.apache.lucene.ws
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span>    task-segment: <span style="color:#666">[</span>jetty:run<span style="color:#666">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span>
+</span></span><span style="display:flex;"><span>----------------------------------------------------------------------------
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Preparing jetty:run
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> <span style="color:#666">[</span>resources:resources<span style="color:#666">]</span>
+</span></span><span style="display:flex;"><span>.....
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Property db.str<span style="color:#666">=</span><span style="color:#a2f">test</span> was <span style="color:#a2f">set</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Property db.usr<span style="color:#666">=</span>LUCENE was <span style="color:#a2f">set</span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Property db.pwd<span style="color:#666">=</span>LUCENE was <span style="color:#a2f">set</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>2008-06-19 09:21:03.559::INFO:  Logging to STDERR via org.mortbay.log.StdErrLog
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Context <span style="color:#b8860b">path</span> <span style="color:#666">=</span> /
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Tmp <span style="color:#b8860b">directory</span> <span style="color:#666">=</span>  determined at runtime
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Web <span style="color:#b8860b">defaults</span> <span style="color:#666">=</span> org/mortbay/jetty/webapp/webdefault.xml
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Web <span style="color:#b8860b">overrides</span> <span style="color:#666">=</span>  none
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Webapp <span style="color:#b8860b">directory</span> <span style="color:#666">=</span> /home/mochoa/jdevhome/mywork/lucene-restlet/src/main/webapp
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Starting jetty 6.1.7 ...
+</span></span><span style="display:flex;"><span>2008-06-19 09:21:03.796::INFO:  jetty-6.1.7
+</span></span><span style="display:flex;"><span>2008-06-19 09:21:04.286::INFO:  No Transaction manager found - <span style="color:#a2f;font-weight:bold">if</span> your webapp
+</span></span><span style="display:flex;"><span>requires one, please configure one.
+</span></span><span style="display:flex;"><span>2008-06-19 09:21:05.171::INFO:  Started SelectChannelConnector@0.0.0.0:8088
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Started Jetty Server
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>INFO<span style="color:#666">]</span> Starting scanner at interval of <span style="color:#666">10</span> seconds.
+</span></span><span style="display:flex;"><span>2008-06-19 09:24:08.039:/:INFO:  UsersRestlet: <span style="color:#666">[</span>Noelios Restlet Engine<span style="color:#666">]</span> - The
+</span></span><span style="display:flex;"><span>ServerServlet <span style="color:#b8860b">address</span> <span style="color:#666">=</span> null
+</span></span><span style="display:flex;"><span>2008-06-19 09:24:08.039:/:INFO:  UsersRestlet: <span style="color:#666">[</span>Noelios Restlet Engine<span style="color:#666">]</span> - The
+</span></span><span style="display:flex;"><span>ServerServlet <span style="color:#b8860b">port</span> <span style="color:#666">=</span> <span style="color:#666">8080</span>
+</span></span><span style="display:flex;"><span>2008-06-19 09:24:08.039:/:INFO:  UsersRestlet: <span style="color:#666">[</span>Noelios Restlet Engine<span style="color:#666">]</span> - The
+</span></span><span style="display:flex;"><span>ServerServlet <span style="color:#b8860b">endpoint</span> <span style="color:#666">=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>2008-06-19 09:24:08.039:/:INFO:  UsersRestlet: <span style="color:#666">[</span>Noelios Restlet Engine<span style="color:#666">]</span> - Try to
+</span></span><span style="display:flex;"><span>load <span style="color:#b44">&#39;org.restlet.attribute.application&#39;</span> parameter from
+</span></span><span style="display:flex;"><span><span style="color:#b44">&#39;/home/&#39;</span><span style="color:#666">||</span>USER<span style="color:#666">||</span><span style="color:#b44">&#39;/restlet/UsersRestlet.xml
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">2008-06-19 09:24:11.584:/:INFO:  UsersRestlet: [Noelios Restlet Engine] - Try to
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">load &#39;</span>org.restlet.attribute.component<span style="color:#b44">&#39; parameter from
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">&#39;</span>/home/<span style="color:#b44">&#39;||USER||&#39;</span>/restlet/UsersRestlet.xml
+</span></span><span style="display:flex;"><span>2008-06-19 09:24:11.595:/:INFO:  UsersRestlet: <span style="color:#666">[</span>Noelios Restlet Engine<span style="color:#666">]</span> - Try to
+</span></span><span style="display:flex;"><span>load <span style="color:#b44">&#39;org.restlet.component&#39;</span> parameter from
+</span></span><span style="display:flex;"><span><span style="color:#b44">&#39;/home/&#39;</span><span style="color:#666">||</span>USER<span style="color:#666">||</span><span style="color:#b44">&#39;/restlet/UsersRestlet.xml
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">Jun 19, 2008 9:24:11 AM org.restlet.Connector &lt;init&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">WARNING: The connector has been instantiated without any protocol.
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">2008-06-19 09:24:11.808:/:INFO:  UsersRestlet: [Noelios Restlet Engine] - Try to
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">load &#39;</span>org.restlet.attribute.server<span style="color:#b44">&#39; parameter from
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">&#39;</span>/home/<span style="color:#b44">&#39;||USER||&#39;</span>/restlet/UsersRestlet.xml
+</span></span><span style="display:flex;"><span>2008-06-19 09:24:11.818:/:INFO:  UsersRestlet: <span style="color:#666">[</span>Noelios Restlet Engine<span style="color:#666">]</span> -
+</span></span><span style="display:flex;"><span>Attaching application: org.apache.lucene.ws.LuceneApplication@5878d2 to URI:
+</span></span><span style="display:flex;"><span>/lucene
+</span></span><span style="display:flex;"><span>Jun 19, <span style="color:#666">2008</span> 9:24:11 AM com.noelios.restlet.ext.xdb.XdbServletWarClientHelper
+</span></span><span style="display:flex;"><span>start
+</span></span><span style="display:flex;"><span>INFO: efective user is: __LUCENE__
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Jun 19, <span style="color:#666">2008</span> 9:24:12 AM com.noelios.restlet.LogFilter afterHandle
+</span></span><span style="display:flex;"><span>INFO: 2008-06-19        09:24:12        -        -        -       <span style="color:#666">8080</span>     GET     /lucene/         -       <span style="color:#666">200</span>      <span style="color:#666">157</span>     -        <span style="color:#666">704</span>     http://localhost:8088 -       -</span></span></code></pre></div>
+<p>Note that <strong>LUCENE</strong> user is configured in pom.xml file, so it will passed to Jetty as System properties and used by XMLDB Restlet adapter as effective user. If you will try to test LuceneApplication using telnet scripts change LUCENE/LUCENE to scott/tiger into pom.xml file.</p>
+<p>You can debug and test <strong>LuceneApplication.java</strong> using Restlet default servlet engine starting it as a simple Java application, but this scenary will not test XMLDB Restlet stack.</p>
+<ul>
+<li>Testing with telnet</li>
+</ul>
+<p>Directory src/main/scripts have several .txt file which includes HTTP content information to test Lucene REST WS API. For example to get all Lucene Domain Indexes at SCOTT&rsquo;s schema you can execute:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#666">[</span>mochoa@mochoa lucene-restlet<span style="color:#666">]</span>$ cat src/main/scripts/test_get_scott.txt
+</span></span><span style="display:flex;"><span>GET /lucene/ HTTP/1.0
+</span></span><span style="display:flex;"><span>Authorization: Basic <span style="color:#b8860b">c2NvdHQ6dGlnZXI</span><span style="color:#666">=</span>
+</span></span><span style="display:flex;"><span>Host: localhost:8080
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">[</span>mochoa@mochoa lucene-restlet<span style="color:#666">]</span>$ telnet localhost <span style="color:#666">8080</span>
+</span></span><span style="display:flex;"><span>Trying 127.0.0.1...
+</span></span><span style="display:flex;"><span>Connected to live.dbprism.mochoa.dyndns.org <span style="color:#666">(</span>127.0.0.1<span style="color:#666">)</span>.
+</span></span><span style="display:flex;"><span>Escape character is <span style="color:#b44">&#39;^]&#39;</span>.
+</span></span><span style="display:flex;"><span>GET /lucene/ HTTP/1.0
+</span></span><span style="display:flex;"><span>Authorization: Basic <span style="color:#b8860b">c2NvdHQ6dGlnZXI</span><span style="color:#666">=</span>
+</span></span><span style="display:flex;"><span>Host: localhost:8080
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>HTTP/1.1 <span style="color:#666">200</span> OK
+</span></span><span style="display:flex;"><span>MS-Author-Via: DAV
+</span></span><span style="display:flex;"><span>DAV: 1,2,&amp;lt;http://www.oracle.com/xdb/webdav/props&amp;gt;
+</span></span><span style="display:flex;"><span>Date: Wed, <span style="color:#666">18</span> Jun <span style="color:#666">2008</span> 23:08:06 GMT
+</span></span><span style="display:flex;"><span>Server: Noelios-Restlet-Engine/1.1.snapshot
+</span></span><span style="display:flex;"><span>Content-Type: application/atomsvc+xml; <span style="color:#b8860b">charset</span><span style="color:#666">=</span>ISO-8859-1
+</span></span><span style="display:flex;"><span>Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+</span></span><span style="display:flex;"><span>Content-Length: <span style="color:#666">330</span>
+</span></span><span style="display:flex;"><span>Expires: Wed, <span style="color:#666">18</span> Jun <span style="color:#666">2008</span> 23:08:16 GMT</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;ISO-8859-1&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;service</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://purl.org/atom/app#&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#008000;font-weight:bold">&lt;workspace</span> <span style="color:#b44">title=</span><span style="color:#b44">&#34;Lucene Web Service&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#008000;font-weight:bold">&lt;collection</span> <span style="color:#b44">href=</span><span style="color:#b44">&#34;SOURCE_BIG_LIDX/&#34;</span> <span style="color:#b44">title=</span><span style="color:#b44">&#34;Index Name: SOURCE_BIG_LIDX status: VALID&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#008000;font-weight:bold">&lt;member-type&gt;</span>entry<span style="color:#008000;font-weight:bold">&lt;/member-type&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#008000;font-weight:bold">&lt;/collection&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#008000;font-weight:bold">&lt;/workspace&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;/service&gt;</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Connection closed by foreign host.</span></span></code></pre></div>
+<p>Note that the Authorization header have a B64 encoding information of scott:tiger user/password, if your database have different values it will not work. Also we are using XMLDB default HTTP port (8080). The example shows that scott have one Lucene Domain Index named <strong>SOURCE_BIG_LIDX</strong>. This index was created using a table and index creation SQL script like:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">create</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">table</span><span style="color:#bbb"> </span>test_source_big<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">as</span><span style="color:#bbb"> </span>(<span style="color:#a2f;font-weight:bold">select</span><span style="color:#bbb"> </span><span style="color:#666">*</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">from</span><span style="color:#bbb"> </span>all_source);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">SQL</span><span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">create</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">index</span><span style="color:#bbb"> </span>source_big_lidx<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">on</span><span style="color:#bbb"> </span>test_source_big(<span style="color:#a2f">text</span>)<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>indextype<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">is</span><span style="color:#bbb"> </span>lucene.LuceneIndex<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">parameters</span>(<span style="color:#b44">&#39;AutoTuneMemory:true;Analyzer:org.apache.lucene.analysis.StopAnalyzer;\
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">
+</span></span></span><span style="display:flex;"><span><span style="color:#b44">MergeFactor:500;FormatCols:line(0000);ExtraCols:line &#34;line&#34;&#39;</span>);</span></span></code></pre></div>
+<ul>
+<li>Testing with JMeter plugin for Maven</li>
+</ul>
+<p>Download and install <a href="https://cwiki.apache.org/confluence/display/jmeter/JMeterMavenPlugin">JMeter Maven Plugin</a>.
+Install required libraries from JMeter distribution</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn install:install-file -DgroupId<span style="color:#666">=</span>org.apache.jmeter -DartifactId<span style="color:#666">=</span>jmeter -Dversion<span style="color:#666">=</span>2.2 -Dpackaging<span style="color:#666">=</span>jar -Dfile<span style="color:#666">=</span>/home/mochoa/Download/jmeter-2.2.jar -DpomFile<span style="color:#666">=</span>/home/mochoa/Download/jmeter-2.2.pom
+</span></span><span style="display:flex;"><span>mvn install:install-file -DgroupId<span style="color:#666">=</span>org.apache.jorphan -DartifactId<span style="color:#666">=</span>jorphan -Dversion<span style="color:#666">=</span>2.2 -Dpackaging<span style="color:#666">=</span>jar -Dfile<span style="color:#666">=</span>/usr/local/jakarta-jmeter-2.3.1/lib/jorphan.jar
+</span></span><span style="display:flex;"><span>mvn install:install-file -DgroupId<span style="color:#666">=</span>org.mozilla.javascript -DartifactId<span style="color:#666">=</span>javascript -Dversion<span style="color:#666">=</span>1.0 -Dpackaging<span style="color:#666">=</span>jar -Dfile<span style="color:#666">=</span>/usr/local/jakarta-jmeter-2.3.1/lib/js_rhino1_6R5.jar  
+</span></span><span style="display:flex;"><span>mvn install:install-file -DgroupId<span style="color:#666">=</span>jcharts -DartifactId<span style="color:#666">=</span>jcharts -Dversion<span style="color:#666">=</span>0.7.5 -Dpackaging<span style="color:#666">=</span>jar -Dfile<span style="color:#666">=</span>/usr/local/jakarta-jmeter-2.3.1/lib/jCharts-0.7.5.jar  </span></span></code></pre></div>
+<p>pom.xml file modifications</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>....
+</span></span><span style="display:flex;"><span>    <span style="color:#999;font-weight:bold">&amp;lt;</span>dependency<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#999;font-weight:bold">&amp;lt;</span>groupId<span style="color:#999;font-weight:bold">&amp;gt;</span>org.apache.jmeter<span style="color:#999;font-weight:bold">&amp;lt;</span>/groupId<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#999;font-weight:bold">&amp;lt;</span>artifactId<span style="color:#999;font-weight:bold">&amp;gt;</span>maven-jmeter-plugin<span style="color:#999;font-weight:bold">&amp;lt;</span>/artifactId<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#999;font-weight:bold">&amp;lt;</span>version<span style="color:#999;font-weight:bold">&amp;gt;</span>1.0-SNAPSHOT<span style="color:#999;font-weight:bold">&amp;lt;</span>/version<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#999;font-weight:bold">&amp;lt;</span>/dependency<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>....
+</span></span><span style="display:flex;"><span>      <span style="color:#999;font-weight:bold">&amp;lt;</span>plugin<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#999;font-weight:bold">&amp;lt;</span>groupId<span style="color:#999;font-weight:bold">&amp;gt;</span>org.apache.jmeter<span style="color:#999;font-weight:bold">&amp;lt;</span>/groupId<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#999;font-weight:bold">&amp;lt;</span>artifactId<span style="color:#999;font-weight:bold">&amp;gt;</span>maven-jmeter-plugin<span style="color:#999;font-weight:bold">&amp;lt;</span>/artifactId<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#999;font-weight:bold">&amp;lt;</span>configuration<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#999;font-weight:bold">&amp;lt;</span>includes<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#999;font-weight:bold">&amp;lt;</span>include<span style="color:#999;font-weight:bold">&amp;gt;</span>test_get_scott.jmx<span style="color:#999;font-weight:bold">&amp;lt;</span>/include<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#999;font-weight:bold">&amp;lt;</span>/includes<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#999;font-weight:bold">&amp;lt;</span>reportDir<span style="color:#999;font-weight:bold">&amp;gt;</span>target/jmeter-reports<span style="color:#999;font-weight:bold">&amp;lt;</span>/reportDir<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#999;font-weight:bold">&amp;lt;</span>/configuration<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#999;font-weight:bold">&amp;lt;</span>/plugin<span style="color:#999;font-weight:bold">&amp;gt;</span>
+</span></span><span style="display:flex;"><span>....</span></span></code></pre></div>
+<p>running</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mvn org.apache.jmeter:maven-jmeter-plugin:jmeter</span></span></code></pre></div>
+<ul>
+<li>Measuring performance using Apache JMeter</li>
+</ul>
+<p>Using some of the JMeter templates at directory __src/test/__<strong>jmeter</strong> you can perform performance test of Lucene REST WS API over Lucene Domain Index.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>

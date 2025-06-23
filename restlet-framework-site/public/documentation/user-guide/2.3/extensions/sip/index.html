@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | SIP</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="static-nav documentation">
+
+  <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+<div class="sidebar-wrapper hidden-xs hidden-sm">
+  <aside class="section-bg-mako text-white">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+      <ul id="accordion" class="nav documentation-nav">
+        <li>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <ul id="submenu-1" class="nav panel-switch" role="menu">
+            <li>
+              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
+              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+                <li><a href="/documentation/user-guide/2.3/introduction/overview" >Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/2.3/core/overview" >Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/2.3/editions/overview" >Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/2.3/extensions/overview" class="active" >Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/2.3/appendices/glossary">Appendices</a></li>
+              </ul>
+            </li>
+            <li><a href="/documentation/tutorials/2.3/overview" >Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.3/" >Javadocs</a></li>
+            <li><a target="_blank" href="/documentation/2.3/changelog">Change Log</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+<div class="content-wrapper section-bg-white">
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-md-12">
+    <div class="h-cta h-cta--large section-bg-grey">
+      <img class="large" src="/images/restlet-framework-dark.svg" alt="Restlet Framework">
+      <a href="/downloads/current" class="m-button m-button-flat-green pull-right">Install Framework</a>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+            <li>mobile-nav</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/overview/">Overview</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/features/">Features</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/">What&#39;s new</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.4/">In version 2.4</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.3/">In version 2.3</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.2/">In version 2.2</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.1/">In version 2.1</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/">2</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/api/">API improvements</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/engine/">Engine</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/extensions/">Extensions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/editions/">Editions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/misc/">Misc</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/migration/">Migration</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        
+
+        <h1>SIP extension</h1>
+        <h1 id="introduction">Introduction</h1>
+<p>This extension provides support for the Session Initiation Protocol,
+largely used for voice over IP (VoIP). It ships both client and server
+SIP connectors over TCP, reusing the 90% of the logic used by the new
+NIO/HTTP internal connector, providing excellent scalability and
+performance.</p>
+<h1 id="features">Features</h1>
+<ul>
+<li>SIP transport over TCP</li>
+<li>All SIP headers, including &ldquo;Via&rdquo;, map to a Java API</li>
+<li>All base SIP methods supported</li>
+<li>Extension INFO, REGISTER, SUBSCRIBE, NOTIFY, PUBLISH and REFER
+methods supported</li>
+<li>OPTIONS method supported : useful for integration purposes as most
+gateways require it for redundancy</li>
+</ul>
+<h1 id="mapping-sip-headers">Mapping SIP headers</h1>
+<p>The <a href="http://www.iana.org/assignments/sip-parameters">complete list of SIP headers</a>
+is available at the IANA site.</p>
+<table>
+  <thead>
+      <tr>
+          <th>SIP header</th>
+          <th>Restlet property name</th>
+          <th>Restlet property class</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Accept</td>
+          <td>request.clientInfo.acceptedMediaTypes</td>
+          <td>org.restlet.data.Preference&lt;MediaType&gt;</td>
+          <td>Identical to HTTP with the exception that if no header field is present, the server should assume a default value of &ldquo;application/sdp&rdquo;.</td>
+      </tr>
+      <tr>
+          <td>Accept-Encoding</td>
+          <td>request.clientInfo.</td>
+          <td>acceptedEncodings</td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Accept-Language</td>
+          <td>request.clientInfo.</td>
+          <td>acceptedLanguages</td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Alert-Info</td>
+          <td>message.alertInfo</td>
+          <td>org.restlet.ext.sip.data.Address</td>
+          <td>Specifies an alternative ring tone to the UAS or alternative ringback tone to the UAC.</td>
+      </tr>
+      <tr>
+          <td>Allow</td>
+          <td>response.allowedMethods</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Allow-Events</td>
+          <td>message.allowedEventTypes</td>
+          <td>org.restlet.ext.sip.data.EventType</td>
+          <td>Includes a list of tokens which indicates the event packages supported. <a href="http://tools.ietf.org/html/rfc3265#section-3.3.7">See RFC 3265</a>.</td>
+      </tr>
+      <tr>
+          <td>Authentication-Info</td>
+          <td>response.authenticationInfo</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Authorization</td>
+          <td>request.challengeResponse</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Call-ID</td>
+          <td>message.callId</td>
+          <td>String</td>
+          <td>Uniquely identifies a particular invitation or all registrations of a particular client.</td>
+      </tr>
+      <tr>
+          <td>Call-Info</td>
+          <td>message.</td>
+          <td>calleeInfo or callerInfo</td>
+          <td>List of org.restlet.ext.sip.data.Address</td>
+      </tr>
+      <tr>
+          <td>Contact</td>
+          <td>message.</td>
+          <td>contact</td>
+          <td>org.restlet.ext.sip.data.ContactInfo</td>
+      </tr>
+      <tr>
+          <td>Content-Disposition</td>
+          <td>entity.disposition</td>
+          <td></td>
+          <td>Similar to HTTP with no disposition types defined.</td>
+      </tr>
+      <tr>
+          <td>Content-Encoding</td>
+          <td>entity.encodings</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Content-Language</td>
+          <td>entity.languages</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Content-Length</td>
+          <td>entity.size</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Content-Type</td>
+          <td>entity.mediaType and entity.characterSet</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>CSeq</td>
+          <td>message.callSequence</td>
+          <td>org.restlet.ext.sip.data.CallSequence</td>
+          <td>Serves to order transactions within a dialog, to provide a means to uniquely identify transactions, and to differentiate between new requests and request retransmissions.</td>
+      </tr>
+      <tr>
+          <td>Date</td>
+          <td>message.date</td>
+          <td></td>
+          <td>Similar to HTTP with restriction on the date format supported.</td>
+      </tr>
+      <tr>
+          <td>Error-Info</td>
+          <td>response.errorInfo</td>
+          <td>org.restlet.ext.sip.data.Address</td>
+          <td>Provides a pointer to additional information about the error status response.</td>
+      </tr>
+      <tr>
+          <td>Event</td>
+          <td>message.event</td>
+          <td>org.restlet.ext.sip.data.Event</td>
+          <td>Describes an event notification. <a href="http://tools.ietf.org/html/rfc3265#section-3.1">See RFC 3265</a>.</td>
+      </tr>
+      <tr>
+          <td>Expires</td>
+          <td>entity.expirationDate</td>
+          <td></td>
+          <td>Similar to HTTP but with SIP specificities.</td>
+      </tr>
+      <tr>
+          <td>From</td>
+          <td>request.clientInfo.from</td>
+          <td>org.restlet.ext.sip.data.Address</td>
+          <td>Similar to HTTP but with a more specific format.</td>
+      </tr>
+      <tr>
+          <td>In-Reply-To</td>
+          <td>request.inReplyTo</td>
+          <td>List&lt;org.restlet.ext.sip.data.CallId&gt;</td>
+          <td>Enumerates the Call-IDs that this call references or returns.</td>
+      </tr>
+      <tr>
+          <td>Max-Forwards</td>
+          <td><a href="http://restlet.tigris.org/issues/show_bug.cgi?id=207">Support for proxies planned for later</a></td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Min-Expires</td>
+          <td>response.minExpires</td>
+          <td></td>
+          <td>Conveys the minimum refresh interval supported for soft-state element managed by that server.</td>
+      </tr>
+      <tr>
+          <td>MIME-Version</td>
+          <td>message.mimeVersion</td>
+          <td>Indicates what version of the MIME protocol was used to construct the message.</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Organization</td>
+          <td>message.organization</td>
+          <td></td>
+          <td>Conveys the name of the organization to which the SIP element issuing the request or response belongs.</td>
+      </tr>
+      <tr>
+          <td>Priority</td>
+          <td>request.priority</td>
+          <td>org.restlet.ext.sip.data.Priority</td>
+          <td>Indicates the urgency of the request as perceived by the client.</td>
+      </tr>
+      <tr>
+          <td>Proxy-Authenticate</td>
+          <td>response.proxyChallengeRequests</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Proxy-Authorization</td>
+          <td>request.proxyChallengeResponse</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Proxy-Require</td>
+          <td>message.proxyRequire</td>
+          <td>List&lt;org.restlet.ext.sip.data.OptionTag&gt;</td>
+          <td>Used to indicate proxy-sensitive features that must be supported by the proxy.</td>
+      </tr>
+      <tr>
+          <td>RAck</td>
+          <td>?</td>
+          <td></td>
+          <td>Supports reliability of provisional responses. Mentionned in <a href="http://tools.ietf.org/html/rfc3262#section-7.2">RFC 3262</a>.</td>
+      </tr>
+      <tr>
+          <td>Record-Route</td>
+          <td>message.recordedRoutes</td>
+          <td>List&lt;org.restlet.ext.sip.data.Address&gt;</td>
+          <td>Inserted by proxies in a request to force future requests in the dialog to be routed through the proxy.</td>
+      </tr>
+      <tr>
+          <td>Refer-To</td>
+          <td>request.refertTo</td>
+          <td>org.restlet.ext.sip.data.Address</td>
+          <td>Provides a URL to reference. See <a href="http://tools.ietf.org/html/rfc3515#section-2.1">RFC 3515</a>.</td>
+      </tr>
+      <tr>
+          <td>Reply-To</td>
+          <td>message.replyTo</td>
+          <td>org.restlet.ext.sip.data.Address</td>
+          <td>Contains a logical return URI that may be different from the From header field.</td>
+      </tr>
+      <tr>
+          <td>Require</td>
+          <td>request.requires</td>
+          <td>List&lt;org.restlet.ext.sip.data.OptionTag&gt;</td>
+          <td>Used by UACs to tell UASs about options that the UAC expects the UAS to support in order to process the request.</td>
+      </tr>
+      <tr>
+          <td>Retry-After</td>
+          <td>response.sipRetryAfter</td>
+          <td>List&lt;org.restlet.ext.sip.data.Availability&gt;</td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Route</td>
+          <td>request.routes</td>
+          <td>List&lt;org.restlet.ext.sip.data.Address&gt;</td>
+          <td>Used to force routing for a request through the listed set of proxies.</td>
+      </tr>
+      <tr>
+          <td>Rseq</td>
+          <td>response</td>
+          <td>Transmit provisional responses reliably. Mentionned in <a href="http://tools.ietf.org/html/rfc3262#section-7.1">RFC 3262</a></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Server</td>
+          <td>response.serverInfo.agent</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>SIP-ETag</td>
+          <td>response.sipTag</td>
+          <td>org.restlet.data.Tag</td>
+          <td><a href="http://tools.ietf.org/html/rfc3903#section-11.3.1">See RFC 3903</a></td>
+      </tr>
+      <tr>
+          <td>SIP-If-Match</td>
+          <td>request.conditions.sipIfMatch</td>
+          <td>org.restlet.data.Tag</td>
+          <td><a href="http://tools.ietf.org/html/rfc3903#section-11.3.2">See RFC 3903</a></td>
+      </tr>
+      <tr>
+          <td>Subject</td>
+          <td>request.subject</td>
+          <td></td>
+          <td>Provides a summary or indicates the nature of the call, allowing call filtering without having to parse the session description.</td>
+      </tr>
+      <tr>
+          <td>Subscription-State</td>
+          <td>request.subscriptionState</td>
+          <td>org.restlet.ext.sip.data.SubscriptionState</td>
+          <td>Provides the state of a subscription. <a href="http://tools.ietf.org/html/rfc3265#section-3.2.4">See RFC 3265</a>.</td>
+      </tr>
+      <tr>
+          <td>Supported</td>
+          <td>message.supported</td>
+          <td>List&lt;org.restlet.ext.sip.data.OptionTag&gt;</td>
+          <td>Enumerates all the extensions supported by the UAC or UAS.</td>
+      </tr>
+      <tr>
+          <td>Timestamp</td>
+          <td>message.timestamp</td>
+          <td></td>
+          <td>Describes when the UAC sent the request to the UAS.</td>
+      </tr>
+      <tr>
+          <td>To</td>
+          <td>message.to</td>
+          <td>org.restlet.ext.sip.data.Address</td>
+          <td>Specifies the logical recipient of the request.</td>
+      </tr>
+      <tr>
+          <td>Unsupported</td>
+          <td>message.unsupported</td>
+          <td>List&lt;org.restlet.ext.sip.data.OptionTag&gt;</td>
+          <td>Lists the features not supported by the UAS.</td>
+      </tr>
+      <tr>
+          <td>User-Agent</td>
+          <td>request.clientInfo.agent</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Via</td>
+          <td>message.recipientsInfo</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>Warning</td>
+          <td>message.warnings</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+      <tr>
+          <td>WWW-Authenticate</td>
+          <td>response.challengeRequests</td>
+          <td></td>
+          <td>Identical to HTTP.</td>
+      </tr>
+  </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>

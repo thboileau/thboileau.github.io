@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | First Application</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="static-nav documentation">
+
+  <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+<div class="sidebar-wrapper hidden-xs hidden-sm">
+  <aside class="section-bg-mako text-white">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+      <ul id="accordion" class="nav documentation-nav">
+        <li>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <ul id="submenu-1" class="nav panel-switch" role="menu">
+            <li>
+              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
+              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+                <li><a href="/documentation/user-guide/2.2/introduction/overview" class="active" >Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/2.2/core/overview" >Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/2.2/editions/overview" >Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/2.2/extensions/overview" >Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/2.2/appendices/glossary">Appendices</a></li>
+              </ul>
+            </li>
+            <li><a href="/documentation/tutorials/2.2/overview" >Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.2/" >Javadocs</a></li>
+            <li><a target="_blank" href="/documentation/2.2/changelog">Change Log</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+<div class="content-wrapper section-bg-white">
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-md-12">
+    <div class="h-cta h-cta--large section-bg-grey">
+      <img class="large" src="/images/restlet-framework-dark.svg" alt="Restlet Framework">
+      <a href="/downloads/current" class="m-button m-button-flat-green pull-right">Install Framework</a>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+            <li>mobile-nav</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/overview/">Overview</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/features/">Features</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/">What&#39;s new</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.4/">In version 2.4</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.3/">In version 2.3</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.2/">In version 2.2</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.1/">In version 2.1</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/">2</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/api/">API improvements</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/engine/">Engine</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/extensions/">Extensions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/editions/">Editions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/misc/">Misc</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/migration/">Migration</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        
+
+        <h1>First Application</h1>
+        <h1 id="introduction">Introduction</h1>
+<p>This first application illustrates how to develop a Restlet application
+that combines several editions of the Restlet Framework : GAE, GWT,
+Android and Java SE. It explains the benefits of annotated Restlet
+interfaces and of the ConverterService that offers transparent
+serialization between Restlet representations and Java objects, usable
+between a server application and several kind of clients.</p>
+<h1 id="table-of-contents">Table of contents</h1>
+<ol>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#scenario">Scenario</a></li>
+<li><a href="#archive-content">Archive content</a></li>
+<li><a href="#common-classes">Common classes</a></li>
+<li><a href="#gae-server">GAE server</a></li>
+<li><a href="#gwt-client">GWT client</a></li>
+<li><a href="#android-client">Android client</a></li>
+<li><a href="#java-se-client">Java SE client</a></li>
+</ol>
+<h1 id="requirements"><a name="requirements"></a>Requirements</h1>
+<p>It is based on the following editions of the Restlet Framework : Java SE
+(JSE), Google App Engine (GAE), Google Web Toolkit (GWT) and Android
+which must be downloaded separately from <a href="/downloads/current">this page</a>.
+It has been tested with the following environments:</p>
+<ul>
+<li>Restlet Framework 2.2 RC 4</li>
+<li>Google App Engine (GAE) 1.7.0</li>
+<li>Google Web Toolkit (GWT) 2.5</li>
+<li>Android 4</li>
+</ul>
+<p>GAE doesn&rsquo;t support HTTP chunked encoding, therefore serialized object can&rsquo;t be sent (via POST or PUT) to a GAE server. Since Restlet Framework version 2.1 M4 we have a workaround available that buffers the HTTP
+entity to prevent chunk encoding. To use it, call the ClientResource.setRequestEntityBuffering(boolean) method with a &ldquo;true&rdquo; value. Note that this workaround isn&rsquo;t required for the GWT edition.</p>
+<h1 id="scenario"><a name="scenario"></a>Scenario</h1>
+<p>The server application is hosted on the Google App Engine (GAE) platform. For the sake of simplicity it serves only one resource named &ldquo;contact&rdquo;, with the following characteristics:</p>
+<ul>
+<li>its relative URI is &ldquo;/contacts/123&rdquo;</li>
+<li>it supports the GET, PUT and DELETE methods.</li>
+<li>it represents a simple &ldquo;contact&rdquo; object.</li>
+</ul>
+<p>The &ldquo;contact&rdquo; object has the following attributes:</p>
+<ul>
+<li>firstname</li>
+<li>lastname</li>
+<li>age</li>
+<li>home address (actually an instance of a &ldquo;Address&rdquo; class): line1,
+line2, zipcode, city and country</li>
+</ul>
+<p>This resource will be requested for several kind of clients:</p>
+<ul>
+<li>GWT client page</li>
+<li>Android application</li>
+<li>Java SE client</li>
+</ul>
+<h1 id="archive-content"><a name="archive-content"></a>Archive content</h1>
+<p>The full source code (without the required archives) is available here:
+<a href="https://download.restlet.talend.com/technical-resources/restlet-framework/archives/examples/firstApplication/2.2/firstapplication.zip" title="firstapplication.zip">firstapplication.zip</a>
+(application/zip, 1.0 MB)</p>
+<p>It contains the full source code of three Eclipse projects with:</p>
+<ol>
+<li>Project that contains both the GAE server and the GWT client code</li>
+<li>Project that contains the source code of the Android client</li>
+<li>Project that contains the source code of the Java SE client</li>
+</ol>
+<h1 id="common-classes"><a name="common-classes"></a>Common classes</h1>
+<p>The following classes are available on the three project. They are used
+by the server and the clients in order to produce the serialized
+representation of the Contact object and to deserialize incoming
+representations.</p>
+<ul>
+<li>Contact</li>
+<li>Address</li>
+<li>ContactResource.</li>
+</ul>
+<p>ContactResource is an interface annotated with Restlet annotations:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">interface</span> <span style="color:#00f">ContactResource</span><span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f">@Get</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span>Contact<span style="color:#bbb"> </span><span style="color:#00a000">retrieve</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f">@Put</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">store</span>(Contact<span style="color:#bbb"> </span>contact);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f">@Delete</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">remove</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<p>It represents the contract passed between the client and the server.</p>
+<p>When using collections of objects as method parameters, you need to use
+concrete classes if you intend to have GWT clients. For example use
+ArrayList&lt;Contact&gt; instead of List&lt;Contact&gt;.</p>
+<h1 id="gae-server"><a name="gae-server"></a>GAE server</h1>
+<p>We propose to host the server application on the GAE platform. The
+server project relies on the following JAR files:</p>
+<ul>
+<li>org.restlet.jar: core archive (<em>GAE edition</em>)</li>
+<li>org.restlet.ext.gwt.jar: GWT server-side extension to convert Java objects to a GWT-specific serialization format (<em>GAE edition</em>)</li>
+<li>org.restlet.ext.gae.jar: GAE server-side extension (<em>GAE edition</em>)</li>
+<li>org.restlet.ext.servlet.jar: Servlet extension to deploy the Restlet application in GAE (<em>GAE edition</em>)</li>
+<li>org.restlet.ext.jackson.jar: Jackson extension used to generate JSON representations of the contact resource (<em>GAE edition</em>)</li>
+<li>com.fasterxml.jackson.core.jar, com.fasterxml.jackson.databind.jar, com.fasterxml.jackson.annotations.jar: archives of the Jackson libraries required by the Jackson extension, and available in the GAE edition.</li>
+</ul>
+<p>See also the &ldquo;readme.txt&rdquo; file located in the sources file. It list also all necessary binaries taken from the GAE platform.</p>
+<p>The server-side resource implements the annotated interface.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-style:italic">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> * The server side implementation of the Restlet resource.
+</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"> */</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">class</span> <span style="color:#00f">ContactServerResource</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">extends</span><span style="color:#bbb"> </span>ServerResource<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">implements</span><span style="color:#bbb"> </span>ContactResource<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">   </span><span style="color:#a2f;font-weight:bold">private</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">static</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">volatile</span><span style="color:#bbb"> </span>Contact<span style="color:#bbb"> </span>contact<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Contact(<span style="color:#b44">&#34;Scott&#34;</span>,<span style="color:#bbb"> </span><span style="color:#b44">&#34;Tiger&#34;</span>,<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Address(<span style="color:#b44">&#34;10 bd Google&#34;</span>,<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">null</span>,<span style="color:#bbb"> </span><span style="color:#b44">&#34;20010&#34;</span>,<span style="color:#bbb"> </span><span style="color:#b44">&#34;Mountain View&#34;</span>,<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">                    </span><span style="color:#b44">&#34;USA&#34;</span>),<span style="color:#bbb"> </span>40);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">remove</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>contact<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">null</span>;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span>Contact<span style="color:#bbb"> </span><span style="color:#00a000">retrieve</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#a2f;font-weight:bold">return</span><span style="color:#bbb"> </span>contact;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">store</span>(Contact<span style="color:#bbb"> </span>contact)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>ContactServerResource.<span style="color:#b44">contact</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>contact;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<p>This resource is then exposed by the server application:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a2f">@Override</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span>Restlet<span style="color:#bbb"> </span><span style="color:#00a000">createInboundRoot</span>()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>Router<span style="color:#bbb"> </span>router<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Router(getContext());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#080;font-style:italic">// Serve the files generated by the GWT compilation step.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>router.<span style="color:#b44">attachDefault</span>(<span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Directory(getContext(),<span style="color:#bbb"> </span><span style="color:#b44">&#34;war:///&#34;</span>));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>router.<span style="color:#b44">attach</span>(<span style="color:#b44">&#34;/contacts/123&#34;</span>,<span style="color:#bbb"> </span>ContactServerResource.<span style="color:#b44">class</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">return</span><span style="color:#bbb"> </span>router;<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h1 id="gwt-client"><a name="gwt-client"></a>GWT client</h1>
+<p>The GWT client relies only on the core Restlet JAR (org.restlet.jar)
+provided in the GWT edition.</p>
+<p>In order to get the Contact object, a proxy class is required. This is
+an interface that inherits on a specific interface (delivered by the GWT
+edition of the Restlet Framework):</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">interface</span> <span style="color:#00f">ContactResourceProxy</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">extends</span><span style="color:#bbb"> </span>ClientProxy<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f">@Get</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">retrieve</span>(Result<span style="color:#666">&amp;</span>lt;Contact<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>callback);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">   </span><span style="color:#a2f">@Put</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">store</span>(Contact<span style="color:#bbb"> </span>contact,<span style="color:#bbb"> </span>Result<span style="color:#666">&amp;</span>lt;Void<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>callback);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f">@Delete</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">remove</span>(Result<span style="color:#666">&amp;</span>lt;Void<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>callback);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<p>This interface looks like the ContactResource interface, expect that it
+adds a callback to each declared methods, due to the asynchronous nature
+of the GWT platform and the underlying AJAX mechanism offered by web
+browsers.</p>
+<p>The type of the callback is not limited to the Result interface of the
+Restlet Framework, it can also be the usual AsyncCallback interface
+provided by GWT. Thus it allows you to easily migrate an existing
+GWT-RPC code base to GWT-REST with Restlet.</p>
+<p>Then, the following code allows you to request and handle the Contact
+resource:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ContactResourceProxy<span style="color:#bbb"> </span>contactResource<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>GWT.<span style="color:#b44">create</span>(ContactResourceProxy.<span style="color:#b44">class</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Set up the contact resource</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>contactResource.<span style="color:#b44">getClientResource</span>().<span style="color:#b44">setReference</span>(<span style="color:#b44">&#34;/contacts/123&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Retrieve the contact</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>contactResource.<span style="color:#b44">retrieve</span>(<span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Result<span style="color:#666">&amp;</span>lt;Contact<span style="color:#666">&amp;</span>gt;()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">onFailure</span>(Throwable<span style="color:#bbb"> </span>caught)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#080;font-style:italic">// Handle the error</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">onSuccess</span>(Contact<span style="color:#bbb"> </span>contact)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#080;font-style:italic">// Handle the contact, for example by updating the GWT interface</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#080;font-style:italic">// Contact fields</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>cTbFirstName.<span style="color:#b44">setText</span>(contact.<span style="color:#b44">getFirstName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>cTbLastName.<span style="color:#b44">setText</span>(contact.<span style="color:#b44">getLastName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>cTbAge.<span style="color:#b44">setText</span>(Integer.<span style="color:#b44">toString</span>(contact.<span style="color:#b44">getAge</span>()));<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>});</span></span></code></pre></div>
+<p>Here is a screenshot of the GWT client page once the user has clicked on
+the GET button.</p>
+<p><img src="../images/serialization-gwt-screenshot.png" alt="serialization gwt screenshot" title="Serialization gwt screenshot"></p>
+<p>In order to update the contact, simply complete your contact object and
+invoke the &ldquo;store&rdquo; method as specified by the proxy interface:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>contactResource.<span style="color:#b44">store</span>(contact,<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Result<span style="color:#666">&amp;</span>lt;Void<span style="color:#666">&amp;</span>gt;()<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">onFailure</span>(Throwable<span style="color:#bbb"> </span>caught)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#080;font-style:italic">// Handle the error</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span><span style="color:#a2f;font-weight:bold">public</span><span style="color:#bbb"> </span><span style="color:#0b0;font-weight:bold">void</span><span style="color:#bbb"> </span><span style="color:#00a000">onSuccess</span>(Void<span style="color:#bbb"> </span>v)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span><span style="color:#080;font-style:italic">// Display a dialog box</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>dialogBox.<span style="color:#b44">setText</span>(<span style="color:#b44">&#34;Update contact&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>textToServerLabel.<span style="color:#b44">setText</span>(<span style="color:#b44">&#34;Contact successfully updated&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>dialogBox.<span style="color:#b44">center</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">        </span>closeButton.<span style="color:#b44">setFocus</span>(<span style="color:#a2f;font-weight:bold">true</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>}<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>});</span></span></code></pre></div>
+<h1 id="android-client"><a name="android-client"></a>Android client</h1>
+<p>The Android client project relies only on the core Restlet JAR
+(org.restlet.jar) provided by the Android edition of the Restlet
+Framework.</p>
+<p>The contact object will be serialized between the GAE server and the
+Android client (in both directions) using the standard Java
+serialization process. No additional interface is required except the
+ContactResource interface furnished by the server.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-style:italic">// Initialize the resource proxy.</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>ClientResource<span style="color:#bbb"> </span>cr<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>ClientResource(<span style="color:#b44">&#34;http://restlet-example-serialization.appspot.com/contacts/123&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Workaround for GAE servers to prevent chunk encoding</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>cr.<span style="color:#b44">setRequestEntityBuffering</span>(<span style="color:#a2f;font-weight:bold">true</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>ContactResource<span style="color:#bbb"> </span>resource<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>cr.<span style="color:#b44">wrap</span>(ContactResource.<span style="color:#b44">class</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Get the remote contact</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Contact<span style="color:#bbb"> </span>contact<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>resource.<span style="color:#b44">retrieve</span>();</span></span></code></pre></div>
+<p>In order to update the contact, simply use this instruction:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#080;font-style:italic">// Update the remote contact</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>resource.<span style="color:#b44">store</span>(contact);</span></span></code></pre></div>
+<p>The internal HTTP client has been rewritten using the java.nio.package.
+This may lead, on some android devices, to encounter this kind of
+exception: <strong>java.net.SocketException: Bad address family</strong>. In this
+case, you can turn off the IPv6 preference as follow:
+System.setProperty(&ldquo;java.net.preferIPv6Addresses&rdquo;, &ldquo;false&rdquo;);</p>
+<p>Here is a screenshot of the Android user interface.</p>
+<p><img src="../images/serialization-android-screenshot.png" alt="serialization android screenshot" title="Serialization android screenshot"></p>
+<h1 id="java-se-client"><a name="java-se-client"></a>Java SE client</h1>
+<h2 id="get-the-full-contact-object">Get the full Contact object</h2>
+<p>The same code used on the Android application allows you to get the full
+Contact object:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ClientResource<span style="color:#bbb"> </span>cr<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>ClientResource(<span style="color:#b44">&#34;http://restlet-example-serialization.appspot.com/contacts/123&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#080;font-style:italic">// Get the Contact object</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>ContactResource<span style="color:#bbb"> </span>resource<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>cr.<span style="color:#b44">wrap</span>(ContactResource.<span style="color:#b44">class</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Contact<span style="color:#bbb"> </span>contact<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>resource.<span style="color:#b44">retrieve</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">if</span><span style="color:#bbb"> </span>(contact<span style="color:#bbb"> </span><span style="color:#666">!=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">null</span>)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="color:#b44">&#34;firstname: &#34;</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>contact.<span style="color:#b44">getFirstName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="color:#b44">&#34; lastname: &#34;</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>contact.<span style="color:#b44">getLastName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="color:#b44">&#34;     nage: &#34;</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>contact.<span style="color:#b44">getAge</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<p>This code produces the following ouput on the console:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    firstname: Scott
+</span></span><span style="display:flex;"><span>     lastname: Tiger
+</span></span><span style="display:flex;"><span>          age: <span style="color:#666">40</span></span></span></code></pre></div>
+<h2 id="get-a-json-representation">Get a JSON representation</h2>
+<p>In case the Contact class is not available, you can still retrieve a
+JSON representation by setting the client preferences when retrieving
+the resource&rsquo;s representation:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>cr.<span style="color:#b44">get</span>(MediaType.<span style="color:#b44">APPLICATION_JSON</span>).<span style="color:#b44">write</span>(System.<span style="color:#b44">out</span>);</span></span></code></pre></div>
+<p>which produces the following output:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{<span style="color:#008000;font-weight:bold">&#34;age&#34;</span>:<span style="color:#666">40</span>,<span style="color:#008000;font-weight:bold">&#34;firstName&#34;</span>:<span style="color:#b44">&#34;Scott&#34;</span>,<span style="color:#008000;font-weight:bold">&#34;homeAddress&#34;</span>:{<span style="color:#008000;font-weight:bold">&#34;country&#34;</span>:<span style="color:#b44">&#34;USA&#34;</span>,<span style="color:#008000;font-weight:bold">&#34;city&#34;</span>:<span style="color:#b44">&#34;Mountain View&#34;</span>,<span style="color:#008000;font-weight:bold">&#34;line1&#34;</span>:<span style="color:#b44">&#34;10 bd Google&#34;</span>,<span style="color:#008000;font-weight:bold">&#34;line2&#34;</span>:<span style="color:#a2f;font-weight:bold">null</span>,<span style="color:#008000;font-weight:bold">&#34;zipCode&#34;</span>:<span style="color:#b44">&#34;20010&#34;</span>},
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&#34;lastName&#34;</span>:<span style="color:#b44">&#34;Tiger&#34;</span>}</span></span></code></pre></div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>

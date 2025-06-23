@@ -1,9 +1,9 @@
 ---
 title: Editions
-parent: In version 2.0
-section: guide-introduction
-version: '2.4'
-weight: 4
+menus:
+  inner:
+    parent: 2.0
+    weight: 4
 ---
 # Introduction
 

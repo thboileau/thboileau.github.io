@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+<title>Restlet framework | Tutorial</title>
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/app.min.css">
+    
+  
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/vendor/magnific-popup.css">
+
+<link rel="stylesheet" href="/css/custom.css" />
+<link rel="stylesheet" href="/css/app.min.css">
+<link rel="stylesheet" href="/css/vendor/prism.css" />
+<link rel="stylesheet" href="/css/vendor/component.css" />
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body class="static-nav documentation">
+
+  <nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class=""><a class="navigation__link" href="/features">Features</a></li>
+        <li class="">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="">
+            <a class="navigation__link" href="/documentation/tutorials/2.5/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+<div class="sidebar-wrapper hidden-xs hidden-sm">
+  <aside class="section-bg-mako text-white">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+      <ul id="accordion" class="nav documentation-nav">
+        <li>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <ul id="submenu-1" class="nav panel-switch" role="menu">
+            <li>
+              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
+              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+                <li><a href="/documentation/user-guide/2.3/introduction/overview" >Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/2.3/core/overview" >Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/2.3/editions/overview" >Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/2.3/extensions/overview" class="active" >Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/2.3/appendices/glossary">Appendices</a></li>
+              </ul>
+            </li>
+            <li><a href="/documentation/tutorials/2.3/overview" >Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.3/" >Javadocs</a></li>
+            <li><a target="_blank" href="/documentation/2.3/changelog">Change Log</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+<div class="content-wrapper section-bg-white">
+  <div class="row hidden-xs hidden-sm">
+  <div class="col-md-12">
+    <div class="h-cta h-cta--large section-bg-grey">
+      <img class="large" src="/images/restlet-framework-dark.svg" alt="Restlet Framework">
+      <a href="/downloads/current" class="m-button m-button-flat-green pull-right">Install Framework</a>
+    </div>
+  </div>
+</div>
+
+  <div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+            <li>mobile-nav</li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-3">
+      
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/overview/">Overview</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/features/">Features</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/">What&#39;s new</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.4/">In version 2.4</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.3/">In version 2.3</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.2/">In version 2.2</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.1/">In version 2.1</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/">2</a>
+        <ul>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/api/">API improvements</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/engine/">Engine</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/extensions/">Extensions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/editions/">Editions</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/misc/">Misc</a>
+    </li>
+    <li>
+      <a href="/documentation/user-guide/2.4/introduction/whats-new/2.0/migration/">Migration</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+  </ul>
+</nav>
+
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-md-9">
+      <div class="documentation-content">
+        
+
+        <h1>Tutorial</h1>
+        <h1 id="target-audience">Target audience</h1>
+<p>Java developers that want to access OData services in Java</p>
+<h1 id="author">Author</h1>
+<p>Thierry Boileau, co-founder of <a href="http://restlet.com/">Restlet</a>
+and core committer on the <a href="http://restlet.org/">Restlet open source
+project</a>.</p>
+<h1 id="topics-covered">Topics covered</h1>
+<ul>
+<li>Accessing an OData service in Java with Restlet</li>
+<li>Handling associations between entities (if any)</li>
+<li>Handling queries</li>
+<li>Accessing secured services</li>
+</ul>
+<h1 id="table-of-contents">Table of contents</h1>
+<ul>
+<li>Introduction: getting started</li>
+<li><a href="#code-generation" title="Code generation">Code generation</a></li>
+<li>Get the current set of Cafes and Items Get a single entity</li>
+<li>Add a new entity</li>
+<li>Update an entity</li>
+<li>Delete an entity</li>
+<li>Get a single Entity and its associated entities</li>
+<li>Other kinds of queries</li>
+<li>Support of projections</li>
+<li>Server-side paging</li>
+<li>Get the row count</li>
+<li>Support of customizable feeds</li>
+<li>Handling blobs (aka media link entries)</li>
+<li>Access secured services</li>
+<li>Support of capability negotiation based on protocol versions</li>
+</ul>
+<h1 id="resources">Resources</h1>
+<ul>
+<li><a href="https://javadocs.restlet.talend.com/2.3/jse/ext/org/restlet/ext/odata/package-summary.html">Javadocs of the Restlet extension for OData
+Services</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/cc907912.aspx">MSDN documentation on WCF Data
+Services</a></li>
+</ul>
+<h1 id="introduction">Introduction</h1>
+<p>REST can play a key role in order to facilitate the interoperability
+between Java and Microsoft environments. To demonstrate this, the
+Restlet team Restlet team worked with Microsoft in order to provide a
+new Restlet extension that will provide several high level features for
+accessing WCF Data Services.</p>
+<h2 id="figure-1---the-wcf-data-services-framework-architecture">Figure 1 - The WCF Data Services Framework Architecture</h2>
+<p>Initially known as “Astoria” then ADO.NET Data Services, the WCF Data
+Services technology has become the preferred way to RESTfully expose
+data sources (relational databases, in-memory data, XML files, etc.) in
+the .NET framework.</p>
+<p>The “org.restlet.ext.odata” extension for the Restlet Framework provides
+a client API to access remote WCF Data Services or other services
+supporting the OData protocol. It allows access to the exposed entities,
+to their properties and their associations (when an entity is linked to
+other entities). We will illustrate this with a sample WCF Data Service
+with the following root URI:
+<a href="http://restlet.cloudapp.net/TestAssociationOneToOne.svc/">http://restlet.cloudapp.net/TestAssociationOneToOne.svc/</a></p>
+<p>Note that the Azure service mentionned above isn&rsquo;t available anymore as
+the account has expired. Sorry for the inconvenience.</p>
+<p>This service defines two kinds of entities:</p>
+<ul>
+<li>“Cafe”, and</li>
+<li>“Item”.</li>
+</ul>
+<p>A “Cafe” defines several properties such as “ID”, “Name”, “City”, and an
+Item is simply defined by an “ID” and a “Description”. Cafe and Item are
+linked, for intentional simplification, in a “one to one” association.
+That is to say, a “Cafe” has one attribute called “Item”.</p>
+<h2 id="figure-2---class-diagram-of-the-testassociationonetoone-service">Figure 2 - Class diagram of the TestAssociationOneToOne service</h2>
+<h1 id="code-generation">Code generation</h1>
+<p>From the client perspective, if you want to handle the declared
+entities, you will have to create a class for each entity, defines their
+attributes, and pray that you have correctly spelled them and defined
+their type. Thanks to the Restlet extension, a generation tool will make
+your life easier. It will take care of this task for you, and generate
+the whole set of Java classes with correct types.</p>
+<h2 id="figure-3---overview-of-code-generation">Figure 3 - Overview of code generation</h2>
+<p>Just note the URI of the target service, and specify the directory where
+you would like to generate the code:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -jar org.restlet.ext.odata.jar http://restlet.cloudapp.net/TestAssociationOneToOne.svc/ ~/workspace/testADO</span></span></code></pre></div>
+<p>Please note that this feature requires the use of the core Restlet, and
+additional dependencies such as Atom (used by OData services for all
+exchanges of data), XML (required by the Atom extension) and FreeMarker
+(used for the files generation). The following jars (take care of the
+names) must be present on the current directory:</p>
+<ul>
+<li>org.restlet.jar (core Restlet)</li>
+<li>org.restlet.ext.odata.jar (OData extension)</li>
+<li>org.restlet.ext.atom.jar (Atom extension)</li>
+<li>org.restlet.ext.xml.jar (XML extension)</li>
+<li>org.restlet.ext.freemarker.jar (Freemarker extension)</li>
+<li>org.freemarker.jar (Freemarker dependency)</li>
+</ul>
+<p>You can also used the full command line that includes the list of
+required archives for the class path argument (nb: take care of the OS
+specific classpath separator) and the name of the main class:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -cp org.restlet.jar:org.restlet.ext.xml.jar:org.restlet.ext.atom.jar:org.restlet.ext.freemarker.jar:org.restlet.ext.odata.jar:org.freemarker.jar org.restlet.ext.odata.Generator
+</span></span><span style="display:flex;"><span>     http://restlet.cloudapp.net/TestAssociationOneToOne.svc/
+</span></span><span style="display:flex;"><span>     ~/workspace/testADO</span></span></code></pre></div>
+<p>This will generate the following java classes and directory:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>testAssociationOneToOne/
+</span></span><span style="display:flex;"><span>  +-- Cafe.java
+</span></span><span style="display:flex;"><span>  +-- Item.java
+</span></span><span style="display:flex;"><span>TestAssociationOneToOneQuery.java</span></span></code></pre></div>
+<p>The classes that correspond to entities are generated in their
+corresponding package (in our case: “testAssociationOneToOne”), as
+defined by the meta data of the target Data Service. The last class
+(“TestAssociationOneToOneService”) is what we call a service object.
+Such object is able to handle the communication with the data service,
+and is able to store the state of the latest executed request and the
+corresponding response. The communication between the client and the
+server is still stateless.</p>
+<p>Before using the generated classes, let’s explain how the Java code is
+generated from the metadata of the target OData service. Actually, the
+Generator class extracts a few elements of the metadata such as the
+schema and the entities as follow.</p>
+<table>
+  <thead>
+      <tr>
+          <th>WCF concept</th>
+          <th>Java concept</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Entity</td>
+          <td>Class</td>
+      </tr>
+      <tr>
+          <td>Entity name</td>
+          <td>Class name</td>
+      </tr>
+      <tr>
+          <td>Enclosing schema namespace</td>
+          <td>Package name</td>
+      </tr>
+      <tr>
+          <td>Entity property</td>
+          <td>Member variable with getter and setter</td>
+      </tr>
+      <tr>
+          <td>EDM data type</td>
+          <td>Java primitive types and classes</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="transformation-table-from-wcf-concepts-to-java-equivalent-concepts">Transformation table from WCF concepts to Java equivalent concepts</h2>
+<p>Regarding the conversion of the data type, an equivalence table has been
+established as follow:</p>
+<table>
+  <thead>
+      <tr>
+          <th>EDM data type</th>
+          <th>Java data type</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Binary</td>
+          <td>byte[]</td>
+      </tr>
+      <tr>
+          <td>Boolean</td>
+          <td>boolean</td>
+      </tr>
+      <tr>
+          <td>DateTime</td>
+          <td>java.util.Date</td>
+      </tr>
+      <tr>
+          <td>Decimal</td>
+          <td>long</td>
+      </tr>
+      <tr>
+          <td>Single</td>
+          <td>float</td>
+      </tr>
+      <tr>
+          <td>Double</td>
+          <td>double</td>
+      </tr>
+      <tr>
+          <td>Guid</td>
+          <td>java.lang.String</td>
+      </tr>
+      <tr>
+          <td>Int16</td>
+          <td>short</td>
+      </tr>
+      <tr>
+          <td>Int32</td>
+          <td>int</td>
+      </tr>
+      <tr>
+          <td>Int64</td>
+          <td>long</td>
+      </tr>
+      <tr>
+          <td>Byte</td>
+          <td>byte</td>
+      </tr>
+      <tr>
+          <td>String</td>
+          <td>java.lang.String</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="data-type-conversion-table">Data type conversion table</h2>
+<p>We have finished for now of the theoretical aspects; let&rsquo;s see how to
+use the generated classes.</p>
+<h1 id="get-the-current-set-of-cafes-and-items">Get the current set of Cafes and Items</h1>
+<p>The code below gets the whole set of Cafe entities and displays some of
+their properties. It will display this kind of output on the console:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id: <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>name: Le Café Louis
+</span></span><span style="display:flex;"><span>id: <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>name: Le Petit Marly</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TestAssociationOneToOneService<span style="color:#bbb"> </span>service<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>TestAssociationOneToOneService();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>query)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>name:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h2 id="retrieve-the-set-of-cafe-entities">Retrieve the set of “Cafe” entities.</h2>
+<p>The first step is the creation of a new service. This is the only
+required action, and it must be done once, but prior to any other one.
+Then, as, we want to get a set of “Cafe”, we just create a new query and
+specify the desired data. Under the hood, it actually makes a GET
+request to the “/Cafes” resource (relatively to the service&rsquo;s URI), and
+receive as a result a AtomXML feed document. This document is parsed by
+the query which provides the result as an Iterator. Finally, we can loop
+over the iterator and access to each “Cafe” instance.</p>
+<p>Here is the content of the HTTP request:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GET /TestAssociationOneToOne.svc/Cafes HTTP/1.1
+</span></span><span style="display:flex;"><span>Host: restlet.cloudapp.net
+</span></span><span style="display:flex;"><span>User-Agent: Noelios-Restlet/2.0snapshot
+</span></span><span style="display:flex;"><span>Accept: */*
+</span></span><span style="display:flex;"><span>Connection: close</span></span></code></pre></div>
+<p>And here is the response of the server including both response headers
+and entity:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>HTTP/1.1 <span style="color:#666">200</span> OK
+</span></span><span style="display:flex;"><span>Cache-Control: no-cache
+</span></span><span style="display:flex;"><span>Content-Type: application/atom+xml;<span style="color:#b8860b">charset</span><span style="color:#666">=</span>utf-8
+</span></span><span style="display:flex;"><span>Server: Microsoft-IIS/7.0
+</span></span><span style="display:flex;"><span>DataServiceVersion: 1.0;
+</span></span><span style="display:flex;"><span>X-AspNet-Version: 2.0.50727
+</span></span><span style="display:flex;"><span>X-Powered-By: ASP.NET
+</span></span><span style="display:flex;"><span>Date: Fri, <span style="color:#666">24</span> Jul <span style="color:#666">2009</span> 14:21:20 GMT
+</span></span><span style="display:flex;"><span>Connection: close
+</span></span><span style="display:flex;"><span>Content-Length: <span style="color:#666">2221</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#080">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; standalone=&#34;yes&#34;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;feed</span> <span style="color:#b44">xml:base=</span><span style="color:#b44">&#34;http://restlet.cloudapp.net/TestAssociationOneToOne.svc/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b44">xmlns:d=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#b44">xmlns:m=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices/metadata&#34;</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://www.w3.org/2005/Atom&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&lt;title</span> <span style="color:#b44">type=</span><span style="color:#b44">&#34;text&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>Cafes<span style="color:#008000;font-weight:bold">&lt;/title&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&lt;id&gt;</span>http://restlet.cloudapp.net/TestAssociationOneToOne.svc/Cafes<span style="color:#008000;font-weight:bold">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&lt;updated&gt;</span>2009-07-24T14:21:20Z<span style="color:#008000;font-weight:bold">&lt;/updated&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&lt;link</span> <span style="color:#b44">rel=</span><span style="color:#b44">&#34;self&#34;</span> <span style="color:#b44">title=</span><span style="color:#b44">&#34;Cafes&#34;</span> <span style="color:#b44">href=</span><span style="color:#b44">&#34;Cafes&#34;</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&lt;entry&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;id&gt;</span>http://restlet.cloudapp.net/TestAssociationOneToOne.svc/Cafes(&#39;1&#39;)<span style="color:#008000;font-weight:bold">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;title</span> <span style="color:#b44">type=</span><span style="color:#b44">&#34;text&#34;</span><span style="color:#008000;font-weight:bold">&gt;&lt;/title&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;updated&gt;</span>2009-07-24T14:21:20Z<span style="color:#008000;font-weight:bold">&lt;/updated&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;author&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&lt;name</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;/author&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;link</span> <span style="color:#b44">rel=</span><span style="color:#b44">&#34;edit&#34;</span> <span style="color:#b44">title=</span><span style="color:#b44">&#34;Cafe&#34;</span> <span style="color:#b44">href=</span><span style="color:#b44">&#34;Cafes(&#39;1&#39;)&#34;</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;link</span> <span style="color:#b44">rel=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices/related/Item&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#b44">type=</span><span style="color:#b44">&#34;application/atom+xml;type=entry&#34;</span> <span style="color:#b44">title=</span><span style="color:#b44">&#34;Item&#34;</span> <span style="color:#b44">href=</span><span style="color:#b44">&#34;Cafes(&#39;1&#39;)/Item&#34;</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;category</span> <span style="color:#b44">term=</span><span style="color:#b44">&#34;TestAssociationOneToOne.Cafe&#34;</span> <span style="color:#b44">scheme=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices/scheme&#34;</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;content</span> <span style="color:#b44">type=</span><span style="color:#b44">&#34;application/xml&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&lt;m:properties&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;d:ID&gt;</span>1<span style="color:#008000;font-weight:bold">&lt;/d:ID&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;d:Name&gt;</span>Le Café Louis<span style="color:#008000;font-weight:bold">&lt;/d:Name&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;d:ZipCode</span> <span style="color:#b44">m:type=</span><span style="color:#b44">&#34;Edm.Int32&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>92300<span style="color:#008000;font-weight:bold">&lt;/d:ZipCode&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;d:City&gt;</span>Levallois-Peret<span style="color:#008000;font-weight:bold">&lt;/d:City&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&lt;/m:properties&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;/content&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&lt;/entry&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&lt;entry&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;id&gt;</span>http://restlet.cloudapp.net/TestAssociationOneToOne.svc/Cafes(&#39;2&#39;)<span style="color:#008000;font-weight:bold">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;title</span> <span style="color:#b44">type=</span><span style="color:#b44">&#34;text&#34;</span><span style="color:#008000;font-weight:bold">&gt;&lt;/title&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;updated&gt;</span>2009-07-24T14:21:20Z<span style="color:#008000;font-weight:bold">&lt;/updated&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;author&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&lt;name</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;/author&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;link</span> <span style="color:#b44">rel=</span><span style="color:#b44">&#34;edit&#34;</span> <span style="color:#b44">title=</span><span style="color:#b44">&#34;Cafe&#34;</span> <span style="color:#b44">href=</span><span style="color:#b44">&#34;Cafes(&#39;2&#39;)&#34;</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;link</span> <span style="color:#b44">rel=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices/related/Item&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#b44">type=</span><span style="color:#b44">&#34;application/atom+xml;type=entry&#34;</span> <span style="color:#b44">title=</span><span style="color:#b44">&#34;Item&#34;</span> <span style="color:#b44">href=</span><span style="color:#b44">&#34;Cafes(&#39;2&#39;)/Item&#34;</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;category</span> <span style="color:#b44">term=</span><span style="color:#b44">&#34;TestAssociationOneToOne.Cafe&#34;</span> <span style="color:#b44">scheme=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices/scheme&#34;</span> <span style="color:#008000;font-weight:bold">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;content</span> <span style="color:#b44">type=</span><span style="color:#b44">&#34;application/xml&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&lt;m:properties&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;d:ID&gt;</span>2<span style="color:#008000;font-weight:bold">&lt;/d:ID&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;d:Name&gt;</span>Le Petit Marly<span style="color:#008000;font-weight:bold">&lt;/d:Name&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;d:ZipCode</span> <span style="color:#b44">m:type=</span><span style="color:#b44">&#34;Edm.Int32&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>78310<span style="color:#008000;font-weight:bold">&lt;/d:ZipCode&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#008000;font-weight:bold">&lt;d:City&gt;</span>Marly Le Roi<span style="color:#008000;font-weight:bold">&lt;/d:City&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#008000;font-weight:bold">&lt;/m:properties&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#008000;font-weight:bold">&lt;/content&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#008000;font-weight:bold">&lt;/entry&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;/feed&gt;</span></span></span></code></pre></div>
+<p>Getting the set of defined “Item” is quite similar:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Item<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>queryItem<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createItemQuery</span>(<span style="color:#b44">&#34;/Items&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Item<span style="color:#bbb"> </span>Item<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>queryItem)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Item.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>desc.:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Item.<span style="color:#b44">getDescription</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h2 id="retrieve-the-set-of-item-entities">Retrieve the set of “Item” entities.</h2>
+<p>Please note that for the rest of the document, we assume the “service”
+object has already been instantiated.</p>
+<h1 id="get-a-single-entity">Get a single Entity</h1>
+<p>Imagine we want to retrieve the first “Cafe” of the list, that is to
+say, the one which identifier is equal to “1”. As for the set of
+entities, you just have to create a new query, with a new parameter. The
+code below should produce this output:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id: <span style="color:#666">1</span>  
+</span></span><span style="display:flex;"><span>name: Le Café Louis</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes(&#39;1&#39;)&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>query.<span style="color:#b44">iterator</span>().<span style="color:#b44">next</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>name:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getName</span>());</span></span></code></pre></div>
+<h2 id="retrieve-the-cafe-by-its-identifier">Retrieve the “Cafe” by its identifier.</h2>
+<p>As for a set of entities, you have to create a new query, and precise
+the identifier of the target resource. WCF adopts its own naming
+convention. You surely notice that the identifier is enclosed between
+“(“ and “)” characters. <br>
+Now, you can ask the query to return the entity with a call to the
+“next” method, and if the entity exists, you can print its properties.
+An additional call to “next” will provide a “null” result.</p>
+<h1 id="add-a-new-entity">Add a new Entity</h1>
+<p>Let&rsquo;s complete the current list of entities and add a new one. This
+process is quite simple and just requires you to firstly create and
+complete the new entity, then invoke the “addEntity” method as follow.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">new</span><span style="color:#bbb"> </span>Cafe();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe.<span style="color:#b44">setID</span>(<span style="color:#b44">&#34;3&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe.<span style="color:#b44">setZipCode</span>(12345);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe.<span style="color:#b44">setName</span>(<span style="color:#b44">&#34;Bar des sports&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe.<span style="color:#b44">setCity</span>(<span style="color:#b44">&#34;Paris&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>service.<span style="color:#b44">addEntity</span>(Cafe);</span></span></code></pre></div>
+<h2 id="add-a-new-cafe">Add a new Cafe</h2>
+<p>The generated subclass of Service contains a dedicated method for each
+declared entities. In our case, there are two of them, one for the Cafe
+class, and the other for the Item class. Such method actually sends a
+POST request to the corresponding entity set resource. For example,
+adding a new Café sends a POST request to the “/Cafes” resource. Here is
+the sample content of such generated request:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>POST /TestAssociationOneToOne.svc/Cafes HTTP/1.1
+</span></span><span style="display:flex;"><span>Host: restlet.cloudapp.net
+</span></span><span style="display:flex;"><span>User-Agent: Noelios-Restlet/2.0snapshot
+</span></span><span style="display:flex;"><span>Accept: */*
+</span></span><span style="display:flex;"><span>Content-Type: application/atom+xml
+</span></span><span style="display:flex;"><span>Transfer-Encoding: chunked
+</span></span><span style="display:flex;"><span>Connection: close
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#666">281</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#080">&lt;?xml version=&#34;1.0&#34; standalone=&#39;yes&#39;?&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;entry</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://www.w3.org/2005/Atom&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#008000;font-weight:bold">&lt;content</span> <span style="color:#b44">type=</span><span style="color:#b44">&#34;application/xml&#34;</span><span style="color:#008000;font-weight:bold">&gt;&lt;properties</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices/metadata&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;ZipCode</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>12345<span style="color:#008000;font-weight:bold">&lt;/ZipCode&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;ID</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>3<span style="color:#008000;font-weight:bold">&lt;/ID&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;Name</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>Bar des sports<span style="color:#008000;font-weight:bold">&lt;/Name&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;City</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices&#34;</span><span style="color:#008000;font-weight:bold">&gt;</span>Paris<span style="color:#008000;font-weight:bold">&lt;/City&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;Article</span> <span style="color:#b44">xmlns=</span><span style="color:#b44">&#34;http://schemas.microsoft.com/ado/2007/08/dataservices&#34;</span><span style="color:#008000;font-weight:bold">/&gt;&lt;/properties&gt;&lt;/content&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#008000;font-weight:bold">&lt;/entry&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>0</span></span></code></pre></div>
+<p>Before using this feature, ensure that you provide a correctly
+identified object, especially, don’t try to add an entity with a null
+value. It appears that the remote service does not prevent such cases
+which could lead to irremediably mess the content of the entity set.</p>
+<h1 id="update-an-entity">Update an Entity</h1>
+<p>Once you have retrieved an entity, imagine that you want to update one
+of its properties. The sample code below illustrates this with the “Nom”
+property. It simply uses the “updateEntity” method. You can check that
+the value has really been taken into account by making a new query.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes(&#39;1&#39;)&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>query.<span style="color:#b44">iterator</span>().<span style="color:#b44">next</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe.<span style="color:#b44">setNom</span>(<span style="color:#b44">&#34;Bar des sports&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>service.<span style="color:#b44">updateEntity</span>(Cafe);</span></span></code></pre></div>
+<h2 id="update-a-cafe">Update a Cafe</h2>
+<p>Under the hood, a PUT request is sent to the corresponding Web resource.</p>
+<h1 id="delete-an-entity">Delete an Entity</h1>
+<p>Let&rsquo;s finish the tour of the basic operations with the deletion of an
+entity. You just need to wall the deleteEntity method as shown just
+below.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes(&#39;1&#39;)&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>query.<span style="color:#b44">iterator</span>().<span style="color:#b44">next</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>service.<span style="color:#b44">deleteEntity</span>(Cafe);</span></span></code></pre></div>
+<h2 id="delete-a-cafe">Delete a Cafe.</h2>
+<p>Basically, this operation requires a valid Java Object instance
+correctly identified: that is to say, the attribute that serves as
+identifier must be correctly valuated.</p>
+<h1 id="get-a-single-entity-and-its-associated-entities">Get a single Entity and its associated entities</h1>
+<p>Until now, we looked at entities and their basic properties. However, we
+pointed out at the beginning of this Item that a “Cafe” also aggregates
+“Item” entities. You may have noticed, during your own tests, that the
+Item property was always null. By default, associations are not
+expanded, but they can be. If you run the following code, you will get
+this kind of trace at the console.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Cafe
+</span></span><span style="display:flex;"><span>id: <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>name: Le Café Louis
+</span></span><span style="display:flex;"><span>Item
+</span></span><span style="display:flex;"><span>id: <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>Description: Poulet au curry</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes(&#39;1&#39;)&#34;</span>).<span style="color:#b44">expand</span>(<span style="color:#b44">&#34;Item&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>query.<span style="color:#b44">next</span>();<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="color:#b44">&#34;Cafe&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>name:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="color:#b44">&#34;Item&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getItem</span>().<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>Description:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getItem</span>().<span style="color:#b44">getDescription</span>());</span></span></code></pre></div>
+<h2 id="retrieve-a-cafe-by-its-identifier-with-the-associated-item-in-one-request">Retrieve a “Cafe” by its identifier, with the associated Item in one request.</h2>
+<p>Instead of just creating a query as seen above, you can complete it by
+calling the “expand” method. It takes one parameter which is the name of
+the entity attribute you want to expand. Please note that you can also
+invoke this when requesting the “/Cafes” entity set.</p>
+<h1 id="other-kinds-of-queries">Other kinds of queries</h1>
+<p>The expansion of query is one of the features provided by the OData
+protocol. Other ones are available that aim at ordering, filtering, and
+limiting the set of the results returned by a query. This section is an
+exhaustive list of those available features.</p>
+<h2 id="order">Order</h2>
+<p>Let&rsquo;s say you want to order a list of ItemItems by their “description”
+attribute. For example, once applied to the set of all Items provided by
+our sample OData service, the following code should display at the
+console this king of trace:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id: <span style="color:#666">2</span>
+</span></span><span style="display:flex;"><span>description: Pâté
+</span></span><span style="display:flex;"><span>id: <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>description: Poulet au curry</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Item<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createItemQuery</span>(<span style="color:#b44">&#34;/Items&#34;</span>).<span style="color:#b44">orderby</span>(<span style="color:#b44">&#34;Description&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Item<span style="color:#bbb"> </span>Item<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>query)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">     </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Item.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">     </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>description:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Item.<span style="color:#b44">getDescription</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"> </span>}</span></span></code></pre></div>
+<h3 id="order-a-set-of-entities">Order a set of entities</h3>
+<p>Just as the “expand” method, it takes one parameter which is the name of
+the property used to order the set of results.</p>
+<h2 id="filter">Filter</h2>
+<p>Do you want to filter the set of results? Using the “filter” method, you
+will be able to specify one or more criteria that the entities returned
+by the query must share. You will express these constraints using LINQ
+(Language-Integrated Query). LINQ has been originally designed to bridge
+the gap between the world of data and the world of objects (in the
+context of C# and Visual Basic programs). In the context of OData
+services, it helps filtering a set of data. Its syntax is very close to
+SQL&rsquo;s one.</p>
+<p>Let&rsquo;s illustrate its use by limiting the set of Cafe objects to the one
+(there should be only one) having its ID equals to “1”. Applied to the
+list of current Cafes, the following code will produce this display on
+the console:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id: <span style="color:#666">1</span>  
+</span></span><span style="display:flex;"><span>nom: Le Café Louis</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes&#34;</span>).<span style="color:#b44">filter</span>(<span style="color:#b44">&#34;Name eq &#39;Le Café Louis&#39;&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>query)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>nom:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getNom</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h3 id="filter-a-set-of-entities">Filter a set of entities</h3>
+<h2 id="skip">Skip</h2>
+<p>The “skip” method takes one parameter which is a number, and simply
+allows you to omit the first elements of the set theoretically returned
+by the query.</p>
+<p>Let&rsquo;s say you want to omit the first “Cafe” of the list, just call the
+“skip” method as shown in the sample code below. It should display this
+kind of trace at the console.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id: <span style="color:#666">2</span>  
+</span></span><span style="display:flex;"><span>name: Le Petit Marly</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes&#34;</span>).<span style="color:#b44">skip</span>(1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>query)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>name:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h3 id="skip-the-first-entity">Skip the first entity</h3>
+<h2 id="top">Top</h2>
+<p>Just as the “skip” method, “top” takes a number parameter which
+represents the maximum number of results that the query will return. Its
+use is very simple as shown below:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id: <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>name: Le Café Louis</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes&#34;</span>).<span style="color:#b44">top</span>(1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>query)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>name:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h3 id="limit-the-number-of-returned-entities">Limit the number of returned entities.</h3>
+<p>The “skip” and “top” can be used together for paging a set of results.</p>
+<h1 id="support-of-projections">Support of projections</h1>
+<p>Projections allow you to retrieve a subset of the properties of queried
+entities. It is a way to reduce the amount of data transfered from the
+server. <br>
+You can restrict your query to set of properties, either simple or
+complex or even navigation properties (links to other entities). The
+OData protocol specifies the usage of the <strong>$select</strong> query parameter
+<a href="http://msdn.microsoft.com/en-us/library/ee525214%28PROT.10%29.aspx">here</a>.
+<br>
+The result of such projection is a list of entities as usual, except
+that these entities are only populated with the selected properties.<br>
+For example, the following code will only get the name of the Cafe
+entities:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id: null
+</span></span><span style="display:flex;"><span>name: Le Café Louis</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes&#34;</span>).<span style="color:#b44">top</span>(1).<span style="color:#b44">select</span>(<span style="color:#b44">&#34;Name&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>query)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>name:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h2 id="limit-the-number-of-returned-properties">Limit the number of returned properties</h2>
+<p>This applies also to associated entities, as far as the association is
+expanded:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>id: null
+</span></span><span style="display:flex;"><span>name: Le Café Louis
+</span></span><span style="display:flex;"><span>Item
+</span></span><span style="display:flex;"><span>id: null
+</span></span><span style="display:flex;"><span>Description: Poulet au curry</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes&#34;</span>).<span style="color:#b44">top</span>(1).<span style="color:#b44">expand</span>(<span style="color:#b44">&#34;Item&#34;</span>).<span style="color:#b44">select</span>(<span style="color:#b44">&#34;Name,Item.Description&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>query)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>name:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="color:#b44">&#34;Item&#34;</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getItem</span>().<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>Description:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getItem</span>().<span style="color:#b44">getDescription</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h2 id="limit-the-number-of-returned-properties-1">Limit the number of returned properties</h2>
+<h1 id="server-side-paging">Server-side paging</h1>
+<p>This mechanism also the server to limit the amount of data to transfer
+in the response to a query made on an entity set. This is very
+interesting if the set can contain a large set of entities.
+Unfortunately, this feature has no impact on the way you use the Query
+object of the OData extension. This is made transparent for the user.</p>
+<h1 id="get-the-row-count">Get the row count</h1>
+<p>By invoking the <strong>getCount</strong> method on the Query object, you can
+retrieve the number of entities contained by the target entity set.
+having said that, you must be aware that there are two ways to get the
+number of entities of an entity set (once filtering, if any, have been
+applied). If the service supports the
+<a href="http://msdn.microsoft.com/en-us/library/dd942040%28PROT.10%29.aspx">inlinecount</a>
+feature, this count is obtained from the Feed document itself. This
+allows to retrieve both count data and entries in the same request.
+Another way is to send a dedicated request using the <a href="http://msdn.microsoft.com/en-us/library/cc716656%28VS.100%29.aspx">$count
+segment</a>.
+You can control this behaviour by invoking the <strong>inlineCount</strong> method on
+the Query object. It accepts as a parameter a boolean value indicating
+that you want to retrieve the count number using the <em>inlinecount</em> query
+parameter (set the parameter to &ldquo;true&rdquo;) or directly using the <em>$count</em>
+segment (set the parameter to &ldquo;false&rdquo;, this is the value by default).
+The following sample code illustrates how to get the count using the
+<em>inlinecount</em> query parameter.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes&#34;</span>).<span style="color:#b44">inlineCount</span>(<span style="color:#a2f;font-weight:bold">true</span>);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="color:#b44">&#34;Number of entities: &#34;</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>query.<span style="color:#b44">getCount</span>());</span></span></code></pre></div>
+<h2 id="get-the-number-of-cafes">Get the number of Cafes</h2>
+<p>Please note that the <em>inlinecount</em> query parameter is not supported by
+every service.</p>
+<h1 id="support-of-customizable-feeds">Support of customizable feeds</h1>
+<p><a href="http://msdn.microsoft.com/en-us/library/ee373839%28VS.100%29.aspx">Customizable
+feeds</a>
+is a server-side feature that address specific use-case that requires
+that the Atom data feeds produced by the data service will use both
+standard Atom elements or custom feed elements. This of course has an
+impact on the way the Atom document must be parsed, but this has no
+impact on the way you use the OData extension.</p>
+<h1 id="handling-blobs-aka-media-link-entries">Handling blobs (aka media link entries)</h1>
+<p><a href="http://msdn.microsoft.com/en-us/library/ee473426.aspx">Media link
+entries</a>
+are specific entities that allow to handle binary content such as
+images, documents, etc. Each entity can be seen as collection of
+metadata about the binary content, plus the binary content itself. Since
+the metadata are stored as basic attribute members of the entity class
+(as usual), there must be a specific way to handle the binary content.
+At that point the Service class introduces a set of new methods to
+handle the &ldquo;value&rdquo; of a blob entity:</p>
+<ul>
+<li>getValueRef(Object) that returns the URI of the target binary
+content</li>
+<li>getValue(Object) and getValue(Object, *) methods that allow you to
+retrieve as a Representation the binary content of a given entity.</li>
+</ul>
+<h1 id="access-to-secured-services">Access to secured services</h1>
+<p>WCF Data Services can choose their security option. In order to access
+those kinds of services, you must have been given the following
+information:</p>
+<ul>
+<li>login and password</li>
+<li>security scheme such as HTTP BASIC, Windows Shared Key and Shared
+Key Lite, etc.</li>
+</ul>
+<p>These data must be supplied to the service instance which takes care of
+all communications with the target service. This is generally done once,
+after the instantiation of the service. Here is an illustration of how
+to set the credentials:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>service.setCredentials<span style="color:#666">(</span>
+</span></span><span style="display:flex;"><span>    new ChallengeResponse<span style="color:#666">(</span>ChallengeScheme.HTTP_BASIC,
+</span></span><span style="display:flex;"><span>                    <span style="color:#b44">&#34;login&#34;</span>,
+</span></span><span style="display:flex;"><span>                    <span style="color:#b44">&#34;password&#34;</span><span style="color:#666">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#666">)</span>;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Query<span style="color:#666">&amp;</span>lt;Cafe<span style="color:#666">&amp;</span>gt;<span style="color:#bbb"> </span>query<span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span>service.<span style="color:#b44">createCafeQuery</span>(<span style="color:#b44">&#34;/Cafes&#34;</span>).<span style="color:#b44">top</span>(1);<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#a2f;font-weight:bold">for</span><span style="color:#bbb"> </span>(Cafe<span style="color:#bbb"> </span>Cafe<span style="color:#bbb"> </span>:<span style="color:#bbb"> </span>query)<span style="color:#bbb"> </span>{<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>id:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getID</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>System.<span style="color:#b44">out</span>.<span style="color:#b44">println</span>(<span style="">“</span>nname:<span style="color:#bbb"> </span><span style="">”</span><span style="color:#bbb"> </span><span style="color:#666">+</span><span style="color:#bbb"> </span>Cafe.<span style="color:#b44">getName</span>());<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>}</span></span></code></pre></div>
+<h2 id="add-credentials-to-access-a-secured-service">Add credentials to access a secured service.</h2>
+<p>Note that Restlet framework supports a wide set of security schemes,
+including HTTP BASIC, HTTP DIGEST, Windows Shared Key and Shared Key
+Lite.</p>
+<h2 id="access-to-ntlm-secured-services">Access to NTLM secured services</h2>
+<p>Please refer to <a href="/documentation/user-guide/2.3#/13-restlet/27-restlet/46-restlet/112-restlet/364-restlet.html" title="NTLM authentication">this
+document</a>
+for how to access NTML secured services.</p>
+<h1 id="support-of-capability-negotiation-based-on-protocol-versions">Support of capability negotiation based on protocol versions</h1>
+<p>As stated by the WCF documentation
+(<a href="http://msdn.microsoft.com/en-us/library/dd541202%28PROT.10%29.aspx">here</a>),
+client and server may talk different dialects of the OData protocol. The
+Service class provides several methods that allow you to control these
+aspects:</p>
+<ul>
+<li>getClientVersion and setClientVersion to handle the supported
+version of OData protocol.</li>
+<li>getMaxClientVersion and setMaxClientVersion to handle the max number
+version od supported version of the OData protocol</li>
+<li>getServerVersion to get the version of the dialect talked by the
+server.</li>
+</ul>
+<p>The values setted by setClientVersion and setMaxClientVersion are not
+controlled by the framework, but they must follow a format specified
+<a href="http://msdn.microsoft.com/en-us/library/dd541109%28PROT.10%29.aspx">here</a>.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>This article illustrates what can be done with the Restlet extension for
+OData services. We hope that you found it simple and useful to follow to
+read. It is a good demonstration of how adopting of REST and related
+standards such as HTTP and Atom facilitates the interoperability across
+programming languages and executions environments.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+    <footer>
+  <div class="m-footer skew-top-black">
+    <div class="container">
+      <div class="row eq-height">
+        <div class="col-sm-2">
+          <h4>Features</h4>
+          <ul>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Downloads</h4>
+          <ul>
+            <li><a href="/downloads/current/">Current Release</a></li>
+            <li><a href="/downloads/past/">Other Releases</a></li>
+            <li><a href="/downloads/legal-terms/">Legal Terms</a></li>
+            <li><a href="/downloads/faq/">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h4>Documentation</h4>
+          <ul>
+            <li><a href="/documentation/user-guide/2.5/">User guide</a></li>
+            <li><a href="/documentation/tutorials/2.5/">Tutorials</a></li>
+            <li><a href="/documentation/javadocs/2.5/">Javadocs</a></li>
+            <li><a href="/documentation/2.5/changelog">Changelog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row copyright">
+        <div class="col-xs-12 col-md-8">
+          <ul class="list-inline">
+            <li>&copy; 2025 Qlik All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</footer>
+
+    <script type="text/javascript" src="/js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="/js/modernizr-2.8.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery.dlmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/init.js"></script>
+<script type="text/javascript" src="/js/prism.js" data-default-language="markup"></script>
+<script type="text/javascript" src="/js/app.js"></script>
+<script type="text/javascript" src="/js/downloads.js"></script>
+
+
+</body>
+</html>
