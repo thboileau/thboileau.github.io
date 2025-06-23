@@ -1,8 +1,9 @@
 ---
 title: Features
-section: guide-introduction
-version: '2.4'
-weight: 1
+menus:
+  inner:
+    name: Features
+    weight: 2
 ---
 # Introduction
 

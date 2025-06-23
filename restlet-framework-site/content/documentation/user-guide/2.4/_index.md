@@ -1,9 +1,8 @@
 ---
 title: Version 2.4
-section: guide-introduction
-nav_exclude: true
 cascade:
   params:
+    section: guide-introduction
     version: '2.4'
 ---
 

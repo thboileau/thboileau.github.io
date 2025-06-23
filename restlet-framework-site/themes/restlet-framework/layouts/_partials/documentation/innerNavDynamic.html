@@ -1,7 +1,7 @@
 {{ if ne .Params.section "javadocs" }}
 <nav class="inner-nav hidden-xs hidden-sm">
   <ul class="content-nav">
-    <li>innnerNavDynamics</li>
+    {{ partial "documentation/menu.html" (dict "menuID" "inner" "page" .) }}
   </ul>
 </nav>
 {{ end }}
