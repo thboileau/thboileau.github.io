@@ -1,8 +1,8 @@
 ---
 title: Version 2.6
-section: guide-introduction
 cascade:
   params:
+    section: guide-introduction
     version: '2.6'
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: API improvements
 parent: In version 2.0
-section: guide-introduction
-version: '2.6'
 weight: 1
 ---
 # Packages restructuring

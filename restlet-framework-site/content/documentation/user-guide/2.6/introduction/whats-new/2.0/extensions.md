@@ -2,8 +2,6 @@
 title: Extensions
 longTitle: Extensions for version 2.0
 parent: In version 2.0
-section: guide-introduction
-version: '2.6'
 weight: 3
 ---
 # Crypto extension

@@ -1,8 +1,6 @@
 ---
 title: First server
 parent: First steps
-section: guide-introduction
-version: '2.6'
 weight: 1
 ---
 # Introduction

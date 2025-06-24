@@ -1,8 +1,6 @@
 ---
 title: First client
 parent: First steps
-section: guide-introduction
-version: '2.6'
 weight: 2
 ---
 # Introduction

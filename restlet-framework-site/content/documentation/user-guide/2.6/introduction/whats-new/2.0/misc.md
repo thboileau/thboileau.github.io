@@ -1,8 +1,6 @@
 ---
 title: Misc
 parent: In version 2.0
-section: guide-introduction
-version: '2.6'
 weight: 5
 ---
 # Enhanced Maven support

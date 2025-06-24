@@ -1,8 +1,6 @@
 ---
 title: Persistence layer
 parent: Architecture
-section: guide-introduction
-version: '2.6'
 weight: 1
 ---
 The Restlet framework is completely agnostic regarding the persistence

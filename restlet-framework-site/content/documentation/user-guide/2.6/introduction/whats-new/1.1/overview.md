@@ -2,8 +2,6 @@
 title: Overview
 longTitle: What's new in version 1.1
 parent: In version 1.1
-section: guide-introduction
-version: '2.6'
 weight: 0
 ---
 # Introduction

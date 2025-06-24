@@ -6,6 +6,5 @@ aliases:
 menus:
   inner:
     parent: What's new
-    name: 2.0
     weight: 5
 ---

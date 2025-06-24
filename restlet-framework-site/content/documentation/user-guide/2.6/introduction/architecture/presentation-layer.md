@@ -1,8 +1,6 @@
 ---
 title: Presentation layer
 parent: Architecture
-section: guide-introduction
-version: '2.6'
 weight: 2
 ---
 When compared to the Servlet API, the Restlet API doesn't have a sister
