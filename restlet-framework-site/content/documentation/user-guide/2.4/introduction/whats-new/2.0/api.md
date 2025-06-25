@@ -2,7 +2,7 @@
 title: API improvements
 parent: In version 2.0
 menus:
-  inner:
+  inner_2.4:
     parent: 2.0
     weight: 1
 ---

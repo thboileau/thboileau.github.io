@@ -1,7 +1,7 @@
 ---
 title: Overview
 menus:
-  inner:
+  inner_2.4:
     name: Overview
     weight: 1
 ---

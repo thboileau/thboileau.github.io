@@ -1,3 +1,4 @@
 {{- if ne .Params.section "javadocs" }}
-    {{- partial "documentation/menu.html" (dict "menuID" "inner" "page" .) }}
+  {{- $menuName := print "inner_" .Params.version }}
+  {{- partial "documentation/menu.html" (dict "menuID" $menuName "page" .) }}
 {{- end }}

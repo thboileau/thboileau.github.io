@@ -4,7 +4,7 @@ longTitle: What's new in version 2.0
 aliases:
   - /overview
 menus:
-  inner:
+  inner_2.4:
     parent: What's new
     weight: 5
 ---

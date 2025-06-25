@@ -2,7 +2,7 @@
 title: Migration
 longTitle: Migration guide from version 1.1 to 2.0
 menus:
-  inner:
+  inner_2.4:
     parent: 2.0
     weight: 6
 ---

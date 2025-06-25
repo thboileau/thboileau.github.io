@@ -1,7 +1,7 @@
 ---
 title: Features
 menus:
-  inner:
+  inner_2.4:
     name: Features
     weight: 2
 ---

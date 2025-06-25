@@ -1,7 +1,7 @@
 ---
 title: Engine
 menus:
-  inner:
+  inner_2.4:
     parent: 2.0
     weight: 2
 ---
