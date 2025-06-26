@@ -1,7 +1,5 @@
 ---
 title: Restlet.org example
-section: guide-appendices
-version: '2.2'
 weight: 5
 ---
 # Table of contents

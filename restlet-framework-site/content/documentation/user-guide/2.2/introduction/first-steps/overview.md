@@ -1,8 +1,5 @@
 ---
 title: Overview
-parent: First Steps
-section: guide-introduction
-version: '2.2'
 weight: 0
 ---
 This section will give you a first taste of the Restlet Framework:

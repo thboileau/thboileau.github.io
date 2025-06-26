@@ -2,8 +2,8 @@
 title: Editions
 menus:
   inner_2.4:
-    parent: 2.0
-    weight: 4
+    parent: 2-0
+    weight: 5
 ---
 # Introduction
 

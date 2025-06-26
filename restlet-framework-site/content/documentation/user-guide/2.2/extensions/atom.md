@@ -1,8 +1,6 @@
 ---
 title: Atom
 longTitle: Atom extension
-section: guide-extensions
-version: '2.2'
 weight: 2
 ---
 # Introduction

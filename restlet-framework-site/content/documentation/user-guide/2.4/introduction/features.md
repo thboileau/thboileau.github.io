@@ -2,7 +2,7 @@
 title: Features
 menus:
   inner_2.4:
-    name: Features
+    identifier: features
     weight: 2
 ---
 # Introduction

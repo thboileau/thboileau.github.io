@@ -1,9 +1,6 @@
 ---
 title: Eclipse IDE
 longTitle: Getting started with Eclipse IDE
-parent: Getting Started
-section: guide-introduction
-version: '2.2'
 weight: 1
 ---
 # Introduction

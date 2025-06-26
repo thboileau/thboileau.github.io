@@ -1,4 +1,39 @@
-{{- if ne .Params.section "javadocs" }}
-  {{- $menuName := print "inner_" .Params.version }}
-  {{- partial "documentation/menu.html" (dict "menuID" $menuName "page" .) }}
+{{- $currentPage := . }}
+{{- $currentPageVersion := $currentPage.Params.version }}
+{{ $section := . }}
+{{- range .Ancestors }}
+  {{- if eq .Page.Params.version $currentPageVersion }}
+    {{ $section = . }}
+  {{- end }}
+{{- end }}
+
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    {{- partial "inline/menu/walk.html" (dict "pageInMenu" $section "currentPage" $currentPage) }}
+  </ul>
+</nav>
+
+{{- define "_partials/inline/menu/walk.html" }}
+  {{- $page := .pageInMenu }}
+  {{- $currentPage := .currentPage }}
+  {{- $attrs := dict "href" $page.Permalink }}
+  {{- $attrs = merge $attrs (dict "class" "navigation-list-link" "aria-current" "true") }}
+
+  {{- if eq $currentPage.Permalink $page.Permalink }}
+    {{- $attrs = merge $attrs (dict "class" "navigation-list-link active" "aria-current" "page") }}
+  {{- else }}
+    {{- $attrs = merge $attrs (dict "class" "navigation-list-link" "aria-current" "true") }}
+  {{- end }}
+
+    <li {{- if eq $currentPage.Permalink $page.Permalink  }} class="active" {{- end }}>
+      <a {{- range $k, $v := $attrs }}{{- with $v }}{{- printf " %s=%q" $k $v | safeHTMLAttr }}{{- end }}{{- end -}}>{{ $page.Title }}</a>
+
+  {{- with $page.Pages }}
+        <ul>
+    {{- range sort . "Weight" "asc" }}
+      {{- partial "inline/menu/walk.html"  (dict "pageInMenu" . "currentPage" $currentPage) }}
+        </ul>
+    {{- end }}
+  {{- end }}
+    </li>
 {{- end }}

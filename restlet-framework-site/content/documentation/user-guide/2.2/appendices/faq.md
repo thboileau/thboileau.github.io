@@ -1,7 +1,5 @@
 ---
 title: FAQ
-section: guide-appendices
-version: '2.2'
 weight: 2
 ---
 # Table of contents

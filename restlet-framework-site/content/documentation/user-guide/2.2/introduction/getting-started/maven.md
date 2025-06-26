@@ -1,9 +1,6 @@
 ---
 title: Maven
 longTitle: Getting started with Maven
-parent: Getting Started
-section: guide-introduction
-version: '2.2'
 weight: 2
 ---
 # Introduction

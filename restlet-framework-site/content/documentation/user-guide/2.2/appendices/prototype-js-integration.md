@@ -1,7 +1,5 @@
 ---
 title: Prototype.js integration
-section: guide-appendices
-version: '2.2'
 weight: 7
 ---
 # Introduction

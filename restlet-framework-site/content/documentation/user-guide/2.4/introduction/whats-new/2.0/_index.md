@@ -5,6 +5,7 @@ aliases:
   - /overview
 menus:
   inner_2.4:
-    parent: What's new
+    parent: whats-new
+    identifier: 2-0
     weight: 5
 ---

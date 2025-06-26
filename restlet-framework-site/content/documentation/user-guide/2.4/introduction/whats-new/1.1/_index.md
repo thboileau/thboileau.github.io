@@ -1,10 +1,11 @@
 ---
 title: In version 1.1
 longTitle: What's new in version 1.1
-parent: What's new
-section: guide-introduction
-version: '2.4'
-weight: 5
-redirect_to: /documentation/user-guide/2.4/introduction/whats-new/1.1/overview
-has_children: true
+aliases:
+  - /overview
+menus:
+  inner_2.4:
+    parent: whats-new
+    identifier: 1.1
+    weight: 5
 ---

@@ -1,7 +1,5 @@
 ---
 title: List of recommended books
-section: guide-appendices
-version: '2.2'
 weight: 8
 ---
 No list of recommended resources will be exhaustive but this list comprises a really good introduction to the books we think would help you through your discovery of the Restlet Framework.

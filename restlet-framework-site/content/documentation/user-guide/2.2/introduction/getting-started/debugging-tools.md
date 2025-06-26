@@ -1,8 +1,5 @@
 ---
 title: Debugging Tools
-parent: Getting Started
-section: guide-introduction
-version: '2.2'
 weight: 4
 ---
 # Introduction

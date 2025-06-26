@@ -1,6 +1,5 @@
 ---
 section: tutorials
-nav_exclude: true
 cascade:
   params:
     version: '2.6'

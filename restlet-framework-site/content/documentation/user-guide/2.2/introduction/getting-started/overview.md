@@ -1,8 +1,6 @@
 ---
 title: Overview
 parent: Getting Started
-section: guide-introduction
-version: '2.2'
 weight: 0
 ---
 This section explains how to get started with the Restlet Framework,

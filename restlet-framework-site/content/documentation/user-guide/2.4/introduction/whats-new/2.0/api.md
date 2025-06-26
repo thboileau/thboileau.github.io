@@ -3,8 +3,8 @@ title: API improvements
 parent: In version 2.0
 menus:
   inner_2.4:
-    parent: 2.0
-    weight: 1
+    parent: 2-0
+    weight: 2
 ---
 # Packages restructuring
 

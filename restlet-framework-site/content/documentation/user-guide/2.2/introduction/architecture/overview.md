@@ -1,8 +1,5 @@
 ---
 title: Overview
-parent: Architecture
-section: guide-introduction
-version: '2.2'
 weight: 0
 ---
 # Introduction

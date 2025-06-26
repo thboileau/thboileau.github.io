@@ -1,10 +1,10 @@
 ---
 title: Overview
 longTitle: What's new in version 1.1
-parent: In version 1.1
-section: guide-introduction
-version: '2.4'
-weight: 0
+menus:
+  inner_2.4:
+    parent: 1.1
+    weight: 1
 ---
 # Introduction
 

@@ -1,8 +1,5 @@
 ---
 title: First Application
-parent: First Steps
-section: guide-introduction
-version: '2.2'
 weight: 3
 ---
 # Introduction
