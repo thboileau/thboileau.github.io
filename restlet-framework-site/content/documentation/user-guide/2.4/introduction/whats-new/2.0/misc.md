@@ -1,9 +1,6 @@
 ---
 title: Misc
-menus:
-  inner_2.4:
-    parent: 2-0
-    weight: 6
+weight: 5
 ---
 # Enhanced Maven support
 

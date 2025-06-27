@@ -1,9 +1,6 @@
 ---
 title: Engine
-menus:
-  inner_2.4:
-    parent: 2-0
-    weight: 3
+weight: 2
 ---
 # Connectors
 

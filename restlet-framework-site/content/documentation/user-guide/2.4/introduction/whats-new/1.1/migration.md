@@ -1,10 +1,7 @@
 ---
 title: Migration
 longTitle: Migration guide from Restlet 1.0 to 1.1
-menus:
-  inner_2.4:
-    parent: 1.1
-    weight: 3
+weight: 3
 ---
 # Introduction
 

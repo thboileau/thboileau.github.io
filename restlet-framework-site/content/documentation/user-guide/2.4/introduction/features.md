@@ -1,9 +1,6 @@
 ---
 title: Features
-menus:
-  inner_2.4:
-    identifier: features
-    weight: 2
+weight: 1
 ---
 # Introduction
 

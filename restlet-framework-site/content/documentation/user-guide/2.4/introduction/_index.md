@@ -6,7 +6,7 @@ cascade:
   params:
     section: guide-introduction
     version: '2.4'
-weight: 0
+weight: 1
 ---
 # User guide overview
 

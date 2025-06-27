@@ -1,10 +1,7 @@
 ---
 title: Extensions
 longTitle: Extensions in version 1.1
-menus:
-  inner_2.4:
-    parent: 1.1
-    weight: 2
+weight: 2
 ---
 -   Full support for WADL, a popular description language for RESTful
     application. It can be used to configure components, applications
