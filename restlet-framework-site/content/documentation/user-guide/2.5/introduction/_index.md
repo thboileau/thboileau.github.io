@@ -1,5 +1,11 @@
 ---
 title: Overview
+aliases:
+  - overview
+cascade:
+  params:
+    section: guide-introduction
+    version: '2.5'
 weight: 0
 ---
 # User guide overview

@@ -4,19 +4,43 @@
 {{ $section := . }}
 {{- range .Ancestors }}
   {{- if eq .Page.Params.version $currentPageVersion }}
-    {{ $section = . }}
+    {{- $section = . }}
   {{- end }}
 {{- end }}
 
 <nav class="inner-nav hidden-xs hidden-sm">
   <ul class="content-nav">
-    {{- partial "inline/menu/walk.html" (dict "pageInMenu" $section "currentPage" $currentPage) }}
+    {{- partial "inline/menu/walkSection.html" (dict "pageInMenu" $section "currentPage" $currentPage "title" "Overview") }}
   </ul>
 </nav>
 
-{{- define "_partials/inline/menu/walk.html" }}
+{{- define "_partials/inline/menu/walkSection.html" }}
   {{- $page := .pageInMenu }}
   {{- $currentPage := .currentPage }}
+  {{- $sectionTitle := .title }}
+
+  {{- partial "inline/menu/menuEntry.html" (dict "pageInMenu" $page "currentPage" $currentPage "title" $sectionTitle) }}
+    </li>
+
+  {{- with $page.Pages }}
+    {{- range sort . "Weight" "asc" }}
+      {{- partial "inline/menu/menuEntry.html" (dict "pageInMenu" . "currentPage" $currentPage "title" .Title) }}
+      {{- if .IsSection }}
+        <ul>
+        {{- partial "inline/menu/walkSection.html" (dict "pageInMenu" . "currentPage" $currentPage "title" .Title) }}
+        </ul>
+      {{- end }}
+    </li>
+    {{- end }}
+  {{- end }}
+  
+{{- end }}
+
+{{- define "_partials/inline/menu/menuEntry.html" }}
+  {{- $page := .pageInMenu }}
+  {{- $currentPage := .currentPage }}
+  {{- $sectionTitle := .title }}
+
   {{- $currentPageActive := (eq $currentPage.Permalink $page.Permalink) }}
   {{- $attrs := dict "href" $page.Permalink }}
   {{- $attrs = merge $attrs (dict "class" "navigation-list-link") }}
@@ -25,17 +49,6 @@
     {{- $attrs = merge $attrs (dict "class" "navigation-list-link active" "aria-current" "page") }}
   {{- end }}
 
-    <li {{- if $currentPageActive }} class="active" {{- end }}>  {{- $page.IsSection }}
-      <a {{- range $k, $v := $attrs }}{{- with $v }}{{- printf " %s=%q" $k $v | safeHTMLAttr }}{{- end }}{{- end -}}>{{ $page.Title }}</a>
-
-  {{- with $page.Pages }}
-        <ul>
-    {{- range sort . "Weight" "asc" }}
-      {{- partial "inline/menu/walk.html" (dict "pageInMenu" . "currentPage" $currentPage) }}
-        </ul>
-    {{- end }}
-  {{- else }}
-
-  {{- end }}
-    </li>
+    <li {{- if $currentPageActive }} class="active" {{- end }}>
+      <a {{- range $k, $v := $attrs }}{{- with $v }}{{- printf " %s=%q" $k $v | safeHTMLAttr }}{{- end }}{{- end -}}>{{ $sectionTitle }}</a>
 {{- end }}
