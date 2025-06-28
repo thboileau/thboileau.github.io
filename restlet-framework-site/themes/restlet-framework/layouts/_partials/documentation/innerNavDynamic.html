@@ -24,7 +24,7 @@
     {{- $attrs := dict "class" "navigation-list-link" }}
 
     {{- with $page.Pages }}{{/* In case of section, let's link to the first child */}}
-      {{- $attrs = merge $attrs (dict  "href" (index $page 0).Permalink) }}
+      {{- $attrs = merge $attrs (dict  "href" (index . 0).Permalink) }}
     {{- else }}
       {{- $attrs = merge $attrs (dict  "href" $page.Permalink) }}
     {{- end }}
