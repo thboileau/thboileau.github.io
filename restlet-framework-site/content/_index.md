@@ -1,5 +1,4 @@
 ---
-date: '2025-06-15T21:37:43+02:00'
 title: 'Overview'
 ---
 Launched in 2005, Restlet Framework is the first open source project that embraced `REST` in the Java world.

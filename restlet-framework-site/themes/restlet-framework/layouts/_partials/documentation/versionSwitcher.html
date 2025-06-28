@@ -1,9 +1,16 @@
-{{/*
-  {% assign versions = site.html_pages | where: "section",page.section | map: "version" | compact | uniq | sort | reverse %}
+{{/* look for the right ancestor of the current page: the one that defines the version */}}
+{{- $currentPage := . }}
+{{- $currentPageVersion := $currentPage.Params.version }}
+{{ $section := . }}
+{{- range .Ancestors }}
+  {{- if eq .Page.Params.version $currentPageVersion }}
+    {{- $section = . }}
+  {{- end }}
+{{- end }}
+
   <select id="id_versions" name="versions">
-    {% for version in versions %}
-    <option value="{{page.url | replace: page.version, version }}" {% if page.version == version %}selected="selected"{% endif %}>{{ version }}</option>
-    {{ version }}
-    {% endfor %}
+{{- range .Params.versions }}
+  {{- $newUrl := replace $currentPage.Permalink $currentPageVersion . }}
+    <option value="{{- $newUrl }}" {{ if eq $currentPageVersion . }}selected="selected"{{ end }}>{{ . }}</option>
+{{- end }}
   </select>
-*/}}
