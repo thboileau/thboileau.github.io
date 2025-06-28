@@ -76,4 +76,4 @@ markup:
     renderer:
       hardWraps: false
       unsafe: true
-      xhtml: true
+      xhtml: false

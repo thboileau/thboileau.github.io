@@ -16,7 +16,7 @@
               </ul>
             </li>
             <li><a href="/documentation/tutorials/{{ .Params.version }}/overview" {{ if eq .Params.section "tutorials" }}class="active" {{ end }}>Tutorials</a></li>
-            <li><a href="/documentation/javadocs/{{ .Params.version }}/" {{ if eq .Params.section "javadocs" }}class="active" {{ end }}>Javadocs</a></li>
+            <li><a href="/documentation/javadocs/{{ .Params.version }}/{{ if eq .Params.version "2.4" }}jse{{ else }}java{{ end }}" {{ if eq .Params.section "javadocs" }}class="active" {{ end }}>Javadocs</a></li>
             <li><a target="_blank" href="/documentation/{{ .Params.version }}/changelog">Change Log</a></li>
           </ul>
         </li>
