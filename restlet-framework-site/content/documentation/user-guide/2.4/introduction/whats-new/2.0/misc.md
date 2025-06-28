@@ -1,6 +1,6 @@
 ---
 title: Misc
-weight: 5
+weight: 6
 ---
 # Enhanced Maven support
 

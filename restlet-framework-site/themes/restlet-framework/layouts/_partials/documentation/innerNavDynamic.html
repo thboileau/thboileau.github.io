@@ -9,71 +9,40 @@
 {{- end }}
 
 <nav class="inner-nav hidden-xs hidden-sm">
-    {{- partial "inline/menu/walkSection.html" (dict "pageInMenu" $section "currentPage" $currentPage "listClass" "content-nav") }}
+  <ul class="content-nav">
+    {{- partial "inline/menu/walkSection.html" (dict "currentPage" $currentPage "sectionInMenu" $section) -}}
+  </ul>
 </nav>
 
-{{- define "_partials/inline/menu/displayPage.html" }}
-  {{- $page := .pageInMenu }}
-  {{- $currentPage := .currentPage }}
-
-  {{- $currentPageActive := (eq $currentPage.Permalink $page.Permalink) }}
-
-  {{- $attrs := dict "class" "navigation-list-link" }}
-  {{- with $page.Aliases }}
-    {{- $attrs = merge $attrs (dict "href" (index . 0)) }}
-  {{- else }}
-    {{- $attrs = merge $attrs (dict "href" $page.Permalink) }}   
-  {{- end }}
-
-  {{- if $currentPageActive }}
-    {{- $attrs = merge $attrs (dict "class" "navigation-list-link active" "aria-current" "page") }}
-  {{- end }}
-
-      <li {{- if $currentPageActive }} class="active" {{- end }}>
-        <a {{ range $k, $v := $attrs }}{{- with $v }}{{- printf " %s=%q" $k $v | safeHTMLAttr }}{{- end -}}{{- end -}}>
-          {{ $page.Title }}
-        </a>
-  {{- with $page.Pages }}
-      {{- partial "inline/menu/walkSection.html" (dict "pageInMenu" $page "currentPage" $currentPage) }}
-  {{- end }}
-      </li>
-{{- end }}
-
 {{- define "_partials/inline/menu/walkSection.html" }}
-  {{- $page := .pageInMenu }}
   {{- $currentPage := .currentPage }}
-  {{- $listClass := .listClass }}
+  {{- $section := .sectionInMenu }}
 
-  {{- $currentPageActive := (eq $currentPage.Permalink $page.Permalink) }}
-  {{- $attrs := dict "class" "navigation-list-link" }}
+  {{- range $section.Pages }}
+    {{- $page := . }}
 
-  {{- with $page.Aliases }}
-    {{- $attrs = merge $attrs (dict "href" (printf "%s%s" $page.Permalink (index . 0))) }}
-  {{- else }}
-    {{- $attrs = merge $attrs (dict "href" $page.Permalink) }}   
-  {{- end }}
+    {{- $attrs := dict "class" "navigation-list-link" }}
+    {{- $currentPageActive := (eq $currentPage.Permalink $page.Permalink) }}
 
-  {{- if $currentPageActive }}
-    {{- $attrs = merge $attrs (dict "class" "navigation-list-link active" "aria-current" "page") }}
-  {{- end }}
-
-  {{- with $page.Pages }}
-    {{- with $listClass }}
-        <ul class="{{- $listClass }}">
+    {{- with $page.Pages }}{{/* In case of section, let's link to the first child */}}
+      {{- $attrs = merge $attrs (dict  "href" (index $page 0).Permalink) }}
     {{- else }}
-        <ul>
+      {{- $attrs = merge $attrs (dict  "href" $page.Permalink) }}
     {{- end }}
 
-    {{- with $page.Aliases }}{{/* We insert an overview link */}}
-          <li {{- if $currentPageActive }} class="active" {{- end }}>
-            <a {{ range $k, $v := $attrs }}{{- with $v }}{{- printf " %s=%q" $k $v | safeHTMLAttr }}{{- end -}}{{- end -}}>
-              Overview
-            </a>
-          </li>
+    {{- if $currentPageActive }}
+      {{- $attrs = merge $attrs (dict "class" "navigation-list-link active" "aria-current" "page") }}
     {{- end }}
-    {{- range sort . "Weight" "asc" }}
-      {{- partial "inline/menu/displayPage.html" (dict "pageInMenu" . "currentPage" $currentPage) }}
-    {{- end }}
+
+      <li {{- if $currentPageActive }} class="active" {{- end -}}>
+        <a {{ range $k, $v := $attrs }}{{- with $v }}{{- printf " %s=%q" $k $v | safeHTMLAttr }}{{- end -}}{{- end -}}>
+          {{- $page.Title -}}
+        </a>
+     {{- with $page.Pages }}
+        <ul>
+       {{- partial "inline/menu/walkSection.html" (dict "currentPage" $currentPage "sectionInMenu" $page) -}}
         </ul>
+     {{- end }}
+      </li>
   {{- end }}
 {{- end }}
