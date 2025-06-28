@@ -48,7 +48,7 @@
   {{- $attrs := dict "class" "navigation-list-link" }}
 
   {{- with $page.Aliases }}
-    {{- $attrs = merge $attrs (dict "href" (index $page.Aliases 0)) }}
+    {{- $attrs = merge $attrs (dict "href" (printf "%s%s" $page.Permalink (index . 0))) }}
   {{- else }}
     {{- $attrs = merge $attrs (dict "href" $page.Permalink) }}   
   {{- end }}
