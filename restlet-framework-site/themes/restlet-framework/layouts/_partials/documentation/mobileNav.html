@@ -6,6 +6,7 @@
         <li class="">
           <a href="#">User guide</a>
           <ul class="dl-submenu">
+
 {{- with .GetPage (printf "/documentation/user-guide/%s/introduction/overview" .Params.version ) }}
   {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-introduction" "sectionLabel" "Part 1 - Introduction") }}
 {{- end }}
