@@ -1,7 +1,5 @@
 ---
 title: ECCN
-section: guide-appendices
-version: '2.4'
 weight: 4
 ---
 # Introduction

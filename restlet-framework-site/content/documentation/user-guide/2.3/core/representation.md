@@ -1,8 +1,6 @@
 ---
 title: Representation package
-section: guide-core
-version: '2.3'
-weight: 4
+weight: 5
 ---
 The **org.restlet.representation** package contains common representation
 data elements. Here is a hierarchy diagram with the core Representation

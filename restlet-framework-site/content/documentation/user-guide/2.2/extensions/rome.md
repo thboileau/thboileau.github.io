@@ -1,9 +1,6 @@
 ---
 title: ROME
 longTitle: ROME extension
-section: guide-extensions
-version: '2.2'
-weight: 31
 ---
 # Introduction
 

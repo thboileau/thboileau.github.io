@@ -1,9 +1,6 @@
 ---
 title: Range service
-parent: Service package
-section: guide-core
-version: '2.4'
-weight: 6
+weight: 7
 ---
 # Introduction
 

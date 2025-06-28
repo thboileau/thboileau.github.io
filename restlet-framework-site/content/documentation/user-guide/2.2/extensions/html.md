@@ -1,8 +1,5 @@
 ---
 title: HTML
-section: guide-extensions
-version: '2.2'
-weight: 12
 ---
 # Introduction
 

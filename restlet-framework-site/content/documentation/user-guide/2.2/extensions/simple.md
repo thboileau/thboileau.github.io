@@ -1,9 +1,6 @@
 ---
 title: Simple
 longTitle: Simple Framework extension
-section: guide-extensions
-version: '2.2'
-weight: 34
 ---
 # Introduction
 

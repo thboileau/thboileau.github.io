@@ -1,9 +1,6 @@
 ---
 title: OSGI
 longTitle: OSGi extension
-section: guide-extensions
-version: '2.2'
-weight: 29
 ---
 Support for highly dynamic web APIs.
 

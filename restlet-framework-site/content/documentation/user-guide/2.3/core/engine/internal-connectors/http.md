@@ -1,10 +1,7 @@
 ---
 title: HTTP
 longTitle: HTTP connector (internal)
-parent: Internal connectors
-section: guide-core
-version: '2.3'
-weight: 3
+weight: 4
 ---
 -   HTTP client : supporting chunked encoding, persistent connections
     and asynchronous processing, but not HTTPS

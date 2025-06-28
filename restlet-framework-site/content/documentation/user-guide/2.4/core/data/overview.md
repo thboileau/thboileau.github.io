@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Data package
-section: guide-core
-version: '2.4'
-weight: 0
+weight: 1
 ---
 The **org.restlet.data** package contains Information exchanged between components distributed over the internet. In particular, it contains [Java classes mapping most HTTP headers](/documentation/user-guide/{{% param version %}}/core/http-headers-mapping "Mapping HTTP headers"). The semantics of each HTTP header is surfaces as a simple Java class or enumeration.
 

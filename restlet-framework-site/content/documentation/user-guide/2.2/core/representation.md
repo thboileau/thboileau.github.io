@@ -1,7 +1,5 @@
 ---
 title: Representation package
-section: guide-core
-version: '2.2'
 weight: 4
 ---
 The **org.restlet.representation** package contains common representation

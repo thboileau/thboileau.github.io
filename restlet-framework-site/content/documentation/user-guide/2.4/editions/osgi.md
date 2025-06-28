@@ -1,9 +1,7 @@
 ---
 title: OSGi
 longTitle: Restlet edition for OSGi Environments
-section: guide-editions
-version: '2.4'
-weight: 6
+weight: 7
 ---
 # Introduction
 

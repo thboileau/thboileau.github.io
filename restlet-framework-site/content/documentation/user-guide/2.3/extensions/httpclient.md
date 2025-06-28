@@ -1,9 +1,6 @@
 ---
 title: HTTP Client
 longTitle: Apache HTTP Client extension
-section: guide-extensions
-version: '2.3'
-weight: 14
 ---
 # Introduction
 

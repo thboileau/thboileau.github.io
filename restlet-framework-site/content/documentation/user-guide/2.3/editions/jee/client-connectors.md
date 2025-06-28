@@ -1,9 +1,6 @@
 ---
 title: Client connectors
-parent: Java EE
-section: guide-editions
-version: '2.3'
-weight: 1
+weight: 2
 ---
 # Introduction
 

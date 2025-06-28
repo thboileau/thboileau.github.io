@@ -1,8 +1,5 @@
 ---
 title: EMF
-section: guide-extensions
-version: '2.3'
-weight: 6
 ---
 # Introduction
 

@@ -1,9 +1,6 @@
 ---
 title: Servlet
 longTitle: Servlet extension
-section: guide-extensions
-version: '2.2'
-weight: 33
 ---
 # Introduction
 

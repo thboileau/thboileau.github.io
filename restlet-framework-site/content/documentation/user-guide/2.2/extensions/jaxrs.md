@@ -1,9 +1,6 @@
 ---
 title: JAX-RS
 longTitle: JAX-RS extension
-section: guide-extensions
-version: '2.2'
-weight: 18
 ---
 # Introduction
 

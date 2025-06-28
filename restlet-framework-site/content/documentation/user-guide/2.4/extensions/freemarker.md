@@ -1,9 +1,6 @@
 ---
 title: FreeMarker
 longTitle: FreeMarker extension
-section: guide-extensions
-version: '2.4'
-weight: 8
 ---
 # FreeMarker extension
 

@@ -1,8 +1,5 @@
 ---
 title: Editions matrix
-section: guide-extensions
-version: '2.4'
-weight: 1
 ---
 # Introduction
 

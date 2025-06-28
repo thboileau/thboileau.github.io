@@ -1,5 +1,5 @@
 ---
 title: Android
 longTitle: Restlet edition for Android
-weight: 1
+weight: 2
 ---

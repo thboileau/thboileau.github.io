@@ -1,9 +1,6 @@
 ---
 title: JavaMail
 longTitle: JavaMail extension
-section: guide-extensions
-version: '2.3'
-weight: 17
 ---
 # Introduction
 

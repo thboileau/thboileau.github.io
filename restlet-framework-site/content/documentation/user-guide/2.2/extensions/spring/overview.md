@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Spring
-section: guide-extensions
-version: '2.2'
-weight: 0
+weight: 1
 ---
 # Table of contents
 

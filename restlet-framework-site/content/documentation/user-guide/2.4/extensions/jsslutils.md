@@ -1,9 +1,6 @@
 ---
 title: jSSLutils
 longTitle: jSSLutils extension
-section: guide-extensions
-version: '2.4'
-weight: 24
 ---
 # Introduction
 

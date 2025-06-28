@@ -1,10 +1,7 @@
 ---
 title: Introduction, download, compiling and installing
 longTitle: XMLDB Restet Adapter/Lucene/Maven
-parent: XDB
-section: guide-extensions
-version: '2.3'
-weight: 7
+weight: 8
 ---
 * Purpose of the document
 

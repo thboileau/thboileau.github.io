@@ -1,7 +1,5 @@
 ---
 title: Glossary
-section: guide-appendices
-version: '2.6'
 weight: 1
 ---
 # Table of contents

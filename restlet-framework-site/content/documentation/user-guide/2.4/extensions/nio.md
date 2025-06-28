@@ -1,9 +1,6 @@
 ---
 title: Nio
 longTitle: Net extension
-section: guide-extensions
-version: '2.4'
-weight: 26
 ---
 # Introduction
 

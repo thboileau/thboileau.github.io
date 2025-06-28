@@ -1,9 +1,6 @@
 ---
 title: Task service
-parent: Service package
-section: guide-core
-version: '2.3'
-weight: 8
+weight: 9
 ---
 # Introduction
 

@@ -1,9 +1,6 @@
 ---
 title: JAXB
 longTitle: JAXB extension
-section: guide-extensions
-version: '2.4'
-weight: 18
 ---
 This extension provided an integration with JAXB.
 [JAXB](https://jaxb.dev.java.net/)

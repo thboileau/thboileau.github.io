@@ -1,9 +1,6 @@
 ---
 title: OpenID
 longTitle: OpenID extension
-section: guide-extensions
-version: '2.2'
-weight: 28
 ---
 Support for OpenID 2.0 HTTP authentication. Leverages the OpenID4Java 0.9 library.
 

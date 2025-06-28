@@ -1,10 +1,7 @@
 ---
 title: FAQ
 longTitle: Oracle XDB Restlet Adapter - FAQ
-parent: XDB
-section: guide-extensions
-version: '2.3'
-weight: 4
+weight: 5
 ---
 * Where Restlet logging information goes?
 

@@ -1,9 +1,6 @@
 ---
 title: FileUpload
 longTitle: Apache FileUpload extension
-section: guide-extensions
-version: '2.2'
-weight: 6
 ---
 # Introduction
 

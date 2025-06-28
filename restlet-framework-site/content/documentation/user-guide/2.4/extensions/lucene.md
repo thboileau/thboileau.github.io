@@ -1,9 +1,6 @@
 ---
 title: Lucene
 longTitle: Lucene extension
-section: guide-extensions
-version: '2.4'
-weight: 25
 ---
 # Introduction
 

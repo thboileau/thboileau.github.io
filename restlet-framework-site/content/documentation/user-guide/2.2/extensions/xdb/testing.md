@@ -1,10 +1,7 @@
 ---
 title: Testing
 longTitle: Oracle XDB Restlet Adapter - Testing
-parent: XDB
-section: guide-extensions
-version: '2.2'
-weight: 3
+weight: 4
 ---
 * Testing using a browser
 

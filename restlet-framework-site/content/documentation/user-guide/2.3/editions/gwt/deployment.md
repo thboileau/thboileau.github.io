@@ -1,10 +1,7 @@
 ---
 title: Deployment
 longTitle: Deploy GWT sample application in Servlet container
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.3'
-weight: 2
+weight: 3
 ---
 # Introduction
 

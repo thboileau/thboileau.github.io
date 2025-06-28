@@ -1,10 +1,7 @@
 ---
 title: Configuring Restlet beans
 longTitle: Spring extension - Configuring Restlet beans
-parent: Spring
-section: guide-extensions
-version: '2.2'
-weight: 2
+weight: 1
 ---
 # Passing the parent context
 

@@ -1,9 +1,6 @@
 ---
 title: SIP
 longTitle: SIP extension
-section: guide-extensions
-version: '2.2'
-weight: 35
 ---
 # Introduction
 

@@ -1,9 +1,6 @@
 ---
 title: RAML
 longTitle: RAML extension
-section: guide-extensions
-version: '2.3'
-weight: 31
 ---
 # Introduction
 

@@ -1,10 +1,7 @@
 ---
 title: Implemented services
 longTitle: XMLDB Restet Adapter/Lucene/Maven - Services implemented
-parent: XDB
-section: guide-extensions
-version: '2.3'
-weight: 9
+weight: 10
 ---
 __This documentation refers to Lucene Web Service with a deprecated URL: `http://dev.lucene-ws.net`__
 

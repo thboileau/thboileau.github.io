@@ -1,9 +1,6 @@
 ---
 title: JAAS
 longTitle: JAAS extension
-section: guide-extensions
-version: '2.2'
-weight: 14
 ---
 # Introduction
 

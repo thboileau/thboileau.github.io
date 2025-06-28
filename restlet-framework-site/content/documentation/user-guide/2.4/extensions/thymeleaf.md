@@ -1,9 +1,6 @@
 ---
 title: Thymeleaf
 longTitle: Thymeleaf extension
-section: guide-extensions
-version: '2.4'
-weight: 41
 ---
 # Introduction
 

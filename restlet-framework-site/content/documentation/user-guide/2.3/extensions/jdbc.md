@@ -1,9 +1,6 @@
 ---
 title: JDBC
 longTitle: JDBC extension
-section: guide-extensions
-version: '2.3'
-weight: 20
 ---
 # Introduction
 

@@ -1,9 +1,6 @@
 ---
 title: Swagger
 longTitle: Swagger extension
-section: guide-extensions
-version: '2.2'
-weight: 38
 ---
 This extension provides a preview integration with Swagger including:
 

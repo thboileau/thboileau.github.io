@@ -1,7 +1,6 @@
 ---
 title: Atom
 longTitle: Atom extension
-weight: 2
 ---
 # Introduction
 

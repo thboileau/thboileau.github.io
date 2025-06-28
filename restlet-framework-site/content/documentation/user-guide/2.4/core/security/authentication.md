@@ -1,9 +1,6 @@
 ---
 title: Authentication
-parent: Security package
-section: guide-core
-version: '2.4'
-weight: 1
+weight: 2
 ---
 # Introduction
 

@@ -1,9 +1,7 @@
 ---
 title: Google App Engine
 longTitle: Restlet edition for Google App Engine
-section: guide-editions
-version: '2.4'
-weight: 2
+weight: 3
 ---
 # Introduction
 

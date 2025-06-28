@@ -1,10 +1,7 @@
 ---
 title: Future plans - Known caveats
 longTitle: Oracle XDB Restlet Adapter - Others
-parent: XDB
-section: guide-extensions
-version: '2.3'
-weight: 5
+weight: 6
 ---
 ** Future plans
 

@@ -1,7 +1,5 @@
 ---
 title: OSGi deployment
-section: guide-appendices
-version: '2.6'
 weight: 3
 ---
 

@@ -1,10 +1,7 @@
 ---
 title: XdbRepresentation
 longTitle: Oracle XDB Restlet Adapter - XdbRepresentation
-parent: XDB
-section: guide-extensions
-version: '2.2'
-weight: 6
+weight: 7
 ---
 ** An Optimized XdbRepresentation class for Oracle XMLDB
 

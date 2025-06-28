@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Java SE
-section: guide-editions
-version: '2.3'
-weight: 0
+weight: 1
 ---
 # Introduction
 

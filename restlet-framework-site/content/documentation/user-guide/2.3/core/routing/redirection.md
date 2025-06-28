@@ -1,10 +1,7 @@
 ---
 title: Redirection
 longTitle: URI rewriting and redirection
-parent: Routing package
-section: guide-core
-version: '2.3'
-weight: 2
+weight: 3
 ---
 # Introduction
 

@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: XDB
-section: guide-extensions
-version: '2.3'
-weight: 0
+weight: 1
 ---
 # Documentation
 

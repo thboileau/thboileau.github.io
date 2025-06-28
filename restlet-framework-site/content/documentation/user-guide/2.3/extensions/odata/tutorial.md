@@ -1,9 +1,6 @@
 ---
 title: Tutorial
-parent: OData
-section: guide-extensions
-version: '2.3'
-weight: 1
+weight: 2
 ---
 # Target audience
 

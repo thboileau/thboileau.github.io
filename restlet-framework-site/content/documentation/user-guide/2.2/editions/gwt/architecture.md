@@ -1,10 +1,7 @@
 ---
 title: Architecture
 longTitle: Architecture flexibility
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.2'
-weight: 1
+weight: 2
 ---
 # GWT's idiomatic RPC approach
 

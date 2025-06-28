@@ -1,9 +1,6 @@
 ---
 title: Examples
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.3'
-weight: 3
+weight: 4
 ---
 # Introduction
 

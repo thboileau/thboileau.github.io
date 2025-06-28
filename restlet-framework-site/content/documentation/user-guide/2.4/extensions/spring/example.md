@@ -1,10 +1,7 @@
 ---
 title: A complete example
 longTitle: Spring extension - A complete example
-parent: Spring
-section: guide-extensions
-version: '2.4'
-weight: 3
+weight: 4
 ---
 # Introduction
 

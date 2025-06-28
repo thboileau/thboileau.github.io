@@ -1,9 +1,6 @@
 ---
 title: SLF4J
 longTitle: SLF4J extension
-section: guide-extensions
-version: '2.3'
-weight: 38
 ---
 # Introduction
 

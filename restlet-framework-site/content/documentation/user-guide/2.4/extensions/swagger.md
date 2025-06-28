@@ -1,9 +1,6 @@
 ---
 title: Swagger
 longTitle: Swagger extension
-section: guide-extensions
-version: '2.4'
-weight: 40
 ---
 # Introduction
 

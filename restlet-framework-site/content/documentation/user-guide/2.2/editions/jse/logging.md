@@ -1,9 +1,6 @@
 ---
 title: Logging
-parent: Java SE
-section: guide-editions
-version: '2.2'
-weight: 1
+weight: 2
 ---
 # Introduction
 

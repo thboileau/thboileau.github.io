@@ -1,9 +1,6 @@
 ---
 title: GAE
 longTitle: GAE extension
-section: guide-extensions
-version: '2.3'
-weight: 9
 ---
 # Introduction
 

@@ -1,10 +1,7 @@
 ---
 title: Installing
 longTitle: Oracle XDB Restlet Adapter - Installing
-parent: XDB
-section: guide-extensions
-version: '2.3'
-weight: 2
+weight: 3
 ---
 First edit into your home directory a file named build.properties with:
 

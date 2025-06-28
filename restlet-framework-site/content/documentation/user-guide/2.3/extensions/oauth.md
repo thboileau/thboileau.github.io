@@ -1,9 +1,6 @@
 ---
 title: OAuth
 longTitle: OAuth extension
-section: guide-extensions
-version: '2.3'
-weight: 27
 ---
 This extensions is a **preview support** of the OAuth v2.0 standard. It has been developed based on an initial contribution by Ericsson Labs ([see original project here](http://labs.ericsson.com/apis/oauth2-framework)) and later enhanced to support the final 2.0 RFC thanks to another community contribution.
 

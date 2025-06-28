@@ -1,9 +1,6 @@
 ---
 title: Parameters
-parent: Data package
-section: guide-core
-version: '2.3'
-weight: 1
+weight: 2
 ---
 # Getting parameter values
 

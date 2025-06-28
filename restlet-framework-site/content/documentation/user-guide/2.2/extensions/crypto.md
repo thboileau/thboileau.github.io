@@ -1,9 +1,6 @@
 ---
 title: Crypto
 longTitle: Crypto extension
-section: guide-extensions
-version: '2.2'
-weight: 3
 ---
 # Introduction
 

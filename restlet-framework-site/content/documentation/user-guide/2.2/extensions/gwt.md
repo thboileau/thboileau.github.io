@@ -1,9 +1,6 @@
 ---
 title: GWT
 longTitle: GWT extension
-section: guide-extensions
-version: '2.2'
-weight: 11
 ---
 This extension is a server-side integration with GWT 2.5.
 

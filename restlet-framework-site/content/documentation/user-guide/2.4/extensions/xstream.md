@@ -1,9 +1,6 @@
 ---
 title: XStream
 longTitle: XStream extension
-section: guide-extensions
-version: '2.4'
-weight: 46
 ---
 # Introduction
 

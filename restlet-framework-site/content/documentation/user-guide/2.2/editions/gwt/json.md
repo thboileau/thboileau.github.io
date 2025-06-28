@@ -1,10 +1,7 @@
 ---
 title: JSON
 longTitle: Working with JSON
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.2'
-weight: 4
+weight: 5
 ---
 # Description
 

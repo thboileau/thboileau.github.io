@@ -1,9 +1,6 @@
 ---
 title: Guice
 longTitle: Guice extension
-section: guide-extensions
-version: '2.3'
-weight: 11
 ---
 # Introduction
 

@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Jetty
-section: guide-extensions
-version: '2.2'
-weight: 0
+weight: 1
 ---
 # Introduction
 

@@ -1,10 +1,7 @@
 ---
 title: Running and testing
 longTitle: XMLDB Restet Adapter/Lucene/Maven - Running/Testing
-parent: XDB
-section: guide-extensions
-version: '2.3'
-weight: 8
+weight: 9
 ---
 * Starting Jetty to debug these services outside OJVM
 

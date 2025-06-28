@@ -1,9 +1,6 @@
 ---
 title: Client resources
-parent: Resource package
-section: guide-core
-version: '2.3'
-weight: 1
+weight: 2
 ---
 # Introduction
 

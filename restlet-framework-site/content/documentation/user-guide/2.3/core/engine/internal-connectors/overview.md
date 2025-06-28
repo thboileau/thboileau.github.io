@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Internal connectors
-section: guide-core
-version: '2.3'
-weight: 0
+weight: 1
 ---
 Here is the list of connectors built-in the Restlet engine:
 

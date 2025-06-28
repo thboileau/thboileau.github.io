@@ -1,9 +1,6 @@
 ---
 title: WADL
 longTitle: WADL extension
-section: guide-extensions
-version: '2.2'
-weight: 41
 ---
 # Introduction
 

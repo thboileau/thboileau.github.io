@@ -1,9 +1,6 @@
 ---
 title: FreeMarker
 longTitle: FreeMarker extension
-section: guide-extensions
-version: '2.2'
-weight: 7
 ---
 This extension provides an integration with FreeMarker 2.3. FreeMarker
 is a template engine, a generic tool to generate text output (anything

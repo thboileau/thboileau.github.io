@@ -1,10 +1,7 @@
 ---
 title: Architecture - Introduction
 longTitle: Oracle XDB Restlet Adapter - Architecture - Introduction
-parent: XDB
-section: guide-extensions
-version: '2.2'
-weight: 1
+weight: 2
 ---
 Oracle XDB Restlet adapter is a [Server connector](/documentation/user-guide/{{% param version %}}/core/base/connectors#toc_6)
 for [Restlet Framework](http://restlet.com) it provides to Oracle 11g the availability to support server side __REST Web Services__ (__WS__).

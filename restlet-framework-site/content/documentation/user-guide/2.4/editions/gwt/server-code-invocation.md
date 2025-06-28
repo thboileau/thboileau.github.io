@@ -1,10 +1,7 @@
 ---
 title: Server code invocation
 longTitle: Invoking server side code
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.4'
-weight: 5
+weight: 6
 ---
 # Description
 
