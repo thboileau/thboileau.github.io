@@ -18,6 +18,10 @@ disableKinds:
    - term
    - robotsTXT
 
+caches:
+  images:
+    dir: :cacheDir/images 
+
 security:
   enableInlineShortcodes: true
 
