@@ -1,7 +1,7 @@
 ---
 title: Overview
 longTitle: What's new in version 2.0
-weight: 0
+weight: 1
 ---
 # Introduction
 

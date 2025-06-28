@@ -1,8 +1,5 @@
 ---
 title: Overview
-parent: Base Package
-section: guide-core
-version: '2.2'
 weight: 0
 ---
 This **org.restlet** package contains the most important classes of the Restlet API,

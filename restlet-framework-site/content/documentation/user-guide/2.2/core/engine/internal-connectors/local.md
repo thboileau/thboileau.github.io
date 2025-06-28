@@ -1,9 +1,6 @@
 ---
 title: Local
 longTitle: Local connectors
-parent: Internal Connectors
-section: guide-core
-version: '2.2'
 weight: 1
 ---
 The "local" Reference instances can be easily created via the

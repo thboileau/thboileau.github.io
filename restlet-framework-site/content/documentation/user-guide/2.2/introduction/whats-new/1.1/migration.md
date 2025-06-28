@@ -1,7 +1,7 @@
 ---
 title: Migration
 longTitle: Migration guide from Restlet 1.0 to 1.1
-weight: 2
+weight: 3
 ---
 # Introduction
 

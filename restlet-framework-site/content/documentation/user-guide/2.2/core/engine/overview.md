@@ -1,8 +1,5 @@
 ---
 title: Overview
-parent: Restlet Engine
-section: guide-core
-version: '2.2'
 weight: 0
 ---
 # Introduction

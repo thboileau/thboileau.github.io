@@ -1,8 +1,6 @@
 ---
 title: Features
-section: guide-introduction
-version: '2.3'
-weight: 1
+weight: 2
 ---
 # Introduction
 

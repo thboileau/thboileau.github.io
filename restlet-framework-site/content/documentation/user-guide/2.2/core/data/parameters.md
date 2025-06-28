@@ -1,9 +1,6 @@
 ---
 title: Parameters
 longTitle: Getting parameter values
-parent: Data Package
-section: guide-core
-version: '2.2'
 weight: 1
 ---
 # Introduction

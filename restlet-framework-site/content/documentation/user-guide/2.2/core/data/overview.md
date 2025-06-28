@@ -1,8 +1,5 @@
 ---
 title: Overview
-parent: Data Package
-section: guide-core
-version: '2.2'
 weight: 0
 ---
 # Data package

@@ -1,6 +1,6 @@
 ---
 title: Overview
-weight: 0
+weight: 1
 ---
 This section will give you a first taste of the Restlet Framework:
 

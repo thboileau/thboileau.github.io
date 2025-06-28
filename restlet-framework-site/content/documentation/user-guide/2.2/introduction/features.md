@@ -1,6 +1,6 @@
 ---
 title: Features
-weight: 1
+weight: 2
 ---
 # Introduction
 

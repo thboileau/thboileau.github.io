@@ -1,8 +1,5 @@
 ---
 title: Connectors
-parent: Base Package
-section: guide-core
-version: '2.2'
 weight: 1
 ---
 # Introduction

@@ -3,5 +3,5 @@ title: Introduction
 cascade:
   params:
     section: guide-introduction
-    version: '2.5'
+    version: '2.3'
 ---

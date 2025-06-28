@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Getting started
-section: guide-introduction
-version: '2.3'
-weight: 0
+weight: 1
 ---
 This section explains how to get started with the Restlet Framework,
 including set up and debugging tools in common development environments

@@ -1,10 +1,6 @@
 ---
 title: Maven and Spring
-longTitle: Getting started with Maven and Spring
-parent: Getting started
-section: guide-introduction
-version: '2.3'
-weight: 3
+weight: 4
 ---
 # Overview
 

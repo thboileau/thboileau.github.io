@@ -22,7 +22,6 @@
     {{- $page := . }}
 
     {{- $attrs := dict "class" "navigation-list-link" }}
-    {{- $currentPageActive := (eq $currentPage.Permalink $page.Permalink) }}
 
     {{- with $page.Pages }}{{/* In case of section, let's link to the first child */}}
       {{- $attrs = merge $attrs (dict  "href" (index $page 0).Permalink) }}
@@ -30,6 +29,7 @@
       {{- $attrs = merge $attrs (dict  "href" $page.Permalink) }}
     {{- end }}
 
+    {{- $currentPageActive := (eq $currentPage.Permalink $page.Permalink) }}
     {{- if $currentPageActive }}
       {{- $attrs = merge $attrs (dict "class" "navigation-list-link active" "aria-current" "page") }}
     {{- end }}

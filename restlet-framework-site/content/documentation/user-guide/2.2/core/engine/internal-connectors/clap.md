@@ -1,9 +1,6 @@
 ---
 title: CLAP
 longTitle: CLAP connector
-parent: Internal Connectors
-section: guide-core
-version: '2.2'
 weight: 2
 ---
 CLAP (ClassLoader Access Protocol) is a custom scheme to access to

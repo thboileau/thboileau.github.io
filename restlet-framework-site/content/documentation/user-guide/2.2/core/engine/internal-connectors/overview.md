@@ -1,8 +1,5 @@
 ---
 title: Overview
-parent: Internal Connectors
-section: guide-core
-version: '2.2'
 weight: 0
 ---
 # Internal connectors
