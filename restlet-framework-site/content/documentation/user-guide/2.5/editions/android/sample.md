@@ -1,10 +1,7 @@
 ---
 title: Sample
 longTitle: Sample application
-parent: Android
-section: guide-editions
-version: '2.5'
-weight: 1
+weight: 2
 ---
 # Introduction
 

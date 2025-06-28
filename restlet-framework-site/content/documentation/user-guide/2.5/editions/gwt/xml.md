@@ -1,10 +1,7 @@
 ---
 title: XML
 longTitle: Working with XML
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.5'
-weight: 8
+weight: 9
 ---
 # Description
 

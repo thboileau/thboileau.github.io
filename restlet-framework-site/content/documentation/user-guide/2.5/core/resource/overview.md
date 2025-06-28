@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Resource package
-section: guide-core
-version: '2.5'
-weight: 0
+weight: 1
 ---
 # Introduction
 

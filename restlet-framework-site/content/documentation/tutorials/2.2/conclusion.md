@@ -1,7 +1,5 @@
 ---
 title: Conclusion
-section: tutorials
-version: '2.2'
 weight: 10
 ---
 We have already covered many aspects of the framework. Before you move

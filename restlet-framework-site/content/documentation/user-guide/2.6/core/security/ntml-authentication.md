@@ -1,9 +1,6 @@
 ---
 title: NTML authentication
-parent: Security package
-section: guide-core
-version: '2.6'
-weight: 5
+weight: 6
 ---
 # Using the internal HTTP client connector
 

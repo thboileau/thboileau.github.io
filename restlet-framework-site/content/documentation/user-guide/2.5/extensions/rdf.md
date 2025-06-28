@@ -1,9 +1,6 @@
 ---
 title: RDF
 longTitle: RDF extension
-section: guide-extensions
-version: '2.5'
-weight: 32
 ---
 # Introduction
 

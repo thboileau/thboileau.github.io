@@ -1,9 +1,6 @@
 ---
 title: Authorization
-parent: Security package
-section: guide-core
-version: '2.6'
-weight: 2
+weight: 3
 ---
 # Introduction
 

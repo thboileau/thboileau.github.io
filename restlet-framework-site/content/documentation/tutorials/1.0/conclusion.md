@@ -1,8 +1,6 @@
 ---
 title: Conclusion
-section: tutorials
-version: '1.0'
-weight: 10
+weight: 11
 ---
 We have already covered many aspects of the framework. Before you move
 on by yourself, let's take a step back and look at two hierarchy

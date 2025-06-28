@@ -1,7 +1,5 @@
 ---
 title: Reach target resources
-section: tutorials
-version: '1.1'
 weight: 8
 ---
 In the previous example, we took advantage of the flexible routing

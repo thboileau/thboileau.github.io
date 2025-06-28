@@ -1,7 +1,6 @@
 ---
 title: Editions
-parent: In version 2.0
-weight: 4
+weight: 5
 ---
 # Introduction
 

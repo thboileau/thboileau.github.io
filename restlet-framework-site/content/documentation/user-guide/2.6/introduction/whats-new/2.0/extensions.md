@@ -1,8 +1,7 @@
 ---
 title: Extensions
 longTitle: Extensions for version 2.0
-parent: In version 2.0
-weight: 3
+weight: 4
 ---
 # Crypto extension
 

@@ -1,10 +1,7 @@
 ---
 title: Tips
 longTitle: Tips and tricks
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.5'
-weight: 7
+weight: 8
 ---
 # Responses with no entity
 

@@ -1,8 +1,6 @@
 ---
 title: Mapping HTTP headers
-section: guide-core
-version: '2.5'
-weight: 1
+weight: 2
 ---
 # Introduction
 

@@ -1,8 +1,6 @@
 ---
 title: Overview
-section: guide-editions
-version: '2.5'
-weight: 0
+weight: 1
 ---
 # Introduction
 

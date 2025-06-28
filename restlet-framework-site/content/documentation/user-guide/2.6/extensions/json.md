@@ -1,9 +1,6 @@
 ---
 title: JSON
 longTitle: JSON extension
-section: guide-extensions
-version: '2.6'
-weight: 23
 ---
 JSON (JavaScript Object Notation) is a compact format for representing
 structured data. It became a popular alternative to XML in AJAX

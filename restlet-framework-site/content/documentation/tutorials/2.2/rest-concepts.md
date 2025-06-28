@@ -1,7 +1,5 @@
 ---
 title: REST main concepts
-section: tutorials
-version: '2.2'
 weight: 4
 ---
 # Overview of a REST architecture

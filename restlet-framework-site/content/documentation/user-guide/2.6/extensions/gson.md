@@ -1,9 +1,6 @@
 ---
 title: GSON
 longTitle: GSON extension
-section: guide-extensions
-version: '2.6'
-weight: 10
 ---
 # Introduction
 

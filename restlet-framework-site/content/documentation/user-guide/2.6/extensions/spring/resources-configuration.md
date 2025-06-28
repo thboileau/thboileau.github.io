@@ -1,10 +1,7 @@
 ---
 title: Configuration of Restlet resources
 longTitle: Spring extension - Configuration of Restlet resources
-parent: Spring
-section: guide-extensions
-version: '2.6'
-weight: 4
+weight: 5
 ---
 # Configuration of basic properties
 

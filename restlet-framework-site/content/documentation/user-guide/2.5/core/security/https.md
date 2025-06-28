@@ -1,10 +1,7 @@
 ---
 title: HTTPS
 longTitle: Configuring HTTPS
-parent: Security package
-section: guide-core
-version: '2.5'
-weight: 3
+weight: 4
 ---
 # Background
 

@@ -1,7 +1,5 @@
 ---
 title: Register an implementation
-section: tutorials
-version: '1.1'
 weight: 1
 ---
 The Restlet framework is composed of two main parts. First, there is the

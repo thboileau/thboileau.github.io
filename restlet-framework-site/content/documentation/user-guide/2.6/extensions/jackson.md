@@ -1,9 +1,6 @@
 ---
 title: Jackson
 longTitle: Jackson extension
-section: guide-extensions
-version: '2.6'
-weight: 16
 ---
 # Introduction
 

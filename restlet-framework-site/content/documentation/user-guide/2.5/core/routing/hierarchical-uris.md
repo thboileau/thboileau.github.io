@@ -1,10 +1,7 @@
 ---
 title: Hierarchical URIs
 longTitle: Routers and hierarchical URIs
-parent: Routing package
-section: guide-core
-version: '2.5'
-weight: 1
+weight: 2
 ---
 # Introduction
 

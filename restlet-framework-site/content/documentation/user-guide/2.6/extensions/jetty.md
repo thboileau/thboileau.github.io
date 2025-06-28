@@ -1,9 +1,6 @@
 ---
 title: Jetty
 longTitle: Eclipse Jetty extension
-section: guide-extensions
-version: '2.6'
-weight: 21
 ---
 # Introduction
 

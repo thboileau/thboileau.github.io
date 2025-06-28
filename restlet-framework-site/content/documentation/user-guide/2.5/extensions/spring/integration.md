@@ -1,10 +1,7 @@
 ---
 title: Integration modes
 longTitle: Spring extension - Integration modes
-parent: Spring
-section: guide-extensions
-version: '2.5'
-weight: 1
+weight: 2
 ---
 # Introduction
 

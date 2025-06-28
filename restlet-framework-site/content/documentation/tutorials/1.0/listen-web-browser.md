@@ -1,8 +1,6 @@
 ---
 title: Listen to web browsers
-section: tutorials
-version: '1.0'
-weight: 3
+weight: 4
 ---
 Now, we want to see how the Restlet framework can listen to client
 requests and reply to them. We will use one of the NRE HTTP server

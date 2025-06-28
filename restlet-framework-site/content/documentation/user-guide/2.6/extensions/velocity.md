@@ -1,9 +1,6 @@
 ---
 title: Velocity
 longTitle: Velocity extension
-section: guide-extensions
-version: '2.6'
-weight: 42
 ---
 # Introduction
 

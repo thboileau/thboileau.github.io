@@ -1,6 +1,5 @@
 ---
 title: Guard access to sensitive resources
-section: tutorials
 weight: 6
 ---
 When you need to secure the access to some Restlets, several options are

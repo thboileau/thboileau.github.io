@@ -1,8 +1,6 @@
 ---
 title: Retrieve the content of a web page
-section: tutorials
-version: '1.0'
-weight: 2
+weight: 3
 ---
 As we mentioned in the [introduction paper](/about/introduction/), the
 Restlet framework is at the same time a client and a server framework.

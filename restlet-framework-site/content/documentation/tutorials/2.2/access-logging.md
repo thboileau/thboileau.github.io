@@ -1,7 +1,5 @@
 ---
 title: Access logging & display error pages
-section: tutorials
-version: '2.2'
 weight: 9
 ---
 # Access logging

@@ -1,7 +1,5 @@
 ---
 title: Overview
-section: tutorials
-version: '2.4'
 weight: 1
 ---
 The Restlet framework is composed of two main parts. First, there is the

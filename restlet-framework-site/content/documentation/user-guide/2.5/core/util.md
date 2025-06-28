@@ -1,8 +1,6 @@
 ---
 title: Util package
-section: guide-core
-version: '2.5'
-weight: 9
+weight: 10
 ---
 # Introduction
 

@@ -1,7 +1,6 @@
 ---
 title: Misc
-parent: In version 2.0
-weight: 5
+weight: 6
 ---
 # Enhanced Maven support
 

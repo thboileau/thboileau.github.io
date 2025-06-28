@@ -1,7 +1,5 @@
 ---
 title: Retrieve the content of a web page
-section: tutorials
-version: '2.3'
 weight: 2
 ---
 As we mentioned in the [introduction

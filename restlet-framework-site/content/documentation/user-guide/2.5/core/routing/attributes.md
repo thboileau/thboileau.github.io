@@ -1,10 +1,7 @@
 ---
 title: Attributes
 longTitle: Extracting attributes
-parent: Routing package
-section: guide-core
-version: '2.5'
-weight: 4
+weight: 5
 ---
 Extracting attributes
 =====================

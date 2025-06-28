@@ -1,7 +1,5 @@
 ---
 title: Serve static files
-section: tutorials
-version: '2.3'
 weight: 5
 ---
 Do you have a part of your web application that serves static pages like

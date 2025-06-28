@@ -1,7 +1,5 @@
 ---
 title: Listen to web browsers
-section: tutorials
-version: '1.1'
 weight: 3
 ---
 Now, we want to see how the Restlet framework can listen to client

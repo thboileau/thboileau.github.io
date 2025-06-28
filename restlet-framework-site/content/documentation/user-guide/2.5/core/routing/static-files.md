@@ -1,9 +1,6 @@
 ---
 title: Static Files
-parent: Routing package
-section: guide-core
-version: '2.5'
-weight: 3
+weight: 4
 ---
 # Introduction
 

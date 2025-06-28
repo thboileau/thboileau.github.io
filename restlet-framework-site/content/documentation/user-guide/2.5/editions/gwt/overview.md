@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.5'
-weight: 0
+weight: 1
 ---
 # Introduction
 

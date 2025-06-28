@@ -1,10 +1,7 @@
 ---
 title: Setup
 longTitle: Setting up a project
-parent: Google Web Toolkit
-section: guide-editions
-version: '2.5'
-weight: 6
+weight: 7
 ---
 # Client-side configuration
 

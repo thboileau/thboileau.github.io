@@ -1,9 +1,6 @@
 ---
 title: XML
 longTitle: XML extension
-section: guide-extensions
-version: '2.5'
-weight: 45
 ---
 # Introduction
 

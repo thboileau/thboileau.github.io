@@ -1,9 +1,6 @@
 ---
 title: Overview
-parent: Java EE
-section: guide-editions
-version: '2.6'
-weight: 0
+weight: 1
 ---
 # Introduction
 

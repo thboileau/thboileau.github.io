@@ -1,8 +1,6 @@
 ---
 title: Overview
-section: guide-extensions
-version: '2.6'
-weight: 0
+weight: 1
 ---
 # Introduction
 

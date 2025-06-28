@@ -1,9 +1,6 @@
 ---
 title: Log service
-parent: Service package
-section: guide-core
-version: '2.5'
-weight: 1
+weight: 2
 ---
 # Introduction
 

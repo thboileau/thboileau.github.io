@@ -1,10 +1,7 @@
 ---
 title: Local
 longTitle: Local connectors
-parent: Internal connectors
-section: guide-core
-version: '2.5'
-weight: 1
+weight: 5
 ---
 The "local" Reference instances can be easily created via the
 [LocalReference](https://javadoc.io/static/org.restlet/org.restlet/{{% frameworkLatestRelease %}}/org/restlet/data/LocalReference.html)
