@@ -1,7 +1,7 @@
 ---
 title: Parameters
 longTitle: Getting parameter values
-weight: 1
+weight: 2
 ---
 # Introduction
 

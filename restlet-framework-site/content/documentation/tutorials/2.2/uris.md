@@ -1,8 +1,6 @@
 ---
 title: URIs
 longTitle: Rewriting, redirection, router & hierarchical URIs
-section: tutorials
-version: '2.2'
 weight: 7
 ---
 # URI rewriting and redirection

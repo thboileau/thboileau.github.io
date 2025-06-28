@@ -1,7 +1,6 @@
 ---
 title: Overview
-parent: Architecture
-weight: 0
+weight: 1
 ---
 # Introduction
 

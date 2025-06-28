@@ -1,9 +1,6 @@
 ---
 title: Metadata service
-parent: Service package
-section: guide-core
-version: '2.2'
-weight: 5
+weight: 6
 ---
 # Introduction
 

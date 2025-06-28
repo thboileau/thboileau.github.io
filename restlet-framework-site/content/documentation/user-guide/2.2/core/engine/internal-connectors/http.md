@@ -1,7 +1,7 @@
 ---
 title: HTTP
 longTitle: HTTP connector (internal)
-weight: 3
+weight: 4
 ---
 -   HTTP client : supporting chunked encoding, persistent connections
     and asynchronous processing, but not HTTPS

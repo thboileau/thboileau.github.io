@@ -1,7 +1,6 @@
 ---
 title: First server
-parent: First steps
-weight: 1
+weight: 2
 ---
 # Introduction
 

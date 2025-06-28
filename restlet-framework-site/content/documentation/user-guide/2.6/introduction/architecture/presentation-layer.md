@@ -1,7 +1,6 @@
 ---
 title: Presentation layer
-parent: Architecture
-weight: 2
+weight: 3
 ---
 When compared to the Servlet API, the Restlet API doesn't have a sister
 API like Java Server Pages (JSP). Instead we made the design choice to

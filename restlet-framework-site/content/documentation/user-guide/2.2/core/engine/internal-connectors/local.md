@@ -1,7 +1,7 @@
 ---
 title: Local
 longTitle: Local connectors
-weight: 1
+weight: 2
 ---
 The "local" Reference instances can be easily created via the
 [LocalReference](https://javadocs.restlet.talend.com/{{% param version %}}/jse/api/index.html?org/restlet/data/LocalReference.html)

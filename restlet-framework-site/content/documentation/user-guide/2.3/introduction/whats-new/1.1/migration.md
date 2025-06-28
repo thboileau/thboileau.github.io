@@ -1,10 +1,7 @@
 ---
 title: Migration
 longTitle: Migration guide from Restlet 1.0 to 1.1
-parent: In version 1.1
-section: guide-introduction
-version: '2.3'
-weight: 2
+weight: 3
 ---
 # Introduction
 

@@ -1,10 +1,7 @@
 ---
 title: Converter
 longTitle: ConverterService
-parent: Service package
-section: guide-core
-version: '2.2'
-weight: 10
+weight: 11
 ---
 # Introduction
 

@@ -1,7 +1,6 @@
 ---
 title: First client
-parent: First steps
-weight: 2
+weight: 3
 ---
 # Introduction
 

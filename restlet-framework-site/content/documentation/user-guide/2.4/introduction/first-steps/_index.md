@@ -1,8 +1,5 @@
 ---
 title: First steps
-section: guide-introduction
-aliases:
-  - overview
 weight: 4
 ---
 This section will give you a first taste of the Restlet Framework:

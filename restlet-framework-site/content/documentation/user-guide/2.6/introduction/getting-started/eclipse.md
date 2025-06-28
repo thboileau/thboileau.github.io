@@ -1,8 +1,7 @@
 ---
 title: Eclipse IDE
 longTitle: Getting started with Eclipse IDE
-parent: Getting started
-weight: 1
+weight: 2
 ---
 # Introduction
 

@@ -1,7 +1,7 @@
 ---
 title: RIAP
 longTitle: Restlet Internal Access Protocol
-weight: 4
+weight: 5
 ---
 # Introduction
 

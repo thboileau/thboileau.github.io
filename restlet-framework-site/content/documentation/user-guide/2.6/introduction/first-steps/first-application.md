@@ -1,7 +1,6 @@
 ---
 title: First application
-parent: First steps
-weight: 3
+weight: 4
 ---
 # Introduction
 

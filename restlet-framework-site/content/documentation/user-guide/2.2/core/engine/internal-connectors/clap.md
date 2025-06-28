@@ -1,7 +1,7 @@
 ---
 title: CLAP
 longTitle: CLAP connector
-weight: 2
+weight: 3
 ---
 CLAP (ClassLoader Access Protocol) is a custom scheme to access to
 representations via classloaders (e.g.:

@@ -1,10 +1,7 @@
 ---
 title: Connector
 longTitle: Connector service
-parent: Service package
-section: guide-core
-version: '2.2'
-weight: 3
+weight: 4
 ---
 # Introduction
 

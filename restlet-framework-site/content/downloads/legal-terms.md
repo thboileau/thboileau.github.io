@@ -1,6 +1,5 @@
 ---
 title: Legal Terms
-parent: Download
 ---
 
 ## Licenses

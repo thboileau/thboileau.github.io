@@ -1,6 +1,6 @@
 ---
 title: Connectors
-weight: 1
+weight: 2
 ---
 # Introduction
 

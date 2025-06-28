@@ -1,10 +1,7 @@
 ---
 title: Decoder
 longTitle: Decoder service
-parent: Service package
-section: guide-core
-version: '2.2'
-weight: 4
+weight: 5
 ---
 # Introduction
 

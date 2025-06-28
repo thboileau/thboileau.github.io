@@ -1,7 +1,5 @@
 ---
 title: Groovy integration
-section: guide-appendices
-version: '2.5'
 weight: 6
 ---
 # As a Java library
