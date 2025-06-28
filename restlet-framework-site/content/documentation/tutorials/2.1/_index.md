@@ -1,6 +1,6 @@
 ---
 cascade:
   params:
-    section: guide-tutorials
+    section: tutorials
     version: '2.1'
 ---
