@@ -1,0 +1,83 @@
+baseURL: 
+languageCode: en-us
+title: Restlet framework
+theme: restlet-framework
+
+params:
+  versions:
+    stable: 2.5
+    '2.5':
+      'latestRelease': 2.5.2
+    '2.6':
+      'latestRelease': 2.6.0-rc2
+    '2.7':
+      'latestRelease': 2.7.0-m1
+
+disableKinds:
+   - rss
+   - term
+   - robotsTXT
+
+caches:
+  images:
+    dir: :cacheDir/images 
+
+security:
+  enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    duplicateResourceFiles: false
+    extensions:
+      definitionList: false
+      extras:
+        delete:
+          enable: false
+        insert:
+          enable: false
+        mark:
+          enable: false
+        subscript:
+          enable: false
+        superscript:
+          enable: false
+      footnote: false
+      linkify: true
+      linkifyProtocol: https
+      passthrough:
+        enable: false
+        delimiters:
+          block: []
+          inline: []
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoDefinitionTermID: false
+      autoHeadingID: true
+      autoIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderHooks:
+      image:
+        enableDefault: false
+      link:
+        enableDefault: false
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false

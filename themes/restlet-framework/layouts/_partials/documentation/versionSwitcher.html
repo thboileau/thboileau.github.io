@@ -1,0 +1,16 @@
+{{/* look for the right ancestor of the current page: the one that defines the version */}}
+{{- $currentPage := . }}
+{{- $currentPageVersion := $currentPage.Params.version }}
+{{ $section := . }}
+{{- range .Ancestors }}
+  {{- if eq .Page.Params.version $currentPageVersion }}
+    {{- $section = . }}
+  {{- end }}
+{{- end }}
+
+  <select id="id_versions" name="versions">
+{{- range .Params.versions }}
+  {{- $newUrl := replace $currentPage.Permalink $currentPageVersion . }}
+    <option value="{{- $newUrl }}" {{ if eq $currentPageVersion . }}selected="selected"{{ end }}>{{ . }}</option>
+{{- end }}
+  </select>

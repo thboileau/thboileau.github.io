@@ -1,0 +1,67 @@
+@mixin m-card {
+  border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+  box-shadow: 0 16px 24px 0 rgba(0,0,0,0.15);
+	background-color: #fff;
+	margin: 0 0 20px;
+
+	&.m-card--square {
+		border-radius: 0;
+
+		@media #{$sm-up} {
+			margin: 0 0 20px;
+		}
+	}
+
+  &.card__flat {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 30px;
+
+    .card__body {
+      padding: 0;
+
+      ul {
+        @media #{$lg-up} {
+          padding-right: 60px;
+        }
+      }
+    }
+  }
+
+  &.card__grey {
+    background-color: $alabaster;
+  }
+
+  @media #{$sm-up} {
+    margin: 10px;
+  }
+}
+
+@mixin card__figure {
+	margin: 0;
+  min-height: 112px;
+	padding: 0;
+  position: relative;
+	overflow: hidden;
+
+	> img {
+		vertical-align: top;
+		max-width: 100%;
+	}
+}
+
+@mixin card__body {
+  background-color: $alabaster;
+  padding: 30px;
+  flex: 1 0 auto;
+
+  &.card__body_white {
+    background-color: $white;
+  }
+
+  cite {
+    display: block;
+  }
+}

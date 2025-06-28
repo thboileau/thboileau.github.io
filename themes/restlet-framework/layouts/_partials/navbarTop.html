@@ -1,0 +1,16 @@
+<nav class="m-navigation m-navigation-site m-navigation-fixed" role="navigation">
+  <div class="container-fluid">
+    <div class="navigation-group">
+      <a class="navigation-logo" href="/"><img src="/images/navbarTop-home.svg"></a>
+      <span id="j-navigation-trigger" class="navigation-trigger"></span>
+      <ul class="navigation-list navigation-list-right">
+        <li class="{{ if eq .Title "Features" }}active{{ end }}"><a class="navigation__link" href="/features">Features</a></li>
+        <li class="{{ if eq .Title "Current Release" }}active{{ end }}">
+          <a class="navigation__link" href="/downloads/current">Download</a>
+        </li>
+        <li class="{{ if eq .Title "Documentation" }}active{{ end }}">
+            <a class="navigation__link" href="/documentation/tutorials/{{ .Site.Params.versions.stable }}/overview/">Documentation</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

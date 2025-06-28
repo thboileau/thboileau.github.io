@@ -1,0 +1,44 @@
+<div class="mobile-nav hidden-md hidden-lg">
+  <div class="dl-menu-container in-content">
+    <div id="dl-menu" class="dl-menuwrapper">
+      <button class="dl-trigger">Open Menu</button>
+      <ul class="dl-menu">
+        <li class="">
+          <a href="#">User guide</a>
+          <ul class="dl-submenu">
+
+{{- with .GetPage (printf "/documentation/user-guide/%s/introduction/overview" .Params.version ) }}
+  {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-introduction" "sectionLabel" "Part 1 - Introduction") }}
+{{- end }}
+{{- with .GetPage (printf "/documentation/user-guide/%s/core/overview" .Params.version ) }}
+{{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-core" "sectionLabel" "Part 2 - Core Restlet") }}
+{{- end }}
+
+{{- with .GetPage (printf "/documentation/user-guide/%s/editions/overview" .Params.version ) }}
+  {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-editions" "sectionLabel" "Part 3 - Restlet Editions") }}
+{{- end }}
+
+{{- with .GetPage (printf "/documentation/user-guide/%s/extensions/overview" .Params.version ) }}
+  {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-extensions" "sectionLabel" "Part 4 - Restlet Extensions") }}
+{{- end }}
+
+{{- with .GetPage (printf "/documentation/user-guide/%s/appendices" .Params.version ) }}
+  {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-appendices" "sectionLabel" "Appendices") }}
+{{- end }}
+
+          </ul>
+        </li>
+{{- with .GetPage (printf "/documentation/tutorials/%s/overview" .Params.version ) }}
+{{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "tutorials" "sectionLabel" "Tutorials") }}
+{{- end }}
+
+        <li>
+          <a href="/documentation/javadocs/{{ .Params.version }}/">Javadocs</a>
+        </li>
+        <li>
+          <a target="_blank" href="/documentation/{{ .Params.version }}/changelog">Change Log</a>
+        </li>
+      </ul>
+    </div><!-- /dl-menuwrapper -->
+  </div>
+</div>

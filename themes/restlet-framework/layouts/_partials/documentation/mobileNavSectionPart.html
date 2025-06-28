@@ -1,0 +1,44 @@
+{{- $currentPage := .currentPage }}
+{{- $sectionId := .sectionId }}
+{{- $sectionLabel := .sectionLabel }}
+
+{{ $section := $currentPage }}
+{{- range $currentPage.Ancestors }}
+  {{- if eq .Page.Params.section $sectionId }}
+    {{- $section = . }}
+  {{- end }}
+{{- end }}
+
+<li>
+  <a href="#">{{ $sectionLabel }}</a>
+  <ul class="dl-submenu">
+    {{- partial "inline/menu/walkSection.html" (dict "currentPage" $currentPage "sectionInMenu" $section) -}}
+  </ul>
+</li>
+
+
+{{- define "_partials/inline/menu/walkSection.html" }}
+  {{- $currentPage := .currentPage }}
+  {{- $section := .sectionInMenu }}
+
+  {{- range $section.Pages }}
+    {{- $page := . }}
+
+    {{- $attrs := dict "href" $page.Permalink }}
+
+    {{- with $page.Pages }}{{/* In case of section, let's link to the first child */}}
+      {{- $attrs = merge $attrs (dict  "href" (index . 0).Permalink) }}
+    {{- end }}
+
+      <li>
+        <a {{ range $k, $v := $attrs }}{{- with $v }}{{- printf " %s=%q" $k $v | safeHTMLAttr }}{{- end -}}{{- end -}}>
+          {{- $page.Title -}}
+        </a>
+     {{- with $page.Pages }}
+        <ul class="dl-submenu">
+       {{- partial "inline/menu/walkSection.html" (dict "currentPage" $currentPage "sectionInMenu" $page) -}}
+        </ul>
+     {{- end }}
+      </li>
+  {{- end }}
+{{- end }}

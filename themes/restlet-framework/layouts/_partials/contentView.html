@@ -1,0 +1,17 @@
+<article class="skew-top-white">
+  <div class="container">
+    <div class="row">
+{{ partial "mobileNav.html" . }}
+      <div class="col-md-3 hidden-xs hidden-sm">
+{{ partial "innerNav.html" . }}
+      </div>
+{{ if eq .Title  "Current Release" }}
+      <div class="col-md-7 col-lg-6">
+{{ else }}
+	    <div class="col-md-5 col-md-offset-1">
+{{ end }}
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</article>

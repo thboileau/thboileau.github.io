@@ -1,0 +1,48 @@
+{{/* look for the right ancestor of the current page: the one that defines the version */}}
+{{- $currentPage := . }}
+{{- $currentPageVersion := $currentPage.Params.version }}
+{{ $section := . }}
+{{- range .Ancestors }}
+  {{- if eq .Page.Params.version $currentPageVersion }}
+    {{- $section = . }}
+  {{- end }}
+{{- end }}
+
+<nav class="inner-nav hidden-xs hidden-sm">
+  <ul class="content-nav">
+    {{- partial "inline/menu/walkSection.html" (dict "currentPage" $currentPage "sectionInMenu" $section) -}}
+  </ul>
+</nav>
+
+{{- define "_partials/inline/menu/walkSection.html" }}
+  {{- $currentPage := .currentPage }}
+  {{- $section := .sectionInMenu }}
+
+  {{- range $section.Pages }}
+    {{- $page := . }}
+
+    {{- $attrs := dict "class" "navigation-list-link" }}
+
+    {{- with $page.Pages }}{{/* In case of section, let's link to the first child */}}
+      {{- $attrs = merge $attrs (dict  "href" (index . 0).Permalink) }}
+    {{- else }}
+      {{- $attrs = merge $attrs (dict  "href" $page.Permalink) }}
+    {{- end }}
+
+    {{- $currentPageActive := (eq $currentPage.Permalink $page.Permalink) }}
+    {{- if $currentPageActive }}
+      {{- $attrs = merge $attrs (dict "class" "navigation-list-link active" "aria-current" "page") }}
+    {{- end }}
+
+      <li {{- if $currentPageActive }} class="active" {{- end -}}>
+        <a {{ range $k, $v := $attrs }}{{- with $v }}{{- printf " %s=%q" $k $v | safeHTMLAttr }}{{- end -}}{{- end -}}>
+          {{- $page.Title -}}
+        </a>
+     {{- with $page.Pages }}
+        <ul>
+       {{- partial "inline/menu/walkSection.html" (dict "currentPage" $currentPage "sectionInMenu" $page) -}}
+        </ul>
+     {{- end }}
+      </li>
+  {{- end }}
+{{- end }}

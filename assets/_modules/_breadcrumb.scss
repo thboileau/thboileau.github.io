@@ -1,0 +1,18 @@
+.m-breadcrumb {
+  padding: 8px 15px 8px 0;
+  margin-bottom: 30px;
+  list-style: none;
+
+  >li {
+    display: inline-block;
+    +li:before {
+      content: "/\00a0";
+      padding: 0 5px;
+      color: #ccc;
+    }
+
+    a {
+      color: $mantee;
+    }
+  }
+}
