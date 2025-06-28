@@ -1,7 +1,7 @@
 ---
 title: Overview
 aliases:
-  - overview
+  - overview/
 cascade:
   params:
     section: guide-introduction

@@ -1,8 +1,12 @@
 ---
 title: First steps
 section: guide-introduction
-version: '2.4'
-weight: 3
-redirect_to: /documentation/user-guide/2.4/introduction/first-steps/overview
-has_children: true
+aliases:
+  - overview
+weight: 4
 ---
+This section will give you a first taste of the Restlet Framework:
+
+- [First server](./first-server "First server")
+- [First client](./first-client "First client")
+- [First application](./first-application "First application")
