@@ -4,16 +4,15 @@
 {{ $defaultVersionClosed := true }}{{/* used to open the default version: the latest one */}}
 {{ $defaultReleaseClosed := true }}
 
-<div class="downloads">
 {{- range $index, $version := sort .Site.Data.downloads.versions "version" "desc" }}
   <details {{ if $defaultVersionClosed }}open{{ $defaultVersionClosed = false }}{{ end }}>
-      <summary class="version">{{- $version.version -}}</summary>
+      <summary class="version">{{- $version.version -}}&nbsp;&nbsp;(<a class="changelog" href="/documentation/{{- $version.version -}}/changelog">View changelog</a>)</summary>
       <div class="releases">
 
   {{- with $version.editions }}{{/* versions 1.* do not support editions */}}
     {{- range $release := $version.releases }}
         <details {{ if $defaultReleaseClosed }}open{{ $defaultReleaseClosed = false }}{{ end }}>
-            <summary class="release">{{- $release.name }} ({{ $release.release_date -}})</summary>
+            <summary class="release">{{- $release.name }}&nbsp;&nbsp;(<p class="release-date">{{ $release.release_date -}}</p>)</summary>
             <ul>
       {{- range $edition := $editions }}
               <li><a href="{{ printf "%s/%s/restlet-%s-%s.zip" $baseUrl $version.version $edition.value $release.name }}">{{- $edition.name }}</a></li>
@@ -24,7 +23,7 @@
   {{- else }}
         <ul>
     {{- range $release := $version.releases }}
-          <li><a href="{{ printf "%s/%s/restlet-%s.zip" $baseUrl $version.version $release.name }}">{{- $release.name }} ({{ $release.release_date -}})</a></li>
+          <li><a href="{{ printf "%s/%s/restlet-%s.zip" $baseUrl $version.version $release.name }}">{{- $release.name }} (<p class="release-date">{{ $release.release_date -}}</p>)</a></li>
     {{- end }}
         </ul>
   {{- end }}

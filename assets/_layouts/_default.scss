@@ -441,6 +441,15 @@ article {
     border-bottom: 1px solid #aaa;
     margin-bottom: 0;
   }
+
+  .changelog, .release-date {
+    font-weight: 300;
+  }
+
+  .release-date {
+    margin: 0px;
+  }
+
 }
 
 code[class*="language-"],
