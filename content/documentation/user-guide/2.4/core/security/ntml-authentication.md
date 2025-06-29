@@ -16,7 +16,7 @@ javadocs, just proceed as follow:
 {{< highlight java "style=emacs" >}}// Create your own authenticator
 Authenticator a = new Authenticator() {
 &nbsp;&nbsp;&nbsp; public PasswordAuthentication getPasswordAuthentication() {
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (new PasswordAuthentication("&lt;your account&gt;", "&lt;your password&gt;".toCharArray()));
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (new PasswordAuthentication("<your account>", "<your password>".toCharArray()));
 &nbsp;&nbsp;&nbsp; }
 };
 // Sets the default Authenticator

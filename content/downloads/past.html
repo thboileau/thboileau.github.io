@@ -7,56 +7,7 @@ title: Other Releases
     <li class="col-md-12">
       <div class="m-icon icon-block">
         <figure><img style="height: 50px;" src="/images/downloads/restlet-framework.svg" /></figure>
-        <p>
-          <small>Select a version to download below, or view how to configure
-          <a class="text-bostonblue" href="/documentation/user-guide/2.4/introduction/getting-started/maven">Maven</a> or
-          <a class="text-bostonblue" href="/documentation/user-guide/2.4/introduction/getting-started/eclipse">Eclipse</a>.</small></p>
 
-        <form id="frmDownload" action="." method="POST" novalidate="novalidate">
-
-          <div class="form-group">
-            <label for="id_branch">Branch:</label>
-            <select class="form-control" id="id_branch" name="branch">
-              
-              {{ range $index, $version := .Site.Data.downloads.preMavenCentral.versions }}
-              <option value="{{ version[0] }}">{{ version[0] }}</option>
-              {{ end }}
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="id_release">Release:</label>
-            <select class="form-control" id="id_release" name="release">
-              {% for version in .Site.Data.downloads.preMavenCentral.versions %}
-                {% for release in version[1]["releases"] %}
-                  <option value="{{ release['id'] }}">{{ release["name"] }}</option>
-                {% endfor %}
-              {% endfor %}
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="id_edition">Edition:</label>
-            <select class="form-control" id="id_edition" name="edition">
-              {% for edition in .Site.Data.downloads.editions %}
-                <option value="{{ edition.value }}">{{ edition.name }}</option>
-              {% endfor %}
-            </select>
-          </div>
-
-          <div class="form-group">
-            <select id="id_distribution" name="distribution" class="hidden">
-              <option data-short-title="zip" selected="selected" value="7">ZIP file</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <button type="button" class="m-button m-button-block m-button-flat-darkblue" id="download" onclick="downloadIIFE({{ .Site.Data.downloads.preMavenCentral.versions | jsonify }}, 'https://download.restlet.talend.com/')">Download</button>
-          </div>
-
-          <p>Release date: <span id="download_date">2024-06-20</span></p>
-
-        </form>
         <div>
           Starting from release 2.5, the Restlet Framework is available from Maven Central repository.
           Prior to version 2.5 of Restlet Framework, the Maven repository for Restlet is accessible from https://maven.restlet.talend.com and contains all Restlet JARs and third party dependencies that aren’t available in the main public Maven repository.
@@ -69,7 +20,8 @@ title: Other Releases
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
@@ -121,6 +73,14 @@ title: Other Releases
           <li class="doc"><a href="/documentation/{{% param versions.stable %}}/changelog" id="change_log_link" target="_blank">View change log for version
             <span class="download_name">{{% param versions.stable %}}</span></a></li>
         </ul>
+
+        <div>
+          Select a version to download below, or view how to configure
+          <a class="text-bostonblue" href="/documentation/user-guide/2.4/introduction/getting-started/maven">Maven</a> or
+          <a class="text-bostonblue" href="/documentation/user-guide/2.4/introduction/getting-started/eclipse">Eclipse</a>.
+        </div>
+
+{{% downloads %}}
       </div>
     </li>
   </ul>

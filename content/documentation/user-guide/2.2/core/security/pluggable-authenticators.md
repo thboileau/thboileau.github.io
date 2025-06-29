@@ -9,7 +9,7 @@ scheme. Let's say you have defined your own challenge scheme called
 "MySCHEME". Basically, the server's response to unauthenticated request
 will contain a WWW-Authenticate header as follow:
 
-{{< highlight bash "style=emacs" >}}WWW-Authentication: MySCHEME realm=”&lt;realm&gt;”
+{{< highlight bash "style=emacs" >}}WWW-Authentication: MySCHEME realm=”<realm>”
 {{</ highlight >}}
 
 ## Definition of the custom challenge scheme
@@ -72,7 +72,7 @@ In order to add the realm, proceed as follow:
 {{< highlight java "style=emacs" >}}public void formatRawRequest(ChallengeWriter cw,
                              ChallengeRequest challenge,
                              Response response,
-                             Series&lt;Parameter&gt; httpHeaders) throws IOException {
+                             Series<Parameter> httpHeaders) throws IOException {
     if (challenge.getRealm() != null) {
         cw.appendQuotedChallengeParameter("realm", challenge.getRealm());
     }

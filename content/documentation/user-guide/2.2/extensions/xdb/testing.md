@@ -31,7 +31,7 @@ GET /userapp/users/scott/orders/300 HTTP/1.0
 
 HTTP/1.1 200 OK
 MS-Author-Via: DAV
-DAV: 1,2,&lt;http://www.oracle.com/xdb/webdav/props&gt;
+DAV: 1,2,<http://www.oracle.com/xdb/webdav/props>
 Date: Tue, 03 Jun 2008 19:18:11 GMT
 Server: Noelios-Restlet-Engine/1.1.snapshot
 Content-Type: text/plain; charset=ISO-8859-1
@@ -113,9 +113,9 @@ END orders_calculator;
 As you can see OrderCalculator class is using JDK logging package, to get JDK logging working this grant is required:
 
 
-{{< highlight sql "style=emacs" >}}SQL&gt; exec dbms_java.grant_permission( 'SCOTT',
+{{< highlight sql "style=emacs" >}}SQL> exec dbms_java.grant_permission( 'SCOTT',
 'SYS:java.util.logging.LoggingPermission', 'control', '' );
-SQL&gt; commit;
+SQL> commit;
 {{</ highlight >}}
 
 
@@ -158,7 +158,7 @@ Add this to __/etc/httpd/modules.d/57_mod_mem_cache.conf__ file:
 
 
 {{< highlight bash "style=emacs" >}}.....
-&lt;IfModule mod_cache.c&gt;
+<IfModule mod_cache.c>
 
     # CacheEnable - A cache type and partial URL prefix below which caching is enabled
     #CacheEnable mem /manual
@@ -166,7 +166,7 @@ Add this to __/etc/httpd/modules.d/57_mod_mem_cache.conf__ file:
     CacheEnable mem /userapp
     CacheEnable mem /orawsv
 
-&lt;/IfModule&gt;
+</IfModule>
 ....
 {{</ highlight >}}
 
@@ -175,7 +175,7 @@ This will enable mod_mem_cache to any URL starting with /userapp/ directory, thi
 Edit __/etc/httpd/modules.d/30_mod_proxy.conf__ adding these lines:
 
 
-{{< highlight bash "style=emacs" >}}&lt;IfModule mod_proxy.c&gt;
+{{< highlight bash "style=emacs" >}}<IfModule mod_proxy.c>
 ....
     SetEnv proxy-nokeepalive 1
 ....
@@ -184,7 +184,7 @@ Edit __/etc/httpd/modules.d/30_mod_proxy.conf__ adding these lines:
     ProxyPass /orawsv/ http://localhost:8080/orawsv/
     ProxyPassReverse /orawsv/ http://localhost:8080/orawsv/
 ....
-&lt;/IfModule&gt;
+</IfModule>
 
 {{</ highlight >}}
 
@@ -222,21 +222,21 @@ __XMLDB Restlet Adapter__ can be tested with __Apache JMeter__, here some captur
 Test plan used with Users Restlet example:
 
 
-{{< highlight bash "style=emacs" >}}Thread Group -&gt; Thread Properties
+{{< highlight bash "style=emacs" >}}Thread Group -> Thread Properties
 Number of Threads (users): 10
 
 Ramp Up Period (in seconds): 0
 
 Loop Count: 200
 
-HTTP Request -&gt; Web Server
+HTTP Request -> Web Server
 Server Name or IP: localhost
-HTTP Request -&gt; HTTP Request
+HTTP Request -> HTTP Request
 Protocol: http
 Method: GET
 Path: /userapp/users/scott/orders/300
 
-Gaussian Random Timer -&gt; Thread Delay Properties
+Gaussian Random Timer -> Thread Delay Properties
 Deviation (in milliseconds): 100.0
 Constant Delay Offset (in milliseconds): 300
 {{</ highlight >}}
@@ -248,9 +248,9 @@ Test plan used with Users SOAP example:
 Ramp Up Period (in seconds): 0
 Loop Count: 200
 
-SOAP/XML-RPC Request -&gt; Web Server
+SOAP/XML-RPC Request -> Web Server
 Server Name or IP: localhost
-HTTP Request -&gt; HTTP Request
+HTTP Request -> HTTP Request
 URL: http://localhost:8080/orawsv/SCOTT/ORDERS_CALCULATOR/GETORDER
 
 Send SOAPAction: GETORDER
@@ -258,9 +258,9 @@ User KeepAlive: true
 SOAP/XML-RPC Data Filename: /tmp/soap-post-func.txt
 
 
-HTTP Header Manager -&gt; Headers Stored in the Header Manager
+HTTP Header Manager -> Headers Stored in the Header Manager
 Authorization: Basic c2NvdHQ6dGlnZXI=    (Base 64 encoding of scott/tiger)
-Gaussian Random Timer -&gt; Thread Delay Properties
+Gaussian Random Timer -> Thread Delay Properties
 Deviation (in milliseconds): 100.0
 Constant Delay Offset (in milliseconds): 300
 /tmp/soap-post-func.txt file content:

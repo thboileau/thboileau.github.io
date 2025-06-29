@@ -67,18 +67,18 @@ Several parameters at the boton of pom.xml file, properties section, are used du
 
 
 {{< highlight xml "style=emacs" >}}....
-&lt;properties&gt;
+<properties>
 
-&lt;sqlplus.app.value&gt;${env.ORACLE_HOME}/bin/sqlplus&lt;/sqlplus.app.value&gt;
+<sqlplus.app.value>${env.ORACLE_HOME}/bin/sqlplus</sqlplus.app.value>
 
-    &lt;restlet.owner.value&gt;RESTLET&lt;/restlet.owner.value&gt;
-    &lt;sqlnet.string.value&gt;test&lt;/sqlnet.string.value&gt;
-    &lt;jdbc.str.value&gt;test&lt;/jdbc.str.value&gt;
-    &lt;jdbc.username.value&gt;LUCENE&lt;/jdbc.username.value&gt;
-    &lt;jdbc.password.value&gt;LUCENE&lt;/jdbc.password.value&gt;
-    &lt;jdbc.sysusr.value&gt;sys&lt;/jdbc.sysusr.value&gt;
-    &lt;jdbc.syspwd.value&gt;change_on_install&lt;/jdbc.syspwd.value&gt;
-  &lt;/properties&gt;
+    <restlet.owner.value>RESTLET</restlet.owner.value>
+    <sqlnet.string.value>test</sqlnet.string.value>
+    <jdbc.str.value>test</jdbc.str.value>
+    <jdbc.username.value>LUCENE</jdbc.username.value>
+    <jdbc.password.value>LUCENE</jdbc.password.value>
+    <jdbc.sysusr.value>sys</jdbc.sysusr.value>
+    <jdbc.syspwd.value>change_on_install</jdbc.syspwd.value>
+  </properties>
 ....
 {{</ highlight >}}
 

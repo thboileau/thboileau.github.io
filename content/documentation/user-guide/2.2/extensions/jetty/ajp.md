@@ -101,17 +101,17 @@ public class JettyAJPApplication extends Application {
 -   add the entry below in your httpd.conf apache configuration file
     located in \<apache-root\>/conf/ directory:
 
-{{< highlight plaintext "style=emacs" >}}&lt;IfModule !mod_jk.c&gt;
+{{< highlight plaintext "style=emacs" >}}<IfModule !mod_jk.c>
      LoadModule jk_module  modules/mod_jk.so
-&lt;/IfModule&gt;
+</IfModule>
 
-&lt;IfModule mod_jk.c&gt;
+<IfModule mod_jk.c>
      JkWorkersFile &quot;conf/worker.properties&quot;
      JkLogFile &quot;logs/mod_jk.log&quot;
      JkLogLevel info
      JkLogStampFormat &quot;[%a %b %d %H:%M:%S %Y] &quot;
      JkOptions +ForwardKeySize +ForwardURICompat
-&lt;/IfModule&gt;
+</IfModule>
 {{</ highlight >}}
 
 -   **LoadModule jk\_module modules/mod\_jk.so** tells your apache
@@ -125,13 +125,13 @@ After adding the mod\_jk configuration you may add a **VirtualHost**
 Entry in the same file (httpd.conf) as long as its located below your
 mod\_jk configuration entry:
 
-{{< highlight plaintext "style=emacs" >}}&lt;VirtualHost host:*&gt;
+{{< highlight plaintext "style=emacs" >}}<VirtualHost host:*>
      ServerName yourserver
       ServerAdmin user@yourserver
       ## you may add further entries concerning log-files, log-level, URL-rewriting, ...
       ## pass requests through to jetty worker
 JkMount /* jetty
-&lt;/VirtualHost&gt;
+</VirtualHost>
 {{</ highlight >}}
 -   Add a worker file **worker.properties** in your
     \<apache-root\>/conf/

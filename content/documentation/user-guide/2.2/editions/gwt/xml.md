@@ -30,7 +30,7 @@ r.setOnResponse(new Uniform() {
         NodeList nodes;
         try {
             nodes = rep.getDocument().getDocumentElement().getChildNodes();
-            for (int i = 0; i &lt; nodes.getLength(); i++) {
+            for (int i = 0; i < nodes.getLength(); i++) {
                 Node node = nodes.item(i);
                 xmlRoot.addItem(node.getNodeName() + ":" + node.getFirstChild().getNodeValue());
             }

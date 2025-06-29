@@ -1,0 +1,23 @@
+{{ $editions := .Site.Data.downloads.editions }}
+
+{{ $defaultVersionClosed := true }}
+{{ $defaultReleaseClosed := true }}
+<div class="downloads">
+{{- range $index, $version := sort .Site.Data.downloads.versions "version" "desc" }}
+  <details {{ if $defaultVersionClosed }}open{{ $defaultVersionClosed = false }}{{ end }}>
+      <summary class="version">{{- $version.version -}}</summary>
+      <div class="releases">
+  {{ range $release := $version.releases }}
+        <details {{ if $defaultReleaseClosed }}open{{ $defaultReleaseClosed = false }}{{ end }}>
+            <summary class="release">{{- $release.name }} ({{ $release.release_date -}})</summary>
+            <ul>
+    {{ range $editions }}
+              <li><a href="{{ .Site.Data.downloads.baseUrl }}">{{- .name }}</a></li>
+    {{- end }}          
+            </ul>
+        </details>
+  {{- end }}
+      </div>
+  </details>
+{{- end }}
+</div>

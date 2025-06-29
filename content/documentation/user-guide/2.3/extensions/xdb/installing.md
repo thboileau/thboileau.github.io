@@ -86,7 +86,7 @@ To start using XDB Adapter __ant__ without arguments is the only target required
 Oracle databases do not enable by default XMLDB HTTP repository access. To enable it using SQLPlus connected as SYSDBA execute:
 
 
-{{< highlight sql "style=emacs" >}}SQL&gt; exec dbms_xdb.sethttpport(8080);
+{{< highlight sql "style=emacs" >}}SQL> exec dbms_xdb.sethttpport(8080);
 {{</ highlight >}}
 
 Restart your database and test with a browser or any WebDAV enable file manager a connection to http://localhost:8080/

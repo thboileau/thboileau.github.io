@@ -62,9 +62,9 @@ public class EasyRootResource {
     @GET
     @Produces("text/html")
     public String getHtml() {
-        return "&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;\n"
+        return "<html><head></head><body>\n"
                 + "This is an easy resource (as html text).\n"
-                + "&lt;/body&gt;&lt;/html&gt;";
+                + "</body></html>";
     }
 
     @GET
@@ -90,8 +90,8 @@ import javax.ws.rs.core.Application;
 
 public class ExampleApplication extends Application {
 
-    public Set&lt;Class&lt;?&gt;&gt; getClasses() {
-        Set&lt;Class&lt;?&gt;&gt; rrcs = new HashSet&lt;Class&lt;?&gt;&gt;();
+    public Set<Class<?>> getClasses() {
+        Set<Class<?>> rrcs = new HashSet<Class<?>>();
         rrcs.add(EasyRootResource.class);
         return rrcs;
     }

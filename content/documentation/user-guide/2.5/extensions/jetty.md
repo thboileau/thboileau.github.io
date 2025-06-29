@@ -42,9 +42,9 @@ For configuration of the connector in a Restlet component, you will need
 to set some of the HTTPS parameters listed above, for example:
 
 {{< highlight java "style=emacs" >}}Server server = myComponent.getServers().add(Protocol.HTTPS, 8183);
-server.getContext().getParameters().add("keystorePath", "&lt;your-path&gt;");
-server.getContext().getParameters().add("keystorePassword", "&lt;your-password&gt;");
-server.getContext().getParameters().add("keyPassword", "&lt;your-password&gt;");
+server.getContext().getParameters().add("keystorePath", "<your-path>");
+server.getContext().getParameters().add("keystorePassword", "<your-password>");
+server.getContext().getParameters().add("keyPassword", "<your-password>");
 {{</ highlight >}}
 
 ## SPDY

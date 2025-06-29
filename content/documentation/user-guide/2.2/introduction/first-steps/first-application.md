@@ -166,13 +166,13 @@ edition of the Restlet Framework):
 
 {{< highlight java "style=emacs" >}}public interface ContactResourceProxy extends ClientProxy {
     @Get
-    public void retrieve(Result&lt;Contact&gt; callback);
+    public void retrieve(Result<Contact> callback);
 
    @Put
-    public void store(Contact contact, Result&lt;Void&gt; callback);
+    public void store(Contact contact, Result<Void> callback);
 
     @Delete
-    public void remove(Result&lt;Void&gt; callback);
+    public void remove(Result<Void> callback);
 }
 {{</ highlight >}}
 
@@ -195,7 +195,7 @@ resource:
 contactResource.getClientResource().setReference("/contacts/123");
 
 // Retrieve the contact
-contactResource.retrieve(new Result&lt;Contact&gt;() {
+contactResource.retrieve(new Result<Contact>() {
     public void onFailure(Throwable caught) {
         // Handle the error
     }
@@ -219,7 +219,7 @@ the GET button.
 In order to update the contact, simply complete your contact object and
 invoke the "store" method as specified by the proxy interface:
 
-{{< highlight java "style=emacs" >}}contactResource.store(contact, new Result&lt;Void&gt;() {
+{{< highlight java "style=emacs" >}}contactResource.store(contact, new Result<Void>() {
     public void onFailure(Throwable caught) {
         // Handle the error
     }

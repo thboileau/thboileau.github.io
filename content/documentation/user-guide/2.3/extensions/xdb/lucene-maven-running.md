@@ -107,7 +107,7 @@ Host: localhost:8080
 
 HTTP/1.1 200 OK
 MS-Author-Via: DAV
-DAV: 1,2,&lt;http://www.oracle.com/xdb/webdav/props&gt;
+DAV: 1,2,<http://www.oracle.com/xdb/webdav/props>
 Date: Wed, 18 Jun 2008 23:08:06 GMT
 Server: Noelios-Restlet-Engine/1.1.snapshot
 Content-Type: application/atomsvc+xml; charset=ISO-8859-1
@@ -135,7 +135,7 @@ Note that the Authorization header have a B64 encoding information of scott:tige
 {{< highlight sql "style=emacs" >}} create table test_source_big as (select * from all_source);
 
 
-SQL&gt; create index source_big_lidx on test_source_big(text)
+SQL> create index source_big_lidx on test_source_big(text)
 indextype is lucene.LuceneIndex
 parameters('AutoTuneMemory:true;Analyzer:org.apache.lucene.analysis.StopAnalyzer;\
 
@@ -163,22 +163,22 @@ pom.xml file modifications
 
 
 {{< highlight xml "style=emacs" >}}....
-    &lt;dependency&gt;
-      &lt;groupId&gt;org.apache.jmeter&lt;/groupId&gt;
-      &lt;artifactId&gt;maven-jmeter-plugin&lt;/artifactId&gt;
-      &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
-    &lt;/dependency&gt;
+    <dependency>
+      <groupId>org.apache.jmeter</groupId>
+      <artifactId>maven-jmeter-plugin</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
 ....
-      &lt;plugin&gt;
-        &lt;groupId&gt;org.apache.jmeter&lt;/groupId&gt;
-        &lt;artifactId&gt;maven-jmeter-plugin&lt;/artifactId&gt;
-        &lt;configuration&gt;
-          &lt;includes&gt;
-            &lt;include&gt;test_get_scott.jmx&lt;/include&gt;
-          &lt;/includes&gt;
-&lt;reportDir&gt;target/jmeter-reports&lt;/reportDir&gt;
-        &lt;/configuration&gt;
-      &lt;/plugin&gt;
+      <plugin>
+        <groupId>org.apache.jmeter</groupId>
+        <artifactId>maven-jmeter-plugin</artifactId>
+        <configuration>
+          <includes>
+            <include>test_get_scott.jmx</include>
+          </includes>
+<reportDir>target/jmeter-reports</reportDir>
+        </configuration>
+      </plugin>
 ....
 {{</ highlight >}}
 

@@ -389,6 +389,52 @@ article {
   }
 }
 
+  .downloads {
+    details {
+      border: 0;
+      border-radius: 4px;
+      padding: 0.5em 0.5em 0;
+
+      ul {
+        list-style: none;
+      }
+
+      summary {
+        font-weight: bold;
+        margin: -0.5em -0.5em 0;
+        padding: 0.5em;
+      }
+ 
+      summary:first-of-type {
+        display: list-item;
+        counter-increment: list-item 0;
+        list-style: inside disclosure-closed;
+      }
+
+      &[open] summary:first-of-type {
+        list-style-type: disclosure-open;
+      }
+    }
+
+    details::details-content {
+      opacity: 0;
+      transition: content-visibility 300ms allow-discrete, opacity 300ms;
+    }
+
+    details[open]::details-content {
+      opacity: 1;
+    }
+
+    details[open] {
+      padding: 0.5em;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 0;
+    }
+  }
+
 code[class*="language-"],
 pre[class*="language-"] {
   // font-family: "Source Sans Pro", sans-serif !important;

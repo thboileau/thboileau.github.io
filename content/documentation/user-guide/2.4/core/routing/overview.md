@@ -201,6 +201,6 @@ Value | Description
 Here is the way to change the type of a variable:
 
 {{< highlight java "style=emacs" >}}TemplateRoute route = router.attach("/items/{itemName}", ItemResource);
-    Map&lt;String, Variable&gt; routeVariables = route.getTemplate().getVariables();
+    Map<String, Variable> routeVariables = route.getTemplate().getVariables();
     routeVariables.put("itemName", new Variable(Variable.TYPE_URI_WORD));
 {{</ highlight >}}

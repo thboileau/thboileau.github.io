@@ -71,9 +71,9 @@ install Maven. Open and edit *conf/settings.xml* file. Add to the
 
 Just after the \</profiles\> add the following:
 
-{{< highlight xml "style=emacs" >}}    &lt;activeProfiles&gt;&nbsp;
-    &nbsp; &lt;activeProfile&gt;restlet&lt;/activeProfile&gt;
-    &lt;/activeProfiles&gt;
+{{< highlight xml "style=emacs" >}}    <activeProfiles>&nbsp;
+    &nbsp; <activeProfile>restlet</activeProfile>
+    </activeProfiles>
 {{</ highlight >}}
 
 # Available artifacts

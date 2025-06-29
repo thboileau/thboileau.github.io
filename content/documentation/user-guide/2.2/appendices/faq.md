@@ -57,7 +57,7 @@ with media type parameters:
 {{< highlight java "style=emacs" >}}public class MyResource extends ServerResource {
    @Get("html")
    public String toHtml() {
-      return "&lt;html&gt;&lt;body&gt;hello, world&lt;/body&gt;&lt;/html&gt;";
+      return "<html><body>hello, world</body></html>";
    }
 }
 {{</ highlight >}}

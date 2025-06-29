@@ -151,7 +151,7 @@ The listing below shows how to rRetrieve the two first “BuildingPermits”
 entities:
 
 {{< highlight java "style=emacs" >}}OgdiDcSession session = new OgdiDcSession();
-Query&lt;BuildingPermit&gt; query =
+Query<BuildingPermit> query =
       session.createBuildingPermitQuery("/BuildingPermits").top(2);
 
 if (query != null) {
@@ -209,7 +209,7 @@ Address :2925 SOUTH DAKOTA AVE NE
 The listing below shows how to retrieve the five first “BuildingPermits”
 entities in the fifht district of Washington:
 
-{{< highlight java "style=emacs" >}}Query&lt;BuildingPermit&gt; search =
+{{< highlight java "style=emacs" >}}Query<BuildingPermit> search =
    session.createBuildingPermitQuery("/BuildingPermits")
       .filter("((city eq 'WASHINGTON') and (district eq 'FIFTH'))")
       .top(5);

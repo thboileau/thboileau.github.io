@@ -156,7 +156,7 @@ options:
 The output should be:
 
 {{< highlight bash "style=emacs" >}}
-Certificate stored in file &lt;serverX.cer&gt;
+Certificate stored in file <serverX.cer>
 {{</ highlight >}}
 
 To explain each option:
@@ -259,10 +259,10 @@ from the keystore file (serverX.jks):
 
          // Add a new HTTPS server listening on port 8183
          Server server = component.getServers().add(Protocol.HTTPS, 8183);  
-         Series&lt;Parameter&gt; parameters = server.getContext().getParameters();
+         Series<Parameter> parameters = server.getContext().getParameters();
          parameters.add("sslContextFactory",
          "org.restlet.ext.ssl.PkixSslContextFactory");
-         parameters.add("keystorePath", "&lt;path&gt;serverX.jks");
+         parameters.add("keystorePath", "<path>serverX.jks");
          parameters.add("keystorePassword", "password");
          parameters.add("keyPassword", "password");
          parameters.add("keystoreType", "JKS");
@@ -298,7 +298,7 @@ public class SampleClient {
         Reference samplesUri = new Reference("https://serverX:8183/sample";);
 
         // Create 9 new items
-        for (int i = 1; i &lt; 10; i++) {
+        for (int i = 1; i < 10; i++) {
             Sample sample = new Sample(Integer.toString(i), "sample " + i, "this is
                 sample " + i + ".");
             Reference sampleUri = createSample(sample, client, samplesUri);

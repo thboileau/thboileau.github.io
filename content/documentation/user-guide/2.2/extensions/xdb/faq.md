@@ -147,32 +147,32 @@ Above registration can be done by a following PLSQL script executed logged as SY
 begin
   dbms_xdb.deleteServletMapping(&apos;UsersRestlet&apos;);
   dbms_xdb.deleteServlet(&apos;UsersRestlet&apos;);
-  dbms_xdb.addServlet(name=&gt;&apos;UsersRestlet&apos;,
+  dbms_xdb.addServlet(name=>&apos;UsersRestlet&apos;,
 
- language=&gt;&apos;Java&apos;,
+ language=>&apos;Java&apos;,
 
-class=&gt;&apos;org.restlet.ext.xdb.XdbServerServlet&apos;,
+class=>&apos;org.restlet.ext.xdb.XdbServerServlet&apos;,
 
- dispname=&gt;&apos;Restlet
-Servlet&apos;,schema=&gt;&apos;PUBLIC&apos;);
+ dispname=>&apos;Restlet
+Servlet&apos;,schema=>&apos;PUBLIC&apos;);
   -- Modify the configuration
   -- Due this servlet provide public access, it can not load
   -- &apos;/home/&apos;||USER||&apos;/restlet/UsersRestlet.xml&apos; from XMLDB repository
   SELECT
 INSERTCHILDXML(xdburitype(&apos;/xdbconfig.xml&apos;).getXML(),&apos;/xdbconfig/sysconfig/protocolconfig/httpconfig/webappconfig/servletconfig/servlet-list/servlet[servlet-name=&quot;UsersRestlet&quot;]&apos;,&apos;init-param&apos;,
 
-  XMLType(&apos;&lt;init-param xmlns=&quot;http://xmlns.oracle.com/xdb/xdbconfig.xsd&quot;&gt;
- &lt;param-name&gt;org.restlet.application&lt;/param-name&gt;
- &lt;param-value&gt;RESTLET:org.restlet.example.tutorial.Part12&lt;/param-value&gt;
- &lt;description&gt;REST User Application&lt;/description&gt;
- &lt;/init-param&gt;&apos;),&apos;xmlns=&quot;http://xmlns.oracle.com/xdb/xdbconfig.xsd&quot;&apos;) INTO
+  XMLType(&apos;<init-param xmlns=&quot;http://xmlns.oracle.com/xdb/xdbconfig.xsd&quot;>
+ <param-name>org.restlet.application</param-name>
+ <param-value>RESTLET:org.restlet.example.tutorial.Part12</param-value>
+ <description>REST User Application</description>
+ </init-param>&apos;),&apos;xmlns=&quot;http://xmlns.oracle.com/xdb/xdbconfig.xsd&quot;&apos;) INTO
 configxml
   FROM DUAL;
   -- Update the configuration to use the modified version
   --I got this error at this line :
   dbms_xdb.cfg_update(configxml);
-  dbms_xdb.addServletSecRole(SERVNAME =&gt; &apos;UsersRestlet&apos;,ROLENAME =&gt;
-&apos;PUBLIC&apos;,ROLELINK =&gt; &apos;PUBLIC&apos;);
+  dbms_xdb.addServletSecRole(SERVNAME => &apos;UsersRestlet&apos;,ROLENAME =>
+&apos;PUBLIC&apos;,ROLELINK => &apos;PUBLIC&apos;);
   dbms_xdb.addServletMapping(&apos;/userapp/*&apos;,&apos;UsersRestlet&apos;);
   commit;
 end;
@@ -220,32 +220,32 @@ If you want to use Apache mod_proxy behind Oracle XMLDB Restlet adapter for secu
 
 
 
-{{< highlight bash "style=emacs" >}}&lt;IfModule mod_proxy.c&gt;
+{{< highlight bash "style=emacs" >}}<IfModule mod_proxy.c>
 
-    # &lt;Proxy&gt; - Container for directives affecting resources located in
+    # <Proxy> - Container for directives affecting resources located in
 the proxied location
-    &lt;Proxy *&gt;
+    <Proxy *>
         Order deny,allow
         Allow from all
     #    Allow from .your-domain.com
-    &lt;/Proxy&gt;
+    </Proxy>
     ProxyRequests On
     ProxyVia On
     ProxyPreserveHost On
     SetEnv proxy-nokeepalive 1
     ProxyPass / http://localhost:8080/
-&lt;/IfModule&gt;
+</IfModule>
 {{</ highlight >}}
 
 Above configuration, usually in __/etc/httpd/modules.d/30_mod_proxy.conf__, will forward all request to `http://localhost:80/` to `http://localhost:8080/` assuming that your Oracle listener is in the same host as Apache.
 If you want to configure Apache mod_cache to speed GET request which have expiration Date header, for example, follow this configuration:
 
 
-{{< highlight bash "style=emacs" >}}&lt;IfModule mod_cache.c&gt;
+{{< highlight bash "style=emacs" >}}<IfModule mod_cache.c>
     CacheEnable mem /userapp
     CacheEnable mem /orawsv
     CacheEnable mem /ds
-&lt;/IfModule&gt;
+</IfModule>
 {{</ highlight >}}
 
 This configuration will enable Apache mod_mem_cache on directories __/ds__ __/oraws__ and __/userapp__.

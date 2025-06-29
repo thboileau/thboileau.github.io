@@ -17,8 +17,8 @@ Some browser such Firefox reports an unexpected exception because it tries to st
 Usually to run REST application in other schemas like SCOTT these grants are required (JDK Logging and class loader functionality):
 
 
-{{< highlight sql "style=emacs" >}}SQL&gt; exec dbms_java.grant_permission( 'SCOTT', 'SYS:java.lang.RuntimePermission', 'getClassLoader', '' );
-SQL&gt; exec dbms_java.grant_permission( 'SCOTT', 'SYS:java.util.logging.LoggingPermission', 'control', '' );
-SQL&gt; commit;
+{{< highlight sql "style=emacs" >}}SQL> exec dbms_java.grant_permission( 'SCOTT', 'SYS:java.lang.RuntimePermission', 'getClassLoader', '' );
+SQL> exec dbms_java.grant_permission( 'SCOTT', 'SYS:java.util.logging.LoggingPermission', 'control', '' );
+SQL> commit;
 
 {{</ highlight >}}

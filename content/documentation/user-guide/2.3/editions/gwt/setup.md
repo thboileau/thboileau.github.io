@@ -18,7 +18,7 @@ GWT to the project classpath *^[explain]^*
 ​3) Add the following to your application's module definition file
 (*yourapp*.gwt.xml):
 
-{{< highlight xml "style=emacs" >}}    &lt;inherits name=&apos;org.restlet.Restlet&apos;/&gt;
+{{< highlight xml "style=emacs" >}}    <inherits name=&apos;org.restlet.Restlet&apos;/>
 {{</ highlight >}}
 
 This will make the Restlet API available to your GWT compiled code.  The

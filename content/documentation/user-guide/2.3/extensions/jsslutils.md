@@ -76,7 +76,7 @@ SslContextFactory, but is often used in conjunction with it.
 
 Server server1 = component.getServers().add(Protocol.HTTPS,
    "host1.example.org", 8083);
-Series&lt;Parameter&gt; param1 = server1.getContext().getParameters();
+Series<Parameter> param1 = server1.getContext().getParameters();
 
 param1.add("sslContextFactory","org.restlet.ext.ssl.PkixSslContextFactory");
 param1.add("keystorePath","/path/to/keystore1.p12");
@@ -86,7 +86,7 @@ param1.add("keystoreType","PKCS12");
 
 Server server2 = component.getServers().add(Protocol.HTTPS,
    "host2.example.com", 8083);
-Series&lt;Parameter&gt; param2 = server2.getContext().getParameters();
+Series<Parameter> param2 = server2.getContext().getParameters();
 
 param2.add("sslContextFactory","org.restlet.ext.ssl.PkixSslContextFactory");
 param2.add("keystorePath","/path/to/keystore2.p12");
