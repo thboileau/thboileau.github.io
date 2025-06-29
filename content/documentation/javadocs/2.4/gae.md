@@ -1,10 +1,14 @@
 ---
 title: Google App Engine
 longTitle: Javadocs - Google App Engine
-weight: 1
+weight: 4
 ---
-#### Version {{% param version %}}
+<h4>Version {{% param version %}}</h4>
 
-- [Restlet API](https://javadocs.restlet.talend.com/{{% param version %}}/gae/api/index.html)
-- [Restlet Extensions](https://javadocs.restlet.talend.com/{{% param version %}}/gae/ext/index.html)
-- [Restlet Engine](https://javadocs.restlet.talend.com/{{% param version %}}/gae/engine/index.html)
+<div class="javadocs-index">
+  <ul>
+      <li><a href="https://javadocs.restlet.talend.com/{{% param version %}}/gae/api/index.html">Restlet API</a></li>
+      <li><a href="https://javadocs.restlet.talend.com/{{% param version %}}/gae/ext/index.html">Restlet Extensions</a></li>
+      <li><a href="https://javadocs.restlet.talend.com/{{% param version %}}/gae/engine/index.html">Restlet Engine</a></li>
+  </ul>
+</p>

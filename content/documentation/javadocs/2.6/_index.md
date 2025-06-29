@@ -4,9 +4,10 @@ cascade:
   params:
     version: '2.6'
 ---
-[Java edition](./java)
-[GWT](./gwt)
-<p class="index">
-  <a href="java/">Java Edition</a><br>
-  <a href="gwt/">Google Web Toolkit</a><br>
+
+<div class="javadocs-index">
+  <ul>
+      <li><a href="java/">Java Edition</a></li>
+      <li><a href="gwt/">Google Web Toolkit</a></li>
+  </ul>
 </p>

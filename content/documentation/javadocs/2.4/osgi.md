@@ -1,11 +1,15 @@
 ---
 title: OSGi Environments
 longTitle: Javadocs - OSGi Environments
-weight: 5
+weight: 6
 ---
 
-#### Version {{% param version %}}
+<h4>Version {{% param version %}}</h4>
 
-- [Restlet API](https://javadocs.restlet.talend.com/{{% param version %}}/osgi/api/index.html)
-- [Restlet Extensions](https://javadocs.restlet.talend.com/{{% param version %}}/osgi/ext/index.html)
-- [Restlet Engine](https://javadocs.restlet.talend.com/{{% param version %}}/osgi/engine/index.html)
+<div class="javadocs-index">
+  <ul>
+      <li><a href="https://javadocs.restlet.talend.com/{{% param version %}}/osgi/api/index.html">Restlet API</a></li>
+      <li><a href="https://javadocs.restlet.talend.com/{{% param version %}}/osgi/ext/index.html">Restlet Extensions</a></li>
+      <li><a href="https://javadocs.restlet.talend.com/{{% param version %}}/osgi/engine/index.html">Restlet Engine</a></li>
+  </ul>
+</p>
