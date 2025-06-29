@@ -12,7 +12,7 @@
   {{- with $version.editions }}{{/* versions 1.* do not support editions */}}
     {{- range $release := $version.releases }}
         <details {{ if $defaultReleaseClosed }}open{{ $defaultReleaseClosed = false }}{{ end }}>
-            <summary class="release">{{- $release.name }}&nbsp;&nbsp;(<p class="release-date">{{ $release.release_date -}}</p>)</summary>
+            <summary class="release">{{- $release.name }}&nbsp;&nbsp;(<span class="release-date">{{ $release.release_date -}}</span>)</summary>
             <ul>
       {{- range $edition := $editions }}
               <li><a href="{{ printf "%s/%s/restlet-%s-%s.zip" $baseUrl $version.version $edition.value $release.name }}">{{- $edition.name }}</a></li>
@@ -23,7 +23,7 @@
   {{- else }}
         <ul>
     {{- range $release := $version.releases }}
-          <li><a href="{{ printf "%s/%s/restlet-%s.zip" $baseUrl $version.version $release.name }}">{{- $release.name }} (<p class="release-date">{{ $release.release_date -}}</p>)</a></li>
+          <li><a href="{{ printf "%s/%s/restlet-%s.zip" $baseUrl $version.version $release.name }}">{{- $release.name }} (<span class="release-date">{{ $release.release_date -}}</span>)</a></li>
     {{- end }}
         </ul>
   {{- end }}
