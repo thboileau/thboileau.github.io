@@ -22,7 +22,7 @@ output it in the JVM console:
 
 
 {{< highlight java "style=emacs" >}}// Outputting the content of a Web page  
-new ClientResource("https://restlet.talend.com").get().write(System.out);  
+new ClientResource("https://perdu.com").get().write(System.out);  
 {{</ highlight >}}
 
 
@@ -35,7 +35,7 @@ The next example sets some preferences in your client call, like a
 referrer URI:
 
 {{< highlight java "style=emacs" >}}// Create the client resource  
-ClientResource resource = new ClientResource("https://restlet.talend.com");  
+ClientResource resource = new ClientResource("https://perdu.com");  
 
 // Customize the referrer property  
 resource.setReferrerRef("http://www.mysite.org");  
