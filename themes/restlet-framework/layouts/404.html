@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="static-nav documentation">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+  <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+  {{ partial "documentation/navbarTop.html" . }}
+
+<main id="main" role="main">
+  <div class="documentation-wrapper">
+{{ partial "documentation/outerNav.html" . }}
 <div class="flex-inline">
   <figure><img src="/images/sparky_flying_sorry.svg" /></figure>
   <div class="flex-inline__body">
@@ -6,3 +21,10 @@
     <p>Oops! We are really sorry but it seems the page you requested cannot be found.</p>
   </div>
 </div>
+
+  </div>
+</main>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+</body>
+</html>
