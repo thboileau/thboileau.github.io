@@ -12,11 +12,12 @@ editions:
   - name: OSGi Environments
     value: osgi
 
-'baseUrl': https://download.restlet.talend.com/
+'baseUrl': https://download.restlet.talend.com
 
 'versions':
   '2.4':
     version: '2.4'
+    editions: true
     releases:
       - {name: 2.4.4, release_date: '2024-06-20', id: 2.4.4}
       - {name: 2.4.3, release_date: '2020-01-28', id: 2.4.3}
@@ -25,6 +26,7 @@ editions:
       - {name: 2.4.0, release_date: '2018-01-09', id: 2.4.0}
   '2.3':
     version: '2.3'
+    editions: true
     releases:
       - {name: 2.3.12, release_date: '2017-10-02', id: 2.3.12}
       - {name: 2.3.11, release_date: '2017-09-29', id: 2.3.11}
@@ -41,7 +43,6 @@ editions:
       - {name: 2.3.0, release_date: '2014-12-17', id: 2.3.0}
       - {name: '2.3 RC2', release_date: '2014-12-08', id: 2.3rc2}
       - {name: '2.3 RC1', release_date: '2014-11-21', id: 2.3rc1}
-      - {name: '2.3 Snapshot', release_date: '2014-12-17', id: 2.3snapshot}
       - {name: '2.3 M5', release_date: '2014-11-07', id: 2.3m5}
       - {name: '2.3 M4', release_date: '2014-10-31', id: 2.3m4}
       - {name: '2.3 M3', release_date: '2014-09-18', id: 2.3m3}
@@ -49,13 +50,13 @@ editions:
       - {name: '2.3 M1', release_date: '2014-03-27', id: 2.3m1}
   '2.2':
     version: '2.2'
+    editions: true
     releases:
       - {name: 2.2.3, release_date: '2014-11-27', id: 2.2.3}
       - {name: 2.2.2, release_date: '2014-08-05', id: 2.2.2}
       - {name: 2.2.1, release_date: '2014-05-06', id: 2.2.1}
       - {name: 2.2.0, release_date: '2014-03-27', id: 2.2.0}
       - {name: '2.2 RC4', release_date: '2014-03-19', id: 2.2rc4}
-      - {name: '2.2 Snapshot', release_date: '2014-03-18', id: 2.2snapshot}
       - {name: '2.2 RC3', release_date: '2014-03-04', id: 2.2rc3}
       - {name: '2.2 RC2', release_date: '2014-02-18', id: 2.2rc2}
       - {name: '2.2 RC1', release_date: '2014-02-09', id: 2.2rc1}
@@ -67,9 +68,9 @@ editions:
       - {name: '2.2 M1', release_date: '2012-12-24', id: 2.2m1}
   '2.1':
     version: '2.1'
+    editions: true
     releases:
       - {name: 2.1.7, release_date: '2014-02-09', id: 2.1.7}
-      - {name: '2.1 Snapshot', release_date: '2014-02-09', id: 2.1snapshot}
       - {name: 2.1.6, release_date: '2013-12-05', id: 2.1.6}
       - {name: 2.1.5, release_date: '2013-12-05', id: 2.1.5}
       - {name: 2.1.4, release_date: '2013-09-07', id: 2.1.4}
@@ -92,6 +93,7 @@ editions:
       - {name: '2.1 M1', release_date: '2010-11-07', id: 2.1m1}
   '2.0':
     version: '2.0'
+    editions: true
     releases:
       - {name: 2.0.15, release_date: '2012-08-23', id: 2.0.15}
       - {name: 2.0.14, release_date: '2012-05-23', id: 2.0.14}
@@ -120,11 +122,13 @@ editions:
       - {name: '2.0 M3', release_date: '2009-05-27', id: 2.0m3}
   '1.2':
     version: '1.2'
+    editions: false
     releases:
       - {name: '1.2 M2', release_date: '2009-04-01', id: 1.2m2}
       - {name: '1.2 M1', release_date: '2009-01-23', id: 1.2m1}
   '1.1':
     version: '1.1'
+    editions: false
     releases:
       - {name: 1.1.10, release_date: '2010-04-23', id: 1.1.10}
       - {name: 1.1.9, release_date: '2010-03-30', id: 1.1.9}
@@ -146,6 +150,7 @@ editions:
       - {name: '1.1 M1', release_date: '2007-12-24', id: 1.1m1}
   '1.0':
     version: '1.0'
+    editions: false
     releases:
       - {name: 1.0.11, release_date: '2008-10-27', id: 1.0.11}
       - {name: 1.0.10, release_date: '2008-05-20', id: 1.0.10}

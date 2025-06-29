@@ -30,4 +30,9 @@ Each Restlet Framework project needs at least one dependency: the Restlet core m
 </dependencies>
 {{< /highlight >}}
 
-[More information](/documentation/user-guide/{{% param versions.stable %}}/introduction/getting-started/maven)
+[Getting started with Maven](/documentation/user-guide/{{% param versions.stable %}}/introduction/getting-started/maven)
+<ul class="list-inline">
+  <li class="doc"><a href="/documentation/{{% param versions.stable %}}/changelog" id="change_log_link" target="_blank">View change log for version
+    <span class="download_name">{{% param versions.stable %}}</span></a>
+  </li>
+</ul>
