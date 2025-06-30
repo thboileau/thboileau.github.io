@@ -10,8 +10,8 @@ $(document).ready(function () {
  });
 
  // Mobi sub navigation toggle
- // $(function () {
-  //  $('#dl-menu').dlmenu();
-  //});
+ $(function () {
+   $('#dl-menu').dlmenu();
+ });
 });
 
