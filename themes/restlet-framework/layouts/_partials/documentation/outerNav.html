@@ -9,15 +9,15 @@
             <li>
               <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
               <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
-                <li><a href="/documentation/user-guide/{{ $currentVersion }}/introduction/overview" {{ if eq .Params.section "guide-introduction" }}class="active" {{ end }}>Part 1 - Introduction</a></li>
-                <li><a href="/documentation/user-guide/{{ $currentVersion }}/core/overview" {{ if eq .Params.section "guide-core" }}class="active" {{ end }}>Part 2 - Core Restlet</a></li>
-                <li><a href="/documentation/user-guide/{{ $currentVersion }}/editions/overview" {{ if eq .Params.section "guide-editions" }}class="active" {{ end }}>Part 3 - Restlet Editions</a></li>
-                <li><a href="/documentation/user-guide/{{ $currentVersion }}/extensions/overview" {{ if eq .Params.section "guide-extensions" }}class="active" {{ end }}>Part 4 - Restlet Extensions</a></li>
-                <li><a href="/documentation/user-guide/{{ $currentVersion }}/appendices/glossary"{{ if eq .Params.section "guide-appendices" }}class="active" {{ end }}>Appendices</a></li>
+                <li><a href="/documentation/user-guide/{{ $currentVersion }}/introduction/overview/" {{ if eq .Params.section "guide-introduction" }}class="active" {{ end }}>Part 1 - Introduction</a></li>
+                <li><a href="/documentation/user-guide/{{ $currentVersion }}/core/overview/" {{ if eq .Params.section "guide-core" }}class="active" {{ end }}>Part 2 - Core Restlet</a></li>
+                <li><a href="/documentation/user-guide/{{ $currentVersion }}/editions/overview/" {{ if eq .Params.section "guide-editions" }}class="active" {{ end }}>Part 3 - Restlet Editions</a></li>
+                <li><a href="/documentation/user-guide/{{ $currentVersion }}/extensions/overview/" {{ if eq .Params.section "guide-extensions" }}class="active" {{ end }}>Part 4 - Restlet Extensions</a></li>
+                <li><a href="/documentation/user-guide/{{ $currentVersion }}/appendices/glossary/"{{ if eq .Params.section "guide-appendices" }}class="active" {{ end }}>Appendices</a></li>
               </ul>
             </li>
-            <li><a href="/documentation/tutorials/{{ $currentVersion }}/overview" {{ if eq .Params.section "tutorials" }}class="active" {{ end }}>Tutorials</a></li>
-            <li><a href="/documentation/javadocs/{{ $currentVersion }}" {{ if eq .Params.section "javadocs" }}class="active" {{ end }}>Javadocs</a></li>
+            <li><a href="/documentation/tutorials/{{ $currentVersion }}/overview/" {{ if eq .Params.section "tutorials" }}class="active" {{ end }}>Tutorials</a></li>
+            <li><a href="/documentation/javadocs/{{ $currentVersion }}/" {{ if eq .Params.section "javadocs" }}class="active" {{ end }}>Javadocs</a></li>
             <li><a target="_blank" href="/documentation/{{ $currentVersion }}/changelog">Change Log</a></li>
           </ul>
         </li>

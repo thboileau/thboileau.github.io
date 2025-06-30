@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 </head>
 <body class="static-nav documentation">
 <!--[if lte IE 9]>
@@ -10,13 +10,13 @@
 <![endif]-->
   {{ partial "documentation/navbarTop.html" . }}
 
-<main id="main" role="main">
-  <div class="documentation-wrapper">
-{{ partial "documentation/outerNav.html" . }}
-{{ partial "documentation/contentView.html" . }}
-  </div>
-</main>
-    {{ partial "footer.html" . }}
-    {{ partial "scripts.html" . }}
+  <main id="main" role="main">
+    <div class="documentation-wrapper">
+      {{ partial "documentation/outerNav.html" . }}
+      {{ partial "documentation/contentView.html" . }}
+    </div>
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "scripts.html" . }}
 </body>
 </html>

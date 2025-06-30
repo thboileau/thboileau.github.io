@@ -16,7 +16,7 @@ Now, here is the hierarchy with the core Representation classes:
 Beside this tutorial, your best source of information will be the
 Javadocs available for the [Restlet API](api/), the [Restlet
 Extensions](ext/) and the [NRE](nre/). Have also a look at the
-[connectors](connectors) section that lists all available client and
+[connectors](connectors/) section that lists all available client and
 server connectors and explain how to use and configure them, and the
 [integrations](integrations) section for a list of all available
 extensions providing pluggable features such as integration with servlet
