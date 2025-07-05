@@ -1,0 +1,20 @@
+.m-slope {
+  position: relative;
+
+  &.slope-masthead {
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+  }
+
+  &.slope-section {
+    clip-path: polygon(0% 26%, 100% 0, 100% 100%, 0 100%);
+    padding-top: 111px;
+    padding-bottom: 73px;
+  }
+}
+
+/*clip-path: polygon(
+   0 0, // left top
+   100% 0, // right top
+   100% 100%, // right bottom
+   0 90% // left bottom
+ );*/

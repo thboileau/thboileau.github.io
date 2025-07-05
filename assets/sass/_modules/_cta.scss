@@ -1,0 +1,100 @@
+.m-cta {
+  display: block;
+  text-align: center;
+  align-items: center;
+  max-width: 661px;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+
+  ~.m-cta {
+    margin-top: 15px;
+  }
+
+  @media #{$xs-up} {
+    display: flex; 
+    height: 128px;
+    padding: 0 30px;
+  }
+
+  .m-button {
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  &.cta-green {
+    background: linear-gradient(left, rgba(64,148,119,1) 0%, rgba(72,160,99,1) 100%);
+  }
+
+  &.cta-purple {
+    background-image: linear-gradient(90deg, #496b9e 3.4%, #716897 41.7%, #726797 41.7%, #8d6e9b 60.9%, #8e6d9b 60.9%, #a86591 91.4%, #aa6691 93.8%, #ab6591 93.8%, #a96391 99.2%, #a86491 99.2%, #a86491 99.7%, #a7618f 99.7%, #a7618f)
+  }
+
+  &.cta-orange {
+    background-image: linear-gradient(90deg, #a46948, #a26e69 55.8%, #926274);
+  }
+
+  &.cta-darkblue {
+    background-image: linear-gradient(90deg, #45566a 1.3%, #445567 4.4%, #435667 4.4%, #425566 14.3%, #435466 14.3%, #435466 15.6%, #425566 15.6%, #415465 22.7%, #405266 22.7%, #3b4d61 38.9%, #3b4e5f 38.9%, #3b4e5f 40.9%, #3a4c60 40.9%, #394b5f 44%, #384d60 44%, #384a5e 48%, #354a5d 48%, #2f455a 85.6%, #2f4658 85.6%, #2f4658 86.6%, #304558 86.6%, #2d4456 88.5%, #2d4358 91.7%, #2d4456 91.7%)
+  }
+
+  svg {
+      max-width: 140px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+
+      @media #{$xs-up} {
+        margin: 0;
+      }
+
+      @media #{$sm-up} {
+         max-width: 173px;
+      }
+
+      >path {
+        fill: $white;
+      }
+  }
+
+  .white-fill {
+    >g {
+      >path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.h-cta {
+  &+.h-cta {
+    margin-top: 16px;
+  }
+
+  i {
+    padding-right: 20px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  img {
+    width: 136px;
+
+    &.medium {
+      width: 173px;
+    }
+    &.large {
+      width: 195px;
+    }
+  }
+
+  &--large {
+    height: 80px;
+    padding: 15px 16px 15px 32px;
+  }
+
+  &--narrow {
+    height: 65px;
+    padding: 20px 22px;
+  }
+}

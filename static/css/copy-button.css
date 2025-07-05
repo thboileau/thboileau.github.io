@@ -1,0 +1,32 @@
+
+/* Code block copy buttons */
+/* ------------------------------------------------------------------------- */
+
+.highlight {
+  position: relative;
+}
+
+.copy-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  float: right;
+  right: 8px;
+  top: 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.highlight:hover .copy-button {
+  opacity: 1;
+}
+
+.copy-button > svg {
+  width: 18px;
+}
+
+.copy-button > svg > path {
+  fill: $white;
+}

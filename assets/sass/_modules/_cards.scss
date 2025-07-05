@@ -1,0 +1,31 @@
+.m-card {
+  @include m-card();
+
+  &.card__small {
+    @media #{$sm-up} {
+      max-width: 296px;
+    }
+  }
+
+  .card__figure {
+	  @include card__figure();
+	}
+
+  .card__body {
+    @include card__body();
+  }
+
+  .card__action {
+    margin-top: 30px;
+  }
+
+  .card__quote,
+  cite {
+    font-style: italic;
+  }
+
+  cite {
+    margin-top: 30px;
+    color: rgba($mako,.5);
+  }
+}

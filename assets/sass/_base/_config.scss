@@ -1,0 +1,48 @@
+$white: #FFFFFF;
+
+// Grays
+$black: #000000;
+$shark: #262A30;
+$mako: #464B55;
+$mantee: #8F96A2;
+$alabaster: #F8F8F8;
+$waterloo: #7E8491;
+$regent-gray: #929EA9;
+$mine-shaft: #333333;
+
+// Tertiary color palette
+$shamrock: #3DD1A5;
+$lima: #83C21D;
+$apple: #64B44D;
+$malibu: #8089FF;
+$jaffa: #EB8244;
+$fire-bush: #E89626;
+$buttercup: #F2AE25;
+$picton-blue: #42ADF7;
+$pickled-bluewood: #2E465B;
+$ship-cove: #7C98C4;
+$terracotta: #DB7B53;
+$boston-blue: #3891B1;
+$buddha-gold: #CF8F00;
+$ocean-green: #40B97E;
+$de-york: #79CA86;
+
+// Nav color palette
+$velvet: #585E68;
+$fox: #484E58;
+$charcoal: #393D46;
+$night: #25282F;
+$citrus: #D49922;
+
+// Media queries
+$xs-up: 'only screen and (min-width: 480px)';
+$sm-up: 'only screen and (min-width: 768px)';
+$md-up: 'only screen and (min-width: 992px)';
+$lg-up: 'only screen and (min-width: 1200px)';
+$nav-up:'only screen and (min-width: 1300px)';
+$xl-up: 'only screen and (min-width: 1600px)';
+
+$xs-only: 'only screen and (min-width: 320px) and (max-width: 767px)';
+$sm-only: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$md-only: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$lg-only: 'only screen and (min-width: 1200px) and (max-width: 1599px)';

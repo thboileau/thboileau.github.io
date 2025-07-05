@@ -1,0 +1,258 @@
+// Config
+$masthead-text-color: $white;
+
+.m-masthead {
+  background-position: center;
+  background-repeat: no-repeat;
+  color: $masthead-text-color;
+  width: 100%;
+  background-size: cover;
+  padding: 112px 0 137px;
+  position: relative;
+
+  .announcement {
+    font-size: 43px;
+    line-height: 43px;
+
+    @media #{$md-up} {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    &:after {
+      content: '';
+      background-color: #829099;
+      display: block;
+      height: 1px;
+      margin: 78px auto 64px auto;
+      max-width: 821px;
+      width: 100%;
+    }
+
+    a {
+      color: $jaffa;
+      display: block;
+      font-weight: 300;
+      margin-left: 0;
+
+      @media #{$xs-only} {
+        display: inline-block;
+      }
+
+      @media #{$md-up} {
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      &:hover {
+        color: lighten($jaffa, 5%);
+      }
+    }
+  }
+
+  .masthead__title {
+    margin-top: 0;
+  }
+
+  .masthead__slogan {
+    font-size: 20px;
+    line-height: 28px;
+
+    @media #{$xs-only} {
+      padding: 0 30px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &.masthead-jumbo {
+    padding-top: 185px;
+    padding-bottom: 178px;
+
+    .masthead__title {
+      margin-bottom: 11px;
+    }
+  }
+
+  &.masthead-textured {
+    background-position: bottom center;
+    padding: 91px 0 137px;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .masthead__block {
+    margin-top: 88px;
+    >li {
+      padding: 0 0 floor(($font-size-base * 3.87));
+      position: relative;
+      p {
+        margin-bottom: 28px;
+        color: rgba($white,.5);
+        font-weight: 600;
+      }
+
+      span {
+        color: $white;
+        text-transform: uppercase;
+      }
+
+      svg {
+        cursor: pointer;
+        transform: scale(1);
+        transform-origin: center;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+
+      a {
+        color: $white;
+        min-width: 216px;
+        position: absolute;
+        top: 26px;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: center;
+        transition: all 0.3s;
+
+        @media #{$sm-only} {
+          top: 52px;
+        }
+
+        >span {
+          position: relative;
+          display: block;
+
+          &:before {
+            content: '';
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            position: absolute;
+            top: -18px;
+            left: -32px;
+            background-size: contain;
+          }
+        }
+
+        .studio {
+          &:before {
+            background-image: url("../images/shared/icons/icon-restlet-green.svg");
+          }
+        }
+
+        .client {
+          &:before {
+            background-image: url("../images/shared/icons/icon-restlet-purple.svg");
+          }
+        }
+
+        .cloud {
+          &:before {
+            background-image: url("../images/shared/icons/icon-restlet-orange.svg");
+          }
+        }
+      }
+
+      &:hover {
+        svg {
+          cursor: pointer;
+          transform: scale(0);
+          opacity: 0;
+        }
+
+        a {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+
+    @media #{$sm-up} {
+      display: flex;
+      // justify-content: space-between;
+      justify-content: space-evenly;
+      margin-bottom: 0;
+      margin-top: 113px;
+
+      >li {
+        padding: 0 ceil(($font-size-base * 2.81));
+      }
+    }
+  }
+
+  .masthead-logos__block {
+    @media #{$sm-up} {
+      margin-top: 188px;
+    }
+
+    &.closer {
+      margin-top: 50px;
+    }
+
+    .masthead__logos {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+
+      li {
+        padding-bottom: 5px;
+        width: 25%;
+        @media #{$sm-up} {
+          width: 20%;
+        }
+
+        @media #{$xs-only} {
+          width: 33.333%;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+    .masthead-logos__title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+  }
+
+  .m-button {
+    margin-top: 34px;
+  }
+}
+
+.masthead-gradient {
+  height: 551px;
+}
+
+// Custom
+
+.home {
+  .masthead__slogan {
+    color: rgba($white,.75);
+  }
+
+  .masthead__block {
+    svg {
+      width: 180px;
+      height: 65px;
+
+      >path {
+        fill: $white;
+      }
+    }
+  }
+
+  .block__body {
+    position: relative;
+    display: inline-block;
+  }
+}

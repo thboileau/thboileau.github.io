@@ -1,0 +1,69 @@
+.m-overlay {
+  position: relative;
+}
+
+.overlay__content-block {
+  position: relative;
+  top: -111px;
+  z-index: -1;
+}
+
+.overlay__section {
+  position: relative;
+  top: -150px;
+  z-index: 1;
+}
+
+.overlay__image {
+  position: relative;
+  top: -232px;
+
+  .overlay__oval {
+    background: $white;
+    border-radius: 50%;
+    margin: auto;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    @media #{$sm-up} {
+      width: 395px;
+      height: 395px;
+    }
+
+    &:before{
+      content: '';
+      background-image: linear-gradient(to bottom,  rgba(191,222,200,1) 0%,rgba(254,255,254,0) 99%,rgba(255,255,255,0) 100%);
+      border-radius: inherit;
+      position: absolute;
+      top: -2px;
+      bottom: -2px;
+      right: -2px;
+      left: -2px;
+      z-index: -1;
+    }
+
+    svg {
+        max-width: 58px;
+        height: auto;
+    }
+  }
+  p {
+    background: $white;
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 540px;
+    margin: 0 auto;
+    position: relative;
+    top: 324px;
+  }
+
+  .overlay__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

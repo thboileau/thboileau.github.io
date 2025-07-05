@@ -1,0 +1,164 @@
+footer {
+  color: $white;
+  // padding-bottom: 218px;
+  position: relative;
+  z-index: 100; // to sit on top of documenation fixed sidebar of 99
+
+  .m-footer {
+    padding-top: 0;
+    background-color: $shark;
+  }
+
+  .b-footer {
+    background-color: #23272C;
+    padding-top: 25px;
+    padding-bottom: 40px;
+
+    P {
+      font-size: 12px;
+      line-height: 16px;
+      color: rgba($white,.65);
+    }
+  }
+
+  .social-wrapper {
+    margin-top: 0;
+
+    @media #{$sm-up} {
+      margin-top: 86px;
+    }
+
+    h4 {
+      margin-bottom: 11px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    &.list-inline {
+      margin-left: 0;
+    }
+
+    li {
+      line-height: 32px;
+
+      & h4 {
+        margin-bottom: 11px;
+      }
+    }
+    &~ul {
+      margin-top: 86px;
+    }
+  }
+
+  h4 {
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 14px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    @media #{$sm-up} {
+      margin-top: 0;
+      margin-bottom: 29px;
+    }
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $picton-blue;
+    }
+  }
+
+  .social {
+    font-size: 20px;
+
+    @media #{$sm-up} {
+      font-size: 23px;
+    }
+
+    h4 {
+      display: block;
+    }
+
+    @media #{$sm-up} {
+      display: inline-flex;
+      position: relative;
+      z-index: 2;
+    }
+
+    li {
+      padding-left: 0;
+      padding-right: 22px;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+
+  }
+
+  .copyright {
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+    @media #{$sm-up} {
+      padding-top: 58px;
+    }
+
+    .pull-right {
+        float: none;
+      }
+
+    @media #{$md-up} {
+      .pull-right {
+        float: right;
+      }
+    }
+
+    img.unomena {
+      margin-bottom: 2px;
+    }
+  }
+
+  small {
+    color: rgba($white,.65);
+    font-size: 14px;
+  }
+}
+
+.footer-submenu {
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media #{$xs-only} {
+      &:last-of-type {
+        margin-bottom: 16px;
+      }
+    }
+
+  }
+
+  li {
+    white-space: nowrap;
+    &:not(:first-of-type) {
+      padding-left: 8px;
+    }
+  }
+
+  a {
+    color: rgba($white,.65);
+  }
+
+  .link-header {
+    color: $white;
+  }
+}
