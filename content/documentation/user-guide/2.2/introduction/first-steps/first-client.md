@@ -22,7 +22,7 @@ output it in the JVM console:
 
 {{< highlight java "style=emacs" >}}// Outputting the content of a Web page  
 new ClientResource("http://restlet.com").get().write(System.out);  
-{{</ highlight >}}
+{{< /highlight >}}
 
 If you are running your client behind a proxy, please [check this
 page](/documentation/user-guide/{{% param version %}}/core/base/connectors) to
@@ -40,7 +40,7 @@ resource.setReferrerRef("http://www.mysite.org");
 
 // Write the response entity on the console
 resource.get().write(System.out);  
-{{</ highlight >}}
+{{< /highlight >}}
 
 After those first two steps, [let's now develop a more complete Restlet
 application](./first-application "First application"),

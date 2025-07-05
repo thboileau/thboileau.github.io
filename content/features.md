@@ -2,22 +2,22 @@
 title: Features
 ---
 
-<figure class="text-center"><img src="/images/features/crane.svg" /></figure>
+<figure class="text-center"><img alt="crane" src="/images/features/crane.svg"></figure>
                                     
 # Native REST Support
 Restlet Framework provides a reusable and extensible set of classes and interfaces that serves as a foundation on which you can construct your own web applications more efficiently. Aligned with the REST and HTTP concepts and terminology, the Restlet API can be used for both client and server-side development. Using the same Java API which reduces both the learning curve and the software footprint and facilitate the development of applications acting as server and client at the same time.
 
-<figure class="text-center"><img src="/images/features/cubes.svg" /></figure>
+<figure class="text-center"><img alt="cubes" src="/images/features/cubes.svg"></figure>
 
 # Secure and Scalable
 You should never have to make a tradeoff between security and scalability for your APIs. Restlet Framework supports standard security and authentication methods. A fully multi-threaded design with per-request resource instances reduces thread-safety issues, and ensures that APIs will scale no matter how many requests.
 
-<figure class="text-center"><img src="/images/features/binoculars.svg" /></figure>
+<figure class="text-center"><img alt="binoculars" src="/images/features/binoculars.svg"></figure>
 
 # Broad Use Case Support
 APIs you build with Restlet Framework can be deployed to all common environments. An extensible set of representations, support for standards, and numerous connectors lets you build and call any type of web API, and connect to any backend process or data source.
 
-<figure class="text-center"><img src="/images/features/server.svg" /></figure>
+<figure class="text-center"><img alt="server" src="/images/features/server.svg"></figure>
 
 # A Complete Web Server
 Restlet Framework is not only a framework for building APIs but also for running them. Its built-in web server provides:
@@ -29,7 +29,7 @@ Restlet Framework is not only a framework for building APIs but also for running
 - Static file serving, like the Apache HTTP Server, with metadata association based on file extensions and URI-based redirection.
 - Optional remote edition of local files served based on PUT and DELETE methods.
 
-<figure class="text-center"><img src="/images/features/hexa-tiles.svg" /></figure>
+<figure class="text-center"><img alt="hexa-tiles" src="/images/features/hexa-tiles.svg"></figure>
 
 # Extensive Connectors Set
 With its connectors, Restlet Framework covers many use cases. Connectors available by default include:
@@ -39,7 +39,7 @@ With its connectors, Restlet Framework covers many use cases. Connectors availab
 - Client CLAP connector to access to the Classloader resources.
 - Client RIAP connector to access to the Restlet internal resources, directly inside the JVM.
 
-<figure class="text-center"><img src="/images/features/technos.svg" /></figure>
+<figure class="text-center"><img alt="technos" src="/images/features/technos.svg"></figure>
 
 # Available Representations
 Fully aligned with Web standards, Restlet Framework provides the following representations out of the box:
@@ -53,7 +53,7 @@ Fully aligned with Web standards, Restlet Framework provides the following repre
 - Support for Atom standard via a dedicated extension.
 - Full RDF reading and writing support make Restlet Framework ready for the Semantic Web (Web 3.0).
 
-<figure class="text-center"><img src="/images/features/gears.svg" /></figure>
+<figure class="text-center"><img alt="gears" src="/images/features/gears.svg"></figure>
 
 # Flexible Configuration
 Restlet Framework can be entirely configured in Java via the Restlet API. Configuration standards supported include:
@@ -62,6 +62,6 @@ Restlet Framework can be entirely configured in Java via the Restlet API. Config
 - Logging based on JULI (java.util.logging) with an extensibility system, including an adapter for SLF4J.
 
 <div class="m-cta cta-darkblue">
-  <img src="/images/features/restlet-framework.svg" />
+  <img alt="Restlet Framework" src="/images/features/restlet-framework.svg">
   <a href="/downloads/current/" class="m-button m-button-border">Download</a>
 </div>

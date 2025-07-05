@@ -74,7 +74,7 @@ INFO: efective user is: __LUCENE__
 Jun 19, 2008 9:24:12 AM com.noelios.restlet.LogFilter afterHandle
 INFO: 2008-06-19        09:24:12        -        -        -       8080     GET     /lucene/         -       200      157     -        704     http://localhost:8088 -       -
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Note that __LUCENE__ user is configured in pom.xml file, so it will passed to Jetty as System properties and used by XMLDB Restlet adapter as effective user. If you will try to test LuceneApplication using telnet scripts change LUCENE/LUCENE to scott/tiger into pom.xml file.
@@ -114,7 +114,7 @@ Content-Type: application/atomsvc+xml; charset=ISO-8859-1
 Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
 Content-Length: 330
 Expires: Wed, 18 Jun 2008 23:08:16 GMT
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight xml "style=emacs" >}}<?xml version="1.0" encoding="ISO-8859-1"?>
 <service xmlns="http://purl.org/atom/app#">
@@ -124,10 +124,10 @@ Expires: Wed, 18 Jun 2008 23:08:16 GMT
          </collection>
    </workspace>
 </service>
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight bash "style=emacs" >}}Connection closed by foreign host.
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Note that the Authorization header have a B64 encoding information of scott:tiger user/password, if your database have different values it will not work. Also we are using XMLDB default HTTP port (8080). The example shows that scott have one Lucene Domain Index named __SOURCE_BIG_LIDX__. This index was created using a table and index creation SQL script like:
@@ -142,7 +142,7 @@ parameters('AutoTuneMemory:true;Analyzer:org.apache.lucene.analysis.StopAnalyzer
 
 MergeFactor:500;FormatCols:line(0000);ExtraCols:line "line"');
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 * Testing with JMeter plugin for Maven
@@ -157,7 +157,7 @@ mvn install:install-file -DgroupId=org.apache.jorphan -DartifactId=jorphan -Dver
 mvn install:install-file -DgroupId=org.mozilla.javascript -DartifactId=javascript -Dversion=1.0 -Dpackaging=jar -Dfile=/usr/local/jakarta-jmeter-2.3.1/lib/js_rhino1_6R5.jar  
 mvn install:install-file -DgroupId=jcharts -DartifactId=jcharts -Dversion=0.7.5 -Dpackaging=jar -Dfile=/usr/local/jakarta-jmeter-2.3.1/lib/jCharts-0.7.5.jar  
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 pom.xml file modifications
@@ -181,14 +181,14 @@ pom.xml file modifications
         </configuration>
       </plugin>
 ....
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 running
 
 
 {{< highlight bash "style=emacs" >}}mvn org.apache.jmeter:maven-jmeter-plugin:jmeter
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 * Measuring performance using Apache JMeter

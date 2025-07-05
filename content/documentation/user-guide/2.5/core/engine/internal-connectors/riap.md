@@ -112,7 +112,7 @@ To call a resource via the  riap:// scheme one can just use:
 
 {{< highlight java "style=emacs" >}}Context context;
 context.getClientDispatcher().get("riap://component/some-path/Y");
-{{</ highlight >}}
+{{< /highlight >}}
 
 There is no need to register a RIAP client, this is handled by built-in
 support.
@@ -124,7 +124,7 @@ the Component.
 
 {{< highlight java "style=emacs" >}}Component component;
 component.getInternalRouter().attach("/path", someApplication);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Applications can be attached multiple times (at different paths) to both
 the internal router as to several virtual hosts.\

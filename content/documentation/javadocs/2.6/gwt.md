@@ -8,12 +8,12 @@ weight: 2
 
 <div class="javadocs-index">
   <ul>
-    <li><a href="https://javadoc.io/doc/org.restlet.gwt/org.restlet.gwt/{{% param version %}}/">Restlet Core</a></li>
+    <li><a href="https://javadoc.io/doc/org.restlet.gwt/org.restlet.gwt/{{% frameworkLatestRelease %}}/">Restlet Core</a></li>
     <li>Restlet extensions
       <ul>
-        <li><a href="https://javadoc.io/doc/org.restlet.gwt/org.restlet.gwt.ext.json/{{% param version %}}/">JSON extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet.gwt/org.restlet.gwt.ext.xml/{{% param version %}}/">XML extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet.gwt/org.restlet.gwt.ext.json/{{% frameworkLatestRelease %}}/">JSON extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet.gwt/org.restlet.gwt.ext.xml/{{% frameworkLatestRelease %}}/">XML extension</a></li>
+      </ul>
     </li>
   </ul>
-</p>
-
+</div>

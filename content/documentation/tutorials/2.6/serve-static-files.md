@@ -27,7 +27,7 @@ Application application = new Application() {
 // Attach the application to the component and start it
 component.getDefaultHost().attach(application);
 component.start();
-{{</ highlight >}}
+{{< /highlight >}}
 
 In order to run this example, you need to specify a valid value for
 ROOT\_URI, In this case, it is set to "file:///c:/restlet/docs/api/".

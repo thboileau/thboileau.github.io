@@ -3,7 +3,6 @@
   background-image: url('/images/standard-darkblue.png');
 }
 
-
 navigation-logo .a{
 	fill:#FFF;
 }
@@ -20,3 +19,10 @@ navigation-logo .a{
   display: none;
 }
 
+.home-logo {
+	width: 173px;
+}
+
+.download-logo {
+	height: 50px;
+}

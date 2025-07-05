@@ -19,7 +19,7 @@ It is very simple to create an OAuth server with just a few lines of code. It is
     router.attach("/me", auth);
     ...
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Example 1. Creating a Protected Resource
 
@@ -39,7 +39,7 @@ Example 1. Creating a Protected Resource
     proxy.setNext(DummyResource.class);
     router.attach("/write", write);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Example 2. Creating a Proxies to access protected resources
 

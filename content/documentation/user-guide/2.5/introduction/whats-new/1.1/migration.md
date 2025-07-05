@@ -66,7 +66,7 @@ component.getServers().add(Protocol.HTTP, 8182);
 
 // Attach the sample application.
 component.getDefaultHost().attach(new FirstStepsApplication(component.getContext()));
-{{</ highlight >}}
+{{< /highlight >}}
 
 And now, here is the new way:
 
@@ -77,7 +77,7 @@ component.getServers().add(Protocol.HTTP, 8182);
 
 // Attach the sample application.
 component.getDefaultHost().attach(new FirstStepsApplication());
-{{</ highlight >}}
+{{< /highlight >}}
 
 If you still need to handle the context in the Application constructor,
 you must do as follow:
@@ -89,7 +89,7 @@ component.getServers().add(Protocol.HTTP, 8182);
 
 // Attach the sample application.
 component.getDefaultHost().attach(new FirstStepsApplication(component.getContext().createChildContext()));
-{{</ highlight >}}
+{{< /highlight >}}
 
 The application is instantiated with a child context, not the component
 context. Otherwise, your application might not start properly and a log

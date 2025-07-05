@@ -21,4 +21,4 @@ Usually to run REST application in other schemas like SCOTT these grants are req
 SQL> exec dbms_java.grant_permission( 'SCOTT', 'SYS:java.util.logging.LoggingPermission', 'control', '' );
 SQL> commit;
 
-{{</ highlight >}}
+{{< /highlight >}}

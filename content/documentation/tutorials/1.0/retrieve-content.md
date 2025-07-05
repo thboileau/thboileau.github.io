@@ -18,7 +18,7 @@ it in the JVM console:
 {{< highlight java "style=emacs" >}}// Outputting the content of a Web page
 Client client = new Client(Protocol.HTTP);
 client.get("http://restlet.com").getEntity().write(System.out);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Note that the example above uses a simplified way to issue calls via the
 generic Client class. A more flexible way is to create a new Request
@@ -38,4 +38,4 @@ Response response = client.handle(request);
 // Write the response entity on the console
 Representation output = response.getEntity();
 output.write(System.out);
-{{</ highlight >}}
+{{< /highlight >}}

@@ -45,7 +45,7 @@ to set some of the HTTPS parameters listed above, for example:
 server.getContext().getParameters().add("keystorePath", "<your-path>");
 server.getContext().getParameters().add("keystorePassword", "<your-password>");
 server.getContext().getParameters().add("keyPassword", "<your-password>");
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## SPDY
 

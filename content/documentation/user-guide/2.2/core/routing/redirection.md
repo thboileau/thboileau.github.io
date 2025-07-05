@@ -32,7 +32,7 @@ extractor.extractFromQuery("keywords", "kwd", true);
 
 // Attach the extractor to the router
 router.attach("/search", extractor);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Note that the Redirector needs three parameters only. The first is the
 parent context, the second one defines how the URI rewriting should be

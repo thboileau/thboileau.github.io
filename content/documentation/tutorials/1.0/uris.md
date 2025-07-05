@@ -40,7 +40,7 @@ Route route = component.getDefaultHost().attach("/search", application);
 // will be routed to
 // http://www.google.com/search?q=site:mysite.org+myKeyword1%20myKeyword2
 route.extractQuery("keywords", "kwd", true);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Note that the Redirector needs three parameters only. The first is the
 parent context, the second one defines how the URI rewriting should be
@@ -155,7 +155,7 @@ Application application = new Application(component.getContext()) {
 // Attach the application to the component and start it
 component.getDefaultHost().attach(application);
 component.start();
-{{</ highlight >}}
+{{< /highlight >}}
 
 Please note that the values of the variables are directly extracted from
 the URI and are therefore not percent-decoded. In order to achieve such

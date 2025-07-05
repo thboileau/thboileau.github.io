@@ -55,7 +55,7 @@ instructions to get a simple Restlet project working with OSGi:
      }
 
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 1.  Open the Run Configurations dialog
 2.  Create a new configuration under the "OSGi framework" tree node
@@ -106,7 +106,7 @@ public class Activator implements BundleActivator {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 For the rest of the source code, copy and paste from the regular Restlet
 tutorial available in the "org.restlet.example.tutorial" package the
@@ -171,7 +171,7 @@ your actual equinox bundle version for "3.X.X"):
      load/\
          configuration/ \
              config.ini
-{{</ highlight >}}
+{{< /highlight >}}
 
 "load/" is an empty dir, where you will later put the bundles you wish
 to test.
@@ -181,17 +181,17 @@ not indented):
 
 {{< highlight ini "style=emacs" >}}osgi.bundles=fileinstall-1.3.4.jar@start \
      eclipse.ignoreApp=true
-{{</ highlight >}}
+{{< /highlight >}}
 
 ​4) run equinox from the command line (make sure to "cd" to the
 "my\_equinox" directory first):
 
 {{< highlight bash "style=emacs" >}}java -jar org.eclipse.osgi\_3.X.X.jar -console
-{{</ highlight >}}
+{{< /highlight >}}
     (or)
 
 {{< highlight bash "style=emacs" >}}java -jar org.eclipse.osgi\_3.X.X.jar -console 7777 &
-{{</ highlight >}}
+{{< /highlight >}}
 
 This will start up equinox with a command-line console. if you run the
 first version above, you will enter the console directly. This can be
@@ -201,14 +201,14 @@ listen on port 7777 for telnet connections. To connect to the running
 osgi console, you then type:
 
 {{< highlight bash "style=emacs" >}}telnet locahost 7777
-{{</ highlight >}}
+{{< /highlight >}}
 
 ​5) type "help" in the osgi console for a list of commands. To quickly
 check the status of all installed bundles, type (where "osgi\>" is the
 osgi command prompt):
 
 {{< highlight bash "style=emacs" >}}osgi\> ss
-{{</ highlight >}}
+{{< /highlight >}}
 
 "ss" stands for "short status", and in this case you should see
 something like:
@@ -216,7 +216,7 @@ something like:
 {{< highlight bash "style=emacs" >}}id State Bundle \
 0 ACTIVE org.eclipse.osgi\_3.X.X \
 1 ACTIVE biz.aQute.fileinstall\_1.3.4
-{{</ highlight >}}
+{{< /highlight >}}
 
 ​6) copy any bundles you want to install to the "load/" directory. The
 FileInstall bundle will automatically attempt to load and start these
@@ -255,7 +255,7 @@ System.out.println("Connectors - "+clients.size());
 for(ConnectorHelper<Client> connectorHelper : clients) {   
     System.out.println("connector = "+connectorHelper.getClass());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 You can use OSGi bundle listeners to see if necessary bundles are
 loaded. Here is a sample of code:
@@ -279,7 +279,7 @@ for (Bundle bundle : bundles) {
         registerClientConnector();
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 The registerClientConnector method simply does something like that:
 component.getClients().add(Protocol.HTTPS);.

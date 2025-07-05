@@ -1,10 +1,10 @@
 {{ $currentVersion := (default .Site.Params.versions.stable .Params.version) }}
 <div class="sidebar-wrapper hidden-xs hidden-sm">
   <aside class="section-bg-mako text-white">
-    <nav class="documentation-sidebar" aria-label="Documentation navigation" role="navigation">
+    <nav class="documentation-sidebar" aria-label="Documentation navigation">
       <ul id="accordion" class="nav documentation-nav">
         <li>
-          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img src="/images/restlet_white_32.svg">Framework</a>
+          <a href="#submenu-1" class="accordion-toggle toggle-switch"><img alt="Restlet Framework" src="/images/restlet_white_32.svg">Framework</a>
           <ul id="submenu-1" class="nav panel-switch" role="menu">
             <li>
               <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
@@ -13,7 +13,7 @@
                 <li><a href="/documentation/user-guide/{{ $currentVersion }}/core/overview/" {{ if eq .Params.section "guide-core" }}class="active" {{ end }}>Part 2 - Core Restlet</a></li>
                 <li><a href="/documentation/user-guide/{{ $currentVersion }}/editions/overview/" {{ if eq .Params.section "guide-editions" }}class="active" {{ end }}>Part 3 - Restlet Editions</a></li>
                 <li><a href="/documentation/user-guide/{{ $currentVersion }}/extensions/overview/" {{ if eq .Params.section "guide-extensions" }}class="active" {{ end }}>Part 4 - Restlet Extensions</a></li>
-                <li><a href="/documentation/user-guide/{{ $currentVersion }}/appendices/glossary/"{{ if eq .Params.section "guide-appendices" }}class="active" {{ end }}>Appendices</a></li>
+                <li><a href="/documentation/user-guide/{{ $currentVersion }}/appendices/glossary/" {{ if eq .Params.section "guide-appendices" }}class="active" {{ end }}>Appendices</a></li>
               </ul>
             </li>
             <li><a href="/documentation/tutorials/{{ $currentVersion }}/overview/" {{ if eq .Params.section "tutorials" }}class="active" {{ end }}>Tutorials</a></li>

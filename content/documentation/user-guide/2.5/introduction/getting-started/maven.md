@@ -94,4 +94,4 @@ add the following lines of text into the \<dependencies\> section.
   <artifactId>org.restlet.ext.jackson</artifactId>
   <version>{{% frameworkLatestRelease %}}</version>
 </dependency>
-{{</ highlight >}}
+{{< /highlight >}}

@@ -20,7 +20,7 @@ configuration file by setting a system property like:
 
 {{< highlight java "style=emacs" >}}System.setProperty("java.util.logging.config.file",
         "/your/path/logging.config");
-{{</ highlight >}}
+{{< /highlight >}}
 
 For details on the configuration file format, please check the [JDK's
 LogManager](https://docs.oracle.com/javase/8/docs/api/java/util/logging/LogManager.html)

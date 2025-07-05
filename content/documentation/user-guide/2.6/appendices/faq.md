@@ -28,12 +28,12 @@ create this new classloader:
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Now you just need to call this line before using the Restlet API:
 
 {{< highlight java "style=emacs" >}}Engine.setInstance(new AppletEngine());
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="solve-405-status-code-responses"></a>Solve 405 status code responses
 
@@ -61,7 +61,7 @@ with media type parameters:
       return "<html><body>hello, world</body></html>";
    }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 In this case, the client requires a JSON representation but the server
 resource is not able to generate it.
@@ -78,7 +78,7 @@ dependencies?
 The simplest way is to set the log level of the underlying Engine:
 
 {{< highlight java "style=emacs" >}}Engine.setLogLevel(Level.FINE);
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="how-do-i-implement-the-traditional-mvc-pattern"></a>How do I implement the traditional MVC pattern?
 

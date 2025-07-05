@@ -19,7 +19,7 @@ GWT to the project classpath *^[explain]^*
 (*yourapp*.gwt.xml):
 
 {{< highlight xml "style=emacs" >}}    <inherits name=&apos;org.restlet.Restlet&apos;/>
-{{</ highlight >}}
+{{< /highlight >}}
 
 This will make the Restlet API available to your GWT compiled code.  The
 Restlet module in turn inherits the GWT standard
@@ -63,7 +63,7 @@ side.
 
          ...
 </web-app>
-{{</ highlight >}}
+{{< /highlight >}}
 
 For *application*, supply the name of your Restlet Application, e.g.
 `com.mycompany.server.TestApplication`.  You can also supply a

@@ -78,7 +78,7 @@ public class JettyAJPApplication extends Application {
 
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Running JettyAJPApplication
 
@@ -112,7 +112,7 @@ public class JettyAJPApplication extends Application {
      JkLogStampFormat &quot;[%a %b %d %H:%M:%S %Y] &quot;
      JkOptions +ForwardKeySize +ForwardURICompat
 </IfModule>
-{{</ highlight >}}
+{{< /highlight >}}
 
 -   **LoadModule jk\_module modules/mod\_jk.so** tells your apache
     server to load the mod\_jk libray and where it is located.
@@ -132,7 +132,7 @@ mod\_jk configuration entry:
       ## pass requests through to jetty worker
 JkMount /* jetty
 </VirtualHost>
-{{</ highlight >}}
+{{< /highlight >}}
 -   Add a worker file **worker.properties** in your
     \<apache-root\>/conf/
 -   add the entries below, and make sure to specify your ip-address or

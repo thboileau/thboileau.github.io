@@ -22,7 +22,7 @@ property. In order to fully configure the logging, you need to declare a
 configuration file by setting a system property like:
 
 {{< highlight java "style=emacs" >}}System.setProperty("java.util.logging.config.file", "/your/path/logging.config"); 
-{{</ highlight >}}
+{{< /highlight >}}
 
 For details on the configuration file format, please check the [JDK's
 LogManager](http://docs.oracle.com/javase/6/docs/api/index.html?java/util/logging/LogManager.html)
@@ -46,7 +46,7 @@ c.getDefaultHost().attach(new MyApplication());
 c.getLogService().setResponseLogFormat("{ciua} {cri} {ra} {m} {rp} {rq} {S} {ES} {es} {hh} {cig} {fi}");
 
 c.start();
-{{</ highlight >}}
+{{< /highlight >}}
 
 This log format displays the following data:
 
@@ -66,7 +66,7 @@ This log format displays the following data:
 For example:
 
 {{< highlight bash "style=emacs" >}}127.0.0.1  localhost:8182 GET /ping  200 5 0 http://localhost:8182 curl/7.35.0 http://test.example.com
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Second method: write the log manually
 

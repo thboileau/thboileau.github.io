@@ -45,7 +45,7 @@ restlet-basecamp/src/test/java/com/mycompany
 restlet-basecamp/src/test/java/com/mycompany/restlet
 restlet-basecamp/src/test/java/com/mycompany/restlet/basecamp
 restlet-basecamp/src/test/java/com/mycompany/restlet/basecamp/AppTest.java
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Step 2: Configure the POM
 
@@ -114,7 +114,7 @@ embedded Jetty server.
     <basecamp.server.contextpath>basecamp</basecamp.server.contextpath>
   </properties>
 </project>
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Step 3: Create the BaseCampResource
 
@@ -135,7 +135,7 @@ public class BaseCampResource extends ServerResource {
         return "Hello World!";
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Step 4: Create the BaseCampApplication
 
@@ -150,7 +150,7 @@ import org.restlet.Application;
 
 public class BaseCampApplication extends Application {
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Step 5: Sprinkle Some Spring
 
@@ -183,7 +183,7 @@ various components.
   <!-- Define all the routes -->
   <bean name="/hello" class="com.mycompany.restlet.basecamp.resource.demo.BaseCampResource" scope="prototype" autowire="byName" lazy-init="default" dependency-check="default" />
 </beans>
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Step 6: Set up the web.xml
 
@@ -216,7 +216,7 @@ other points to the location of the application context file.
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
 </web-app>
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Step 7: Build It
 
@@ -267,7 +267,7 @@ Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
 [INFO] Finished at: Tue Nov 09 21:30:38 EST 2010
 [INFO] Final Memory: 18M/81M
 [INFO] ------------------------------------------------------------------------
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Step 8: Run It
 
@@ -287,7 +287,7 @@ available on **localhost:8080** with a root context of '**/basecamp**'
 [INFO] Starting jetty 6.1.25 ...
 [INFO] Started Jetty Server
 [INFO] Starting scanner at interval of 10 seconds.
-{{</ highlight >}}
+{{< /highlight >}}
 
 If you now go to your web browser and enter the following URL the
 service, which you have just created, should respond with 'Hello World!'
@@ -302,7 +302,7 @@ should see some logging similar to what is displayed below
 
 {{< highlight bash "style=emacs" >}}    Nov 9, 2010 9:34:31 PM org.restlet.engine.log.LogFilter afterHandle
     INFO: 2010-11-09    21:34:31    0:0:0:0:0:0:0:1%0   -   0:0:0:0:0:0:0:1%0   8080    GET /basecamp/hello -   200 12  0   57  http://localhost:8080   Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.18.1 (KHTML, like Gecko) Version/5.0.2 Safari/533.18.5 -
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Step 9: Deploy It
 
@@ -326,7 +326,7 @@ consult the documentation for the finer details.
     <path>${basecamp.server.contextpath}</path>
   </configuration>
 </plugin>
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Resources
 

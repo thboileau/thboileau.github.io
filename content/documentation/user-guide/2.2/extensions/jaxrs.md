@@ -73,7 +73,7 @@ public class EasyRootResource {
         return "This is an easy resource (as plain text)";
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Create Application
 
@@ -96,7 +96,7 @@ public class ExampleApplication extends Application {
         return rrcs;
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 The root resource class and the Application is specified by the JAX-RS
 specification. It can be used in any JAX-RS runtime environment.
@@ -143,7 +143,7 @@ public class ExampleServer {
             System.out.println("Server stopped");
         }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Start this class, open a browser and request
 [http://localhost:8182/easy](http://localhost:8182/easy).
@@ -179,7 +179,7 @@ the Application and sets the Guard and the RoleChecker (if needed).
         this.setRoleChecker(...); // if needed
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 For details to run this Application in a Servet Container take a look at
 [Restlet
@@ -191,7 +191,7 @@ You could use this subclass also in the example above:
 Application application = new MyJaxRsApplication(comp.getContext());
 
 // if you use this kind, you don't need to attach the Application again.
-{{</ highlight >}}
+{{< /highlight >}}
 
 Comments are welcome to the [Restlet mailing
 list](https://groups.google.com/a/restlet.org/forum/#!forum/framework-discuss)

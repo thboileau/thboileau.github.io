@@ -41,7 +41,7 @@ By default, the Swagger documentation will be available on the path "/api-docs" 
     ChallengeAuthenticator guard = createApiGuard(apiRouter);
     return guard;
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here, you specify that the Swagger definition will be provided on the path "/docs".
 
@@ -74,7 +74,7 @@ public SwaggerSpecificationRestlet getSwaggerSpecificationRestlet(
         }
     };
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Swagger-UI
 

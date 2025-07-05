@@ -33,7 +33,7 @@ simple it is to use it:
          component.start();
      }
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 In order to run this example, you need to specify a valid value for
 ROOT\_URI, In this case, it is set to

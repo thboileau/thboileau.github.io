@@ -35,7 +35,7 @@ By default, the RAML documentation will be available on the path "/raml" of your
         ChallengeAuthenticator guard = createApiGuard(apiRouter);
         return guard;
     }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here, you specify that the RAML definition will be provided on the path "/docs".
 
@@ -62,7 +62,7 @@ See sample implementation below:
             }
         };
     }
-{{</ highlight >}}
+{{< /highlight >}}
 
 For additional details, please consult the
 [Javadocs](https://javadocs.restlet.talend.com/{{% param version %}}/jse/ext/org/restlet/ext/raml/package-summary.html).

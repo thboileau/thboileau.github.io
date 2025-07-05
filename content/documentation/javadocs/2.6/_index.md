@@ -10,4 +10,4 @@ cascade:
       <li><a href="java/">Java Edition</a></li>
       <li><a href="gwt/">Google Web Toolkit</a></li>
   </ul>
-</p>
+</div>

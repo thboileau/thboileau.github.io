@@ -14,12 +14,12 @@ You can get automatic conversion for retrieved representations like
 this:
 
 {{< highlight java "style=emacs" >}}String myString = myClientResource.get(String.class);
-{{</ highlight >}}
+{{< /highlight >}}
 
 For sent representations:
 
 {{< highlight java "style=emacs" >}}myClientResource.put(myString);
-{{</ highlight >}}
+{{< /highlight >}}
 
 There is even a more transparent way if you define an annotated Java
 interface (using the Restlet @Get, @Put, etc. annotations). Once it is
@@ -27,7 +27,7 @@ defined, you can use it on the server side in your ServerResource
 subclasses or on the client side to consume it:
 
 {{< highlight java "style=emacs" >}}MyAnnotatedInterface myClient = myClientResource.wrap(MyAnnotatedInterface.class);
-{{</ highlight >}}
+{{< /highlight >}}
 
 In this case, automatic conversion is handled for you. By default, the
 Restlet Engine support Java object serialization (binary or XML), but
@@ -70,7 +70,7 @@ public interface TestResource {
     public void remove() throws Exception;
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Server side implementation
 
@@ -120,7 +120,7 @@ public class TestServerResource extends ServerResource implements TestResource {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Client-side consumption
 
@@ -147,7 +147,7 @@ Finally, we can consume it via the ClientResource class:
          }
      }
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Consuming response entities
 

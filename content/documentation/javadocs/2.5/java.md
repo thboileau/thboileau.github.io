@@ -8,33 +8,34 @@ weight: 1
 
 <div class="javadocs-index">
   <ul>
-    <li><a href="https://javadoc.io/doc/org.restlet/org.restlet/{{% param version %}}/">Restlet Core</a></li>
+    <li><a href="https://javadoc.io/doc/org.restlet/org.restlet/{{% frameworkLatestRelease %}}/">Restlet Core</a></li>
     <li>Restlet extensions
       <ul>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.atom/{{% param version %}}/">Atom extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.crypto/{{% param version %}}/">Crypto extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.fileUpload/{{% param version %}}/">FileUpload extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.freemarker/{{% param version %}}/">Freemarker extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.gae/{{% param version %}}/">GAE extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.gson/{{% param version %}}/">GSON extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.guice/{{% param version %}}/">Guice extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.gwt/{{% param version %}}/">GWT server extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.html/{{% param version %}}/">Html extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.httpclient/{{% param version %}}/">Apache HttpClient extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.jaas/{{% param version %}}/">JAAS extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.jackson/{{% param version %}}/">Jackson extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.jaxb/{{% param version %}}/">Jaxb extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.jetty/{{% param version %}}/">Jetty extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.json/{{% param version %}}/">Json extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.odata/{{% param version %}}/">OData extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.osgi/{{% param version %}}/">OSGi extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.rdf/{{% param version %}}/">RDF extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.servlet/{{% param version %}}/">Servlet extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.slf4j/{{% param version %}}/">Slf4j extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.spring/{{% param version %}}/">Spring extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.thymeleaf/{{% param version %}}/">Thymeleaf extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.velocity/{{% param version %}}/">Velocity extension</a></li>
-        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.xml/{{% param version %}}/">XML extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.atom/{{% frameworkLatestRelease %}}/">Atom extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.crypto/{{% frameworkLatestRelease %}}/">Crypto extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.fileUpload/{{% frameworkLatestRelease %}}/">FileUpload extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.freemarker/{{% frameworkLatestRelease %}}/">Freemarker extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.gae/{{% frameworkLatestRelease %}}/">GAE extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.gson/{{% frameworkLatestRelease %}}/">GSON extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.guice/{{% frameworkLatestRelease %}}/">Guice extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.gwt/{{% frameworkLatestRelease %}}/">GWT server extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.html/{{% frameworkLatestRelease %}}/">Html extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.httpclient/{{% frameworkLatestRelease %}}/">Apache HttpClient extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.jaas/{{% frameworkLatestRelease %}}/">JAAS extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.jackson/{{% frameworkLatestRelease %}}/">Jackson extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.jaxb/{{% frameworkLatestRelease %}}/">Jaxb extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.jetty/{{% frameworkLatestRelease %}}/">Jetty extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.json/{{% frameworkLatestRelease %}}/">Json extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.odata/{{% frameworkLatestRelease %}}/">OData extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.osgi/{{% frameworkLatestRelease %}}/">OSGi extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.rdf/{{% frameworkLatestRelease %}}/">RDF extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.servlet/{{% frameworkLatestRelease %}}/">Servlet extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.slf4j/{{% frameworkLatestRelease %}}/">Slf4j extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.spring/{{% frameworkLatestRelease %}}/">Spring extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.thymeleaf/{{% frameworkLatestRelease %}}/">Thymeleaf extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.velocity/{{% frameworkLatestRelease %}}/">Velocity extension</a></li>
+        <li><a href="https://javadoc.io/doc/org.restlet/org.restlet.ext.xml/{{% frameworkLatestRelease %}}/">XML extension</a></li>
+      </ul>
     </li>
   </ul>
-</p>
+</div>

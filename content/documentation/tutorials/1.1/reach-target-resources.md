@@ -47,7 +47,7 @@ Router router = new Router(getContext());
 router.attach("/users/{user}", UserResource.class);
 router.attach("/users/{user}/orders", OrdersResource.class);
 router.attach("/users/{user}/orders/{order}", OrderResource.class);
-{{</ highlight >}}
+{{< /highlight >}}
 
 We will finally review one of the resource classes, the UserResource
 class. This class derives from org.restlet.resource.Resource and
@@ -87,7 +87,7 @@ handled, all this transparently.
         return result;
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 You can have a look at the rest of the code in the tutorial package and
 test the application. You will obtain the same behavior as in Part11,

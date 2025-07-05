@@ -45,7 +45,7 @@ context path is required for standalone deployment.
         </map>
     </property>
 </bean>
-{{</ highlight >}}
+{{< /highlight >}}
 
 As a result, the main method has become very simple. It loads a Spring
 context based on two configuration metadata files, one for the preceding
@@ -61,7 +61,7 @@ It then starts up the top-level Restlet Component.
     // obtain the Restlet component from the Spring context and start it
     ((Component) springContext.getBean("top")).start();
     }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Next, we look at the configuration of the application-specific Router.
 We use a SpringRouter for this purpose, which is configured using a map
@@ -108,7 +108,7 @@ accessing a static field in a class.
 
 <bean id="org.restlet.util.Variable.TYPE_URI_ALL"
     class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean" />
-{{</ highlight >}}
+{{< /highlight >}}
 
 Unlike the preceding singleton beans, we define the ServerResources as
 prototype beans so that they get instantiated separately for each
@@ -123,7 +123,7 @@ UserResource here.
     scope="prototype">
     <property name="container" ref="db4oContainer" />
 </bean>
-{{</ highlight >}}
+{{< /highlight >}}
 
 Using the
 [db4o](http://supportservices.actian.com/versant/default.html)
@@ -142,7 +142,7 @@ configuring the ObjectContainer is straightforward.
     <property name="updateDepth" value="2" />
     <property name="configurationCreationMode" value="NEW" />
 </bean>
-{{</ highlight >}}
+{{< /highlight >}}
 
 As mentioned above, we added the following elements to each
 application-specific Resource:
@@ -186,4 +186,4 @@ The following code fragment summarizes these changes.
 
     // other methods
 }
-{{</ highlight >}}
+{{< /highlight >}}

@@ -36,14 +36,14 @@ First one is to specify directory and configFile parameters.
 {{< highlight java "style=emacs" >}}Client solrClient = component.getClients().add(SolrClientHelper.SOLR_PROTOCOL);
 solrClient.getContext().getParameters().getFirstValue("directory");
 solrClient.getContext().getParameters().getFirstValue("configFile");
-{{</ highlight >}}
+{{< /highlight >}}
 
 Second one is to create the CoreContainer.
 
 {{< highlight java "style=emacs" >}}Client solrClient = component.getClients().add(SolrClientHelper.SOLR_PROTOCOL);
 CoreContainer coreContainer = initSolrContainer(component);
 solrClient.getContext().getAttributes().put("CoreContainer",coreContainer);
-{{</ highlight >}}
+{{< /highlight >}}
 
 To configure your core container see solr documentation :
 [http://wiki.apache.org/solr/](http://wiki.apache.org/solr/)
@@ -63,7 +63,7 @@ you can do :
 
 {{< highlight java "style=emacs" >}}StringRepresentation repr = new StringRepresentation(xml, MediaType.TEXT_XML);
 getContext().getClientDispatcher().post("solr://main/update", repr);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Solr Core Container
 
@@ -98,4 +98,4 @@ public class SolrForward extends Restlet {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}

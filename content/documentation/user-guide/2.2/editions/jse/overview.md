@@ -56,7 +56,7 @@ public class HelloWorldResource extends ServerResource {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Then, create the sample application. Let's call it
 "FirstStepsApplication" and copy/paste the following code:
@@ -84,7 +84,7 @@ public class FirstStepsApplication extends Application {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## <a name="run-as-a-standalone-java-application"></a>Run as a standalone Java application
 
@@ -111,7 +111,7 @@ requests to the "FirstStepsApplication".
     // Start the component.  
     component.start();  
 }      
-{{</ highlight >}}
+{{< /highlight >}}
 Once you have launched the main class, if you can open your favorite web
 browser, and gently type the following URL:
 [http://localhost:8182/firstSteps/hello](http://localhost:8182/firstSteps/hello)

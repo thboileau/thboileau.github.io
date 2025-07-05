@@ -57,7 +57,7 @@ configuration, it provides a way to set up certificate revocation lists
         <attach uriPattern="" targetClass="org.restlet.example.tutorial.Part12" />
     </defaultHost>
 </component>
-{{</ highlight >}}
+{{< /highlight >}}
 
 There can be multiple `crlUrl` parameters. In addition, two other
 parameters can be set:
@@ -91,7 +91,7 @@ Series<Parameter> param2 = server2.getContext().getParameters();
 param2.add("sslContextFactory","org.restlet.ext.ssl.PkixSslContextFactory");
 param2.add("keystorePath","/path/to/keystore2.p12");
 //...
-{{</ highlight >}}
+{{< /highlight >}}
 
 This example uses two certificates depending on which server connector
 (and thus which listening socket) is used.

@@ -37,7 +37,7 @@ Restlet restlet = new Restlet() {
         response.setEntity(new StringRepresentation("hello, world", MediaType.TEXT_PLAIN));
     }
 };
-{{</ highlight >}}
+{{< /highlight >}}
 
 Then, the component protects this Restlet with a ChallengeAuthenticator
 instance based on the BASIC authentication scheme. Once the instance is
@@ -58,7 +58,7 @@ Component component = new Component();
 component.getServers().add(Protocol.HTTP, 8182);  
 component.getDefaultHost().attachDefault(guard);
 component.start();
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Customization
 
@@ -92,7 +92,7 @@ public class TestVerifier extends LocalVerifier {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Description of the client side
 
@@ -110,7 +110,7 @@ object as follow:
      // Should be 200
      System.out.println(resource.getStatus());
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 If you try to access http://localhost:8182/ via a web browser, a window will
 appear to type in your credentials.
@@ -141,7 +141,7 @@ of your own complex application.
          response.setEntity(new StringRepresentation("hello, world", MediaType.TEXT_PLAIN));
      }
  };
-{{</ highlight >}}
+{{< /highlight >}}
 
 Then, the component protects this Restlet with an Authenticator instance
 based on the DIGEST authentication scheme. A dedicated constructor of
@@ -161,7 +161,7 @@ Once the instance is created, it is given the list of known
  guard.setNext(restlet);
 
  component.getDefaultHost().attachDefault(guard);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Customization
 
@@ -195,7 +195,7 @@ public class TestVerifier extends LocalVerifier {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Description of the client side
 
@@ -218,7 +218,7 @@ try {
 // Should be 401, since the client needs some data sent by the server in
 // order to complete the ChallengeResponse.
 System.out.println(resource.getStatus());
-{{</ highlight >}}
+{{< /highlight >}}
 
 Then, the second step allows to get the required data for the final
 computation of a correct ChallengeResponse object:
@@ -238,7 +238,7 @@ computation of a correct ChallengeResponse object:
                                                              resource.getResponse(),
                                                              "login",
                                                              "secret".toCharArray());
-{{</ highlight >}}
+{{< /highlight >}}
 
 Finally, the request is completed with the computed ChallengeResponse
 instance:
@@ -249,4 +249,4 @@ instance:
 resource.get();
 // Should be 200.
 System.out.println(resource.getStatus());
-{{</ highlight >}}
+{{< /highlight >}}

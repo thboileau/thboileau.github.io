@@ -181,7 +181,7 @@ public class DB4OSimpler {
         return ret;
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## MicroblogApplication.Class
 
@@ -244,7 +244,7 @@ public class MicroblogApplication {
         component.start();
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## microblogAppInterface.js
 
@@ -343,7 +343,7 @@ which was exposed in server side:
               }
           );
   }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## MicroblogResource.Class
 
@@ -508,7 +508,7 @@ which was exposed in server side:
          getResponse().setEntity(callMethod("delete",jsonParamVal));
      }
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Microblog.Class
 
@@ -524,7 +524,7 @@ public class Microblog {\
    }\
    ...
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Running Application
 
@@ -560,7 +560,7 @@ Router router = new Router(getContext());
 //It's very easy!
 router.setFinderClass(PrototypeFinder.class);
 ...
-{{</ highlight >}}
+{{< /highlight >}}
 
 Custom Finder:
 
@@ -578,7 +578,7 @@ public class PrototypeFinder extends Finder {
                super.handle(request, response);
        }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 javascript snippet in web page:
 
@@ -605,7 +605,7 @@ function callJSON() {
        });
 }
 ...
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Thanks
 

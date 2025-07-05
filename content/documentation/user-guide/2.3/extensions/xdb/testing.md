@@ -11,7 +11,7 @@ Test your __REST__ examples with your favorite browser using these URLs (they wh
 
 {{< highlight bash "style=emacs" >}}http://localhost:8080/searchapp/search?kwd=marcelo+ochoa
 http://localhost:8080/userapp/users/scott/orders/300
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Note: XMLDB is an HTTP 1.0 complaint connector, usually modern browsers try to connect using HTTP 1.1 so you can experiment that the browser leave the connection open because is trying to use Keep-alive feature.
@@ -42,7 +42,7 @@ Content-Length: 28
 
 
 __Order "300" for user "scott"__
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 * Minimalistic test comparing REST versus native SOAP
@@ -53,7 +53,7 @@ __Order "300" for user "scott"__
 As you can see in a previous section there is simple User application which returns orders for __scott__ user. Using __ApacheBench__ you can test the application executing:
 
 {{< highlight bash "style=emacs" >}}ab -n {total_request} -c {concurrent_request} http://localhost:8080/userapp/users/scott/orders/300
-{{</ highlight >}}
+{{< /highlight >}}
 
 Where __total_request__ is number of request sent by Apache benchmark paralleling it in __concurrent_request__ request.
 A result of this execution on my notebook can be compared in [this Google sheet](http://spreadsheets.google.com/pub?key=pAl-EJ5Wtb_10aTyfnO1dUw).
@@ -98,7 +98,7 @@ public class OrderCalculator {
         return "Order '"+orderId+"' for user '"+userName+"'";
    }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Note that I have added JDK Logging functionality to compare a closer example to Restlet functionality, obviously routing and many other default Restlet functionalities are not compared with this example.
@@ -112,7 +112,7 @@ as LANGUAGE JAVA NAME
 java.lang.String';
 END orders_calculator;
 /
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 As you can see OrderCalculator class is using JDK logging package, to get JDK logging working this grant is required:
@@ -121,7 +121,7 @@ As you can see OrderCalculator class is using JDK logging package, to get JDK lo
 {{< highlight sql "style=emacs" >}}SQL> exec dbms_java.grant_permission( 'SCOTT',
 'SYS:java.util.logging.LoggingPermission', 'control', '' );
 SQL> commit;
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Finally to send a POST message using Apache benchmark its necessary to edit a POST XML message like:
@@ -137,13 +137,13 @@ Finally to send a POST message using Apache benchmark its necessary to edit a PO
    </env:Body>
 </env:Envelope>
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 The ApacheBench command line will look like:
 
 {{< highlight bash "style=emacs" >}}ab -A scott:tiger -H 'SOAPAction: "GETORDER"' -p /tmp/soap-post-func.txt -n {total_request} -c {concurrent_request} http://localhost:8080/orawsv/SCOTT/ORDERS_CALCULATOR/GETORDER
-{{</ highlight >}}
+{{< /highlight >}}
 
 Where:
 
@@ -175,7 +175,7 @@ Add this to __/etc/httpd/modules.d/57_mod_mem_cache.conf__ file:
 </IfModule>
 ....
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 This will enable mod_mem_cache to any URL starting with /userapp/ directory, this directory will be retrieved using Apache mod_proxy.
@@ -193,7 +193,7 @@ Edit __/etc/httpd/modules.d/30_mod_proxy.conf__ adding these lines:
 ....
 </IfModule>
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 This will redirect automatically any __URL__ __http://localhost:80/userapp/__ to __XMLDB__ __http://localhost:8080/userapp/__.
@@ -217,7 +217,7 @@ To boost your __REST WS__ performance you can change, for example, the expiratio
         result.setExpirationDate(expirationDate);
         return result;
     }
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 This small change represent for 100 request in User application a difference between:
@@ -249,7 +249,7 @@ Gaussian Random Timer -> Thread Delay Properties
 Deviation (in milliseconds): 100.0
 Constant Delay Offset (in milliseconds): 300
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Test plan used with Users SOAP example:
@@ -274,7 +274,7 @@ Gaussian Random Timer -> Thread Delay Properties
 Deviation (in milliseconds): 100.0
 Constant Delay Offset (in milliseconds): 300
 /tmp/soap-post-func.txt file content:
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight xml "style=emacs" >}}<?xml version = '1.0'?>
 <env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://xmlns.oracle.com/orawsv/SCOTT/ORDERS_CALCULATOR/GETORDER">
@@ -288,4 +288,4 @@ Constant Delay Offset (in milliseconds): 300
       </ns1:SVARCHAR2-GETORDERInput>
    </env:Body>
 </env:Envelope>
-{{</ highlight >}}
+{{< /highlight >}}

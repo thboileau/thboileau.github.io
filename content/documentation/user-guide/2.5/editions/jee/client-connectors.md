@@ -23,4 +23,4 @@ The web.xml file declares the client connectors in a dedicated
     </init-param>
     [...]
 </servlet>
-{{</ highlight >}}
+{{< /highlight >}}

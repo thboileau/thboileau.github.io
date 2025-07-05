@@ -80,7 +80,7 @@ Several parameters at the boton of pom.xml file, properties section, are used du
     <jdbc.syspwd.value>change_on_install</jdbc.syspwd.value>
   </properties>
 ....
-{{</ highlight >}}
+{{< /highlight >}}
 
  - __sqlplus.app__: using __ORACLE_HOME__ environment variable will work in most of the installation, this parameter is used to locate Oracle
  - __SQLPlus__ executable application used to connect as sysdba.
@@ -109,7 +109,7 @@ mvn install:install-file -DgroupId=oracle -DartifactId=xdb -Dversion=11.1.0 -Dpa
 mvn install:install-file -DgroupId=org.apache.lucene -DartifactId=lucene-ojvm -Dversion=2.3.2 -Dpackaging=jar -Dfile=/home/mochoa/jdevhome/mywork/ojvm-bin/11g/ojvm/lib/lucene-ojvm-2.3.jar
 mvn install:install-file -DgroupId=org.apache.lucene -DartifactId=lucene-ojvm-test -Dversion=2.3.2 -Dpackaging=jar -Dfile=/home/mochoa/jdevhome/mywork/ojvm-bin/11g/ojvm/lib/lucene-ojvm-2.3-test.jar
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 ** mvn test

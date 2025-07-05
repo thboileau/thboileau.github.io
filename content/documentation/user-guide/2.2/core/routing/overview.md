@@ -36,7 +36,7 @@ Router router = new Router(getContext());
 router.attach("/items", ItemsResource.class);
 // Defines a route for the resource "item"
 router.attach("/items/{itemName}", ItemResource.class);
-{{</ highlight >}}
+{{< /highlight >}}
 
 It declares two routes, the first one associates the URI "/items" to the
 Resource "ItemsResource" and the second one "/items/itemName" to the
@@ -74,7 +74,7 @@ routers to be used.
 Here is a sample code:
 
 {{< highlight java "style=emacs" >}}router.setMatchingMode(Template.MODE_STARTS_WITH);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Routing and queries
 
@@ -84,13 +84,13 @@ this, you can either indicate at the router level, that the matching
 process does not take into account the query part of the reference:
 
 {{< highlight java "style=emacs" >}}router.setDefaultMatchQuery(false);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Or you can explicitly allow the query part in your URI template:
 
 {{< highlight java "style=emacs" >}}TemplateRoute route = router.attach("/users/{user}?{query}", UserResource.class);
 route.setMatchingQuery(false);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Routing mode
 
@@ -110,7 +110,7 @@ best affinity score. You can update this behavior by setting the routing
 mode property with one of the listed modes declared above.
 
 {{< highlight java "style=emacs" >}}router.setRoutingMode(Router.FIRST);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Matching of template variables
 
@@ -119,13 +119,13 @@ declaration of templates of URI. In the sample code below, the URI
 template declares one variable called "user":
 
 {{< highlight java "style=emacs" >}}TemplateRoute route = router.attach("/users/{user}", UserResource.class);
-{{</ highlight >}}
+{{< /highlight >}}
 
 At run-time, the value of this variable is put into the attributes of
 the request:
 
 {{< highlight java "style=emacs" >}}this.userId = (String) getRequest().getAttributes().get("user");
-{{</ highlight >}}
+{{< /highlight >}}
 
 By default a variable is meant to match a URI segment as defined in the
 URI specification document. That is to say a sequence of characters
@@ -159,7 +159,7 @@ instance as follow:
 
 {{< highlight java "style=emacs" >}}TemplateRoute route = router.attach("/users/{user}", UserResource.class);
 route.getTemplate().setMatchingMode(Template.MODE_STARTS_WITH);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Routing and queries
 
@@ -201,4 +201,4 @@ Here is the way to change the type of a variable:
 {{< highlight java "style=emacs" >}}TemplateRoute route = router.attach("/items/{itemName}", ItemResource);
 Map<String, Variable> routeVariables = route.getTemplate().getVariables();
 routeVariables.put("itemName", new Variable(Variable.TYPE_URI_WORD));
-{{</ highlight >}}
+{{< /highlight >}}

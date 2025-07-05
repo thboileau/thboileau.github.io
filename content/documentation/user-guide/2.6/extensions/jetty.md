@@ -44,7 +44,7 @@ to set some of the HTTPS parameters listed above, for example:
 server.getContext().getParameters().add("keystorePath", "<your-path>");
 server.getContext().getParameters().add("keystorePassword", "<your-password>");
 server.getContext().getParameters().add("keyPassword", "<your-password>");
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## HTTP2, HTTP3 on server side
 
@@ -58,7 +58,7 @@ In this case, HTTP3 is not supported. Just provide the `HTTP2` value to the `htt
 
 {{< highlight java "style=emacs" >}}Server server = myComponent.getServers().add(Protocol.HTTP, 8182);
 server.getContext().getParameters().add("http.transport.mode", "HTTP2");
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 HTTP1.1 will be still be supported.
@@ -69,7 +69,7 @@ In this case, HTTP3 is supported. The `http.transport.protocols` parameter allow
 
 {{< highlight java "style=emacs" >}}Server server = myComponent.getServers().add(Protocol.HTTPS, 8183);
 server.getContext().getParameters().add("http.transport.protocols", "HTTP1_1,HTTP2,HTTP3");
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## HTTP2, HTTP3 on client side
 
@@ -77,4 +77,4 @@ In this case, you can either ask to support only HTTP1.1, HTTP2, HTTP3, or suppo
 
 {{< highlight java "style=emacs" >}}CLient client = myComponent.getClient().add(Protocol.HTTPS);
 client.getContext().getParameters().add("httpClientTransportMode", "DYNAMIC");
-{{</ highlight >}}
+{{< /highlight >}}

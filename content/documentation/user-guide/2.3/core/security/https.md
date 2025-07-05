@@ -103,7 +103,7 @@ options are put onto separate lines for readability only):
  -sigalg "MD5withRSA"\
  -keysize 2048\
  -validity 3650
-{{</ highlight >}}
+{{< /highlight >}}
 
 The output should be:
 
@@ -112,7 +112,7 @@ The output should be:
  a validity of 3,650 days\
  for: CN=serverX, OU=IT, O=JPC, C=GB\
  [Storing serverX.jks]
-{{</ highlight >}}
+{{< /highlight >}}
 
 To explain each option:
 
@@ -137,7 +137,7 @@ options to the keytool command line:
 
 
 {{< highlight bash "style=emacs" >}}-storetype “PKCS12”
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Step 2: Exporting the Self-Signed Certificate
 
@@ -153,12 +153,12 @@ options:
  -file serverX.cer\
  -keystore serverX.jks\
  -storepass password
-{{</ highlight >}}
+{{< /highlight >}}
 
 The output should be:
 
 {{< highlight bash "style=emacs" >}}Certificate stored in file <serverX.cer>
-{{</ highlight >}}
+{{< /highlight >}}
 
 To explain each option:
 
@@ -212,7 +212,7 @@ The keytool command to do this is:
  -file serverX.cer\
  -keystore "C:\\Program Files\\Java\\jre6\\lib\\security\\cacerts"\
  -storepass "changeit"
-{{</ highlight >}}
+{{< /highlight >}}
 
 Note that the default password for the cacerts keystore file is
 'changeit'.
@@ -222,7 +222,7 @@ line:
 
 {{< highlight bash "style=emacs" >}}-Djavax.net.ssl.trustStore=C:\\\\somedir\\\\serverX.jks -Djavax.net.ssl.trustStoreType=JKS\
  -Djavax.net.ssl.trustStorePassword=password
-{{</ highlight >}}
+{{< /highlight >}}
 
 These arguments tell the Java VM where to find your certificate.
 **Please note that this approach should only be used in a test
@@ -239,7 +239,7 @@ jar files:
  lib/org.simpleframework\_3.1/org.simpleframework.jar
 lib/org.restlet.ext.ssl.jar\
  lib/org.jsslutils\_0.5/org.jsslutils.jar
-{{</ highlight >}}
+{{< /highlight >}}
 
 The server code in this example will explicitly load the certificate
 from the keystore file (serverX.jks):
@@ -275,7 +275,7 @@ public class SampleServer {
         component.start();
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Step 5: Sample Restlet Client Code
 
@@ -314,7 +314,7 @@ public class SampleClient {
     }
 }
 ...other code not shown (similar to original HTTP Restlet example)...
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Conclusion
 

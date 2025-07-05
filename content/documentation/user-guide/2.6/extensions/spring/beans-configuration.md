@@ -28,7 +28,7 @@ PropertyPathFactoryBean class to create a context bean such as:
     <constructor-arg ref="component.context" />
     ...
 </bean>
-{{</ highlight >}}
+{{< /highlight >}}
 
 The second mechanism is based on the Spring utilities schema and is
 actually more compact:
@@ -44,7 +44,7 @@ actually more compact:
     </constructor-arg>
     ...
 </bean>
-{{</ highlight >}}
+{{< /highlight >}}
 
 You also have to make sure that the util namespace is properly declared
 in your XML configuration header. Here is a snippet for Spring 2.5:
@@ -60,7 +60,7 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 <!-- Add you <bean/> definitions here -->
 
 </beans>
-{{</ highlight >}}
+{{< /highlight >}}
 
 This utilities mechanism is quite powerful and flexible, for more
 information [check this

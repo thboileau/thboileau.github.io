@@ -17,7 +17,7 @@ server, thus you have access to it via request.getEntity().
         System.out.print("parameter " + parameter.getName());
         System.out.println("/" + parameter.getValue());
     }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Getting values from a query
 
@@ -28,7 +28,7 @@ for (Parameter parameter : form) {
     System.out.print("parameter " + parameter.getName());
     System.out.println("/" + parameter.getValue());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Getting values from the cookies
 
@@ -41,4 +41,4 @@ Cookies are directly available from the request via the request.getCookies() met
     System.out.println("path = " + cookie.getPath());
     System.out.println("version = " + cookie.getVersion());
 }
-{{</ highlight >}}
+{{< /highlight >}}

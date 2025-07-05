@@ -28,7 +28,7 @@ like so:
         super.init(context, request, response);
         BeanUtils.copyProperties(backup, this);
     }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Configuration of representation templates
 
@@ -82,7 +82,7 @@ configuration is also handled by Spring.)
         <bean class="freemarker.template.DefaultObjectWrapper" />
     </property>
 </bean>
-{{</ highlight >}}
+{{< /highlight >}}
 
 When using this approach, the ServerResources themselves become very
 simple, for example:
@@ -95,7 +95,7 @@ simple, for example:
     return createTemplateRepresentation(variant.getMediaType(), dataModel);
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 A working proof-of-concept for this approach is available through
 Git at

@@ -65,7 +65,7 @@ Just note the URI of the target service, and specify the directory where
 you would like to generate the code via the command line:
 
 {{< highlight bash "style=emacs" >}}java -jar org.restlet.ext.odata Generator http://ogdi.cloudapp.net/v1/dc/ ~/workspace/testADO
-{{</ highlight >}}
+{{< /highlight >}}
 
 Please note that this feature requires the use of the core Restlet, and
 additional dependencies such as Atom (used by OData services for all
@@ -88,7 +88,7 @@ specific classpath separator) and the name of the main class:
  org.restlet.ext.odata.jar:org.freemarker.jar org.restlet.ext.odata.Generator
  http://ogdi.cloudapp.net/v1/dc/
  ~/workspace/testADO
-{{</ highlight >}}
+{{< /highlight >}}
 
 or programmatically:
 
@@ -96,7 +96,7 @@ or programmatically:
       { "http://ogdi.cloudapp.net/v1/dc/",
         "/home/thierry/workspace/restlet-2.0/odata/src" };
 Generator.main(arguments);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Please note that this feature requires the use of the core Restlet, and
 additional dependencies such as Atom (used by OData services for all
@@ -111,7 +111,7 @@ This will generate the following Java classes and directory:
   +-- etc
 
 OgdiDcSession.java
-{{</ highlight >}}
+{{< /highlight >}}
 
 The classes that correspond to entities are generated in their
 corresponding package (in our case: “ogdiDc”), as defined by the meta
@@ -145,7 +145,7 @@ City    :WASHINGTON
 District:FIFTH
 Address :144 U ST NW
 State   :DC
-{{</ highlight >}}
+{{< /highlight >}}
 
 The listing below shows how to rRetrieve the two first “BuildingPermits”
 entities:
@@ -165,7 +165,7 @@ if (query != null) {
       System.out.println();
    }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 The first step is the creation of a new session. This is the only
 required action, and it must be done once, but prior to any other one.
@@ -204,7 +204,7 @@ Address :336 ADAMS ST NE
 *** building permit
 Owner   :CARL J HAMPTON
 Address :2925 SOUTH DAKOTA AVE NE
-{{</ highlight >}}
+{{< /highlight >}}
 
 The listing below shows how to retrieve the five first “BuildingPermits”
 entities in the fifht district of Washington:
@@ -222,7 +222,7 @@ if (search != null) {
       System.out.println();
    }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 As we want to get a set of “BuildingPermit”, we just create a new query
 and specify the desired data. In addition we add a filter based on the
 expression of two criteria: the name of the city and the district. This

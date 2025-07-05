@@ -47,7 +47,7 @@ FinderFactory finderFactory = ... injected somehow ...;
 router.attach("/hello", finderFactory.finder(ServerResource.class, Hello.class);
 // Attachment with direct knowledge of concrete resource type:
 router.attach("/bye", finderFactory.finder(ByeServerResource.class);
-{{</ highlight >}}
+{{< /highlight >}}
 
 To use a Guice-enabled FinderFactory, install a RestletGuice.Module when creating the Injector. (RestletGuice has convenience methods to install such a module that parallel those in the Guice class.)
 
@@ -86,7 +86,7 @@ Instead of calling new FooApplication(...) when attaching an application in sett
          getDefaultHost().attach("/bar", barApp);
      }
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 To avoid coupling a knowledge of a specific application subtype in this setting, use qualifiers:
 
@@ -103,13 +103,13 @@ To avoid coupling a knowledge of a specific application subtype in this setting,
  @javax.inject.Qualifier
  public @interface Foo {
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Using the @Named qualifier trades some type-safety for convenience:
 
 {{< highlight java "style=emacs" >}}@Inject
 MyComponent(@Named(FOO) Application fooApp, @Named(BAR) Application barApp) ...
-{{</ highlight >}}
+{{< /highlight >}}
 
 For additional details, please consult [the
 Javadocs](https://javadoc.io/doc/org.restlet/org.restlet.ext.guice/{{% param version %}}/org/restlet/ext/guice/package-summary.html).

@@ -20,7 +20,7 @@ Authenticator a = new Authenticator() {
 };
 // Sets the default Authenticator
 Authenticator.setDefault(a);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Authenticate with NTML all requests performed via the internal HTTP client connector.
 
@@ -55,4 +55,4 @@ Here is a sample code that manually adds this client helper:
 
 
 {{< highlight java "style=emacs" >}}Engine.getInstance().getRegisteredClients().add(0, new MyNtlmHttpClientHelper(new Client(Protocol.HTTP)));
-{{</ highlight >}}
+{{< /highlight >}}

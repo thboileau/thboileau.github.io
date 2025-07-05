@@ -20,7 +20,7 @@ Here the step by step instruction to compile the code: create a directory under 
 modules/org.restlet.ext.xdb/src/org/restlet/representation/XdbRepresentation.java
 
 --- Edit here the content of the class below -----
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 XdbRepresentation.java class
@@ -266,4 +266,4 @@ public class XdbRepresentation extends XmlRepresentation {
         return this.dom;
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}

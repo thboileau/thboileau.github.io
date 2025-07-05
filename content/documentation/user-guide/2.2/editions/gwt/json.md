@@ -13,7 +13,7 @@ a JSON value.
 Prior to leverage this extension, ensure to update your `module.gwt.xml` configuration file with the following instruction:
 
 {{< highlight xml "style=emacs" >}}<inherits name="org.restlet.JSON" />
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here is a sample code taken from the example application. The
 JsonRepresentation gives access to the underlying JSONValue after the
@@ -44,4 +44,4 @@ r.setOnResponse(new Uniform() {
 // Indicates the client preferences and let the server handle
 // the best representation with content negotiation.
 r.get(MediaType.APPLICATION_JSON);
-{{</ highlight >}}
+{{< /highlight >}}

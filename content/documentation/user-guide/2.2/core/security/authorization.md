@@ -104,7 +104,7 @@ Main class for role authorization example:
         c.start();
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Resources classes, call them Resource1, Resource2 etc... and copy-paste
 their content from here:
@@ -136,7 +136,7 @@ their content from here:
 		return this.getClass().getSimpleName() + " deleted!";
 	}
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Main class for method authorization example, use the last class and replace
 its createInboundRoot and createRoleAuthorizer with the methods below:
@@ -167,7 +167,7 @@ its createInboundRoot and createRoleAuthorizer with the methods below:
  	methodAuth.getAuthenticatedMethods().add(Method.DELETE);
  	return methodAuth;
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Fine-grained authorization
 
@@ -195,7 +195,7 @@ Create a simple server as below:
          c.start();
  	}
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 With a resource like this:
 
@@ -225,7 +225,7 @@ With a resource like this:
 		return this.getClass().getSimpleName() + " patched !";
 	}
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 For a call to [http://localhost:9000/v1/resourceTypePublic/resource1/](http://localhost:9000/v1/resourceTypePublic/resource1/)
 you will need to use the owner profile to use POST and just authenticate to use PATCH.

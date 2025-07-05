@@ -51,7 +51,7 @@ import org.restlet.ext.jackson.JacksonConverter;
 // ...
 
 Engine.getInstance().getRegisteredConverters().add(new JacksonConverter());
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here is another example for the Apache HTTP Client:
 
@@ -62,4 +62,4 @@ import org.restlet.ext.httpclient.HttpClientHelper;
 
 Engine.getInstance().getRegisteredClients().clear();
 Engine.getInstance().getRegisteredClients().add(new HttpClientHelper(null));
-{{</ highlight >}}
+{{< /highlight >}}

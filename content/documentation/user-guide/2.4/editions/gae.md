@@ -51,7 +51,7 @@ public class HelloWorldResource extends ServerResource {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Now here is the parent application:
 
@@ -78,7 +78,7 @@ public class FirstStepsApplication extends Application {
         return router;
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Finally, here is the Servlet configuration file:
 
@@ -105,7 +105,7 @@ Finally, here is the Servlet configuration file:
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
 </web-app>
-{{</ highlight >}}
+{{< /highlight >}}
 
 For more information on Restlet, please check our [documentation
 pages](/documentation/javadocs/{{% param version %}}/jse).

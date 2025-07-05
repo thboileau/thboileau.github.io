@@ -26,7 +26,7 @@ org.restlet.resource.ServerResource class provided by the Restlet API:
    }
 
 }  
-{{</ highlight >}}
+{{< /highlight >}}
 
 If you run this code and launch your server, you can open a Web browser
 and hit the

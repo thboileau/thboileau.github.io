@@ -10,7 +10,7 @@ scheme. Let's say you have defined your own challenge scheme called
 will contain a WWW-Authenticate header as follow:
 
 {{< highlight bash "style=emacs" >}}WWW-Authentication: MySCHEME realm=”<realm>”
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Definition of the custom challenge scheme
 
@@ -18,7 +18,7 @@ You will first need to declare your own ChallengeScheme, certainly as a
 static member:
 
 {{< highlight java "style=emacs" >}}public static ChallengeScheme MySCHEME = new ChallengeScheme("This is my own challenge scheme", "MySCHEME");
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Definition of the custom authentication helper
 
@@ -36,7 +36,7 @@ and need to be registered by the engine.
 The registration can be done manually:
 
 {{< highlight java "style=emacs" >}}Engine.getInstance().getRegisteredAuthenticators().add(new MyCustomAuthenticationHelper());
-{{</ highlight >}}
+{{< /highlight >}}
 
 or "magically" by creating a service file located in the
 "META-INF/services" and called
@@ -49,7 +49,7 @@ done in the constructor:
 {{< highlight java "style=emacs" >}}public MyCustomAuthenticationHelper() {
     super(ChallengeScheme.CUSTOM, false, true);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 The two boolean values correspond to the support of the client and
 server sides of the authentication: in the sample code above, this
@@ -65,7 +65,7 @@ implementation of the following methods:
     following header:
 
 {{< highlight bash "style=emacs" >}}WWW-Authentication: MySCHEME
-{{</ highlight >}}
+{{< /highlight >}}
 
 In order to add the realm, proceed as follow:
 
@@ -77,7 +77,7 @@ In order to add the realm, proceed as follow:
         cw.appendQuotedChallengeParameter("realm", challenge.getRealm());
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 -   parseResponse(ChallengeResponse, Request, Series\<Parameter\>) which
     let the helper complete the given instance of ChallengeResponse (it

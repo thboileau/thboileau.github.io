@@ -59,7 +59,7 @@ Component c = new Component();
 Server server = c.getServers().add(Protocol.HTTP, 8182);
 server.getContext().getParameters().add("useForwardedForHeader", "true");
 c.start();
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Client connectors
 
@@ -73,7 +73,7 @@ Here is a sample code showing how to set such a parameter.
 
 {{< highlight java "style=emacs" >}}Client client = new Client(new Context(), Protocol.HTTP);
 client.getContext().getParameters().add("useForwardedForHeader","false");
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here is a sample code showing how to set such a parameter on a
 component's client connector.
@@ -82,7 +82,7 @@ component's client connector.
 Component c = new Component();
 Client client = c.getClients().add(Protocol.HTTP);
 client.getContext().getParameters().add("useForwardedForHeader", "false");
-{{</ highlight >}}
+{{< /highlight >}}
 
 If you want to configure the client connector used by a ClientResource,
 there are several cases. When your ClientResource instances are created
@@ -98,7 +98,7 @@ client.getContext().getParameters().add("useForwardedForHeader","false");
 // Instantiate the ClientResource, and set it's client connector.
 ClientResource cr = new ClientResource("http://www.example.com/");
 cr.setNext(client);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## List of available connectors
 

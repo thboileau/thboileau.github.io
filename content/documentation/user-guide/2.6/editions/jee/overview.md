@@ -55,7 +55,7 @@ public class HelloWorldResource extends ServerResource {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Then, create the sample application. Let's call it
 "FirstStepsApplication" and copy/paste the following code:
@@ -84,7 +84,7 @@ public class FirstStepsApplication extends Application {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Run in a Servlet container
 
@@ -124,7 +124,7 @@ Then, update the "web.xml" configuration file as follow:
       <url-pattern>/*</url-pattern>  
    </servlet-mapping>  
 </web-app>
-{{</ highlight >}}
+{{< /highlight >}}
 
 Finally, package the whole as a WAR file called for example
 "firstStepsServlet.war" and deploy it inside your Servlet container.
@@ -132,7 +132,7 @@ Once you have launched the Servlet container, open your favorite web
 browser, and enter the following URL:
 
 {{< highlight bash "style=emacs" >}}http://<your server name>:<its port number>/firstStepsServlet/hello
-{{</ highlight >}}
+{{< /highlight >}}
 
 The server will happily welcome you with the expected "hello, world"
 message. You can find the WAR file (packaged with archives taken from
@@ -164,7 +164,7 @@ requests to the "FirstStepsApplication".
     // Start the component.  
     component.start();  
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Once you have launched the main class, if you can open your favorite web
 browser, and gently type the following URL:

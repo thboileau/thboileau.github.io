@@ -15,7 +15,7 @@ For example, to indicate the location of your logging properties file,
 you should add the following parameter to your JVM:
 
 {{< highlight bash "style=emacs" >}}-Djava.util.logging.config.file="/home/myApp/config/myLogging.properties"
-{{</ highlight >}}
+{{< /highlight >}}
 
 When developing your Restlet code, you should always use the current
 context to get a logger. This will ensure the proper naming and
@@ -149,7 +149,7 @@ as needed.
 # the root Logger (the Logger named ""). Each class name must be for a Handler class which has a default constructor.
 # Note that these Handlers may be created lazily, when they are first used.
 handlers=java.util.logging.FileHandler
-{{</ highlight >}}
+{{< /highlight >}}
 
 In this first section, we declare one default handler that will receive
 the log records. It is a file handler that will be configured below.
@@ -166,7 +166,7 @@ com.noelios.level=WARNING
 com.noelios.web.WebComponent.www.level=INFO
 com.noelios.web.WebComponent.www.handlers=com.noelios.restlet.util.AccessLogFileHandler
 com.noelios.web.WebComponent.www.useParentHandlers=false
-{{</ highlight >}}
+{{< /highlight >}}
 
 In this second section, we indicate that by default we are only
 interested in log records with a WARNING level. We also configure the
@@ -179,7 +179,7 @@ component. For information, our Component subclass has this code in its
 constructor:
 
 {{< highlight java "style=emacs" >}}getLogService().setLoggerName("com.noelios.web.WebComponent.www");
-{{</ highlight >}}
+{{< /highlight >}}
 
 Also note that we use a specific handler for this logger, the
 AccessLogFileHandler which is provided in the NRE. It can be easily
@@ -200,7 +200,7 @@ configurer to produce Apache-style HTTP log files.
 
 # The name of the character set encoding to use (defaults to the default platform encoding).
 # java.util.logging.ConsoleHandler.encoding=
-{{</ highlight >}}
+{{< /highlight >}}
 
 In the section above we have disabled the default ConsoleHandler
 configuration as we don't use it on our server-side application.
@@ -240,7 +240,7 @@ java.util.logging.FileHandler.pattern=/home/prod/data/log/WebComponent-app-%u-%g
 
 # Specifies whether the FileHandler should append onto any existing files (defaults to false).
 # java.util.logging.FileHandler.append=
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here we specify the file size limit, the number of rotation files (100)
 and the file name template.
@@ -279,7 +279,7 @@ org.restlet.engine.log.AccessLogFileHandler.count=100
 
 # Specifies whether the FileHandler should append onto any existing files (defaults to false).
 # org.restlet.util.AccessLogFileHandler.append=
-{{</ highlight >}}
+{{< /highlight >}}
 
 This is similar to the previous section, but specific to our
 AccessLogFileHandler log handler. This let's us use a specific log
@@ -302,7 +302,7 @@ Once it is installed, you will just need to add these lines of code:
 
 {{< highlight java "style=emacs" >}}import org.slf4j.bridge.SLF4JBridgeHandler;
 SLF4JBridgeHandler.install();
-{{</ highlight >}}
+{{< /highlight >}}
 
 Then, you can drop the JAR from SLF4J corresponding to the target
 logging mechanism. For details, you can check [this
@@ -319,7 +319,7 @@ add those lines:
 Handler[] handlers = rootLogger.getHandlers();
 rootLogger.removeHan​dler(handlers[0]);
 SLF4JBridgeHandler.install();
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Restlet LoggerFacade for SLF4J
 
@@ -335,7 +335,7 @@ A special subclass for SLF4J is even provided in the
 add this system property
 
 {{< highlight java "style=emacs" >}}org.restlet.engine.loggerFacadeClass=org.restlet.ext.slf4j.Slf4jLoggerFacade
-{{</ highlight >}}
+{{< /highlight >}}
 
 You can set this property on the command line with the "-D" prefix, or
 programmatically with the System\#setProperty() method.

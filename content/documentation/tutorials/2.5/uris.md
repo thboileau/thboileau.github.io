@@ -37,7 +37,7 @@ extractor.extractQuery("keywords", "kwd", true);
 
 // Attach the extractor to the router
 router.attach("/search", extractor);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Note that the Redirector needs three parameters only. The first is the
 parent context, the second one defines how the URI rewriting should be
@@ -134,7 +134,7 @@ Restlet order = new Restlet(getContext()) {
 router.attach("/users/{user}", account);
 router.attach("/users/{user}/orders", orders);
 router.attach("/users/{user}/orders/{order}", order);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Note that the routing assumes that your request contains an absolute
 target URI that identifies a target resource. During the request

@@ -19,7 +19,7 @@ it in the JVM console:
 
 {{< highlight java "style=emacs" >}}// Outputting the content of a Web page
 new ClientResource("https://restlet.org").get().write(System.out);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Note that the example above uses a simplified way to issue calls via the
 ClientResource class. If you need multi-threading or more control it is
@@ -36,4 +36,4 @@ resource.setReferrerRef("http://www.mysite.org");
 
 // Write the response entity on the console
 resource.get().write(System.out);
-{{</ highlight >}}
+{{< /highlight >}}

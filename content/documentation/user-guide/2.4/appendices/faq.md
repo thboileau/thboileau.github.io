@@ -28,12 +28,12 @@ create this new classloader:
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Now you just need to call this line before using the Restlet API:
 
 {{< highlight java "style=emacs" >}}Engine.setInstance(new AppletEngine());
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="solve-405-status-code-responses"></a>Solve 405 status code responses
 
@@ -61,7 +61,7 @@ with media type parameters:
       return "<html><body>hello, world</body></html>";
    }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 In this case, the client requires a JSON representation but the server
 resource is not able to generate it.
@@ -86,7 +86,7 @@ connector of a Component:
 Server s = new Server(Protocol.HTTP, 8182);
 c.getServers().add(s);
 s.getContext().getParameters().add("tracing", "true");
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here is a sample code that illustrates how to configure the HTTP  client
 connector of a resource:
@@ -96,7 +96,7 @@ Client client = new Client(new Context(), Protocol.HTTP);
 client.getContext().getParameters().add("tracing", "true");
 ClientResource resource = new ClientResource("http://localhost:8182/<resource>");
 resource.setNext(client);
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="how-do-i-implement-the-traditional-mvc-pattern"></a>How do I implement the traditional MVC pattern?
 

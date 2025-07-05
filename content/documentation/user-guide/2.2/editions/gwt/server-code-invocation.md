@@ -40,4 +40,4 @@ closeButton.addClickHandler(new ClickHandler() {
         dialogBox.hide();
     }
 });
-{{</ highlight >}}
+{{< /highlight >}}

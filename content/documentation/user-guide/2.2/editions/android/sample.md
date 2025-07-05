@@ -54,7 +54,7 @@ A new contact has been added
         <action android:name="org.restlet.example.android.service.IContactService" />
     </intent-filter>
 </service>
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Declaration of the IPC (inter process communication) interface (org/restlet/example/android/service/IContactService.aidl)
 
@@ -62,7 +62,7 @@ A new contact has been added
 interface IContactService {
     List<FoafContact> getFriends(String foafUri);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Implementation of the FoafContact class
 
@@ -121,7 +121,7 @@ implement the Parcelable java interface.
         dest.writeString(phone);
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Implementation of the service (org.restlet.example.android.ContactService)
 
@@ -136,7 +136,7 @@ if (foafProfile.getStatus().isSuccess()) {
     FoafRepresentation foafRep = new FoafRepresentation(rep);
     return foafRep.getFriends();
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Contact activity
 
@@ -152,7 +152,7 @@ book). It calls the "FOAF" service.
     <action android:name="org.restlet.android.example.CONTACT_DETAIL" />
     </intent-filter>
 </activity>
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Declaration of its layout (res/layout/contact.xml)
 
@@ -169,7 +169,7 @@ book). It calls the "FOAF" service.
         android:layout_width="fill_parent" android:layout_height="wrap_content"
             android:adjustViewBounds="true" />
 </LinearLayout>
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Implementation (org.restlet.example.android.ContactActivity)
 
@@ -186,7 +186,7 @@ current contact.
         contactService = null;
     }
 };
-{{</ highlight >}}
+{{< /highlight >}}
 
 Load the list of friends of the current contact, from its foaf profile.
 It simply calls the contactService method "getFriends(String)".
@@ -209,7 +209,7 @@ It simply calls the contactService method "getFriends(String)".
     }
     handler.sendEmptyMessage(0);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Used to unbind the service.
 
@@ -220,7 +220,7 @@ protected void onPause() {
         this.unbindService(connection);
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Used to bind the service, when the activity starts.
 
@@ -233,4 +233,4 @@ protected void onStart() {
                 connection, Context.BIND_AUTO_CREATE);
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}

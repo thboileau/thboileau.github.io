@@ -72,7 +72,7 @@ component.getDefaultHost().attach("/trace", restlet);
 // Now, let's start the component!
 // Note that the HTTP server connector is also automatically started.
 component.start();
-{{</ highlight >}}
+{{< /highlight >}}
 
 Now let's test it by entering
 <http://localhost:8182/trace/abc/def?param=123> in a Web browser. Here
@@ -82,4 +82,4 @@ is the result that you will get:
     Root URI      : http://localhost:8182/trace
     Routed part   : http://localhost:8182/trace
     Remaining part: /abc/def?param=123
-{{</ highlight >}}
+{{< /highlight >}}

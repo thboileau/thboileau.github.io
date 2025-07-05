@@ -52,7 +52,7 @@ INPUT      = ENTITY
 OUTPUT     = ENTITY
 QUERY      = PARAMETER ['&' PARAMETER]
 ANNOTATION = INPUT [',' INPUT]* [':' OUTPUT] ['?' QUERY]
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here are some valid values:
 
@@ -79,7 +79,7 @@ String store(Document doc)
 
 // Alternative variants
 @Put("xml+ascii | json+utf8 : json")
-{{</ highlight >}}
+{{< /highlight >}}
 
 >**Note** the importance of registering the proper extension names via the
 MetadataService in order to use additional extension names.
@@ -137,4 +137,4 @@ public class TestResource extends ServerResource {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}

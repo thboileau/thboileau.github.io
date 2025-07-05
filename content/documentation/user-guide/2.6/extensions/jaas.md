@@ -32,7 +32,7 @@ Considering this JAAS configuration:
       authIdentity="uid={USERNAME},ou=people,dc=example,dc=net"
 
 };
-{{</ highlight >}}
+{{< /highlight >}}
 
 Using a verifier configured like this:
 
@@ -40,23 +40,23 @@ Using a verifier configured like this:
 verifier.setConfiguration(jaasConfig);
 verifier.setUserPrincipalClassName("com.sun.security.auth.UserPrincipal");
 authenticator.setVerifier(verifier);
-{{</ highlight >}}
+{{< /highlight >}}
 
 A successful JAAS login will add principals like these to the subject:
 
 {{< highlight plaintext "style=emacs" >}}[LdapLoginModule] added LdapPrincipal "uid=bruno,ou=people,dc=example,dc=net"
-{{</ highlight >}}
+{{< /highlight >}}
 
 to Subject
 
 {{< highlight plaintext "style=emacs" >}}[LdapLoginModule] added UserPrincipal "bruno" to Subject
-{{</ highlight >}}
+{{< /highlight >}}
 
 Thus, the resulting principals in ClientInfo are:
 
 {{< highlight plaintext "style=emacs" >}}LdapPrincipal with name: "uid=bruno,ou=people,dc=example,dc=net"
 UserPrincipal with name: "bruno"
-{{</ highlight >}}
+{{< /highlight >}}
 
 A new user is created based on the first UserPrincipal name: 'bruno' in
 this example.

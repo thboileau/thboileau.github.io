@@ -95,7 +95,7 @@ ContactResource is an interface annotated with Restlet annotations:
     @Delete
     public void remove();
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 It represents the contract passed between the client and the server.
@@ -142,7 +142,7 @@ public class ContactServerResource extends ServerResource implements ContactReso
         ContactServerResource.contact = contact;
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 This resource is then exposed by the server application:
@@ -158,7 +158,7 @@ public Restlet createInboundRoot() {
 
     return router;
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 # <a name="gwt-client"></a>GWT client
@@ -181,7 +181,7 @@ edition of the Restlet Framework):
    @Delete
    public void remove(Result<Void> callback);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 This interface looks like the ContactResource interface, expect that it
@@ -217,7 +217,7 @@ contactResource.retrieve(new Result<Contact>() {
         cTbAge.setText(Integer.toString(contact.getAge()));
     }
 });
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Here is a screenshot of the GWT client page once the user has clicked on
@@ -243,7 +243,7 @@ invoke the "store" method as specified by the proxy interface:
         closeButton.setFocus(true);
     }
 });
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 # <a name="android-client"></a>Android client
@@ -267,7 +267,7 @@ ContactResource resource = cr.wrap(ContactResource.class);
 
 // Get the remote contact
 Contact contact = resource.retrieve();
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 In order to update the contact, simply use this instruction:
@@ -275,7 +275,7 @@ In order to update the contact, simply use this instruction:
 
 {{< highlight java "style=emacs" >}}// Update the remote contact
 resource.store(contact);
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 The internal HTTP client has been rewritten using the java.nio.package.
@@ -306,7 +306,7 @@ if (contact != null) {
     System.out.println(" lastname: " + contact.getLastName());
     System.out.println("     nage: " + contact.getAge());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 
   This code produces the following ouput on the console:
@@ -314,7 +314,7 @@ if (contact != null) {
 {{< highlight bash "style=emacs" >}}    firstname: Scott
      lastname: Tiger
           age: 40
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Get a JSON representation
 
@@ -324,11 +324,11 @@ the resource's representation:
 
 
 {{< highlight java "style=emacs" >}}cr.get(MediaType.APPLICATION_JSON).write(System.out);
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 which produces the following output:
 
 {{< highlight json "style=emacs" >}}{"age":40,"firstName":"Scott","homeAddress":{"country":"USA","city":"Mountain View","line1":"10 bd Google","line2":null,"zipCode":"20010"},
     "lastName":"Tiger"}
-{{</ highlight >}}
+{{< /highlight >}}

@@ -37,7 +37,7 @@ such file :
 
 {{< highlight ini "style=emacs" >}}agentName: firefox accept:
 application/xhtml+xml,text/html,text/xml;q=0.9,application/xml;q=0.9
-{{</ highlight >}}
+{{< /highlight >}}
 
 It allows to specify a complete "accept" header string for a set of
 (key:value) pairs. The header value is given with the "accept" key, and

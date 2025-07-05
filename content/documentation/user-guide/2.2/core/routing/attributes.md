@@ -33,7 +33,7 @@ public Restlet createInboundRoot() {
 
      return extractor;
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 You will get a String value in the "selectAttribute" (the selected
 option), and a Form object which is a collection of key/value pairs
@@ -59,4 +59,4 @@ Here is sample code which helps to retrieve some attributes:
          }
      }
  }
-{{</ highlight >}}
+{{< /highlight >}}

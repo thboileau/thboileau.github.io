@@ -88,7 +88,7 @@ GET
 -    155
 http://null
 -       -
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 * How many concurrent session are started by Oracle?
@@ -113,7 +113,7 @@ First unlock ANONYMOUS Oracle account. By default __XMLDB Restlet Adapter__ do t
 
 
 {{< highlight sql "style=emacs" >}} alter user anonymous account unlock;
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Then you have to register your __Restlet__ application into __XMLDB__ configuration file (named /xdbconfig.xml) with this __Servlet__ role:
@@ -136,7 +136,7 @@ Then you have to register your __Restlet__ application into __XMLDB__ configurat
         <role-link>PUBLIC</role-link>
     </security-role-ref>
 </servlet>
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Above registration can be done by a following PLSQL script executed logged as SYS:
@@ -187,7 +187,7 @@ end;
 /
 commit;
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 For more information on how to register a __Servlet__ with anonymous access read
@@ -202,7 +202,7 @@ For authenticated applications there is another option which is to put an XML fi
 
 
 {{< highlight bash "style=emacs" >}}/home/[USER]/wars/[appName]/WEB-INF/restlet.xml
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 for example, `/home/__SCOTT__/wars/__DirectoryExample__/WEB-INF/restlet.xml` where __USER__ is the effective connected user name, for example `SCOTT`, and `appName` is the Servlet name; __name__ argument in __dbms_xdb.addServlet__ procedure used for registering Servlet in __XMLDB__, in above example is __DirectoryExample__.
@@ -217,7 +217,7 @@ This file look like:
     </defaultHost>
     <statusService enabled="true" contactEmail="mochoa@ieee.org"/>
 </component>
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 Second option do not require __DBA__ role if you want to update your application class name, for a complete explanation of [restlet.xml](/documentation/schemas/{{% param version %}}/Component.xsd) file syntax look at [Component java documentation](https://javadocs.restlet.talend.com/{{% param version %}}/jse/api/org/restlet/Component.html).
@@ -246,7 +246,7 @@ the proxied location
     ProxyPass / http://localhost:8080/
 </IfModule>
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 Above configuration, usually in __/etc/httpd/modules.d/30_mod_proxy.conf__, will forward all request to http://localhost:80/ to http://localhost:8080/ assuming that your Oracle listener is in the same host as Apache.
 If you want to configure Apache mod_cache to speed GET request which have expiration Date header, for example, follow this configuration:
@@ -258,7 +258,7 @@ If you want to configure Apache mod_cache to speed GET request which have expira
     CacheEnable mem /ds
 </IfModule>
 
-{{</ highlight >}}
+{{< /highlight >}}
 
 
 This configuration will enable Apache mod_mem_cache on directories __/ds__ __/oraws__ and __/userapp__.

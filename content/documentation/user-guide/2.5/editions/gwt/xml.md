@@ -12,7 +12,7 @@ to either parse a XML representation received or to serialize a XML DOM.
 Prior to leverage this extension, ensure to update your `module.gwt.xml` configuration file with the following instruction:
 
 {{< highlight xml "style=emacs" >}}<inherits name="org.restlet.XML" />
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here is a sample code taken from the example application. The
 DomRepresentation gives access to the underlying DOM document via the
@@ -43,4 +43,4 @@ r.setOnResponse(new Uniform() {
 // Indicates the client preferences and let the server handle
 // the best representation with content negotiation.
 r.get(MediaType.TEXT_XML);
-{{</ highlight >}}
+{{< /highlight >}}

@@ -34,7 +34,7 @@ guard.setNext(adminRouter);
 
 // Attach this guarded set of URIs
 router.attach("/admin", guard);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Usage of the GaeEnroler
 
@@ -64,7 +64,7 @@ public Restlet createInboundRoot() {
   guard.setNext(adminRouter);
   [...]
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Thanks to the Enroler, a resource can check if the current request is
 sent by an administrator:
@@ -76,4 +76,4 @@ protected void doInit() throws ResourceException {
   [...]
   }
 }
-{{</ highlight >}}
+{{< /highlight >}}

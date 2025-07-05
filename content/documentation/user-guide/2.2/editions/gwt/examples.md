@@ -66,7 +66,7 @@ vPanel.setHorizontalAlignment(VerticalPanel.ALIGN_CENTER);
 // Add image, button, tree
 vPanel.add(img);
 vPanel.add(button);
-{{</ highlight >}}
+{{< /highlight >}}
 
 These class illustrates also how to add an asynchronous call with AJAX
 inside the final Web page. It is as simple as to use a simple Restlet
@@ -86,7 +86,7 @@ r.setOnResponse(new Uniform() {
     }
 });
 r.get();
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Server side
 
@@ -116,4 +116,4 @@ credentials.
         return sb.toString();
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}

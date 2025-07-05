@@ -28,7 +28,7 @@ public Contact toJson(){
 public void store(Form form){
    [...]
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 In this case, the aim of the converter service is to:
 
@@ -56,7 +56,7 @@ document, you can just do:
 
 {{< highlight java "style=emacs" >}}ClientResource cr = new ClientResource("http://myapi.com/path/resource");
 Document doc = cr.get(Document.class);
-{{</ highlight >}}
+{{< /highlight >}}
 
 And that's all you need to do, as long as you have the
 org.restlet.ext.xml.jar in your classpath!

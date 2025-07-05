@@ -30,7 +30,7 @@ component.
 {{< highlight java "style=emacs" >}}import org.restlet.Component;
 import org.restlet.VirtualHost;
 import org.restlet.data.Protocol;
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="declaring-the-main-class"></a>Declaring the Main class
 
@@ -45,7 +45,7 @@ associated applications.
  */
 public class WebComponent extends Component {
       ...
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="main-method"></a>Main method
 
@@ -86,7 +86,7 @@ public static void main(String[] args) {
       e.printStackTrace(System.err);
    }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="build-the-component"></a>Build the component
 
@@ -189,7 +189,7 @@ public WebComponent(String ipAddress, int port, String wwwUri,
           "http://www.noelios.com{rr}", true));
    getHosts().add(host);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="redirection-application"></a>Redirection Application
 
@@ -238,7 +238,7 @@ public class RedirectApplication extends Application {
         return new Redirector(getContext(), this.targetUri, mode);
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # <a name="conclusion"></a>Conclusion
 

@@ -42,7 +42,7 @@ public class TestServer extends ServerResource {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here is the matching client resource:
 
@@ -74,7 +74,7 @@ public class TestClient {
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Note that our Customer and Address classes are just regular serializablecbeans, with no special parent classes and no special annotations.
 

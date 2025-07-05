@@ -36,4 +36,4 @@ form.getEntries().add(new FormData("tos", "agree"));
 
 ClientResource cr = new ClientResource("http://mydomain.com/upload");
 cr.post(form);
-{{</ highlight >}}
+{{< /highlight >}}

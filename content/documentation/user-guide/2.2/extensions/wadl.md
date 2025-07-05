@@ -48,7 +48,7 @@ public ApplicationInfo getApplicationInfo(Request request, Response response) {
 
     return result;
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## BaseResource class
 
@@ -64,7 +64,7 @@ protected Representation describe() {
     setTitle("List of items.");
     return super.describe();
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 -   Implement the"describeGet" method
 
@@ -78,7 +78,7 @@ protected void describeGet(MethodInfo info) {
     repInfo.setDocumentation("List of items as XML file");
     info.getResponse().getRepresentations().add(repInfo);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 -   Implement the "describePost" method
 
@@ -105,7 +105,7 @@ protected void describePost(MethodInfo info) {
     faultInfo.setMediaType(MediaType.TEXT_HTML);
     info.getResponse().getFaults().add(faultInfo);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## ItemResource
 
@@ -116,7 +116,7 @@ public Representation describe() {
     setTitle("Representation of a single item");
     return super.describe();
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 -   Implement the"describeGet" method
 
@@ -136,7 +136,7 @@ protected void describeGet(MethodInfo info) {
     faultInfo.setMediaType(MediaType.TEXT_HTML);
     info.getResponse().getFaults().add(faultInfo);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 -   Implement the "describeDelete" method
 
@@ -149,7 +149,7 @@ protected void describeDelete(MethodInfo info) {
     repInfo.getStatuses().add(Status.SUCCESS_NO_CONTENT);
     info.getResponse().getRepresentations().add(repInfo);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 -   Implement the "describePut" method
 
@@ -173,7 +173,7 @@ protected void describePut(MethodInfo info) {
 
     super.describePut(info);
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Getting the documentation
 
@@ -189,7 +189,7 @@ application:
 
 // Displays the WADL documentation of the application
 app.options().write(System.out);
-{{</ highlight >}}
+{{< /highlight >}}
 
 Here is a way to programmatically obtain the WADL documentation of the
 "items" resource:
@@ -198,7 +198,7 @@ Here is a way to programmatically obtain the WADL documentation of the
 
 // Displays the WADL documentation of the application
 items.options().write(System.out);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## HTML documentation
 
@@ -213,7 +213,7 @@ application:
 
 // Displays an HTML documentation of the application
 app.options(MediaType.TEXT_HTML).write(System.out);
-{{</ highlight >}}
+{{< /highlight >}}
 
 In order to work properly, you will certainly have to update your
 classpath with the archive of a convenient transformation engine. Xalan
@@ -237,7 +237,7 @@ For example:
   <include href="NewsSearchResponse.xsd"/>
   <include href="Error.xsd"/>
 </grammars>
-{{</ highlight >}}
+{{< /highlight >}}
 
 At this time, the WADL extension of the Restlet framework supports only
 "included" and not "inline" schemas via the GrammarsInfo\#includes
@@ -250,12 +250,12 @@ section.
 For example:
 
  {{< highlight xml "style=emacs" >}}<representation mediaType="application/xml" element="yn:ResultSet"/>
-{{</ highlight >}}
+{{< /highlight >}}
 
 Assuming that the "yn" namespace is declared in the document:
 
 {{< highlight xml "style=emacs" >}}<application [...] xmlns:yn="urn:yahoo:yn" >
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Implementation with Restlet
 
@@ -273,11 +273,11 @@ getApplicationInfo method:
      appInfo.setGrammars(grammar);
      return appInfo;
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Then, at the level of the subclass of WadlResource, update the
 RepresentationInfo\#element attribute:
 
 {{< highlight java "style=emacs" >}}RepresentationInfo formRepresentation = new RepresentationInfo();
 formRepresentation.setXmlElement("yn:ResultSet");
-{{</ highlight >}}
+{{< /highlight >}}

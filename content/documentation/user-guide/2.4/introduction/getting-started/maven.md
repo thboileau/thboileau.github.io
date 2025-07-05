@@ -50,7 +50,7 @@ updating the *pom.xml* file and adding the following code to the
   <name>Public online Restlet repository</name>
   <url>https://maven.restlet.talend.com</url>
 </repository>
-{{</ highlight >}}
+{{< /highlight >}}
 
 As an alternative, you can also declare the repository for all of your
 projects. Go to the directory on the local computer where you just
@@ -67,14 +67,14 @@ install Maven. Open and edit *conf/settings.xml* file. Add to the
     </repository>
   </repositories>
 </profile>
-{{</ highlight >}}
+{{< /highlight >}}
 
 Just after the \</profiles\> add the following:
 
 {{< highlight xml "style=emacs" >}}    <activeProfiles>&nbsp;
     &nbsp; <activeProfile>restlet</activeProfile>
     </activeProfiles>
-{{</ highlight >}}
+{{< /highlight >}}
 
 # Available artifacts
 
@@ -167,4 +167,4 @@ add the following lines of text into the \<dependencies\> section.
   <artifactId>org.restlet.ext.simple</artifactId>
   <version>2.2-RC4</version>
 </dependency>
-{{</ highlight >}}
+{{< /highlight >}}

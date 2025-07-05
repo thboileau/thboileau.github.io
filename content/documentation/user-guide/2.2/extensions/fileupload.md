@@ -99,7 +99,7 @@ public Representation accept(Representation entity) throws Exception {
     }
     return result;
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Before running this example, please add the following jars to the
 classpath:

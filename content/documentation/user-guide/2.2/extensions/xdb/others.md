@@ -20,4 +20,4 @@ Usually to run REST application in other schemas like SCOTT these grants are req
 {{< highlight sql "style=emacs" >}}SQL> exec dbms_java.grant_permission( 'SCOTT', 'SYS:java.lang.RuntimePermission', 'getClassLoader', '' );
 SQL> exec dbms_java.grant_permission( 'SCOTT', 'SYS:java.util.logging.LoggingPermission', 'control', '' );
 SQL> commit;
-{{</ highlight >}}
+{{< /highlight >}}

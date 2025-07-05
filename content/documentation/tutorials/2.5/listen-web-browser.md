@@ -22,7 +22,7 @@ class extends the base ServerResource class provided by Restlet:
     }
 
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 If you run this code and launch your server, you can open a Web browser
 and hit the <http://localhost:8182>. Actually, any URI will work, try

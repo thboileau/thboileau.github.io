@@ -61,7 +61,7 @@ public Restlet createInboundRoot() {
 
     return guard;
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ![](../images/guard.png)
 
@@ -98,7 +98,7 @@ let's use the client-side Restlet API:
         }
     }
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 You can change the user ID or password sent by this test client in order
 to check the response returned by the server. Remember to launch the

@@ -89,7 +89,7 @@ Restlet order = new Restlet(getContext()) {
 router.attach("/users/{user}", account);
 router.attach("/users/{user}/orders", orders);
 router.attach("/users/{user}/orders/{order}", order);
-{{</ highlight >}}
+{{< /highlight >}}
 
 >**Note** that the routing assumes that your request contains an absolute
 target URI that identifies a target resource. During the request

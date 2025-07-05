@@ -3,6 +3,10 @@ languageCode: en-us
 title: Restlet framework
 theme: restlet-framework
 
+module:
+  hugoVersion:
+    min: '0.147.8'
+
 params:
   versions:
     stable: 2.6
@@ -26,6 +30,8 @@ security:
   enableInlineShortcodes: true
 
 markup:
+  highlight:
+    noClasses: false
   goldmark:
     duplicateResourceFiles: false
     extensions:

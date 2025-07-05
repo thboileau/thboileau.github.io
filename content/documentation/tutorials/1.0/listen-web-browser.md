@@ -25,7 +25,7 @@ Restlet restlet = new Restlet() {
 
 // Create the HTTP server and listen on port 8182
 new Server(Protocol.HTTP, 8182, restlet).start();
-{{</ highlight >}}
+{{< /highlight >}}
 
 If you run this code and launch your server, you can open a Web browser
 and hit the <http://localhost:8182>. Actually, any URI will work, try

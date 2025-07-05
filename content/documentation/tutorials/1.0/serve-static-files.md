@@ -27,7 +27,7 @@ Application application = new Application(component.getContext()) {
 // Attach the application to the component and start it
 component.getDefaultHost().attach("", application);
 component.start();
-{{</ highlight >}}
+{{< /highlight >}}
 
 As you may notice, the application is instantiated by passing the
 context of its parent component, contrary to the previous sample code

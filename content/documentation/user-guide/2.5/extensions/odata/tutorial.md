@@ -97,7 +97,7 @@ Just note the URI of the target service, and specify the directory where
 you would like to generate the code:
 
 {{< highlight bash "style=emacs" >}}java -jar org.restlet.ext.odata.jar http://restlet.cloudapp.net/TestAssociationOneToOne.svc/ ~/workspace/testADO
-{{</ highlight >}}
+{{< /highlight >}}
 
 Please note that this feature requires the use of the core Restlet, and
 additional dependencies such as Atom (used by OData services for all
@@ -119,7 +119,7 @@ specific classpath separator) and the name of the main class:
 {{< highlight bash "style=emacs" >}}java -cp org.restlet.jar:org.restlet.ext.xml.jar:org.restlet.ext.atom.jar:org.restlet.ext.freemarker.jar:org.restlet.ext.odata.jar:org.freemarker.jar org.restlet.ext.odata.Generator
      http://restlet.cloudapp.net/TestAssociationOneToOne.svc/
      ~/workspace/testADO
-{{</ highlight >}}
+{{< /highlight >}}
 
 This will generate the following java classes and directory:
 
@@ -127,7 +127,7 @@ This will generate the following java classes and directory:
   +-- Cafe.java
   +-- Item.java
 TestAssociationOneToOneQuery.java
-{{</ highlight >}}
+{{< /highlight >}}
 
 The classes that correspond to entities are generated in their
 corresponding package (in our case: “testAssociationOneToOne”), as
@@ -185,7 +185,7 @@ their properties. It will display this kind of output on the console:
 name: Le Café Louis
 id: 2
 name: Le Petit Marly
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}TestAssociationOneToOneService service = new TestAssociationOneToOneService();
 Query<Cafe> query = service.createCafeQuery("/Cafes");
@@ -194,7 +194,7 @@ for (Cafe Cafe : query) {
     System.out.println(“id: ” + Cafe.getID());
     System.out.println(“name: ” + Cafe.getName());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Retrieve the set of “Cafe” entities.
 
@@ -214,7 +214,7 @@ Host: restlet.cloudapp.net
 User-Agent: Noelios-Restlet/2.0snapshot
 Accept: */*
 Connection: close
-{{</ highlight >}}
+{{< /highlight >}}
 
 And here is the response of the server including both response headers
 and entity:
@@ -229,7 +229,7 @@ X-Powered-By: ASP.NET
 Date: Fri, 24 Jul 2009 14:21:20 GMT
 Connection: close
 Content-Length: 2221
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight xml "style=emacs" >}}<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <feed xml:base="http://restlet.cloudapp.net/TestAssociationOneToOne.svc/"
@@ -280,7 +280,7 @@ Content-Length: 2221
     </content>
   </entry>
 </feed>
-{{</ highlight >}}
+{{< /highlight >}}
 
 Getting the set of defined “Item” is quite similar:
 
@@ -290,7 +290,7 @@ for (Item Item : queryItem) {
     System.out.println(“id: ” + Item.getID());
     System.out.println(“desc.: ” + Item.getDescription());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Retrieve the set of “Item” entities.
 
@@ -306,14 +306,14 @@ code below should produce this output:
 
 {{< highlight bash "style=emacs" >}}id: 1  
 name: Le Café Louis
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes('1')");
 
 Cafe Cafe = query.iterator().next();
 System.out.println(“id: ” + Cafe.getID());
 System.out.println(“name: ” + Cafe.getName());
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Retrieve the “Cafe” by its identifier.
 
@@ -338,7 +338,7 @@ Cafe.setName("Bar des sports");
 Cafe.setCity("Paris");
 
 service.addEntity(Cafe);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Add a new Cafe
 
@@ -358,7 +358,7 @@ Transfer-Encoding: chunked
 Connection: close
 
 281
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight xml "style=emacs" >}}<?xml version="1.0" standalone='yes'?>
 <entry xmlns="http://www.w3.org/2005/Atom">
@@ -371,7 +371,7 @@ Connection: close
 </entry>
 
 0
-{{</ highlight >}}
+{{< /highlight >}}
 
 Before using this feature, ensure that you provide a correctly
 identified object, especially, don’t try to add an entity with a null
@@ -391,7 +391,7 @@ Cafe Cafe = query.iterator().next();
 Cafe.setNom("Bar des sports");
 
 service.updateEntity(Cafe);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Update a Cafe
 
@@ -407,7 +407,7 @@ below.
 Cafe Cafe = query.iterator().next();
 
 service.deleteEntity(Cafe);
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Delete a Cafe.
 
@@ -430,7 +430,7 @@ name: Le Café Louis
 Item
 id: 1
 Description: Poulet au curry
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes('1')").expand("Item");
 
@@ -441,7 +441,7 @@ System.out.println(“name: ” + Cafe.getName());
 System.out.println("Item");
 System.out.println(“id: ” + Cafe.getItem().getID());
 System.out.println(“Description: ” + Cafe.getItem().getDescription());
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Retrieve a “Cafe” by its identifier, with the associated Item in one request.
 
@@ -468,7 +468,7 @@ console this king of trace:
 description: Pâté
 id: 1
 description: Poulet au curry
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Item> query = service.createItemQuery("/Items").orderby("Description");
 
@@ -476,7 +476,7 @@ description: Poulet au curry
      System.out.println(“id: ” + Item.getID());
      System.out.println(“description: ” + Item.getDescription());
  }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Order a set of entities
 
@@ -501,7 +501,7 @@ the console:
 
 {{< highlight bash "style=emacs" >}}id: 1  
 nom: Le Café Louis
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes").filter("Name eq 'Le Café Louis'");
 
@@ -509,7 +509,7 @@ for (Cafe Cafe : query) {
     System.out.println(“id: ” + Cafe.getID());
     System.out.println(“nom: ” + Cafe.getNom());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Filter a set of entities
 
@@ -525,7 +525,7 @@ kind of trace at the console.
 
 {{< highlight bash "style=emacs" >}}id: 2  
 name: Le Petit Marly
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes").skip(1);
 
@@ -533,7 +533,7 @@ for (Cafe Cafe : query) {
     System.out.println(“id: ” + Cafe.getID());
     System.out.println(“name: ” + Cafe.getName());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Skip the first entity
 
@@ -545,7 +545,7 @@ use is very simple as shown below:
 
 {{< highlight bash "style=emacs" >}}id: 1
 name: Le Café Louis
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes").top(1);
 
@@ -553,7 +553,7 @@ for (Cafe Cafe : query) {
     System.out.println(“id: ” + Cafe.getID());
     System.out.println(“name: ” + Cafe.getName());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ### Limit the number of returned entities.
 
@@ -576,7 +576,7 @@ entities:
 
 {{< highlight bash "style=emacs" >}}id: null
 name: Le Café Louis
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes").top(1).select("Name");
 
@@ -584,7 +584,7 @@ for (Cafe Cafe : query) {
     System.out.println(“id: ” + Cafe.getID());
     System.out.println(“name: ” + Cafe.getName());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Limit the number of returned properties
 
@@ -596,7 +596,7 @@ name: Le Café Louis
 Item
 id: null
 Description: Poulet au curry
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes").top(1).expand("Item").select("Name,Item.Description");
 
@@ -607,7 +607,7 @@ for (Cafe Cafe : query) {
     System.out.println(“id: ” + Cafe.getItem().getID());
     System.out.println(“Description: ” + Cafe.getItem().getDescription());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Limit the number of returned properties
 
@@ -642,7 +642,7 @@ The following sample code illustrates how to get the count using the
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes").inlineCount(true);
 
 System.out.println("Number of entities: " + query.getCount());
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Get the number of Cafes
 
@@ -696,7 +696,7 @@ to set the credentials:
                     "login",
                     "password")
     );
-{{</ highlight >}}
+{{< /highlight >}}
 
 {{< highlight java "style=emacs" >}}Query<Cafe> query = service.createCafeQuery("/Cafes").top(1);
 
@@ -704,7 +704,7 @@ for (Cafe Cafe : query) {
     System.out.println(“id: ” + Cafe.getID());
     System.out.println(“nname: ” + Cafe.getName());
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 ## Add credentials to access a secured service.
 

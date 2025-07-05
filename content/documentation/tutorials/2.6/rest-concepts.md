@@ -70,7 +70,7 @@ public String toString() {
             + getReference().getBaseRef() + '\n' + "Remaining part: "
             + getReference().getRemainingPart();
 }
-{{</ highlight >}}
+{{< /highlight >}}
 
 Now let's test it by entering
 <http://localhost:8182/trace/abc/def?param=123> in a Web browser. Here
@@ -80,4 +80,4 @@ is the result that you will get:
     Root URI      : http://localhost:8182/trace
     Routed part   : http://localhost:8182/trace
     Remaining part: /abc/def?param=123
-{{</ highlight >}}
+{{< /highlight >}}

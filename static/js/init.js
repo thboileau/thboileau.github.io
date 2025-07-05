@@ -9,9 +9,11 @@ $(document).ready(function () {
    window.location.href = $(this).val();
  });
 
+/* Dropped generatino of mobile menu - CSP issue
  // Mobi sub navigation toggle
  $(function () {
    $('#dl-menu').dlmenu();
  });
+-->*/
 });
 
