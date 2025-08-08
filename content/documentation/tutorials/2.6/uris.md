@@ -1,7 +1,7 @@
 ---
 title: URIs
 longTitle: Rewriting, redirection, router & hierarchical URIs
-weight: 7
+weight: 8
 ---
 # URI rewriting and redirection
 

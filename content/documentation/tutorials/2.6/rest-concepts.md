@@ -1,6 +1,6 @@
 ---
 title: REST main concepts
-weight: 4
+weight: 5
 ---
 # Overview of a REST architecture
 
