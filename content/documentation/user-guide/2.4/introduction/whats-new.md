@@ -1,6 +1,5 @@
 ---
-title: In version 2.4
-longTitle: What's new in version 2.4
+title: What's new
 weight: 3
 ---
 # Introduction

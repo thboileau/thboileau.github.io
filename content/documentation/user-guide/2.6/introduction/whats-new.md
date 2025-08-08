@@ -1,7 +1,6 @@
 ---
-title: In version 2.6
-longTitle: What's new in version 2.6
-weight: 1
+title: What's new
+weight: 3
 ---
 # Introduction
 
