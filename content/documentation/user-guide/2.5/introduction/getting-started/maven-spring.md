@@ -1,7 +1,7 @@
 ---
 title: Maven and Spring
 longTitle: Getting started with Maven and Spring
-weight: 4
+weight: 3
 ---
 # Overview
 

@@ -21,8 +21,7 @@ as:
 
 -   [cURL](http://curl.haxx.se/) : command line HTTP client for Unix
 -   [WireShark](http://www.wireshark.org/) : advanced network analyzer working at the IP or TCP or HTTP levels
--   [RESTClient](http://code.google.com/p/rest-client/) : Java/Swing graphical HTTP client
+-   [RESTClient](https://github.com/wiztools/rest-client) : Java/Swing graphical HTTP client
 -   [Poster](http://code.google.com/p/poster-extension/) : FireFox extension to test RESTful Web applications
 -   [Netcat](http://netcat.sourceforge.net/) : swiss-army knife for TCP/IP.
--   [tcpmon](http://ws.apache.org/tcpmon/) : Java utility that monitors a TCP connection.
 -   etc.

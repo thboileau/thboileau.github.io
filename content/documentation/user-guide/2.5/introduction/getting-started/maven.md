@@ -1,6 +1,6 @@
 ---
 title: Maven
-weight: 3
+weight: 2
 ---
 # Introduction
 

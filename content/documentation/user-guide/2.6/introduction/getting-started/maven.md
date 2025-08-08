@@ -1,7 +1,7 @@
 ---
 title: Maven
 longTitle: Getting started with Maven
-weight: 3
+weight: 2
 ---
 # Introduction
 
