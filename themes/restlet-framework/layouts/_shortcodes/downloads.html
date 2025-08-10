@@ -6,7 +6,7 @@
 
 {{- range $index, $version := sort .Site.Data.downloads.versions "version" "desc" }}
   <details {{ if $defaultVersionClosed }}open{{ $defaultVersionClosed = false }}{{ end }}>
-      <summary class="version">{{- $version.version -}}&nbsp;&nbsp;(<a class="changelog" href="/documentation/{{- $version.version -}}/changelog">View changelog</a>)</summary>
+      <summary class="version">{{- $version.version -}}&nbsp;&nbsp;(<a class="changelog" href="/documentation/whats-new/{{- $version.version -}}">View changelog</a>)</summary>
       <div class="releases">
 
   {{- with $version.editions }}{{/* versions 1.* do not support editions */}}

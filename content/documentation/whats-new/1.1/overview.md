@@ -10,6 +10,10 @@ tremendous progress. We will try to summarize here the main benefits
 that you can expect by migrating from Restlet 1.0 to the latest 1.1
 version.
 
+# References
+
+For more details, you can read the [the full list of changes](https://github.com/restlet/restlet-framework-java/blob/1.1/build/tmpl/text/changes.txt).
+
 # Uniform Development Environment
 
 Truly boost the productivity of your team by leveraging our uniform

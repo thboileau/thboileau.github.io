@@ -29,7 +29,6 @@ Pages are organized by their main directory:
  - the pages inside the root directory
  - the pages inside the `downloads` directory
  - the pages inside the `documentation` directory
- - the pages inside the `documentation/changelog` directory
 
 They are handled by the `baseof.html` template of the exact same directory in the layouts `./themes/restlet-framework/layouts`. As you can notice, there is no `downloads` directory: the layout in the root directory applies.
 Layout include what is called `partials` (located in `./themes/restlet-framework/partials`) this is where all the logic of html code generation resides.

@@ -15,4 +15,4 @@ to the Restlet Framework.
 
 # References
 
-For more details, you can read the [the full list of changes](/documentation/2.0/changelog).
+For more details, you can read the [the full list of changes](https://github.com/restlet/restlet-framework-java/blob/2.0/build/tmpl/text/changes.txt).
