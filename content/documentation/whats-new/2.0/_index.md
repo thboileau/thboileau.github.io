@@ -1,5 +1,5 @@
 ---
-title: Restlet Framework - What's new 2.0
+title: What's new 2.0
 cascade:
   params:
     version: '2.0'

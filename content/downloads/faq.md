@@ -15,4 +15,4 @@ More details are available in the [user guide](/documentation/user-guide/{{% par
 **Is there complete documentation available for Restlet Framework?**
 
 Of course! Please visit the [User guide](/documentation/user-guide/{{% param versions.stable %}}) in the Technical Resources section of this website.
-You can also check out [Tutorials](/documentation/tutorials/{{% param versions.stable %}}) or access the [Javadocs](/documentation/javadocs/{{% param versions.stable %}}/).
+You can also check out [Tutorials](/documentation/user-guide/{{% param versions.stable %}}/introduction/tutorials/overview/) or access the [Javadocs](/documentation/javadocs/{{% param versions.stable %}}/).
