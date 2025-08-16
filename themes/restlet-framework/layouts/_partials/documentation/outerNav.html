@@ -7,8 +7,8 @@
           <a href="#submenu-1" class="accordion-toggle toggle-switch"><img alt="Restlet Framework" src="/images/restlet_white_32.svg">Framework</a>
           <ul id="submenu-1" class="nav panel-switch" role="menu">
             <li>
-              <a href="#subsubmenu-1" class="accordion-toggle toggle-switch">User guide</a>
-              <ul id="subsubmenu-1" class="nav panel-switch lowest-lewel" role="menu">
+              <a href="/documentation/user-guide/{{ $currentVersion }}/introduction/overview/" class="accordion-toggle toggle-switch">User guide</a>
+              <ul class="nav panel-switch lowest-lewel" role="menu">
                 <li><a href="/documentation/user-guide/{{ $currentVersion }}/introduction/overview/" {{ if eq .Params.section "guide-introduction" }}class="active" {{ end }}>Part 1 - Getting started</a></li>
                 <li><a href="/documentation/user-guide/{{ $currentVersion }}/core/overview/" {{ if eq .Params.section "guide-core" }}class="active" {{ end }}>Part 2 - Core Restlet</a></li>
                 <li><a href="/documentation/user-guide/{{ $currentVersion }}/editions/overview/" {{ if eq .Params.section "guide-editions" }}class="active" {{ end }}>Part 3 - Restlet Editions</a></li>
