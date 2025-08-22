@@ -2,15 +2,13 @@
 title: Overview
 weight: 1
 ---
-The Restlet framework is composed of two main parts. First, there is the
-"[Restlet API](https://javadoc.io/doc/org.restlet/org.restlet/{{% param version %}}/index.html)", a neutral API supporting
-the concepts of REST and HTTP and facilitating the handling of calls for both
-client-side and server-side applications. This API is backed by the
-Restlet Engine and both are now shipped in a single JAR
-("org.restlet.jar").
+This section explains how to get started with the Restlet Framework,
+including set up and debugging tools in common development environments
+such as:
 
-![](../images/tutorial01.png)
+-   [Maven](/documentation/user-guide/{{% param version %}}/introduction/tutorials/maven "Getting started with Maven")
+-   [Maven and Spring](/documentation/user-guide/{{% param version %}}/introduction/tutorials/maven-spring "Getting Started with Maven and Spring")
+-   [Debugging tools](/documentation/user-guide/{{% param version %}}/introduction/tutorials/debugging-tools "Debugging tools")
 
-This separation between the API and the implementation is similar to the
-one between the Servlet API and Web containers like Jetty or Tomcat, or
-between the JDBC API and concrete JDBC drivers.
+Finally, there is the [Restlet in Action](http://www.amazon.com/gp/product/193518234X/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=193518234X&linkCode=as2&tag=restlet-20)
+book written by Restlet creators and published by Manning that is a highly recommended reading for a smoother Restlet learning curve.

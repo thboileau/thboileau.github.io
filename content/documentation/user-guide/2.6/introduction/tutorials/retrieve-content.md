@@ -1,6 +1,6 @@
 ---
 title: Retrieve the content of a web page
-weight: 3
+weight: 6
 ---
 As we mentioned in the [introduction
 paper](/documentation/user-guide/{{% param version %}}/introduction/overview), the Restlet framework is at the
@@ -18,7 +18,9 @@ Here we will get the representation of an existing resource and output
 it in the JVM console:
 
 {{< highlight java "style=emacs" >}}// Outputting the content of a Web page
-new ClientResource("https://restlet.org").get().write(System.out);
+new ClientResource("https://restlet.org")
+      .get()
+      .write(System.out);
 {{< /highlight >}}
 
 Note that the example above uses a simplified way to issue calls via the

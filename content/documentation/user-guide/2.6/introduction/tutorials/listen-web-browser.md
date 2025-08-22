@@ -1,6 +1,6 @@
 ---
 title: Listen to web browsers
-weight: 4
+weight: 5
 ---
 Now, we want to see how the Restlet Framework can listen to client
 requests and reply to them. We will use the internal Restlet HTTP server
@@ -9,11 +9,13 @@ one based on Eclipse Jetty for production workloads) and return a simple
 string representation "hello, world" as plain text. Note that the Part03
 class extends the base ServerResource class provided by Restlet:
 
-{{< highlight java "style=emacs" >}}public class Part03 extends ServerResource {
+{{< highlight java "style=emacs" >}}public class HelloWorldServerResource extends ServerResource {
 
     public static void main(String[] args) throws Exception {
         // Create the HTTP server and listen on port 8182
-        new Server(Protocol.HTTP, 8182, Part03.class).start();
+        new Server(Protocol.HTTP,
+                   8182, 
+                   HelloWorldServerResource.class).start();
     }
 
     @Get("txt")

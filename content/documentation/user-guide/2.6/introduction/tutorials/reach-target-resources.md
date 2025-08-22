@@ -1,6 +1,6 @@
 ---
 title: Reach target resources
-weight: 9
+weight: 10
 ---
 In the previous example, we took advantage of the flexible routing
 features of the framework to route the requests while extracting
