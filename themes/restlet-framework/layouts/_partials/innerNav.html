@@ -1,35 +1,15 @@
   <nav>
   <ul class="content-nav">
-    <li {{ if eq .Title "Overview" }}class="active" {{ end }} >
-      <a href="/">Overview</a>
-    </li>
-    <li {{ if eq .Title "Features" }}class="active" {{ end }} >
-      <a href="/features/">Features</a>
-    </li>
-    <li {{ if eq .Title "Download" }}class="active" {{ end }} >
-      <a href="/downloads/current/">Download</a>
-      <ul>
-        <li {{ if eq .Title "Current Release" }}class="active" {{ end }} >
-          <a href="/downloads/current/">Current Release</a>
-        </li>
-        <li {{ if eq .Title "Other Releases" }}class="active" {{ end }} >
-          <a href="/downloads/past/">Other Releases</a>
-        </li>
-        <li {{ if eq .Title "Legal Terms" }}class="active" {{ end }} >
-          <a href="/downloads/legal-terms/">Legal Terms</a>
-        </li>
-        <li {{ if eq .Title "FAQ" }}class="active" {{ end }} >
-          <a href="/downloads/faq/">FAQ</a>
-        </li>
-      </ul>
-    </li>
+    <li {{ if eq .Title "Overview" }}class="active"{{ end }}><a href="/">Overview</a></li>
+    <li {{ if eq .Title "Features" }}class="active"{{ end }}><a href="/features/">Features</a></li>
     <li>
-      <a href="/documentation/user-guide/{{ .Site.Params.versions.stable }}/introduction/overview/">Documentation</a>
+      <a href="/documentation/user-guide/{{ .Site.Params.versions.stable }}/introduction/">Documentation</a>
       <ul>
-        <li><a href="/documentation/user-guide/{{ .Site.Params.versions.stable }}/introduction/overview/">User guide</a></li>
+        <li><a href="/documentation/user-guide/{{ .Site.Params.versions.stable }}/introduction/">User guide</a></li>
         <li><a href="/documentation/javadocs/{{ .Site.Params.versions.stable }}/">Javadocs</a></li>
         <li><a href="/documentation/whats-new/{{ .Site.Params.versions.stable }}">What's new</a></li>
       </ul>
     </li>
+    <li {{ if eq .Title "Legal Terms" }}class="active"{{ end }}><a href="/legal-terms/">Legal Terms</a></li>
   </ul>
 </nav>

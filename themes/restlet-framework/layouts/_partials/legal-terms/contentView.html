@@ -2,12 +2,9 @@
   {{- partial "documentation/installFramework.html" . }}
   {{- partial "documentation/mobileNav.html" . }}
   <div class="row">
-    <div class="col-md-3">
-      {{ partial "documentation/innerNavDynamic.html" . }}
-    </div>
+    <div class="col-md-3"></div>
     <div class="col-md-9">
       <div class="documentation-content">
-        {{ partial "documentation/versionSwitcher.html" . }}
 
         <h1>{{ default .Title .Params.longTitle }}</h1>
         {{ .Content }}
