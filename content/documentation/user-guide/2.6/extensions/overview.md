@@ -2,7 +2,6 @@
 title: Overview
 weight: 1
 ---
-# Introduction
 
 The Restlet Framework is composed of two parts:
 

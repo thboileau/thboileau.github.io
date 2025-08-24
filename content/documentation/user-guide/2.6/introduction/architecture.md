@@ -2,7 +2,6 @@
 title: Architecture
 weight: 2
 ---
-# Introduction
 
 The Restlet Framework is composed of two main parts. First, there is the
 [Restlet API](/documentation/user-guide/{{% param version %}}/core/overview "Part II - Core Restlet"),

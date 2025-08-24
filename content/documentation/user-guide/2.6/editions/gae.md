@@ -1,7 +1,7 @@
 ---
 title: Google App Engine
 longTitle: Restlet edition for Google App Engine
-weight: 3
+weight: 5
 ---
 # Introduction
 
