@@ -170,6 +170,15 @@ $navigation-schemes: ('site' transparent $white);
           }
         }
       }
+      >.navigation-list.documentation {
+        >li {
+          &.active {
+            &:before {
+              background-color: $mako;
+            }
+          }
+        }
+      }
     }
 
     .navigation-list {

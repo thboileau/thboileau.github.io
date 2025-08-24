@@ -1,6 +1,6 @@
 ---
 title: Guard access to sensitive resources
-weight: 8
+weight: 4
 ---
 When you need to secure the access to some Restlets, several options are
 available. A common way is to rely on cookies to identify clients (or

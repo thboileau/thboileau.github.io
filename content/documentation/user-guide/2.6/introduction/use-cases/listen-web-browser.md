@@ -1,6 +1,8 @@
 ---
 title: Listen to web browsers
-weight: 5
+weight: 1
+aliases:
+ - /documentation/user-guide/2.6/introduction/use-cases/overview/
 ---
 Now, we want to see how the Restlet Framework can listen to client
 requests and reply to them. We will use the internal Restlet HTTP server

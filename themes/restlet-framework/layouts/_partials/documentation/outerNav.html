@@ -17,8 +17,8 @@
               </ul>
             </li>
             <li><a href="/documentation/javadocs/{{ $currentVersion }}/" {{ if eq .Params.section "javadocs" }}class="active" {{ end }}>Javadocs</a></li>
-            <li><a href="/documentation/whats-new/{{ $currentVersion }}">What's new</a></li>
-            <li><a href="/legal-terms">Legal terms</a></li>
+            <li><a href="/documentation/whats-new/{{ $currentVersion }}" {{ if eq .Params.section "whats-new" }}class="active" {{ end }}>What's new</a></li>
+            <li><a href="/legal-terms" {{ if eq .Section "legal-terms" }}class="active" {{ end }}>Legal terms</a></li>
           </ul>
         </li>
       </ul>

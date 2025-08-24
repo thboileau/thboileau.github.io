@@ -5,14 +5,16 @@
       <ul class="dl-menu content-nav dl-menu-toggle">
         <li><a href="/">Overview</a></li>
         <li><a href="/features/">Features</a></li>
-        <li class="">
-          <a href="/documentation/user-guide/{{ .Site.Params.versions.stable }}/introduction/">User guide</a>
+{{- with .Site.Params.versions.stable }}
+        <li>
+          <a href="/documentation/user-guide/{{ . }}/introduction/">User guide</a>
           <ul class="dl-submenu">
-            <li><a href="/documentation/user-guide/{{ .Site.Params.versions.stable }}/introduction/">User guide</a></li>
-            <li><a href="/documentation/use-cases/{{ .Site.Params.versions.stable }}/overview/">Use cases</a></li>
-            <li><a href="/documentation/whats-new/{{ .Site.Params.versions.stable }}">What's new</a></li>
+            <li><a href="/documentation/user-guide/{{ . }}/introduction/">User guide</a></li>
+            <li><a href="/documentation/javadocs/{{ . }}/">Javadocs</a></li>
+            <li><a href="/documentation/whats-new/{{ . }}">What's new</a></li>
           </ul>
         </li>
+{{- end }}
         <li><a href="/legal-terms/">Legal Terms</a></li>
       </ul>
     </div>

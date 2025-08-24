@@ -1,6 +1,6 @@
 ---
 title: Serve static files
-weight: 7
+weight: 3
 ---
 Do you have a part of your web application that serves static pages like
 Javadocs? Well, no need to setup an Apache server just for that, use

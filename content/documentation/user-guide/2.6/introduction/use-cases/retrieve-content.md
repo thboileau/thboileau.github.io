@@ -1,6 +1,6 @@
 ---
 title: Retrieve the content of a web page
-weight: 6
+weight: 2
 ---
 As we mentioned in the [introduction
 paper](/documentation/user-guide/{{% param version %}}/introduction/overview), the Restlet framework is at the

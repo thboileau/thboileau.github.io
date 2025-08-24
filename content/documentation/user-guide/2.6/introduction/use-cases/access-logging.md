@@ -1,6 +1,6 @@
 ---
 title: Access logging & display error pages
-weight: 11
+weight: 7
 ---
 # Access logging
 
