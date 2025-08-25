@@ -2,7 +2,6 @@
 title: Overview
 weight: 1
 ---
-# Introduction
 
 The **org.restlet.service** package contains services used by
 applications and components. This chapter lists the services hosted by

@@ -4,8 +4,6 @@ section: guide-editions
 version: '2.6'
 weight: 1
 ---
-# Introduction
-
 The Restlet Framework is written in the Java language but can target
 very different execution environments. This part of the user guide will
 present the various editions supported and cover the differences between

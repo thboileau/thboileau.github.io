@@ -2,7 +2,6 @@
 title: Overview
 weight: 1
 ---
-# Introduction
 
 The engine is the set of classes that supports or implements the Restlet
 API. Since version 2.0, the Restlet API and Engine have been merged in a

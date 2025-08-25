@@ -2,7 +2,6 @@
 title: Overview
 weight: 1
 ---
-# Introduction
 
 The **org.restlet.security** package contains classes related to
 security. As there are numerous protocols (like HTTP, SMTP, etc.) that

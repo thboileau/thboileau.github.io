@@ -2,7 +2,6 @@
 title: Overview
 weight: 1
 ---
-# Introduction
 
 This chapter presents the Restlet edition for GWT, which is a
 client-side port of the Restlet Framework to GWT 2.2 and above releases.

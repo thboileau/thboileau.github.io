@@ -2,7 +2,6 @@
 title: Overview
 weight: 1
 ---
-# Introduction
 
 The **org.restlet.routing** package contains classes related to call
 routing.

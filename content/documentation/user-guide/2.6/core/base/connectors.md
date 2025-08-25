@@ -2,7 +2,6 @@
 title: Connectors
 weight: 2
 ---
-# Connectors
 
 ## Introduction
 
