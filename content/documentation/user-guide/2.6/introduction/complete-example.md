@@ -1,6 +1,6 @@
 ---
 title: Complete example
-weight: 12
+weight: 5
 ---
 # Introduction
 

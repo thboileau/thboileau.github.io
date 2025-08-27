@@ -1,6 +1,6 @@
 ---
 title: Conclusion
-weight: 13
+weight: 6
 ---
 We have already covered many aspects of the framework. Before you move
 on by yourself, let's take a step back and look at two hierarchy

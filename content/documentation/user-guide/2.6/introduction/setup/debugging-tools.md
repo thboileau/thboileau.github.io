@@ -1,6 +1,6 @@
 ---
 title: Debugging tools
-weight: 4
+weight: 3
 ---
 
 As a set of pure Java library, the Restlet framework can easily be

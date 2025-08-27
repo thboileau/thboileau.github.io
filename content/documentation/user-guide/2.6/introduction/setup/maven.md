@@ -1,7 +1,7 @@
 ---
 title: Maven
 longTitle: Getting started with Maven
-weight: 2
+weight: 1
 ---
 
 Maven is a comprehensive project management system built around the

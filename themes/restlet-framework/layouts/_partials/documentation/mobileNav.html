@@ -7,30 +7,30 @@
           <a href="#">User guide</a>
           <ul class="dl-submenu">
 
-{{- with .GetPage (printf "/documentation/user-guide/%s/introduction/overview" .Params.version ) }}
+{{- with .GetPage (printf "/documentation/user-guide/%s/introduction/overview/" .Params.version ) }}
   {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-introduction" "sectionLabel" "Part 1 - Getting started") }}
 {{- end }}
-{{- with .GetPage (printf "/documentation/user-guide/%s/core/overview" .Params.version ) }}
+{{- with .GetPage (printf "/documentation/user-guide/%s/core/overview/" .Params.version ) }}
 {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-core" "sectionLabel" "Part 2 - Core Restlet") }}
 {{- end }}
 
-{{- with .GetPage (printf "/documentation/user-guide/%s/editions/overview" .Params.version ) }}
+{{- with .GetPage (printf "/documentation/user-guide/%s/editions/overview/" .Params.version ) }}
   {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-editions" "sectionLabel" "Part 3 - Restlet Editions") }}
 {{- end }}
 
-{{- with .GetPage (printf "/documentation/user-guide/%s/extensions/overview" .Params.version ) }}
+{{- with .GetPage (printf "/documentation/user-guide/%s/extensions/overview/" .Params.version ) }}
   {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-extensions" "sectionLabel" "Part 4 - Restlet Extensions") }}
 {{- end }}
 
-{{- with .GetPage (printf "/documentation/user-guide/%s/appendices" .Params.version ) }}
+{{- with .GetPage (printf "/documentation/user-guide/%s/appendices/" .Params.version ) }}
   {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-appendices" "sectionLabel" "Appendices") }}
 {{- end }}
 
           </ul>
         </li>
         <li><a href="/documentation/javadocs/{{ .Params.version }}/">Javadocs</a></li>
-        <li><a href="/documentation/whats-new/{{ .Params.version }}">What's new</a></li>
-        <li><a href="/documentation/legal-terms/{{ .Params.version }}">Legal terms</a></li>
+        <li><a href="/documentation/whats-new/{{ .Params.version }}/">What's new</a></li>
+        <li><a href="/documentation/legal-terms/{{ .Params.version }}/">Legal terms</a></li>
       </ul>
     </div><!-- /dl-menuwrapper -->
   </div>

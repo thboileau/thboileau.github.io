@@ -4,11 +4,11 @@
     <li {{ if eq .Title "Features" }}class="active"{{ end }}><a href="/features/">Features</a></li>
 {{- with .Site.Params.versions.stable }}
     <li>
-      <a href="/documentation/user-guide/{{ . }}/introduction/">Documentation</a>
+      <a href="/documentation/user-guide/{{ . }}/introduction/overview/">Documentation</a>
       <ul>
-        <li><a href="/documentation/user-guide/{{ . }}/introduction/">User guide</a></li>
+        <li><a href="/documentation/user-guide/{{ . }}/introduction/overview/">User guide</a></li>
         <li><a href="/documentation/javadocs/{{ . }}/">Javadocs</a></li>
-        <li><a href="/documentation/whats-new/{{ . }}">What's new</a></li>
+        <li><a href="/documentation/whats-new/{{ . }}/">What's new</a></li>
       </ul>
     </li>
 {{- end }}
