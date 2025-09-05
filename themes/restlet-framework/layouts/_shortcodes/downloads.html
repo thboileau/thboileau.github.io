@@ -1,32 +1,35 @@
 {{ $editions := .Site.Data.downloads.editions }}
 {{ $baseUrl := .Site.Data.downloads.baseUrl }}
 
-{{ $defaultVersionClosed := true }}{{/* used to open the default version: the latest one */}}
-{{ $defaultReleaseClosed := true }}
+{{ $microVersion := .Get "microVersion" }}
 
-{{- range $index, $version := sort .Site.Data.downloads.versions "version" "desc" }}
-  <details {{ if $defaultVersionClosed }}open{{ $defaultVersionClosed = false }}{{ end }}>
-      <summary class="version">{{- $version.version -}}&nbsp;&nbsp;(<a class="changelog" href="/documentation/whats-new/{{- $version.version -}}">View changelog</a>)</summary>
-      <div class="releases">
+{{ $version := (index .Site.Data.downloads.versions $microVersion) }}
 
+
+<div class="downloads">
+  <span class="title">Download a full zip of one of the {{ $version.version }} versions</span>
+<details>
+  <summary class="version">{{- $version.version -}}&nbsp;&nbsp;(<a class="changelog" href="/documentation/whats-new/{{- $version.version -}}">View changelog</a>)</summary>
+  <div class="releases">
   {{- with $version.editions }}{{/* versions 1.* do not support editions */}}
     {{- range $release := $version.releases }}
-        <details {{ if $defaultReleaseClosed }}open{{ $defaultReleaseClosed = false }}{{ end }}>
-            <summary class="release">{{- $release.name }}&nbsp;&nbsp;(<span class="release-date">{{ $release.release_date -}}</span>)</summary>
-            <ul>
+    <details>
+      <summary class="release">{{- $release.name }}&nbsp;&nbsp;(<span class="release-date">{{ $release.release_date -}}</span>)</summary>
+      <ul>
       {{- range $edition := $editions }}
-              <li><a href="{{ printf "%s/%s/restlet-%s-%s.zip" $baseUrl $version.version $edition.value $release.name }}">{{- $edition.name }}</a></li>
+        <li><a href="{{ printf "%s/%s/restlet-%s-%s.zip" $baseUrl $version.version $edition.value $release.name }}">{{- $edition.name }}</a></li>
       {{- end }}
-            </ul>
-        </details>
+      </ul>
+    </details>
     {{- end }}
   {{- else }}
-        <ul>
+    <ul>
     {{- range $release := $version.releases }}
-          <li><a href="{{ printf "%s/%s/restlet-%s.zip" $baseUrl $version.version $release.name }}">{{- $release.name }} (<span class="release-date">{{ $release.release_date -}}</span>)</a></li>
+      <li><a href="{{ printf "%s/%s/restlet-%s.zip" $baseUrl $version.version $release.name }}">{{- $release.name }} (<span class="release-date">{{ $release.release_date -}}</span>)</a></li>
     {{- end }}
-        </ul>
+    </ul>
   {{- end }}
-      </div>
-  </details>
-{{- end }}
+  </div>
+</details>
+</div>
+

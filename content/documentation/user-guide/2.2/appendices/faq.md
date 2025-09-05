@@ -4,36 +4,11 @@ weight: 2
 ---
 # Table of contents
 
-1.  [How to use Restlet in an Applet](#how-to-use-restlet-in-an-applet "How to use Restlet in an Applet")
-2.  [Solve 405 status code responses](#solve-405-status-code-responses "Solve 405 status code responses")
-3.  [How to trace the internal client and server connectors?](#how-to-trace-the-internal-client-and-server-connectors "How to trace the internal client and server connectors?")
-4.  [How do I implement the traditional MVC pattern?](#how-do-i-implement-the-traditional-mvc-pattern "How do I implement the traditional MVC pattern?")
+1.  [Solve 405 status code responses](#solve-405-status-code-responses "Solve 405 status code responses")
+2.  [How to trace the internal client and server connectors?](#how-to-trace-the-internal-client-and-server-connectors "How to trace the internal client and server connectors?")
+3.  [How do I implement the traditional MVC pattern?](#how-do-i-implement-the-traditional-mvc-pattern "How do I implement the traditional MVC pattern?")
 
 
-# <a name="how-to-use-restlet-in-an-applet"></a>How to use Restlet in an Applet
-
-In version 2.0, the Restlet engine creates its own classloader, instance
-of the EngineClassLoader class. This is fine most of the time, except
-when a security manager is used, such as for Applets running inside a
-sandbox.
-
-The solution is to use a custom Restlet engine as below, that won't
-create this new classloader:
-
-{{< highlight java "style=emacs" >}}public class AppletEngine extends Engine {
-
-    @Override
-    protected ClassLoader createClassLoader() {
-        return getClass().getClassLoader();
-    }
-
-}
-{{< /highlight >}}
-
-Now you just need to call this line before using the Restlet API:
-
-{{< highlight java "style=emacs" >}}    Engine.setInstance(new AppletEngine());
-{{< /highlight >}}
 # <a name="solve-405-status-code-responses"></a>Solve 405 status code responses
 
 Having set up your server resource with annotated methods, you're ready
@@ -72,11 +47,11 @@ project. Did you reference the archive of the right Restlet extension
 (such as the Jackson extension) and the archives of its library
 dependencies?
 
-# <a name="how-to-trace-the-internal-client-and-server-connectors"></a>How to trace the internal client and server connectors?
+# <a name="how-to-trace-the-internal-client-and-server-connectors"></a>How to trace the nio client and server connectors?
 
 These connectors are configured via the parameter called "tracing" of
 their context (see the
-[javadocs](https://javadocs.restlet.talend.com/{{% param version %}}/jse/engine/org/restlet/engine/connector/BaseHelper.html)).
+[javadocs](https://javadocs.restlet.talend.com/{{% param version %}}/jse/ext/org/restlet/ext/nio/BaseHelper.html)).
 
 Here is a sample code that illustrates how to configure the HTTP  server
 connector of a Component:
