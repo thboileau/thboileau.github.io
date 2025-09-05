@@ -9,5 +9,5 @@ While Restlet applications can be deployed in Servlet containers, they can also 
 
 <div class="m-cta cta-darkblue">
     <img class="home-logo" src="/images/restlet-framework.svg" alt="Restlet Framework">
-    <a href="/downloads/current/" class="m-button m-button-border">Download</a>
+    <a href="/documentation/user-guide/{{% frameworkLatestRelease %}}/introduction/overview/" class="m-button m-button-border">Getting Started</a>
 </div>

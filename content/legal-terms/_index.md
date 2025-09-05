@@ -1,5 +1,6 @@
 ---
 title: Legal Terms
+url: /documentation/legal-terms
 ---
 
 ## Licenses

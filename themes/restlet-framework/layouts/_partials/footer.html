@@ -9,14 +9,6 @@
           </ul>
         </div>
         <div class="col-sm-2">
-          <h4>Downloads</h4>
-          <ul>
-            <li><a href="/downloads/current/">Current Release</a></li>
-            <li><a href="/downloads/past/">Other Releases</a></li>
-            <li><a href="/legal-terms/">Legal Terms</a></li>
-          </ul>
-        </div>
-        <div class="col-sm-2">
           <h4>Documentation</h4>
 {{- with .Site.Params.versions.stable }}
           <ul>
@@ -24,6 +16,7 @@
             <li><a href="/documentation/user-guide/{{ . }}/introduction/use-cases/overview/">Use cases</a></li>
             <li><a href="/documentation/javadocs/{{ . }}/">Javadocs</a></li>
             <li><a href="/documentation/whats-new/{{ . }}/">What's new</a></li>
+            <li><a href="/documentation/legal-terms/">Legal terms</a></li>
           </ul>
 {{- end }}
         </div>
