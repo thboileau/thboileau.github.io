@@ -1,7 +1,7 @@
 ---
 title: URIs
 longTitle: Rewriting, redirection, router & hierarchical URIs
-weight: 7
+weight: 5
 ---
 # URI rewriting and redirection
 
@@ -23,15 +23,15 @@ parameter:
 Router router = new Router(getContext());
 
 // Create a Redirector to Google search service
-String target = "http://www.google.com/search?q=site:mysite.org+{keywords}";
-Redirector redirector = new Redirector(getContext(), target,
-        Redirector.MODE_CLIENT_TEMPORARY);
+Redirector redirector = new Redirector(getContext(),
+    "https://www.google.com/search?q=site:mysite.org+{keywords}",
+    Redirector.MODE_CLIENT_TEMPORARY);
 
-// While routing requests to the redirector, extract the "kwd" query
-// parameter. For instance :
+// While routing requests to the redirector,
+// extract the "kwd" query parameter. For instance :
 // http://localhost:8182/search?kwd=myKeyword1+myKeyword2
 // will be routed to
-// http://www.google.com/search?q=site:mysite.org+myKeyword1%20myKeyword2
+// https://www.google.com/search?q=site:mysite.org+myKeyword1%20myKeyword2
 Extractor extractor = new Extractor(getContext(), redirector);
 extractor.extractQuery("keywords", "kwd", true);
 
@@ -63,10 +63,10 @@ you will set a Router as the root of your Application.
 
 Here we want to explain how to handle the following URI patterns:
 
-1.  /docs/ to display static files
-2.  /users/{user} to display a user account
-3.  /users/{user}/orders to display the orders of a particular user
-4.  /users/{user}/orders/{order} to display a specific order
+1. `/docs/` to display static files
+2. `/users/{user}` to display a user account
+3. `/users/{user}/orders` to display the orders of a particular user
+4. `/users/{user}/orders/{order}` to display a specific order
 
 The fact that these URIs contain variable parts (between accolades) and
 that no file extension is used makes it harder to handle them in a

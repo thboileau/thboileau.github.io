@@ -55,4 +55,4 @@ and read the [recommended books](/documentation/user-guide/{{% param version %}}
 We especially recommend our [Restlet in Action](http://www.amazon.com/gp/product/193518234X/ref=as_li_tf_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=193518234X&linkCode=as2&tag=restlet-20)
 book published by Manning.
 
-![](../images/restlet-in-action.png)
+![](./images/restlet-in-action.png)

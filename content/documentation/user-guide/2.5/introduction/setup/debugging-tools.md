@@ -1,8 +1,7 @@
 ---
 title: Debugging tools
-weight: 4
+weight: 3
 ---
-# Introduction
 
 As a set of pure Java library, the Restlet framework can easily be
 debugged in your favorite IDE. All the source code is available, making

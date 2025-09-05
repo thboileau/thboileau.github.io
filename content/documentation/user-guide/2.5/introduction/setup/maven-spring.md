@@ -1,9 +1,8 @@
 ---
 title: Maven and Spring
 longTitle: Getting started with Maven and Spring
-weight: 3
+weight: 2
 ---
-# Overview
 
 This document outlines how to integrate the Restlet Framework with Maven
 and Spring. It is not a tutorial on using the Restlet Framework.

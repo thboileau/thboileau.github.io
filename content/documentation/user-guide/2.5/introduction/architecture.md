@@ -1,8 +1,7 @@
 ---
-title: Overview
-weight: 1
+title: Architecture
+weight: 2
 ---
-# Introduction
 
 The Restlet Framework is composed of two main parts. First, there is the
 [Restlet API](/documentation/user-guide/{{% param version %}}/core/overview "Part II - Core Restlet"),
@@ -100,3 +99,41 @@ the result that you will get:
     Routed part   : http://localhost:8182/trace
     Remaining part: /abc/def?param=123
 {{< /highlight >}}
+
+# Persistence layer
+
+The Restlet framework is completely agnostic regarding the persistence
+technology that you want to use. Many alternatives having been used
+successfully and we are confident that you won't hit any special
+limitation in this area.
+
+The basic idea is that from a Restlet point of view, your application
+with be composed of resources, extending the
+org.restlet.resource.Resource class. Those subclassed will be in charge
+of handling the incoming requests. One instance of your resource
+subclass will be created for each request to handle, making sure that
+you don't have to care about concurrent access at this point of your
+application.
+
+When you resource is instantiated, it will need to expose its
+representations (via HEAD, GET methods), to store (PUT method), accept
+(POST method) or remove (DELETE method) representations. During
+construction, based on the actual identity of your resource and other
+parameters or attributes of the request, you will be able to contact
+your persistence backend in order to support your processing logic or
+the representations of your resources returned.
+
+# Presentation layer
+
+When compared to the Servlet API, the Restlet API doesn't have a sister
+API like Java Server Pages (JSP). Instead we made the design choice to
+be equally open to all presentation technologies. This openess is
+materialized in the Representation class which is used for response
+entities. 
+
+More concretely, we provide integrations with three popular template
+technologies : XSLT, Apache FreeMarker, Apache Velocity and Thymeleaf.
+
+The design idea of those extensions is to use a TemplateRepresentation
+that combines at generation time a data model with a template document.
+

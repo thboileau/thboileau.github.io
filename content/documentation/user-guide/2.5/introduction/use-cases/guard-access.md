@@ -1,6 +1,6 @@
 ---
 title: Guard access to sensitive resources
-weight: 6
+weight: 4
 ---
 When you need to secure the access to some Restlets, several options are
 available. A common way is to rely on cookies to identify clients (or
@@ -34,7 +34,9 @@ verifier.getLocalSecrets().put("scott", "tiger".toCharArray());
 
 // Create a Guard
 ChallengeAuthenticator guard = new ChallengeAuthenticator(
-                getContext(), ChallengeScheme.HTTP_BASIC, "Tutorial");
+                getContext(),
+                ChallengeScheme.HTTP_BASIC,
+                "Tutorial");
 guard.setVerifier(verifier);
 
 // Create a Directory able to return a deep hierarchy of files
@@ -69,15 +71,15 @@ resource.get();
 if (resource.getStatus().isSuccess()) {
     // Output the response entity on the JVM console
     resource.getResponseEntity().write(System.out);
-} else if (resource.getStatus()
-        .equals(Status.CLIENT_ERROR_UNAUTHORIZED)) {
+} else if (Status.CLIENT_ERROR_UNAUTHORIZED
+             .equals(resource.getStatus())) {
     // Unauthorized access
-    System.out
-            .println("Access unauthorized by the server, check your credentials");
+    System.out.println(
+      "Access unauthorized, check your credentials");
 } else {
     // Unexpected status
-    System.out.println("An unexpected status was returned: "
-            + resource.getStatus());
+    System.out.println(
+      "An unexpected status was returned: " + resource.getStatus());
 }
 {{< /highlight >}}
 

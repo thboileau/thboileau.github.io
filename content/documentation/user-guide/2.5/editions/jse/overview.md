@@ -2,8 +2,6 @@
 title: Overview
 weight: 1
 ---
-# Introduction
-
 This chapter presents the Restlet Framework edition for Java SE (Java
 Standard Edition).
 

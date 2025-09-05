@@ -1,6 +1,6 @@
 ---
-title: First application
-weight: 4
+title: Complete example
+weight: 5
 ---
 # Introduction
 
