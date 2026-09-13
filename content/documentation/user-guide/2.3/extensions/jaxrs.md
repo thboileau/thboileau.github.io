@@ -13,7 +13,7 @@ Note that this implementation is not final yet.
 
 To run this example, you need the Restlet libraries. Download a {{% param version %}}
 version from
-[restlet.com/downloads/](/downloads/current).
+[restlet.com/downloads/](/documentation/user-guide/2.3/introduction/setup/download/).
 (For a general Restlet example take a look at [the first steps
 examples](/documentation/user-guide/{{% param version %}}/introduction/first-steps/overview "First steps")).
 

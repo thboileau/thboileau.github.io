@@ -25,10 +25,8 @@ resource that says "hello, world" and run it.
 ## What do I need?
 
 We assume that you have a development environment set up and
-operational, and that you already have installed the Java 1.5 (or
-higher). In case you haven't downloaded the Restlet Framework yet,
-select one of the available distributions of the [Restlet Framework
-{{% param version %}}](/downloads/current).
+operational, and that you already have installed the Java 17 (or
+higher). Follow the [Maven setup guide](/documentation/user-guide/{{% param version %}}/introduction/setup/maven/). 
 
 ## The "hello, world" application
 

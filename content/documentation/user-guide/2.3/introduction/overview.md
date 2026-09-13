@@ -7,7 +7,7 @@ weight: 1
 This is the official User Guide for version {{% param version %}} of the [Restlet Framework](/).
 
 This document is edited in a collaborative way via this
-[GitHub repository](https://github.com/restlet/restlet.github.io/tree/master/documentation/user-guide/{{% param version %}})
+[GitHub repository](https://github.com/restlet/restlet.github.io/tree/master/content/documentation/user-guide/{{% param version %}})
 as a set of Markdown pages.
 
 Welcome to Restlet Framework! We hope that you will have

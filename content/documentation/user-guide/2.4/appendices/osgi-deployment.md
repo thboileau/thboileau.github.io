@@ -8,7 +8,7 @@ This page will explain you how to run your Restlet application in an
 OSGi environment such as Eclipse Equinox or Apache Felix.
 
 Since Restlet 2.1 RC2, a new edition of Restlet Framework for OSGi
-environements is available as well as an [Eclipse update site](/downloads/current?distribution=p2&release=stable&edition=osgi).
+environements is available as well as an [Eclipse update site](/documentation/user-guide/2.4/introduction/setup/download/).
 
 # Simple example
 

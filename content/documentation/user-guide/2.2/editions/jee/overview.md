@@ -30,7 +30,7 @@ We assume that you have a development environment set up and
 operational, and that you already have installed the Java 1.5 (or
 higher). In case you haven't downloaded the Restlet Framework yet,
 select one of the available distributions of the [Restlet Framework
-{{% param version %}}](/downloads/current).
+{{% param version %}}](/documentation/user-guide/2.2/introduction/setup/download/).
 
 ## <a name="the-hello-world-application"></a>The "hello, world" application
 

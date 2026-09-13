@@ -11,9 +11,8 @@ Note that this implementation is not final yet.
 
 # Description
 
-To run this example, you need the Restlet libraries. Download a {{% param version %}}
-version from
-[restlet.com/downloads/](/downloads/current).
+To run this example, you need the Restlet libraries. Follow the 
+[Maven setup guide](/documentation/user-guide/2.4/introduction/setup/maven/).
 (For a general Restlet example take a look at [the first steps
 examples](/documentation/user-guide/{{% param version %}}/introduction/first-steps/overview "First steps")).
 

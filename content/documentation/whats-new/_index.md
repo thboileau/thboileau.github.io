@@ -3,6 +3,7 @@ cascade:
   params:
     section: whats-new
     versions:
+      - '2.7'
       - '2.6'
       - '2.5'
       - '2.4'

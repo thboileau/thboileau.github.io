@@ -2,6 +2,7 @@
 cascade:
   params:
     versions:
+      - '2.7'
       - '2.6'
       - '2.5'
       - '2.4'

@@ -26,7 +26,7 @@ between a server application and several kind of clients.
 
 It is based on the following editions of the Restlet Framework : Java SE
 (JSE), Google App Engine (GAE), Google Web Toolkit (GWT) and Android
-which must be downloaded separately from [this page](/downloads/current).
+which must be downloaded separately from [this page](/documentation/user-guide/2.3/introduction/setup/download/).
 It has been tested with the following environments:
 
 -   Restlet Framework 2.2 RC 4

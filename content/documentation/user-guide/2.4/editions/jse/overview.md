@@ -29,10 +29,7 @@ resource that says "hello, world" and run it.
 
 We assume that you have a development environment set up and
 operational, and that you already have installed the Java 1.5 (or
-higher). In case you haven't downloaded the Restlet Framework yet,
-select one of the available distributions of the [Restlet Framework
-{{% param version %}}](/downloads/current). Make sure you
-add org.restlet.jar in your Build path.
+higher).
 
 ## The "hello, world" application
 

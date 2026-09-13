@@ -14,12 +14,15 @@
 {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-core" "sectionLabel" "Part 2 - Core Restlet") }}
 {{- end }}
 
-{{- with .GetPage (printf "/documentation/user-guide/%s/editions/overview/" .Params.version ) }}
+{{- $editionsPage := .GetPage (printf "/documentation/user-guide/%s/editions/overview/" .Params.version ) }}
+{{- $extensionsPartNum := 3 }}
+{{- if $editionsPage }}{{ $extensionsPartNum = 4 }}{{ end }}
+{{- with $editionsPage }}
   {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-editions" "sectionLabel" "Part 3 - Restlet Editions") }}
 {{- end }}
 
 {{- with .GetPage (printf "/documentation/user-guide/%s/extensions/overview/" .Params.version ) }}
-  {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-extensions" "sectionLabel" "Part 4 - Restlet Extensions") }}
+  {{- partial "documentation/mobileNavSectionPart.html" (dict "currentPage" . "sectionId" "guide-extensions" "sectionLabel" (printf "Part %d - Restlet Extensions" $extensionsPartNum)) }}
 {{- end }}
 
 {{- with .GetPage (printf "/documentation/user-guide/%s/appendices/" .Params.version ) }}

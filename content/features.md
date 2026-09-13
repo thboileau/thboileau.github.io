@@ -62,6 +62,6 @@ Restlet Framework can be entirely configured in Java via the Restlet API. Config
 - Logging based on JULI (java.util.logging) with an extensibility system, including an adapter for SLF4J.
 
 <div class="m-cta cta-darkblue">
-  <img alt="Restlet Framework" src="/images/features/restlet-framework.svg">
-  <a href="/downloads/current/" class="m-button m-button-border">Download</a>
+    <img class="home-logo" src="/images/restlet-framework.svg" alt="Restlet Framework">
+    <a href="/documentation/user-guide/{{% frameworkStableMicroVersion %}}/introduction/setup/maven/" class="m-button m-button-border">Setup</a>
 </div>
