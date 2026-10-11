@@ -1,5 +1,5 @@
 {{- with resources.Get "sass/app.min.sass" }}
-  {{- $opts := dict "transpiler" "libsass"
+  {{- $opts := dict "transpiler" "dartsass"
                     "outputStyle" "expanded"
                     "targetPath" "css/app.min.css" }}
   {{- with . | toCSS $opts }}
